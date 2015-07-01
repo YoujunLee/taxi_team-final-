@@ -7,6 +7,10 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="/C:/Users/이형호/Desktop/taxi/git//css/bootstrap.css">  
 	<title> Taxi </title>
+
+	<style>
+		ul{list-style-type:none;}
+	</style>
 </head>
 
 <body>
@@ -40,10 +44,18 @@
 					</select>
 				</label>
 			</li>
-		
-			<li>날짜 <input type="date"> </li>
-			<li>시간 </li>
-			<li>최대탑승인원</li>
-			<li>Memo</li>
+			
+			<form action"" method="post">
+			<li><label>날짜 <input type="date" id="make_date" required> </label></li>
+			<li><label>시간 <input type="time" id="make_time" value="09:00"> </label></li>
+			<li><label>최대탑승인원 <input type="number" id="make_number" min="1" max="4" value="1"></label></li>
+			<li><label>Memo <input type="textarea" id="make_memo" placeholder="특이사항" autocomplete="off"></label></li>
+			</form>
 		</ul>
 	</section>
+
+	<input type="submit" value="방만들기">
+	<input type="button" value="취소">
+
+</body>
+</html>
