@@ -1,0 +1,17 @@
+/**{
+	border  :1px solid blue;
+}
+*/
+.div_root{
+	margin:auto;
+	width:40%;
+}
+
+.modify{
+	float: right;
+}
+.modify2{
+	float: right;
+	position: relative;
+	top :-7px ;
+}

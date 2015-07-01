@@ -41,3 +41,11 @@ tr.tr1
 {
 	vertical-align : middle;
 }
+tr.trcenter
+{
+	text-align: middle;
+}
+.tablewidth
+{
+	height: 50px
+}
