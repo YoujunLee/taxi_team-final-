@@ -17,12 +17,13 @@
 		</div>
 		
 		<div class="col-md-4">
-		<table>
+		<div class="form-group">
+		<table class="table">
 			<tbody>
 				<tr >
 					<label>
 					<td class="col-md-3">출발지</td>
-					<td class="col-md-9"><select size="1">
+					<td class="col-md-9"><select size="1" class="form-control">
 						<option value="handong" selected>한동대 택시승강장</option>
 						<option value="yangduk">양덕 하나로마트</option>
 						<option value="E1">E1</option>
@@ -37,7 +38,7 @@
 				<tr>
 					<label>
 					<td class="col-md-3">도착지</td>
-					<td class="col-md-9"><select size="1">
+					<td class="col-md-9"><select size="1" class="form-control">
 						<option value="handong">한동대 택시승강장</option>
 						<option value="yangduk">양덕 하나로마트</option>
 						<option value="E1">E1</option>
@@ -55,37 +56,39 @@
 				<tr>
 					<label>
 					<td class="col-md-3">날짜</td>
-					<td class="col-md-9"><input type="date" id="make_date"  required></td>
+					<td class="col-md-9"><input type="date" id="make_date" class="form-control" required></td>
 				    </label>
 				</tr>
 			
 				<tr>
 					<label>
 					<td class="col-md-3">시간</td>
-					<td class="col-md-9"><input type="time" id="make_time" value="09:00"></td>
+					<td class="col-md-9"><input type="time" id="make_time" class="form-control" value="09:00"></td>
 				    </label>
 				</tr>
 
 				<tr>
 					<label>
 					<td class="col-md-5">최대탑승인원</td>
-					<td class="col-md-7"><input type="number" id="make_number" min="1" max="4" value="1"></td>
+					<td class="col-md-7"><input type="number" id="make_number" class="form-control" min="1" max="4" value="1" ><div class="input-group-addon">최대 탑승 인원 4명</div></td>
 					</label>
 				</tr>
 
 				<tr>
 					<label>
 					<td class="col-md-3">Memo</td>
-					<td class="col-md-9"><input type="textarea" id="make_memo" placeholder="특이사항" autocomplete="off"></td>
+					<td class="col-md-9"> <textarea id="make_memo" class="form-control" placeholder="특이사항" cols="5"></textarea></td>
 					</label>
 				</tr>
 			</form>
 			</tbody>
 		</table>
+	</div>
 	
-
-	<input type="submit" value="방만들기" class="btn btn-info">
+	<p class="text-center">
+	<input type="submit" value="방만들기" class=" margin_right btn-info">
 	<input type="button" value="취소" class="btn btn-danger">
+	</p>
 	</div>
 
 	<div class="col-md-4">
