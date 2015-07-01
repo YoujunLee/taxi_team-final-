@@ -1,7 +1,7 @@
 /*{
 	border  :1px solid blue;
-}
-*/
+}*/
+
 #center {
  position:absolute;
  top:50%; 
@@ -33,4 +33,9 @@
 .div_root{
 	margin:auto;
 	width:30%;
+}
+
+#div_go{
+	width:30%;
+	float:right;
 }
