@@ -1,11 +1,11 @@
-*{
+/**{
 	border: 1px solid blue;
-}
+}*/
 .myposition
 {
-	position:absolute;
+	
 	bottom: 1px;
-	margin:0 auto;
+	
 	
  
 }
@@ -35,7 +35,7 @@ tr.tr1
 	text-align: center;
 	background-align: center;
 	margin:auto;
-	width: 500px;
+	width: 40%;
 }
 .btn-center
 {
