@@ -1,13 +1,34 @@
 
-
-.container {
-  margin:0px;
-  padding-left: 100px;
-  padding-right: 100px;
+.center{
+  text-align: center;
+   background-align: center;
+   margin:auto;
+  width: 50%;
 }
+
+.wrapper2{
+  height: 50%;
+  position: relative;
+   border: 1px solid black;
+   margin-top: 0.5%;
+   margin-bottom: 0.5%;
+     text-align: left;
+     padding-left: 1%;
+font-size: 18px;
+}
+.wrapper3{
+  height: 6%;
+  position: relative;
+   
+ 
+   
+     
+    
+}
+
 .wrapper {
 
-  height: 80px;
+  height: 10%;
   position: static;
 background-color: grey;
 
@@ -15,22 +36,6 @@ background-color: grey;
 font-size: 18px;
 }
 
-.jumbotron > h1 {
-  color: navy;
+thead.co{
+  background-color: grey;
 }
-
-.jumbotron > p {
-  margin-top: 30px;
-  font-size: 18px;
-}
-
-.page-header {
-  margin-top: 100px;
-}
-
-#profile-description {
-  text-align: center;
-}
-
-#profile-photo {
-  width: 80%;
