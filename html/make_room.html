@@ -1,25 +1,28 @@
-<!-- 방 만드는 Page-->
-<!-- 이유준 -->
+<!-- 방 만드는 Page
+.....이유준-->
+
 
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="/C:/Users/이형호/Desktop/taxi/git//css/bootstrap.css">  
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">  
+	<link rel="stylesheet" type="text/css" href="../css/make_room.css"> 
 	<title> Taxi </title>
-
-	<style>
-		ul{list-style-type:none;}
-	</style>
 </head>
 
 <body>
-	<section>
-		<ul>
-			
-			<li>
-				<label>출발지 
-					<select size="1">
+	<section class="container">
+		<div class="col-md-4">
+		</div>
+		
+		<div class="col-md-4">
+		<table>
+			<tbody>
+				<tr >
+					<label>
+					<td class="col-md-3">출발지</td>
+					<td class="col-md-9"><select size="1">
 						<option value="handong" selected>한동대 택시승강장</option>
 						<option value="yangduk">양덕 하나로마트</option>
 						<option value="E1">E1</option>
@@ -27,13 +30,14 @@
 						<option value="city_ex">시외버스터미널</option>
 						<option value="six">욱거리</option>
 						<option value="ktx">포항역</option>
-					</select>
-				</label>
-			</li>
+						</select>
+					</td>
+					</label>
 			
-			<li>
-				<labe>도착지 
-					<select size="1">
+				<tr>
+					<label>
+					<td class="col-md-3">도착지</td>
+					<td class="col-md-9"><select size="1">
 						<option value="handong">한동대 택시승강장</option>
 						<option value="yangduk">양덕 하나로마트</option>
 						<option value="E1">E1</option>
@@ -41,21 +45,52 @@
 						<option value="city_ex">시외버스터미널</option>
 						<option value="six">욱거리</option>
 						<option value="ktx" selected>포항역</option>
-					</select>
-				</label>
-			</li>
+						</select>
+					</td>
+					</label>
+				</tr>		
 			
-			<form action"" method="post">
-			<li><label>날짜 <input type="date" id="make_date" required> </label></li>
-			<li><label>시간 <input type="time" id="make_time" value="09:00"> </label></li>
-			<li><label>최대탑승인원 <input type="number" id="make_number" min="1" max="4" value="1"></label></li>
-			<li><label>Memo <input type="textarea" id="make_memo" placeholder="특이사항" autocomplete="off"></label></li>
+			<form action"" metdod="post">
+				
+				<tr>
+					<label>
+					<td class="col-md-3">날짜</td>
+					<td class="col-md-9"><input type="date" id="make_date"  required></td>
+				    </label>
+				</tr>
+			
+				<tr>
+					<label>
+					<td class="col-md-3">시간</td>
+					<td class="col-md-9"><input type="time" id="make_time" value="09:00"></td>
+				    </label>
+				</tr>
+
+				<tr>
+					<label>
+					<td class="col-md-5">최대탑승인원</td>
+					<td class="col-md-7"><input type="number" id="make_number" min="1" max="4" value="1"></td>
+					</label>
+				</tr>
+
+				<tr>
+					<label>
+					<td class="col-md-3">Memo</td>
+					<td class="col-md-9"><input type="textarea" id="make_memo" placeholder="특이사항" autocomplete="off"></td>
+					</label>
+				</tr>
 			</form>
-		</ul>
-	</section>
+			</tbody>
+		</table>
+	
 
-	<input type="submit" value="방만들기">
-	<input type="button" value="취소">
+	<input type="submit" value="방만들기" class="btn btn-info">
+	<input type="button" value="취소" class="btn btn-danger">
+	</div>
 
+	<div class="col-md-4">
+	</div>
+
+    </section>
 </body>
 </html>
