@@ -1,7 +1,7 @@
-*{
+/*{
 	border  :1px solid blue;
 }
-
+*/
 #center {
  position:absolute;
  top:50%; 
@@ -32,5 +32,5 @@
 
 .div_root{
 	margin:auto;
-	width:500px;
+	width:30%;
 }
