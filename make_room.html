@@ -1,4 +1,4 @@
-<!-- 방 조회 Page
+<!-- 방 만드는 Page
 .....이유준-->
 
 
@@ -6,8 +6,8 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">  
-	<link rel="stylesheet" type="text/css" href="../css/make_room.css"> 
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">  
+	<link rel="stylesheet" type="text/css" href="./css/make_room.css"> 
 	<title> Taxi </title>
 </head>
 
@@ -62,27 +62,33 @@
 			
 				<tr>
 					<label>
-					<td class="col-md-3">시작 시간</td>
-					<td><input type="time" id="make_time" class="form-control" value="09:00"></td>
+					<td class="col-md-3">시간</td>
+					<td class="col-md-9"><input type="time" id="make_time" class="form-control" value="09:00"></td>
 				    </label>
 				</tr>
 
 				<tr>
 					<label>
-					<td class="col-md-3">마침 시간</td>
-					<td><input type="time" id="make_time" class="form-control" value="20:00"></td>
-				    </label>
+					<td class="col-md-5">최대탑승인원</td>
+					<td class="col-md-7"><input type="number" id="make_number" class="form-control" min="1" max="4" value="1" ><div class="input-group-addon">최대 탑승 인원 4명</div></td>
+					</label>
+				</tr>
+
+				<tr>
+					<label>
+					<td class="col-md-3">Memo</td>
+					<td class="col-md-9"> <textarea id="make_memo" class="form-control" placeholder="특이사항" cols="5"></textarea></td>
+					</label>
 				</tr>
 			</form>
 			</tbody>
 		</table>
 	</div>
 	
-	<a href="../html/search_result.html">
 	<p class="text-center">
-	<input type="submit" value="방 조회" class="btn btn-info">
+	<a href="./Room.html"><input type="submit" value="방만들기" class=" margin_right btn-info"></a>
+	<input type="button" value="취소" class="btn btn-danger">
 	</p>
-	</a>
 	</div>
 
 	<div class="col-md-4">
