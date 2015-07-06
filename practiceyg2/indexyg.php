@@ -21,7 +21,7 @@
 			  <span class="input-group-addon" id="sizing-addon1">
 			  	<img src="../img/login.png">
 			  </span>
-			  <input type="text" class="form-control" placeholder="ID" aria-describedby="sizing-addon1" name="logid">
+			  <input type="text" class="form-control" placeholder="Student ID" aria-describedby="sizing-addon1" name="logid" required>
 			</div>
 			<br>
 			<!-- Pw 입력창 -->
@@ -29,7 +29,7 @@
 				<span class="input-group-addon" id="sizing-addon1">
 					<img id="profile-photo" src="../img/pwd.png">
 				</span>
-				<input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1"  name="logpass">
+				<input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1"  name="logpass" required>
 			</div>
 
 			<br><br>

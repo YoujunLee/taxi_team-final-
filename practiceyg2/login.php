@@ -14,10 +14,10 @@ require_once './db.php';
 $db = new DBC;
 $db->DBI();
 
-$id = $_POST['logid'];
+$studentid = $_POST['logid'];
 $pass = $_POST['logpass'];
 
-$db->query = "select id, password from student_info where id='".$id."' and password='".$pass."'";
+$db->query = "select studentid, password from student_info where studentid='".$studentid."' and password='".$pass."'";
 $db->DBQ();
 
 $num = $db->result->num_rows;
@@ -28,9 +28,22 @@ if($num==1)
 {
 	
 	echo "<script>location.replace('./조회창yg.html');</script>";
-} else if(($id!="" || $pass!="") && $data[0]!=1)
+	exit;
+} 
+else if(($studentid==null))
 {
-	echo "<script>alert('아이디와 비밀번호가 맞지 않습니다.');location.replace('./indexyg.php');</script>";
+	echo "<script>alert('학번을 입력해주세요.');location.replace('./indexyg.php');</script>";
+	exit;
+}
+else if(($pass==null))
+{
+	echo "<script>alert('비밀번호를 입력해주세요.');location.replace('./indexyg.php');</script>";
+	exit;
+}
+else if(($studentid!="" || $pass!=""))
+{
+	echo "<script>alert('학번과 비밀번호가 맞지 않습니다.');location.replace('./indexyg.php');</script>";
+	exit;
 }
 ?>
 </body>

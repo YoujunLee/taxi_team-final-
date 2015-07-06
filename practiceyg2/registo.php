@@ -16,7 +16,7 @@ $db = new DBC; //db object생성
 $db->DBI();//db 들어가기
 
 
-$id = $_POST['id'];
+$cellPhone = $_POST['cellPhone'];
 $pass1 = $_POST['pass1'];
 $pass2 = $_POST['pass2'];
 $name = $_POST['name'];
@@ -32,8 +32,31 @@ if($pass1 == $pass2)
 	echo "<script>alert('비밀번호가 맞지 않습니다.');history.back();</script>";
 	exit;
 }
+if($student_no==null||$student_no=='')
+{
+	echo "<script>alert('학번을 입력해주세요.');history.back();</script>";
+	exit;
+}
+if($cellPhone==null||$cellPhone=='')
+{
+	echo "<script>alert('번호를 입력해주세요.');history.back();</script>";
+	exit;
+}
 
-$db->query = "insert into student_info values ('".$student_no."', '".$name."','".$id."','".$pass."')";
+if($pass==null||$pass=='')
+{
+	echo "<script>alert('비밀번호를 입력해주세요.');history.back();</script>";
+	exit;
+}
+
+if($name==null||$name=='')
+{
+	echo "<script>alert('이름을 입력해주세요.');history.back();</script>";
+	exit;
+}
+
+
+$db->query = "insert into student_info values ('".$student_no."', '".$name."','".$cellPhone."','".$pass."')";
 $db->DBQ();
 
 if(!$db->result)

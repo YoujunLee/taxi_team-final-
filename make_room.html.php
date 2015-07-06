@@ -1,6 +1,8 @@
 <!-- 방 만드는 Page
 .....이유준-->
-
+<?php
+include "./php/config.php";
+?>
 
 <!DOCTYPE html>
 <html>
@@ -99,3 +101,9 @@
     </section>
 </body>
 </html>
+
+<?php 
+	mysql_connect('localhost','root','taxi');
+	mysql_select_db('youjun');
+	
+	?>
