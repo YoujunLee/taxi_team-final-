@@ -21,9 +21,10 @@
 		<table class="table">
 			<tbody>
 				<tr >
-					<label>
+					<label for="start">
 					<td class="col-md-3">출발지</td>
-					<td class="col-md-9"><select size="1" class="form-control">
+					<td class="col-md-9">
+						<select id="start" size="1" class="form-control">
 						<option value="handong" selected>한동대 택시승강장</option>
 						<option value="yangduk">양덕 하나로마트</option>
 						<option value="E1">E1</option>
@@ -36,9 +37,10 @@
 					</label>
 			
 				<tr>
-					<label>
+					<label for="arrive">
 					<td class="col-md-3">도착지</td>
-					<td class="col-md-9"><select size="1" class="form-control">
+					<td class="col-md-9">
+						<select id="arrive" size="1" class="form-control">
 						<option value="handong">한동대 택시승강장</option>
 						<option value="yangduk">양덕 하나로마트</option>
 						<option value="E1">E1</option>
@@ -51,33 +53,33 @@
 					</label>
 				</tr>		
 			
-			<form action"" metdod="post">
+			<form action="./Room.php" method="post">
 				
 				<tr>
-					<label>
+					<label for="make_date">
 					<td class="col-md-3">날짜</td>
 					<td class="col-md-9"><input type="date" id="make_date" class="form-control" required></td>
 				    </label>
 				</tr>
 			
 				<tr>
-					<label>
+					<label for="make_time">
 					<td class="col-md-3">시간</td>
 					<td class="col-md-9"><input type="time" id="make_time" class="form-control" value="09:00"></td>
 				    </label>
 				</tr>
 
 				<tr>
-					<label>
+					<label for="make_number">
 					<td class="col-md-5">최대탑승인원</td>
 					<td class="col-md-7"><input type="number" id="make_number" class="form-control" min="1" max="4" value="1" ><div class="input-group-addon">최대 탑승 인원 4명</div></td>
 					</label>
 				</tr>
 
 				<tr>
-					<label>
+					<label for="make_memo">
 					<td class="col-md-3">Memo</td>
-					<td class="col-md-9"> <textarea id="make_memo" class="form-control" placeholder="특이사항" cols="5"></textarea></td>
+					<td class="col-md-9"> <textarea id="make_memo" class="form-control" placeholder="특이사항" cols="5"> </textarea></td>
 					</label>
 				</tr>
 			</form>
