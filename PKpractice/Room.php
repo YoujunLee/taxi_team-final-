@@ -1,3 +1,18 @@
+<?php
+	require_once('./db.php');
+	
+	$db = new DBC; //db object생성
+$db->DBI();//db 들어가기
+
+	$content = $_POST['댓글'];
+	
+	$db->query = "insert into comment values('" . $content . "')";
+	$db->DBQ();
+
+?>
+	
+	
+<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -17,11 +32,13 @@
   </div>
   
   <div class="wrapper2">
- <p><?php echo $row['content']?></p>
+<?php
+echo $row['content']."<br>";
+?>
   </div>
   <div class="wrapper3">
-  <form>
-  <form action="comment_update.php" method="post">
+  
+  <form action="Room.php" method="post">
   <input class="col-xs-15 col-md-10" type="text" name="댓글" id="content">
   <input class="col-xs-3 col-md-2" type="submit" value="의견쓰기">
 </form>
