@@ -3,9 +3,9 @@
 <html>
 	<head>
 		 <meta charset="utf-8">
-   		 <title>로그인12312412</title>
-   		 <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-   		 <link rel="stylesheet" type="text/css" href="./css/로그인.css">
+   		 <title>로그인</title>
+   		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+   		 <link rel="stylesheet" type="text/css" href="../css/로그인.css">
 	</head>
 	<body>
 
@@ -18,7 +18,7 @@
   			<!-- Id 입력창 -->
 	  		<div class="input-group input-group-lg" class="div_login">
 			  <span class="input-group-addon" id="sizing-addon1">
-			  	<img src="./img/login.png">
+			  	<img src="../img/login.png">
 			  </span>
 			  <input type="text" class="form-control" placeholder="ID" aria-describedby="sizing-addon1">
 			</div>
@@ -26,7 +26,7 @@
 			<!-- Pw 입력창 -->
 			<div class="input-group input-group-lg" class="div_login">
 				<span class="input-group-addon" id="sizing-addon1">
-					<img id="profile-photo" src="./img/pwd.png">
+					<img id="profile-photo" src="../img/pwd.png">
 				</span>
 				<input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1">
 			</div>
@@ -50,7 +50,7 @@
 		    <!-- 보기 좋게 띄우기 -->
 		    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
 		    <!-- 회원가입 버튼 -->
-		    <a href="./SignUp.html"><button class="btn btn-primary">회원가입→</button></a>
+		    <a href="./SignUp.php"><button class="btn btn-primary">회원가입→</button></a>
 		    </div>
 		</div>
 	</body>
