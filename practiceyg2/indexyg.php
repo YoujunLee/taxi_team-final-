@@ -16,11 +16,12 @@
 		</div>
 		<br><br><br>
   			<!-- Id 입력창 -->
+  			<form action='./login.php'  method='post'>
 	  		<div class="input-group input-group-lg" class="div_login">
 			  <span class="input-group-addon" id="sizing-addon1">
 			  	<img src="../img/login.png">
 			  </span>
-			  <input type="text" class="form-control" placeholder="ID" aria-describedby="sizing-addon1">
+			  <input type="text" class="form-control" placeholder="Student ID" aria-describedby="sizing-addon1" name="logid" required>
 			</div>
 			<br>
 			<!-- Pw 입력창 -->
@@ -28,18 +29,19 @@
 				<span class="input-group-addon" id="sizing-addon1">
 					<img id="profile-photo" src="../img/pwd.png">
 				</span>
-				<input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1">
+				<input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1"  name="logpass" required>
 			</div>
 
 			<br><br>
-			<a href="./조회창yg.html">
+			
 
 			<br><br><br>
 
 			<div class="div_go">
                 <input class="btn btn-lg btn-block" type="submit" value="GO!">
 			</div>
-		</a>
+			
+		</form>
 			<br>
 			<!-- remember id and pw -->
 	        <div align="center" class="checkbox">
