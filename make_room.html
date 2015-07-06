@@ -21,18 +21,18 @@
 		<table class="table">
 			<tbody>
 				<tr >
-				<form action="Room1.php" method="post">
+				<form action="/Room1.php" method="post">
 					<label for="start">
 					<td class="col-md-3">출발지</td>
 					<td class="col-md-9">
-						<select id="start" size="1" class="form-control">
-						<option value="handong" selected>한동대 택시승강장</option>
-						<option value="yangduk">양덕 하나로마트</option>
+						<select id="start" size="1" name="room_start" class="form-control">
+						<option value="한동대학교 택시 승강장" selected>한동대 택시승강장</option>
+						<option value="양덕 하나로마트">양덕 하나로마트</option>
 						<option value="E1">E1</option>
-						<option value="express">고속터미널</option>
-						<option value="city_ex">시외버스터미널</option>
-						<option value="six">욱거리</option>
-						<option value="ktx">포항역</option>
+						<option value="고속버스터미널">고속터미널</option>
+						<option value="시외버스터미널">시외버스터미널</option>
+						<option value="육거리">욱거리</option>
+						<option value="포항역(KTX)">포항역</option>
 						</select>
 					</td>
 					</label>
@@ -41,14 +41,14 @@
 					<label for="arrive">
 					<td class="col-md-3">도착지</td>
 					<td class="col-md-9">
-						<select id="arrive" size="1" class="form-control">
-						<option value="handong">한동대 택시승강장</option>
-						<option value="yangduk">양덕 하나로마트</option>
+						<select id="arrive" size="1" name="room_arrive" class="form-control">
+						<option value="한동대학교 택시 승강장">한동대 택시승강장</option>
+						<option value="양덕 하나로마트">양덕 하나로마트</option>
 						<option value="E1">E1</option>
-						<option value="express">고속터미널</option>
-						<option value="city_ex">시외버스터미널</option>
-						<option value="six">욱거리</option>
-						<option value="ktx" selected>포항역</option>
+						<option value="고속버스터미널">고속터미널</option>
+						<option value="시외버스터미널">시외버스터미널</option>
+						<option value="육거리">욱거리</option>
+						<option value="포항역(KTX)" selected>포항역</option>
 						</select>
 					</td>
 					</label>
@@ -81,18 +81,18 @@
 					<td class="col-md-9"> <textarea id="make_memo" name="room_memo" class="form-control" placeholder="특이사항" cols="5"> </textarea></td>
 					</label>
 				</tr>
-			</form>
+			
 			</tbody>
 		</table>
 	</div>
 	
 	<p class="text-center">
-	<!--<a href="./Room1.php">-->
-	<input type="submit" value="방만들기" class=" margin_right btn-info">
+	<a href="./Room1.php">
+	<input type="submit" value="방만들기" class=" margin_right btn-info"></a>
 	<input type="button" value="취소" class="btn btn-danger">
 	</p>
 	</div>
-
+	</form>
 	<div class="col-md-4">
 	</div>
 

@@ -11,10 +11,8 @@
 <div class="wrapper">
 
 
-    <p><?php echo $_POST["make_memo"];?></p>
-
-    <p>장소(ex 한동대 택시승강장->포항KTX역)</p>
-
+    <p><?php echo $_POST["room_date"];?> <?php echo $_POST["room_time"];?></p>
+    <p><?php echo $_POST["room_start"];?> → <?php echo $_POST["room_arrive"];?></p>
   </div>
   <div class="wrapper2">
   이유준 : 늦지 않게 모입시다!
