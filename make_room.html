@@ -21,6 +21,7 @@
 		<table class="table">
 			<tbody>
 				<tr >
+				<form action="Room1.php" method="post">
 					<label for="start">
 					<td class="col-md-3">출발지</td>
 					<td class="col-md-9">
@@ -52,34 +53,32 @@
 					</td>
 					</label>
 				</tr>		
-			
-			<form action="./Room1.php" method="post">
 				
 				<tr>
 					<label for="make_date">
 					<td class="col-md-3">날짜</td>
-					<td class="col-md-9"><input type="date" id="make_date" class="form-control" required></td>
+					<td class="col-md-9"><input type="date" id="make_date" name="room_date" class="form-control" required></td>
 				    </label>
 				</tr>
 			
 				<tr>
 					<label for="make_time">
 					<td class="col-md-3">시간</td>
-					<td class="col-md-9"><input type="time" id="make_time" class="form-control" value="09:00"></td>
+					<td class="col-md-9"><input type="time" id="make_time" name="room_time" class="form-control" value="09:00"></td>
 				    </label>
 				</tr>
 
 				<tr>
-					<label for="make_number">
+					<label for="make_population">
 					<td class="col-md-5">최대탑승인원</td>
-					<td class="col-md-7"><input type="number" id="make_number" class="form-control" min="1" max="4" value="1" ><div class="input-group-addon">최대 탑승 인원 4명</div></td>
+					<td class="col-md-7"><input type="number" id="make_populaion" name="room_population" class="form-control" min="1" max="4" value="1" ><div class="input-group-addon">최대 탑승 인원 4명</div></td>
 					</label>
 				</tr>
 
 				<tr>
 					<label for="make_memo">
 					<td class="col-md-3">Memo</td>
-					<td class="col-md-9"> <textarea id="make_memo" class="form-control" placeholder="특이사항" cols="5"> </textarea></td>
+					<td class="col-md-9"> <textarea id="make_memo" name="room_memo" class="form-control" placeholder="특이사항" cols="5"> </textarea></td>
 					</label>
 				</tr>
 			</form>
@@ -88,7 +87,8 @@
 	</div>
 	
 	<p class="text-center">
-	<a href="./Room1.php"><input type="submit" value="방만들기" class=" margin_right btn-info"></a>
+	<!--<a href="./Room1.php">-->
+	<input type="submit" value="방만들기" class=" margin_right btn-info">
 	<input type="button" value="취소" class="btn btn-danger">
 	</p>
 	</div>

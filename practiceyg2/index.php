@@ -16,12 +16,11 @@
 		</div>
 		<br><br><br>
   			<!-- Id 입력창 -->
-  			<form action='./login.php'  method='post'>
 	  		<div class="input-group input-group-lg" class="div_login">
 			  <span class="input-group-addon" id="sizing-addon1">
 			  	<img src="../img/login.png">
 			  </span>
-			  <input type="text" class="form-control" placeholder="ID" aria-describedby="sizing-addon1" name="logid">
+			  <input type="text" class="form-control" placeholder="ID" aria-describedby="sizing-addon1">
 			</div>
 			<br>
 			<!-- Pw 입력창 -->
@@ -29,19 +28,18 @@
 				<span class="input-group-addon" id="sizing-addon1">
 					<img id="profile-photo" src="../img/pwd.png">
 				</span>
-				<input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1"  name="logpass">
+				<input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1">
 			</div>
 
 			<br><br>
-			
+			<a href="./조회창.html">
 
 			<br><br><br>
 
 			<div class="div_go">
                 <input class="btn btn-lg btn-block" type="submit" value="GO!">
 			</div>
-			
-		</form>
+		</a>
 			<br>
 			<!-- remember id and pw -->
 	        <div align="center" class="checkbox">
@@ -52,7 +50,7 @@
 		    <!-- 보기 좋게 띄우기 -->
 		    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
 		    <!-- 회원가입 버튼 -->
-		    <a href="./SignUpyg.php"><button class="btn btn-primary">회원가입→</button></a>
+		    <a href="./SignUp.php"><button class="btn btn-primary">회원가입→</button></a>
 		    </div>
 		</div>
 	</body>

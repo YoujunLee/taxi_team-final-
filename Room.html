@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
@@ -11,7 +10,7 @@
 <div class="wrapper">
 
 
-    <p><?php echo $_POST["make_memo"];?></p>
+    <p>시간(ex 6월 20일 11시~13시)</p>
 
     <p>장소(ex 한동대 택시승강장->포항KTX역)</p>
 
