@@ -1,11 +1,13 @@
 <?php
-	require_once('../Room.php');
+	require_once('./db.php');
 	
+	$db = new DBC; //db object생성
+$db->DBI();//db 들어가기
+
+	$content = $_POST['댓글'];
 	
-	$content = $_POST['content'];
-	
-	$sql = 'insert into comment values("' . $content . '")';
-	$result = $db->query($sql);
+	$db->query = "insert into comment values('" . $content . "')";
+	$db->DBQ();
 
 ?>
 	
