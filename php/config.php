@@ -24,7 +24,7 @@ class DBC
 
 	public function DBO()
 	{
-		//$this->result->free;
+		$this->result->free;
 		$this->db->close();
 	}
 }
