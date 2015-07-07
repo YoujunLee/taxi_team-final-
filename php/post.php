@@ -10,10 +10,13 @@ $db->DBQ();
 $num = $db->result->num_rows;
 $data = $db->result->fetch_row();
 
+<<<<<<< HEAD
 if($num==1)
 $post_id = $data[0]+1;
 else
 	$post_id = 1;
+=======
+>>>>>>> dd1b7e35875bdb7c05ad7a7cdf4b6f35ca38b8f1
 $room_start = $_POST['room_start'];
 $room_arrive = $_POST['room_arrive'];
 $room_date = $_POST['room_date'];
@@ -28,7 +31,11 @@ if($room_date==null||$room_date=='')
 	exit;
 }
 
+<<<<<<< HEAD
 $db->query = "insert into post values ('".$post_id ."','".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."','".$room_population."', '".$room_memo."')";
+=======
+$db->query = "insert into post values ('".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."','".$room_population."', '".$room_memo."')";
+>>>>>>> dd1b7e35875bdb7c05ad7a7cdf4b6f35ca38b8f1
 $db->DBQ();
 
 if(!$db->result)
