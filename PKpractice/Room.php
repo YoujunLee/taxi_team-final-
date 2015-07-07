@@ -1,24 +1,12 @@
-<?php
-	require_once('./db.php');
-	
-	$db = new DBC; //db object생성
-$db->DBI();//db 들어가기
 
-	$content = $_POST['댓글'];
-	
-	$db->query = "insert into comment values('" . $content . "')";
-	$db->DBQ();
-
-?>
-	
 	
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>Taxi</title>
-<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="./css/index2.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../css/index2.css">
 </head>
 <body class="center">
 
@@ -32,13 +20,29 @@ $db->DBI();//db 들어가기
   </div>
   
   <div class="wrapper2">
+
 <?php
-echo $row['content']."<br>";
+require_once './db.php';
+
+$db = new DBC;
+$db->DBI();
+
+
+$db->query = "select * from comment";
+$db->DBQ();
+
+
+while($data = $db->result->fetch_row())
+echo $data[0]."<br>";
+$db->DBO();
+
+
 ?>
+
   </div>
   <div class="wrapper3">
   
-  <form action="Room.php" method="post">
+  <form action="comment_db.php" method="post">
   <input class="col-xs-15 col-md-10" type="text" name="댓글" id="content">
   <input class="col-xs-3 col-md-2" type="submit" value="의견쓰기">
 </form>
