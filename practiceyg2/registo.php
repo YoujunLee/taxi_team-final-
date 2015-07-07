@@ -23,6 +23,8 @@ $name = $_POST['name'];
 $student_no = $_POST['student_no'];
 
 
+
+
 if($pass1 == $pass2)
 {
 	$pass = $pass1;
@@ -55,6 +57,16 @@ if($name==null||$name=='')
 	exit;
 }
 
+$db->query = "select studentid from student_info where studentid='".$student_no."'";
+$db->DBQ();
+
+$num = $db->result->num_rows;
+if($num==1)	
+{
+   
+   echo "<script>alert('이미 회원가입되어 있습니다.');history.back();</script>";
+   exit;
+} 
 
 $db->query = "insert into student_info values ('".$student_no."', '".$name."','".$cellPhone."','".$pass."')";
 $db->DBQ();

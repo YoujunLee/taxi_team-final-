@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 
 <html>
-	<head>
-		 <meta charset="utf-8">
-   		 <title>로그인</title>
-   		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-   		 <link rel="stylesheet" type="text/css" href="../css/box.css">
-	</head>
-	<body>
+   <head>
+       <meta charset="utf-8">
+          <title>로그인</title>
+          <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+          <link rel="stylesheet" type="text/css" href="../css/box.css">
+   </head>
+   <body>
 <?php
 require_once './db.php';
 
@@ -27,23 +27,25 @@ $db->DBO();
 if($num==1)
 {
 	
-	echo "<script>location.replace('./조회창yg.html');</script>";
-	exit;
+  
+   
+   echo "<script>location.replace('./조회창yg.php');</script>";
+   exit;
 } 
 else if(($studentid==null))
 {
-	echo "<script>alert('학번을 입력해주세요.');location.replace('./indexyg.php');</script>";
-	exit;
+   echo "<script>alert('학번을 입력해주세요.');location.replace('./indexyg.php');</script>";
+   exit;
 }
 else if(($pass==null))
 {
-	echo "<script>alert('비밀번호를 입력해주세요.');location.replace('./indexyg.php');</script>";
-	exit;
+   echo "<script>alert('비밀번호를 입력해주세요.');location.replace('./indexyg.php');</script>";
+   exit;
 }
 else if(($studentid!="" || $pass!=""))
 {
-	echo "<script>alert('학번과 비밀번호가 맞지 않습니다.');location.replace('./indexyg.php');</script>";
-	exit;
+   echo "<script>alert('학번과 비밀번호가 맞지 않습니다.');location.replace('./indexyg.php');</script>";
+   exit;
 }
 ?>
 </body>

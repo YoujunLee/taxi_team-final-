@@ -63,14 +63,13 @@
             return str;
         }
 
-<<<<<<< HEAD
+
      var Phone = document.getElementById('Phone');
      
      Phone.onkeyup = function(event){
-=======
-     var cellPhone = document.getElementById('Phone');
-     cellPhone.onkeyup = function(event){
->>>>>>> b6c48d737d86769326df6411b9b2021b78ef18d8
+
+     
+
         event = event || window.event;
         var _val = this.value.trim();
         this.value = autoHypenPhone(_val) ;
