@@ -6,6 +6,7 @@ $db = new DBC; //db object생성
 $db->DBI();//db 들어가기
 $db->query = "select post_id from post order by post_id desc limit 1";
 $db->DBQ();
+
 $num = $db->result->num_rows;
 $data = $db->result->fetch_row();
 
@@ -28,6 +29,7 @@ if($room_date==null||$room_date=='')
 }
 
 $db->query = "insert into post values ('".$post_id ."','".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."','".$room_population."', '".$room_memo."')";
+
 $db->DBQ();
 
 if(!$db->result)
