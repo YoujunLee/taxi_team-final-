@@ -12,12 +12,9 @@
 
 <div class="wrapper">
 
+	
 
-    <p>시간(ex 6월 20일 11시~13시)</p>
-
-    <p>장소(ex 한동대 택시승강장->포항KTX역)</p>
-
-  </div>
+</div>
   
   <div class="wrapper2">
 

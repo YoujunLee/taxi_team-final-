@@ -101,9 +101,3 @@ include "./php/config.php";
     </section>
 </body>
 </html>
-
-<?php 
-	mysql_connect('localhost','root','taxi');
-	mysql_select_db('youjun');
-	
-	?>
