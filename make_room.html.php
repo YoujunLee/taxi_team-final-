@@ -23,7 +23,7 @@ include "./php/config.php";
 		<table class="table">
 			<tbody>
 				<tr >
-				<form action="/Room1.php" method="post">
+				<form action="./php/post.php" method="post">
 					<label for="start">
 					<td class="col-md-3">출발지</td>
 					<td class="col-md-9">
