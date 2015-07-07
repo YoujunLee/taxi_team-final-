@@ -2,10 +2,12 @@
 <html>
 <head>
 	<meta charset="utf-8" >
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">  
-	<link rel="stylesheet" type="text/css" href="./css/search.css">  
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">  
+	<link rel="stylesheet" type="text/css" href="../css/search.css">  
+	
 </head>
-<body class="center">	
+<body class="center">
+
 	<!-- 방만들기, 방조회  -->
 	<table >
 		<tr class="tr1 row">
@@ -13,7 +15,7 @@
 				<h3>방만들기</h3>
 			</td>
 			<td class="col-xs-6 col-md-4">
-				<a href="./make_room.html" class="btn-primary btn-lg " >click</a>
+				<a href="./make_room.html.php" class="btn-primary btn-lg " >click</a>
     	   	</td>
 		</tr>
 		<tr class = "tr2 row" >

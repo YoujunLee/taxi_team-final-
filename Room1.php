@@ -1,25 +1,49 @@
+
+	
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8">
 <title>Taxi</title>
-<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="./css/index2.css">
+<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="../css/index2.css">
 </head>
 <body class="center">
 
 <div class="wrapper">
 
 
-    <p><?php echo $_POST["room_date"];?> <?php echo $_POST["room_time"];?></p>
-    <p><?php echo $_POST["room_start"];?> → <?php echo $_POST["room_arrive"];?></p>
+    <p>시간(ex 6월 20일 11시~13시)</p>
+
+    <p>장소(ex 한동대 택시승강장->포항KTX역)</p>
+
   </div>
+  
   <div class="wrapper2">
-  이유준 : 늦지 않게 모입시다!
+
+<?php
+require_once './php/db.php';
+
+$db = new DBC;
+$db->DBI();
+
+
+$db->query = "select * from comment";
+$db->DBQ();
+
+
+while($data = $db->result->fetch_row())
+echo $data[0]."<br>";
+$db->DBO();
+
+
+?>
+
   </div>
   <div class="wrapper3">
-  <form>
-  <input class="col-xs-15 col-md-10" type="text" name="댓글">
+  
+  <form action="./php/comment_db.php" method="post">
+  <input class="col-xs-15 col-md-10" type="text" name="댓글" id="content">
   <input class="col-xs-3 col-md-2" type="submit" value="의견쓰기">
 </form>
 </div>
