@@ -1,13 +1,19 @@
 <?php
 
 require_once './config.php';
-require_once './post_id.php';
 
 $db = new DBC; //db object생성
 $db->DBI();//db 들어가기
+$db->query = "select post_id from post order by post_id desc limit 1";
+$db->DBQ();
 
-$post_id+=1;
-$room_id = $post_id;
+$num = $db->result->num_rows;
+$data = $db->result->fetch_row();
+
+if($num==1)
+$post_id = $data[0]+1;
+else
+	$post_id = 1;
 $room_start = $_POST['room_start'];
 $room_arrive = $_POST['room_arrive'];
 $room_date = $_POST['room_date'];
@@ -22,7 +28,7 @@ if($room_date==null||$room_date=='')
 	exit;
 }
 
-$db->query = "insert into post values ('".$room_id."', '".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."','".$room_population."', '".$room_memo."')";
+$db->query = "insert into post values ('".$post_id ."','".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."','".$room_population."', '".$room_memo."')";
 $db->DBQ();
 
 if(!$db->result)
