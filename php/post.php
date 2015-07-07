@@ -11,9 +11,10 @@ $num = $db->result->num_rows;
 $data = $db->result->fetch_row();
 
 if($num==1)
-$post_id = $data[0]+1;
+	$post_id = $data[0]+1;
 else
 	$post_id=1;
+
 $room_start = $_POST['room_start'];
 $room_arrive = $_POST['room_arrive'];
 $room_date = $_POST['room_date'];
