@@ -4,13 +4,15 @@ require_once './config.php';
 
 $db = new DBC; //db object생성
 $db->DBI();//db 들어가기
-$db->query = "select * from post order by desc limit 1";
+$db->query = "select post_id from post order by post_id desc limit 1";
 $db->DBQ();
+$num = $db->result->num_rows;
 $data = $db->result->fetch_row();
 
-
-
+if($num==1)
 $post_id = $data[0]+1;
+else
+	$post_id=1;
 $room_start = $_POST['room_start'];
 $room_arrive = $_POST['room_arrive'];
 $room_date = $_POST['room_date'];
@@ -37,11 +39,8 @@ if(!$db->result)
 	
 } else
 {
-	echo "<script>alert('Success. Move to 1');location.replace('../Room1.php');</script>";
+	echo "<script>alert('Success. Move to 1');location.replace('../Room1.php.html');</script>";
 	//$db->DBO();
 	exit;
 }
-
-
-
 ?>
