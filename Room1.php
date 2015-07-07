@@ -1,49 +1,55 @@
-
-	
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Taxi</title>
-<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-<link rel="stylesheet" type="text/css" href="../css/index2.css">
+	<meta charset="utf-8">
+	<title>Taxi</title>
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/index2.css">
 </head>
 <body class="center">
 
-<div class="wrapper">
-
+	<div class="wrapper">
 	
+	<?php
+		require_once './php/db.php';
 
-</div>
+		$db = new DBC;
+		$db->DBI();
+		$db->query = "select date, time, start, arrive from post order by post_id desc limit 1";
+		$db->DBQ();
+		
+		$data=$db->result->fetch_row();
+		echo $data[0]." ".$data[1]."<br>".$data[2]." → ".$data[3];
+		
+		$db->DBO();
+	?>
+	
+	</div>
   
-  <div class="wrapper2">
+    <div class="wrapper2">
 
-<?php
-require_once './php/db.php';
+	<?php
+		require_once './php/db.php';
 
-$db = new DBC;
-$db->DBI();
+		$db = new DBC;
+		$db->DBI();
+		$db->query = "select * from comment";
+		$db->DBQ();
 
-
-$db->query = "select * from comment";
-$db->DBQ();
-
-
-while($data = $db->result->fetch_row())
-echo $data[0]."<br>";
-$db->DBO();
-
-
-?>
-
-  </div>
-  <div class="wrapper3">
+		while($data = $db->result->fetch_row())
+			echo $data[0]."<br>";
+		
+		$db->DBO();
+	?>
+	</div>
   
-  <form action="./php/comment_db.php" method="post">
-  <input class="col-xs-15 col-md-10" type="text" name="댓글" id="content">
-  <input class="col-xs-3 col-md-2" type="submit" value="의견쓰기">
-</form>
-</div>
+  	<div class="wrapper3">
+  	<form action="./php/comment_db.php" method="post">
+  	<input class="col-xs-15 col-md-10" type="text" name="댓글" id="content">
+  	<input class="col-xs-3 col-md-2" type="submit" value="의견쓰기">
+	</form>
+	</div>
+
 <table class="table table-striped table-hover ">
   <thead class="co">
     <tr class="row">
@@ -80,11 +86,10 @@ $db->DBO();
 <div class="col-xs-6 col-md-4">
  <a href="#" class="btn btn-danger">탑승취소</a>
 </div>
+
 <div class="col-xs-6 col-md-4"></div>
 
 </div>
-
-
 </body>
 </html>
 
