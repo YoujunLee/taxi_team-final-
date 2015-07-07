@@ -42,7 +42,7 @@ if(!$db->result)
 	
 } else
 {
-	echo "<script>alert('Success. Move to 1');location.replace('../Room1.php.html');</script>";
+	echo "<script>alert('Success. Move to 1');location.replace('../Room1.php');</script>";
 	//$db->DBO();
 	exit;
 }

@@ -15,7 +15,6 @@
 	$db->DBO();
 	echo "<script>location.replace('../Room1.php');</script>";
 	exit;
-
 ?>
 
 	
