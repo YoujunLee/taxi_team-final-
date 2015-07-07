@@ -10,7 +10,7 @@
 	<body>
 <?php
 
-require_once './db.php';
+require_once './config.php';
 
 $db = new DBC; //db object생성
 $db->DBI();//db 들어가기
@@ -80,7 +80,7 @@ if(!$db->result)
 	
 } else
 {
-	echo "<script>alert('회원가입 되었습니다. 로그인 화면으로 이동합니다.');location.replace('./indexyg.php');</script>";
+	echo "<script>alert('회원가입 되었습니다. 로그인 화면으로 이동합니다.');location.replace('../index.html');</script>";
 	$db->DBO();
 	exit;
 }
