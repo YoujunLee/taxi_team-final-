@@ -5,7 +5,13 @@
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">  
 	<link rel="stylesheet" type="text/css" href="./css/search.css">  
 </head>
-<body class="center">	
+<body class="center">
+<form action='./php/logout.php'>
+<div class="div_go">
+                <input class="btn btn-lg btn-block" type="submit" value="LogOut">
+			</div>
+			
+</form>	
 	<!-- 방만들기, 방조회  -->
 	<table >
 		<tr class="tr1 row">
