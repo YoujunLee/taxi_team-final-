@@ -38,7 +38,10 @@ if(!$db->result)
 	
 	echo "<script>alert('fail to posting.');history.back();</script>";
 	$db->DBO();
-	exit;
-	
+	exit;	
 } 
+else
+{
+	echo "<script>location.replace('../Room1.php/$post_id');</script>";
+}
 ?>
