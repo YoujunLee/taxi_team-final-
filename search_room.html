@@ -1,7 +1,5 @@
 <!-- 방 조회 Page
 .....이유준-->
-
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,31 +19,33 @@
 		<table class="table">
 			<tbody>
 				<tr >
-					<label>
+					<label for="start">
 					<td class="col-md-3">출발지</td>
-					<td class="col-md-9"><select size="1" class="form-control">
-						<option value="handong" selected>한동대 택시승강장</option>
-						<option value="yangduk">양덕 하나로마트</option>
+					<td class="col-md-9">
+						<select id="start" size="1" name="room_start" class="form-control">
+						<option value="한동대학교 택시 승강장" selected>한동대 택시승강장</option>
+						<option value="양덕 하나로마트">양덕 하나로마트</option>
 						<option value="E1">E1</option>
-						<option value="express">고속터미널</option>
-						<option value="city_ex">시외버스터미널</option>
-						<option value="six">욱거리</option>
-						<option value="ktx">포항역</option>
+						<option value="고속버스터미널">고속터미널</option>
+						<option value="시외버스터미널">시외버스터미널</option>
+						<option value="육거리">욱거리</option>
+						<option value="포항역(KTX)">포항역</option>
 						</select>
 					</td>
 					</label>
 			
 				<tr>
-					<label>
+					<label for="arrive">
 					<td class="col-md-3">도착지</td>
-					<td class="col-md-9"><select size="1" class="form-control">
-						<option value="handong">한동대 택시승강장</option>
-						<option value="yangduk">양덕 하나로마트</option>
+					<td class="col-md-9">
+						<select id="arrive" size="1" name="room_arrive" class="form-control">
+						<option value="한동대학교 택시 승강장">한동대 택시승강장</option>
+						<option value="양덕 하나로마트">양덕 하나로마트</option>
 						<option value="E1">E1</option>
-						<option value="express">고속터미널</option>
-						<option value="city_ex">시외버스터미널</option>
-						<option value="six">욱거리</option>
-						<option value="ktx" selected>포항역</option>
+						<option value="고속버스터미널">고속터미널</option>
+						<option value="시외버스터미널">시외버스터미널</option>
+						<option value="육거리">욱거리</option>
+						<option value="포항역(KTX)" selected>포항역</option>
 						</select>
 					</td>
 					</label>
