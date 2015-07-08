@@ -10,7 +10,7 @@
 	<body>
 <?php
 
-require_once './db.php';
+require_once './config.php';
 
 $db = new DBC; //db object생성
 $db->DBI();//db 들어가기
@@ -21,6 +21,8 @@ $pass1 = $_POST['pass1'];
 $pass2 = $_POST['pass2'];
 $name = $_POST['name'];
 $student_no = $_POST['student_no'];
+
+
 
 
 if($pass1 == $pass2)
@@ -55,6 +57,16 @@ if($name==null||$name=='')
 	exit;
 }
 
+$db->query = "select studentid from student_info where studentid='".$student_no."'";
+$db->DBQ();
+
+$num = $db->result->num_rows;
+if($num==1)	
+{
+   
+   echo "<script>alert('이미 회원가입되어 있습니다.');history.back();</script>";
+   exit;
+} 
 
 $db->query = "insert into student_info values ('".$student_no."', '".$name."','".$cellPhone."','".$pass."')";
 $db->DBQ();
@@ -68,7 +80,7 @@ if(!$db->result)
 	
 } else
 {
-	echo "<script>alert('회원가입 되었습니다. 로그인 화면으로 이동합니다.');location.replace('./indexyg.php');</script>";
+	echo "<script>alert('회원가입 되었습니다. 로그인 화면으로 이동합니다.');location.replace('../index.html');</script>";
 	$db->DBO();
 	exit;
 }

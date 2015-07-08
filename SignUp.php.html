@@ -15,7 +15,7 @@
 				<h2>회원가입</h2>
 		</div>
   		<br><br><br>
-		<form  action='./registo.php' method='POST' align="center" class="form-horizontal">
+		<form  action='./php/registo.php' method='POST' align="center" class="form-horizontal">
 
 		    <div class="form-group">
 		      <label for="inputName" class="col-lg-2 control-label">이름</label>
@@ -63,14 +63,13 @@
             return str;
         }
 
-<<<<<<< HEAD
+
      var Phone = document.getElementById('Phone');
      
      Phone.onkeyup = function(event){
-=======
-     var cellPhone = document.getElementById('Phone');
-     cellPhone.onkeyup = function(event){
->>>>>>> b6c48d737d86769326df6411b9b2021b78ef18d8
+
+     
+
         event = event || window.event;
         var _val = this.value.trim();
         this.value = autoHypenPhone(_val) ;
