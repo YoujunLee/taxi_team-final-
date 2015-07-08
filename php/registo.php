@@ -80,7 +80,7 @@ if(!$db->result)
 	
 } else
 {
-	echo "<script>alert('회원가입 되었습니다. 로그인 화면으로 이동합니다.');location.replace('../index.html');</script>";
+	echo "<script>alert('회원가입 되었습니다. 로그인 화면으로 이동합니다.');location.replace('../index.html.php');</script>";
 	$db->DBO();
 	exit;
 }
