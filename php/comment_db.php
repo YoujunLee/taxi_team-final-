@@ -18,24 +18,16 @@
 	$content = $_POST['댓글'];
 	$time = date("Y-m-d h:i:s");
 	
-	$db1 = new DBC; //db object생성
-	$db1->DBI();//db 들어가기
-	$db1->query = "select post_id from post";
-	$db1->DBQ();
-
-	$num = $db1->result->num_rows;
-	$data = $db1->result->fetch_row();
-	echo $data['post_id'];
 	
 	if($content==null||$content==''){
 		$db->DBO();
-		echo "<script>location.replace('../Room1.php/$data[0]);</script>";
+		echo "<script>location.replace('../Room1.php');</script>";
 		exit;
 	}
 	$db->query = "insert into comment values('".$id."','".$name."','".$content."','" . $time. "')";
 	$db->DBQ();
 	$db->DBO();
-	echo "<script>location.replace('../Room1.php/$data[0]);</script>";
+	echo "<script>location.replace('../Room1.php');</script>";
 	exit;
 ?>
 
