@@ -26,14 +26,12 @@ $data = $db->result->fetch_row();
 $db->DBO();
 if($num==1)
 {
-	
-  
-   session_start();
+	 session_start();
    $_SESSION['user_id'] = $studentid;
    $_SESSION['user_pw'] = $pass;
    $_SESSION['name'] = $data[1]; 
    $_SESSION['cellphone'] = $data[2]; 
-
+   
    echo "<script>location.replace('../조회창.html.php');</script>";
    exit;
 } 
@@ -44,7 +42,7 @@ else if(($studentid==null))
 }
 else if(($pass==null))
 {
-   echo "<script>alert('비밀번호를 입력해주세요.');location.replace('../index.php);</script>";
+   echo "<script>alert('비밀번호를 입력해주세요.');location.replace('../index.php');</script>";
    exit;
 }
 else if(($studentid!="" || $pass!=""))

@@ -13,10 +13,13 @@
 		</div>
 		<br><br><br>
 		<hr/>
-
+<<<<<<< HEAD
+		<form name="myForm" method="post" action="insert.php">
+		제목 : <input type="text" name="subject" size=50  maxlength=70> <br/><br/>
+=======
 		<form name="myForm" method="post" action="./insert.php">
 		제목 : <input name="subject" type="text" size=50  maxlength=70> <br/><br/>
-
+>>>>>>> 845f0b867a93dde6262c45efb868a10c7bedecbc
 		내용 : <textarea name="memo" cols=55 rows=20  maxlength=500></textarea>
 		<br/>
 		<br/>
