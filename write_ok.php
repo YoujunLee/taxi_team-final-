@@ -15,7 +15,11 @@
 			while($data = $db->result->fetch_assoc())
 			{
 				echo "제목: ".$data['subject']."<br>";
+<<<<<<< HEAD
 				echo "내용: ".$data['memo'];
+=======
+				echo "내용: ".$data['memo']."<br>";
+>>>>>>> 845f0b867a93dde6262c45efb868a10c7bedecbc
 			}
 		?>
 	</body>
