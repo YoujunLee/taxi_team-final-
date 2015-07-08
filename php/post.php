@@ -40,10 +40,5 @@ if(!$db->result)
 	$db->DBO();
 	exit;
 	
-} else
-{
-	echo "<script>alert('Success. Move to 1');location.replace('../Room1.php');</script>";
-	//$db->DBO();
-	exit;
-}
+} 
 ?>
