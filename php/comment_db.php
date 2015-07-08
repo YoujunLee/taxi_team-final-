@@ -1,4 +1,6 @@
 <?php
+   $hostname=$_SERVER["HTTP_REFERER"]; //도메인명(호스트)명을 구합니다.
+  
 	require_once('./db.php');
 	session_start();
 	$db = new DBC; //db object생성
@@ -21,13 +23,13 @@
 	
 	if($content==null||$content==''){
 		$db->DBO();
-		echo "<script>location.replace('../Room1.php');</script>";
+		echo "<script>location.replace('$hostname');</script>";
 		exit;
 	}
 	$db->query = "insert into comment values('".$id."','".$name."','".$content."','" . $time. "')";
 	$db->DBQ();
 	$db->DBO();
-	echo "<script>location.replace('../Room1.php');</script>";
+	echo "<script>location.replace('$hostname');</script>";
 	exit;
 ?>
 
