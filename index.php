@@ -10,7 +10,7 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 <html>
 	<head>
 		 <meta charset="utf-8">
-   		 <title>로그인</title>
+   		 <title>로그인(php)</title>
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="../css/로그인.css">
 	</head>

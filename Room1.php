@@ -8,14 +8,18 @@
 </head>
 <body class="center">
 
+
+
 	<div class="wrapper">
 	
-	<?php
+	<?php 
+  	    $query_string=getenv("QUERY_STRING"); // Get값으로 넘어온 값들을 구합니다.
+		
 		require_once './php/db.php';
 
 		$db = new DBC;
 		$db->DBI();
-		$db->query = "select date, time, start, arrive from post order by post_id desc limit 1";
+		$db->query = "SELECT date, time, start, arrive FROM post WHERE post_id='".$query_string."'";
 		$db->DBQ();
 		
 		$data=$db->result->fetch_row();
@@ -30,7 +34,7 @@
 
 	<?php
 		require_once './php/db.php';
-		session_start();
+		
 		$db = new DBC;
 		$db->DBI();
 		
@@ -39,8 +43,8 @@
 		$db->DBQ();
 
 		while($data = $db->result->fetch_assoc())
-		{	echo $_SESSION['name']."&nbsp;&nbsp;".$data['content']."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$data['time'],"<br>";
-			}
+		{	echo $data['name'].":   &nbsp;".$data['content']."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$data['time'],"<br>";
+		}
 		
 		$db->DBO();
 	?>
@@ -93,6 +97,8 @@
 <div class="col-xs-6 col-md-4"></div>
 
 </div>
+
+
 </body>
 </html>
 

@@ -15,7 +15,7 @@ session_unset('user_pw');
 session_unset('name');
 session_unset('cellphone');
 
-echo "<script>location.replace('../index.html.php');</script>";
+echo "<script>location.replace('../index.php');</script>";
    exit;
 ?>
 </body>
