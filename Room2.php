@@ -52,7 +52,7 @@
   
   	<div class="wrapper3">
   	<form action="./php/comment_db.php" method="post">
-  	<input class="col-xs-15 col-md-10" type="text" placeholder="댓글을 입력하시오(최대 100자)" name="댓글" id="content">
+  	<input class="col-xs-15 col-md-10" type="text" name="댓글" id="content">
   	<input class="col-xs-3 col-md-2" type="submit" value="의견쓰기">
 	</form>
 	</div>
@@ -66,29 +66,35 @@
     </tr>
   </thead>
   <tbody>
+  	<?php
+		require_once './php/db.php';
+		
+		$db = new DBC;
+		$db->DBI();
+		
+		
+		$db->query = "select * from room_user";
+		$db->DBQ();
+		$i = 1;
+  	while($data = $db->result->fetch_assoc())
+	{
+		?>
     <tr class="row">
-      <th class="col-xs-6 col-md-4">1</th>
-      <th class="col-xs-6 col-md-4">이유준</th>
-      <th class="col-xs-6 col-md-4">010-4409-2345</th>
+      <th class="col-xs-6 col-md-4"><?php echo $i?></th>
+      <th class="col-xs-6 col-md-4"><?php echo $data['name']?></th>
+      <th class="col-xs-6 col-md-4"><?php echo $data['cellphone']?></th>
     </tr>
-     <tr class="row">
-      <th class="col-xs-6 col-md-4">2</th>
-      <th class="col-xs-6 col-md-4">김평강</th>
-      <th class="col-xs-6 col-md-4">010-4349-2345</th>
-    </tr>
-   <tr class="row">
-      <th class="col-xs-6 col-md-4">3</th>
-      <th class="col-xs-6 col-md-4">양민규</th>
-      <th class="col-xs-6 col-md-4">010-4509-2345</th>
-    </tr>
-     <tr class="row">
-      <th class="col-xs-6 col-md-4">4</th>
-      <th class="col-xs-6 col-md-4">정마리아</th>
-      <th class="col-xs-6 col-md-4">010-4405-2345</th>
-    </tr>
+    <?php
+    $i=$i+1;
+	?>
+	
+    <?php
+   }
+	?>
+	
    </tbody>
 </table>
-<div class="row">
+<div class="row">s
 <div class="col-xs-6 col-md-4"></div>
 <div class="col-xs-6 col-md-4">
  <a href="#" class="btn btn-danger">탑승취소</a>
