@@ -13,13 +13,13 @@
 	<div class="wrapper">
 	
 	<?php 
-  	    $query_string=getenv("QUERY_STRING"); // Get값으로 넘어온 값들을 구합니다.
+  	    $post_id=getenv("QUERY_STRING"); // Get값으로 넘어온 값들을 구합니다.
 		
 		require_once './php/db.php';
 
 		$db = new DBC;
 		$db->DBI();
-		$db->query = "SELECT date, time, start, arrive FROM post WHERE post_id='".$query_string."'";
+		$db->query = "SELECT date, time, start, arrive FROM post WHERE post_id='".$post_id."'";
 		$db->DBQ();
 		
 		$data=$db->result->fetch_row();
@@ -37,22 +37,33 @@
 		
 		$db = new DBC;
 		$db->DBI();
-		
-		
 		$db->query = "select * from comment";
 		$db->DBQ();
-
-		while($data = $db->result->fetch_assoc())
-		{	echo $data['name'].":   &nbsp;".$data['content']."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$data['time'],"<br>";
-		}
 		
+		$db2 = new DBC;
+		$db2->DBI();
+		
+		while($data = $db->result->fetch_assoc())
+		{
+			$db2->query= "SELECT name FROM student_info WHERE studentid= '".$data['stu_id']."'";
+		    $db2->DBQ();   
+			$data2 = $db2->result->fetch_row() ;
+			$comment_name = $data2[0];
+			echo $comment_name.":   &nbsp;".$data['content']."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$data['time'],"<br>";
+		}		
 		$db->DBO();
+		$db2->DBO();
 	?>
 	</div>
   
   	<div class="wrapper3">
-  	<form action="./php/comment_db.php" method="post">
-  	<input class="col-xs-15 col-md-10" type="text" name="댓글" id="content">
+  	
+  	<?php
+  	$post_id2=getenv("QUERY_STRING");
+  	echo"<form action=./php/comment_db.php?$post_id2  method=post>";
+  	?>
+  	
+  	<input class="col-xs-15 col-md-10" type="text" placeholder="댓글을 입력하시오(최대 100자)" name="댓글" id="content">
   	<input class="col-xs-3 col-md-2" type="submit" value="의견쓰기">
 	</form>
 	</div>

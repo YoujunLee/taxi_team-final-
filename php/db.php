@@ -4,7 +4,8 @@ class DBC
 	public $db;
 	public $query;
 	public $result;
-
+	public $name;
+	
 	public function DBI()
 	{
 		$this->db = new mysqli('localhost', 'root', 'taxi', 'youjun'); //host, id, pw, database 순서입니다.
