@@ -24,6 +24,8 @@ $room_memo = $_POST['room_memo'];
 
 session_start();
 $stu_id= $_SESSION['user_id'];
+//$name =  $_SESSION['name'] ;
+//$cellphone	= $_SESSION['cellphone'];
 
 if($room_date==null||$room_date=='')
 {
@@ -31,8 +33,9 @@ if($room_date==null||$room_date=='')
 	exit;
 }
 
-$db->query = "insert into post values ('".$post_id ."','".$stu_id."','".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."','".$room_population."', '".$room_memo."')";
 
+$db->query = "insert into post values ('".$post_id ."','".$stu_id."','".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."','".$room_population."', '".$room_memo."')";
+//$db->query = "insert into room_user values('".$stu_id."','".$name."','".$cellphone."')";
 $db->DBQ();
 
 if(!$db->result)
