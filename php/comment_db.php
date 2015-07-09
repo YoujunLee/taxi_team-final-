@@ -1,5 +1,5 @@
 <?php
-   $hostname=$_SERVER["HTTP_REFERER"]; //도메인명(호스트)명을 구합니다.
+   $hostname=$_SERVER["HTTP_REFERER"]; // 이전페이지 도메인
   
 	require_once('./db.php');
 	session_start();
