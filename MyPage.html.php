@@ -28,13 +28,13 @@
 			  <li class="list-group-item">
 			 	   탑승내역
 			    <div class="modify2">
-			    <a href="#" class="btn btn-link">></a>
+			    <a href="./mypage-탑승내역.html.php" class="btn btn-link">></a>
 			    </div>
 			  </li>
 			  <li class="list-group-item">
 			    공지사항
 			    <div class="modify2">
-			    <a href="#" class="btn btn-link">></a>
+			    <a href="./공지사항.html.php" class="btn btn-link">></a>
 			    </div>
 			  </li>
 			  <li class="list-group-item">

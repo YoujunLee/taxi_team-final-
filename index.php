@@ -1,12 +1,9 @@
 <?php
-
 session_start();
 if(isset($_SESSION['user_id']) && isset($_SESSION['user_pw'])) 
 echo "<script>location.replace('./조회창.html.php');</script>";
-
 ?>
 <!DOCTYPE html>
-
 <html>
 	<head>
 		 <meta charset="utf-8">
@@ -15,7 +12,6 @@ echo "<script>location.replace('./조회창.html.php');</script>";
    		 <link rel="stylesheet" type="text/css" href="../css/로그인.css">
 	</head>
 	<body>
-
   		<div class="div_root">
 		<br><br><br><br>
 		<div align="center">
@@ -38,16 +34,11 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 				</span>
 				<input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1"  name="logpass" required>
 			</div>
-
 			<br><br>
-			
-
 			<br><br><br>
-
 			<div class="div_go">
                 <input class="btn btn-lg btn-block" type="submit" value="GO!">
 			</div>
-			
 		</form>
 			<br>
 			<!-- remember id and pw -->
@@ -59,7 +50,7 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 		    <!-- 보기 좋게 띄우기 -->
 		    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
 		    <!-- 회원가입 버튼 -->
-		    <a href="./SignUp.php.html"><button class="btn btn-primary">회원가입→</button></a>
+		    <a href="./SignUp.html.php"><button class="btn btn-primary">회원가입→</button></a>
 		    </div>
 		</div>
 	</body>

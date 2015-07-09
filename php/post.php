@@ -66,6 +66,6 @@ if(!$db->result)
 } 
 else
 {
-	echo "<script>location.replace('../Room1.php?$post_id');</script>";
+	echo "<script>location.replace('../Room.html.php?$post_id');</script>";
 }
 ?>

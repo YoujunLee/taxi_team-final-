@@ -25,9 +25,9 @@
 		<tr class = "tr2 row" >
 			<td class="col-xs-12 col-md-8" >
 				<h3>방조회</h3>
-			</td>
+			</td>계
 			<td class="col-xs-6 col-md-4">
-    			<a href="./search_room.html" class="btn-primary btn-lg">click</a>
+    			<a href="./search_room.html.php" class="btn-primary btn-lg">click</a>
     		</td>
     	</tr>
 		<tr class="tr1 row">
@@ -90,12 +90,12 @@
 			</td>
 			
 			<td class="col-xs-6 col-md-4" >
-				<a href="./계산기.html" target="taxi">
+				<a href="./계산기.html.php" target="taxi">
 				<img src="http://365psd.com/images/premium/thumbs/193/vector-calculator-icon-861700.jpg" class="image " >
 				</br>요금계산기</a>
 			</td>
 			<td class="col-xs-6 col-md-4">
-				<a href="./MyPage.html" target="taxi">
+				<a href="./MyPage.html.php" target="taxi">
 				<img src="http://pds18.egloos.com/pds/201005/06/59/d0005159_4be26bd1f0632.jpg" class="image" >
 			</br>My Page
 			</td>
