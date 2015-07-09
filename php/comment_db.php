@@ -1,8 +1,8 @@
 <?php
+   	$hostname=$_SERVER["HTTP_REFERER"]; //도메인명(호스트)명을 구합니다.
 
-   $hostname=$_SERVER["HTTP_REFERER"]; //도메인명(호스트)명을 구합니다.
-
-  
+	$post_id1=getenv("QUERY_STRING");
+	
 	require_once('./db.php');
 	session_start();
 	$db = new DBC; //db object생성
@@ -18,7 +18,7 @@
 	else
 	$id=1;
 	
-	$name =  $_SESSION['name'] ;
+	$stu_id =  $_SESSION['user_id'] ;
 	$content = $_POST['댓글'];
 	$time = date("Y-m-d h:i:s");
 	
@@ -28,11 +28,9 @@
 		echo "<script>location.replace('$hostname');</script>";
 		exit;
 	}
-	$db->query = "insert into comment values('".$id."','".$name."','".$content."','" . $time. "')";
+	$db->query = "insert into comment values('".$id."','".$stu_id."','".$post_id1."','".$content."','" . $time. "')";
 	$db->DBQ();
 	$db->DBO();
 	echo "<script>location.replace('$hostname');</script>";
 	exit;
-?>
-
-	
+?>	
