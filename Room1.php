@@ -76,28 +76,36 @@
       <th class="col-xs-6 col-md-4">Phone</th>
     </tr>
   </thead>
+  <!-- 바꾼 코드. -->
   <tbody>
+  	<?php
+		require_once './php/db.php';
+		
+		$db = new DBC;
+		$db->DBI();
+		
+		
+		$db->query = "select * from room_user";
+		$db->DBQ();
+		$i = 1;
+  	while($data = $db->result->fetch_assoc())
+	{
+		?>
     <tr class="row">
-      <th class="col-xs-6 col-md-4">1</th>
-      <th class="col-xs-6 col-md-4">이유준</th>
-      <th class="col-xs-6 col-md-4">010-4409-2345</th>
+      <th class="col-xs-6 col-md-4"><?php echo $i?></th>
+      <th class="col-xs-6 col-md-4"><?php echo $data['name']?></th>
+      <th class="col-xs-6 col-md-4"><?php echo $data['cellphone']?></th>
     </tr>
-     <tr class="row">
-      <th class="col-xs-6 col-md-4">2</th>
-      <th class="col-xs-6 col-md-4">김평강</th>
-      <th class="col-xs-6 col-md-4">010-4349-2345</th>
-    </tr>
-   <tr class="row">
-      <th class="col-xs-6 col-md-4">3</th>
-      <th class="col-xs-6 col-md-4">양민규</th>
-      <th class="col-xs-6 col-md-4">010-4509-2345</th>
-    </tr>
-     <tr class="row">
-      <th class="col-xs-6 col-md-4">4</th>
-      <th class="col-xs-6 col-md-4">정마리아</th>
-      <th class="col-xs-6 col-md-4">010-4405-2345</th>
-    </tr>
+    <?php
+    $i=$i+1;
+	?>
+	
+    <?php
+   }
+	?>
+	
    </tbody>
+   <!-- 여기까지 바꾼코드 -->
 </table>
 <div class="row">
 <div class="col-xs-6 col-md-4"></div>
@@ -112,4 +120,3 @@
 
 </body>
 </html>
-

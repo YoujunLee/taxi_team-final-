@@ -25,7 +25,7 @@ include "./php/config.php";
 			<tbody>
 				<tr >
 				<form action="./php/post.php"  method="post">
-					<form action="./php/room_user.php" method="post">
+					<!-- <form action="./php/post.php" method="post"> -->
 					<label for="start">
 					<td class="col-md-3">출발지</td>
 					<td class="col-md-9">
@@ -96,7 +96,7 @@ include "./php/config.php";
 	<input type="button" value="취소" class="btn btn-danger">
 	</p>
 	</div>
-	/form
+	<!-- </form> -->
 	</form>
 	<div class="col-md-4">
 	</div>

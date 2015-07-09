@@ -8,6 +8,7 @@
 	$db = new DBC; //db object생성
 	$db->DBI();//db 들어가기
 	
+	
 	$user_id = $_SESSION['user_id'];
 	$name =  $_SESSION['name'] ;
 	$cellphone	= $_SESSION['cellphone'];
