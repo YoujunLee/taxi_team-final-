@@ -2,7 +2,7 @@
 <html>
 	<head>
 		 <meta charset="utf-8">
-		  <title>마이페이지</title>
+		 <title>i-Taxi</title>
    		 <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="./css/mypage.css">
 	</head>

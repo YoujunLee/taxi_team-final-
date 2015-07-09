@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">  
 	<link rel="stylesheet" type="text/css" href="./css/make_room.css"> 
-	<title> Taxi </title>
+	<title>i-Taxi</title>
 </head>
 
 <body>

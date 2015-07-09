@@ -2,6 +2,7 @@
 
 <html>
 <head>
+<title>i-Taxi</title>
 <meta charset="utf-8">
 <?php
 $start = $_POST['search_start'];
