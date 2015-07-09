@@ -52,7 +52,7 @@
   
   	<div class="wrapper3">
   	<form action="./php/comment_db.php" method="post">
-  	<input class="col-xs-15 col-md-10" type="text" name="댓글" id="content">
+  	<input class="col-xs-15 col-md-10" type="text" placeholder="댓글을 입력하시오(최대 100자)" name="댓글" id="content">
   	<input class="col-xs-3 col-md-2" type="submit" value="의견쓰기">
 	</form>
 	</div>

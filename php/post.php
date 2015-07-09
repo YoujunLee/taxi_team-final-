@@ -4,7 +4,7 @@ require_once './config.php';
 
 $db = new DBC; //db object생성
 $db->DBI();//db 들어가기
-$db->query = "select post_id from post order by post_id desc limit 1";
+$db->query = "SELECT post_id FROM post ORDER BY post_id desc LIMIT 1";
 $db->DBQ();
 
 $num = $db->result->num_rows;
@@ -22,6 +22,8 @@ $room_time = $_POST['room_time'];
 $room_population = $_POST['room_population'];
 $room_memo = $_POST['room_memo'];
 
+session_start();
+$stu_id= $_SESSION['user_id'];
 
 if($room_date==null||$room_date=='')
 {
@@ -29,7 +31,7 @@ if($room_date==null||$room_date=='')
 	exit;
 }
 
-$db->query = "insert into post values ('".$post_id ."','".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."','".$room_population."', '".$room_memo."')";
+$db->query = "insert into post values ('".$post_id ."','".$stu_id."','".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."','".$room_population."', '".$room_memo."')";
 
 $db->DBQ();
 
