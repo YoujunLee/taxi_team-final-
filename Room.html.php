@@ -37,7 +37,7 @@
 		
 		$db = new DBC;
 		$db->DBI();
-		$db->query = "select * from comment";
+		$db->query = "SELECT * FROM comment WHERE post_id='".$post_id."'";  //방 별로 다른 commet 출력. 
 		$db->DBQ();
 		
 		$db2 = new DBC;

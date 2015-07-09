@@ -26,7 +26,7 @@
 		<tr class = "tr2 row" >
 			<td class="col-xs-12 col-md-8" >
 				<h3>방조회</h3>
-			</td>계
+			</td>
 			<td class="col-xs-6 col-md-4">
     			<a href="./search_room.html.php" class="btn-primary btn-lg">click</a>
     		</td>
