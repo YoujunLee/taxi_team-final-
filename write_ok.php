@@ -17,7 +17,6 @@
 				echo "제목: ".$data['subject']."<br>";
 
 				echo "내용: ".$data['memo']."<br>";
-
 			}
 		?>
 	</body>
