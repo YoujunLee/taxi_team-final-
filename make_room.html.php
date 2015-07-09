@@ -1,6 +1,7 @@
 <!-- 방 만드는 Page
 .....이유준-->
 <?php
+
 include "./php/config.php";
 ?>
 
@@ -23,7 +24,8 @@ include "./php/config.php";
 		<table class="table">
 			<tbody>
 				<tr >
-				<form action="./php/post.php" method="post">
+				<form action="./php/post.php"  method="post">
+					<form action="./php/room_user.php" method="post">
 					<label for="start">
 					<td class="col-md-3">출발지</td>
 					<td class="col-md-9">
@@ -89,10 +91,12 @@ include "./php/config.php";
 	</div>
 	
 	<p class="text-center">
+		
 	<input type="submit" value="방만들기" class=" margin_right btn-info">
 	<input type="button" value="취소" class="btn btn-danger">
 	</p>
 	</div>
+	/form
 	</form>
 	<div class="col-md-4">
 	</div>
