@@ -8,6 +8,21 @@
 		 <link rel="stylesheet" type="text/css" href="./css/mypage.css">
 	</head>
 	<body>
+	<?php	
+			require_once('./php/db.php');
+		
+			$db = new DBC; //db object생성
+			$db->DBI();//db 들어가기
+			
+			$db->query = "select * from notice";
+			$db->DBQ();
+			
+			while($data = $db->result->fetch_assoc())
+			{
+				echo "제목: ".$data['subject']."<br>";
+				echo "내용: ".$data['memo']."<br>";
+			}
+		?>
 		<div class="div_root">
 		<br><br><br>
 		<div align="center">
