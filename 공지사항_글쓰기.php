@@ -14,13 +14,13 @@
 		<br><br><br>
 		<hr/>
 		<form name="myForm" method="post" action="./insert.php">
-		제목 : <input name="subject" type="text" size=50  maxlength=70> <br/><br/>
-		내용 : <textarea name="memo" cols=55 rows=20  maxlength=500></textarea>
-		<br/>
-		<br/>
-		<hr/>
-		<input type="submit" value="글쓰기"/>
-		</div>
-	</form>
+			제목 : <input name="subject" type="text" size=50  maxlength=70> <br/><br/>
+			내용 : <textarea name="memo" cols=55 rows=20  maxlength=500></textarea>
+			<br/>
+			<br/>
+			<hr/>
+			<input type="submit" value="글쓰기"/>
+			</div>
+		</form>
 	</body>
 </html>

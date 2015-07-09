@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 </head>
 <body>
-WOW
+
 <?php
 $start = $_POST['search_start'];
 $arrive = $_POST['search_arrive'];
@@ -12,23 +12,25 @@ $date = $_POST['search_date'];
 $s_time= $_POST['start_time'];
 $e_time = $_POST['end_time'];
 
-mysql_connect('localhost','root', 'taxi');
-mysql_select_db('youjun');
+echo $s_time.$e_time."<br>";
+require_once './config.php';
 
-mysql_query("set session character_set_connection=utf8;");
-mysql_query("set session character_set_results=utf8;");
-mysql_query("set session character_set_client=utf8;");
+$db = new DBC;
+$db->DBI();
 
-$result = mysql_query("SELECT start, arrive, date, time FROM post");
+$db->query = "select start, arrive, date, time from post where start='".$start."' and arrive='".$arrive."'and date='".$date."'and time>='".$s_time."'and time<='".$e_time."'";
+$db->DBQ();
 
-while($data = mysql_fetch_array($result))
+
+while($data = $db->result->fetch_row())
 {
-	echo $data['date'];
-	echo '<br>';
+	echo $data[0];
+	echo $data[1];
+	echo $data[2];
+	echo $data[3]."<br>";
 }
-echo '123';
-echo $data['date'];
 
+$db->DBO();
 /*
 require_once './config.php';
   

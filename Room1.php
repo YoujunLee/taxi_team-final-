@@ -13,13 +13,13 @@
 	<div class="wrapper">
 	
 	<?php 
-  	    $query_string=getenv("QUERY_STRING"); // Get값으로 넘어온 값들을 구합니다.
+  	    $post_id=getenv("QUERY_STRING"); // Get값으로 넘어온 값들을 구합니다.
 		
 		require_once './php/db.php';
 
 		$db = new DBC;
 		$db->DBI();
-		$db->query = "SELECT date, time, start, arrive FROM post WHERE post_id='".$query_string."'";
+		$db->query = "SELECT date, time, start, arrive FROM post WHERE post_id='".$post_id."'";
 		$db->DBQ();
 		
 		$data=$db->result->fetch_row();
@@ -33,25 +33,36 @@
     <div class="wrapper2">
 
 	<?php
-		require_once './php/db.php';
+		require_once './php/config.php';
 		
 		$db = new DBC;
 		$db->DBI();
-		
-		
 		$db->query = "select * from comment";
 		$db->DBQ();
-
-		while($data = $db->result->fetch_assoc())
-		{	echo $data['name'].":   &nbsp;".$data['content']."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$data['time'],"<br>";
-		}
 		
+		$db2 = new DBC;
+		$db2->DBI();
+		
+		while($data = $db->result->fetch_assoc())
+		{
+			$db2->query= "SELECT name FROM student_info WHERE studentid= '".$data['stu_id']."'";
+		    $db2->DBQ();   
+			$data2 = $db2->result->fetch_row() ;
+			$comment_name = $data2[0];
+			echo $comment_name.":   &nbsp;".$data['content']."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;".$data['time'],"<br>";
+		}		
 		$db->DBO();
+		$db2->DBO();
 	?>
 	</div>
   
   	<div class="wrapper3">
-  	<form action="./php/comment_db.php" method="post">
+  	
+  	<?php
+  	$post_id2=getenv("QUERY_STRING");
+  	echo"<form action=./php/comment_db.php?$post_id2  method=post>";
+  	?>
+  	
   	<input class="col-xs-15 col-md-10" type="text" placeholder="댓글을 입력하시오(최대 100자)" name="댓글" id="content">
   	<input class="col-xs-3 col-md-2" type="submit" value="의견쓰기">
 	</form>
@@ -65,28 +76,36 @@
       <th class="col-xs-6 col-md-4">Phone</th>
     </tr>
   </thead>
+  <!-- 바꾼 코드. -->
   <tbody>
+  	<?php
+		require_once './php/db.php';
+		
+		$db = new DBC;
+		$db->DBI();
+		
+		
+		$db->query = "select * from room_user";
+		$db->DBQ();
+		$i = 1;
+  	while($data = $db->result->fetch_assoc())
+	{
+		?>
     <tr class="row">
-      <th class="col-xs-6 col-md-4">1</th>
-      <th class="col-xs-6 col-md-4">이유준</th>
-      <th class="col-xs-6 col-md-4">010-4409-2345</th>
+      <th class="col-xs-6 col-md-4"><?php echo $i?></th>
+      <th class="col-xs-6 col-md-4"><?php echo $data['name']?></th>
+      <th class="col-xs-6 col-md-4"><?php echo $data['cellphone']?></th>
     </tr>
-     <tr class="row">
-      <th class="col-xs-6 col-md-4">2</th>
-      <th class="col-xs-6 col-md-4">김평강</th>
-      <th class="col-xs-6 col-md-4">010-4349-2345</th>
-    </tr>
-   <tr class="row">
-      <th class="col-xs-6 col-md-4">3</th>
-      <th class="col-xs-6 col-md-4">양민규</th>
-      <th class="col-xs-6 col-md-4">010-4509-2345</th>
-    </tr>
-     <tr class="row">
-      <th class="col-xs-6 col-md-4">4</th>
-      <th class="col-xs-6 col-md-4">정마리아</th>
-      <th class="col-xs-6 col-md-4">010-4405-2345</th>
-    </tr>
+    <?php
+    $i=$i+1;
+	?>
+	
+    <?php
+   }
+	?>
+	
    </tbody>
+   <!-- 여기까지 바꾼코드 -->
 </table>
 <div class="row">
 <div class="col-xs-6 col-md-4"></div>
@@ -101,4 +120,3 @@
 
 </body>
 </html>
-

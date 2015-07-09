@@ -4,31 +4,44 @@
 	</head>
 	<body>
 		<?php
-			require_once('./php/db.php');
+			require_once './php/config.php';
 			$db = new DBC;
 			$db->DBI();
+			$db->query = "select num from notice order by num desc limit 1";
+			
+			$db->DBQ();
+			
+			$num1 = $db->result->num_rows;
+			$data = $db->result->fetch_row();
+			
+			
+			$num = $data[0]+1;
+			
 			
 			$subject = $_POST['subject'];
 			$memo= $_POST['memo'];
-			
-						
-			$db->query = "select num from notice order by num desc limit 1'";
+			$time = date("Y-m-d");
+									
+			if($subject==null||$subject=='')
+			{
+				echo "<script>alert('제목을 입력해주세요.');history.back();</script>";
+				exit;
+			}
+
+			$db->query = "insert into notice values('".$num."','" . $subject . "','".$memo."','".$time."')";
 			$db->DBQ();
 			
-			
-			$data = $db->result->fetch_row();
-			$num1 = $db->result->num_rows;
-			if($num1==1)
-				$num = $data[0]+1;
+			if(!$db->result)
+			{
+				
+				echo "<script>alert('fail to posting.');history.back();</script>";
+				$db->DBO();
+				exit;	
+			} 
 			else
-				$num=1;
-						$num = $data[0]+1;
-			
-			$db->query = "insert into notice values('".$num."','" . $subject . "','".$memo."')";
-			$db->DBQ();
-			$db->DBO();
-			echo "<script>location.replace('./공지사항_글쓰기.php');</script>";
-			exit;
+			{
+				echo "<script>location.replace('./notice.php');</script>";
+			}
 		?>
 	</body>
 </html>
