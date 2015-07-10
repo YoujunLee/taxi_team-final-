@@ -1,3 +1,7 @@
+<?php
+include "./php/session_out.php";
+out();
+?>
 <!-- 방 조회 Page
 .....이유준-->
 <!DOCTYPE html>

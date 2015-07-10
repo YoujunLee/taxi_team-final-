@@ -6,6 +6,8 @@
 <body>
 
 <?php
+include "./session_out.php";
+out();
 $start = $_POST['search_start'];
 $arrive = $_POST['search_arrive'];
 $date = $_POST['search_date'];

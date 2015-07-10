@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 
 <?php
+include "./php/session_out.php";
+out();
 	$start = $_POST['search_start'];
 	$arrive = $_POST['search_arrive'];
 	$date = $_POST['search_date'];
