@@ -2,6 +2,7 @@
 include "./php/session_out.php";
 out();
 ?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -27,48 +28,40 @@ out();
   <table class="table table-striped table-hover tableheight">
 	 <thead>
     	<tr>
+    	 <td>방번호</td>
      	 <td>날짜</td>
      	 <td>시간</td>
-     	 <td>출발->도착</td>
+     	 <td>출발</td>
+     	 <td>도착</td>
    		</tr>
  	 </thead>
 	 <tbody>
-    	<tr>
-      	 <td>Column content</td>
-      	 <td>Column content</td>
-     	 <td>Column content</td>
+	 	<?php
+		require_once './php/db.php';
+		
+		$stu_id= $_SESSION['user_id'];
+		
+		$db = new DBC;
+		$db->DBI();
+		
+		
+		$db->query = "SELECT * FROM room_user WHERE stu_id='".$_SESSION['user_id']."'";
+		$db->DBQ();
+		
+  	while($data = $db->result->fetch_assoc())
+	{
+		?>
+    	<tr  style="cursor:hand;" onclick="location.href='./Room.html.php?<?php echo $data['post_id']?>'">
+      	 <td><?php echo $data['post_id']?></td>
+      	 <td><?php echo $data['date']?></td>
+     	 <td><?php echo $data['time']?></td>
+     	 <td><?php echo $data['start']?></td>
+     	 <td><?php echo $data['arrive']?></td>
    		</tr>
-    	<tr>
-      	 <td>Column content</td>
-      	 <td>Column content</td>
-      	 <td>Column content</td>
-    	</tr>
-    	<tr>
-      	 <td>Column content</td>
-      	 <td>Column content</td>
-      	 <td>Column content</td>
-    	</tr>
-    	<tr>
-      	 <td>Column content</td>
-      	 <td>Column content</td>
-      	 <td>Column content</td>
-    	</tr>
-    	<tr>
-      	 <td>Column content</td>
-      	 <td>Column content</td>
-      	 <td>Column content</td>
-    	</tr>
-    	<tr>
-      	 <td>Column content</td>
-      	 <td>Column content</td>
-      	 <td>Column content</td>
-    	</tr>
-   		<tr>
-      	 <td>Column content</td>
-      	 <td>Column content</td>
-      	 <td>Column content</td>
-    	</tr>
-  	</tbody>
+   		<?php
+	}
+	?>
+    	  	</tbody>
   </table>
 </div>
 

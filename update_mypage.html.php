@@ -30,7 +30,7 @@
 		      <label for="inputStudentId" class="col-lg-2 control-label">학번</label>
 		      <div class="col-lg-10">
 		        <?php
-		          session_start();
+		         
 			 	  $stu_id= $_SESSION['user_id'];
 			 	  echo "$stu_id";
 		        ?>
@@ -94,7 +94,7 @@
 		    <br>		   
 		     <div class="div_go">
                 <input class="btn btn-lg btn-block" type="submit" value="변경">
-                <input class="btn btn-lg btn-block" type="" value="취소">
+                <a href="./MyPage.html.php" class="btn btn-lg btn-block" value="취소">취소</a>
 			</div>
 		</form>
 		</div>
