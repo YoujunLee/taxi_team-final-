@@ -18,8 +18,6 @@ out();
 	<div class="wrapper">
 	
 	<?php 
-	include "./php/session_out.php";
-    out();
   	    $post_id=getenv("QUERY_STRING"); // Get값으로 넘어온 값들을 구합니다.
 		
 		require_once './php/db.php';
@@ -117,7 +115,10 @@ out();
 <div class="row">
 <div class="col-xs-6 col-md-4"></div>
 <div class="col-xs-6 col-md-4">
- <a href="#" class="btn btn-danger">탑승취소</a>
+ 
+ <a href="./php/delete.php?<?php $post_id2 ?>" class="btn btn-danger" >
+ 
+ 탑승취소</a>
 </div>
 
 <div class="col-xs-6 col-md-4"></div>
