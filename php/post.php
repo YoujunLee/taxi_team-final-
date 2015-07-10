@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-</head>
-<body>
 <?php
+
 require_once './config.php';
 
 $db = new DBC; //db object생성
@@ -30,6 +25,19 @@ $room_memo = $_POST['room_memo'];
 
 $db2 = new DBC; //db object생성
 $db2->DBI();//db 들어가기
+$db2->query = "SELECT id FROM room_user ORDER BY id desc LIMIT 1";
+$db2->DBQ();
+$num1 = $db2->result->num_rows;
+$data1 = $db2->result->fetch_row();
+
+if($num1==1)
+{
+	$id = $data1[0]+1;	
+}
+else
+{
+	$id=1;
+}
 
 session_start();
 $stu_id= $_SESSION['user_id'];
@@ -41,14 +49,9 @@ if($room_date==null||$room_date=='')
 	echo "<script>alert('날짜를 입력해 주세요.');history.back();</script>";
 	exit;
 }
-else if($room_population>4||$room_population<1)
-{
-	echo "<script>alert('최대 인원은 4명 입니다.');history.back();</script>";
-	exit;
-}
 
 $db->query = "insert into post values ('".$post_id ."','".$stu_id."','".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."','".$room_population."', '".$room_memo."')";
-$db2->query = "insert into room_user values('".$post_id ."','".$stu_id."','".$name."','".$cellphone."')";
+$db2->query = "insert into room_user values('".$id ."','".$post_id ."','".$stu_id."','".$name."','".$cellphone."')";
 
 $db->DBQ();
 $db2->DBQ();
@@ -66,5 +69,3 @@ else
 	echo "<script>location.replace('../Room.html.php?$post_id');</script>";
 }
 ?>
-</body>
-</html>

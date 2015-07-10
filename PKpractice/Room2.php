@@ -2,7 +2,7 @@
 <html>
 <head>
 	<meta charset="utf-8">
-	<title>i-Taxi</title>
+	<title>Taxi</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../css/index2.css">
 </head>
@@ -37,7 +37,7 @@
 		
 		$db = new DBC;
 		$db->DBI();
-		$db->query = "SELECT * FROM comment WHERE post_id='".$post_id."'";  //방 별로 다른 commet 출력. 
+		$db->query = "select * from comment";
 		$db->DBQ();
 		
 		$db2 = new DBC;
@@ -76,7 +76,6 @@
       <th class="col-xs-6 col-md-4">Phone</th>
     </tr>
   </thead>
-  <!-- 바꾼 코드. -->
   <tbody>
   	<?php
 		require_once './php/db.php';
@@ -105,7 +104,6 @@
 	?>
 	
    </tbody>
-   <!-- 여기까지 바꾼코드 -->
 </table>
 <div class="row">
 <div class="col-xs-6 col-md-4"></div>
@@ -120,3 +118,4 @@
 
 </body>
 </html>
+
