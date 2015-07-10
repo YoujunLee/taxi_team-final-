@@ -9,28 +9,28 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script> 
 			$(document).ready(function(){
-			    $("div").on("click",".flip",function(){
+			    $(".flip").click(function(){
 			        $(".panel").slideToggle("slow");
 			    });
 			});
 		</script>
 		
 		<style>
-		.flip {
-			color: #ffffff;
-		    padding: 12px;
-		    text-align: left;
-		    background-color: #34c6be;
-		}
-		 
-		.panel{
-		    padding: 12px;
-		    text-align: left;
-		    background-color: #ffffff;
-		    border: solid 1px #34c6be;
-		    padding: 12px;
-		    display: none;
-		}
+			.flip{
+				color: #ffffff;
+			    padding: 12px;
+			    text-align: left;
+			    background-color: #34c6be;
+			}
+			 
+			.panel{
+			    padding: 12px;
+			    text-align: left;
+			    background-color: #ffffff;
+			    border: solid 1px #34c6be;
+			    padding: 12px;
+			    display: none;
+			}
 		</style>
 	</head>
 	<body>
@@ -53,7 +53,8 @@
 			$db->DBQ();
 		?>
 			
-		<?php	
+		<?php
+			$index=1;	
 			while($data = $db->result->fetch_assoc())
 			{
 				?>
@@ -69,6 +70,7 @@
 					</div>
 					<br/>
 				<?php
+				$index++;
 			}
 		?>
 				<hr/>	
