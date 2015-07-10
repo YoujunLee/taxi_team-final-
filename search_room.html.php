@@ -28,6 +28,7 @@ out();
 					<td class="col-md-3">출발지</td>
 					<td class="col-md-9">
 						<select id="search_start1" size="1" name="search_start" class="form-control">
+						<option value="전체보기" selected>전체보기</option>
 						<option value="한동대학교 택시 승강장" selected>한동대 택시승강장</option>
 						<option value="양덕 하나로마트">양덕 하나로마트</option>
 						<option value="E1">E1</option>
@@ -44,6 +45,7 @@ out();
 					<td class="col-md-3">도착지</td>
 					<td class="col-md-9">
 						<select id="search_arrive1" size="1" name="search_arrive" class="form-control">
+						<option value="전체보기" selected>전체보기</option>
 						<option value="한동대학교 택시 승강장">한동대 택시승강장</option>
 						<option value="양덕 하나로마트">양덕 하나로마트</option>
 						<option value="E1">E1</option>
