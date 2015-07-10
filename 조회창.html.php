@@ -67,22 +67,7 @@ out();
 			<td class="col-xs-12 col-md-8" ></td>
 			<td class="col-xs-6 col-md-4"></td>
 		</tr>
-		<tr class="tr1 row">
-			<td class="col-xs-12 col-md-8" ></td>
-			<td class="col-xs-6 col-md-4"></td>
-		</tr>
-		<tr class = "tr2 row" >
-			<td class="col-xs-12 col-md-8" ></td>
-			<td class="col-xs-6 col-md-4"></td>
-		</tr>
-		<tr class="tr1 row">
-			<td class="col-xs-12 col-md-8" ></td>
-			<td class="col-xs-6 col-md-4"></td>
-		</tr>
-		<tr class = "tr2 row" >
-			<td class="col-xs-12 col-md-8" ></td>
-			<td class="col-xs-6 col-md-4"></td>
-		</tr>
+		
 
 
 	</table>

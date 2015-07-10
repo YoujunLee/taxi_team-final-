@@ -1,8 +1,3 @@
-<?php
-include "./php/session_out.php";
-out();
-?>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -115,10 +110,7 @@ out();
 <div class="row">
 <div class="col-xs-6 col-md-4"></div>
 <div class="col-xs-6 col-md-4">
- 
- <a href="./php/delete.php?<?php $post_id2 ?>" class="btn btn-danger" >
- 
- 탑승취소</a>
+ <a href="#" class="btn btn-danger">탑승취소</a>
 </div>
 
 <div class="col-xs-6 col-md-4"></div>

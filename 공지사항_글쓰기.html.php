@@ -1,6 +1,6 @@
 <?php
-include "./php/session_out.php";
-out();
+	include "./php/session_out.php";
+	out();
 ?>
 <html>
 	<head>
@@ -8,7 +8,7 @@ out();
 		<title>i-Taxi</title>
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="./css/mypage.css">
-		</head>
+	</head>
 	<body>
 		<div class="div_root">
 		<br><br><br>
