@@ -9,7 +9,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script> 
 			$(document).ready(function(){
-			    $(".flip").click(function(){
+			    $("div").on("click",".flip",function(){
 			        $(".panel").slideToggle("slow");
 			    });
 			});
@@ -49,7 +49,7 @@
 			$db = new DBC;	 //db object생성
 			$db->DBI();		//db 들어가기
 			
-			$db->query = "select * from notice";
+			$db->query = "select * from notice order by num desc";
 			$db->DBQ();
 		?>
 			
@@ -71,7 +71,7 @@
 				<?php
 			}
 		?>
-		<hr/>	
+				<hr/>	
 		</div>
 	</body>
 </html>
