@@ -13,6 +13,8 @@
 	<div class="wrapper">
 	
 	<?php 
+	include "./php/session_out.php";
+    out();
   	    $post_id=getenv("QUERY_STRING"); // Get값으로 넘어온 값들을 구합니다.
 		
 		require_once './php/db.php';

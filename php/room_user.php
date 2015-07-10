@@ -5,7 +5,7 @@ out();
 
   
 	require_once('./db.php');
-	session_start();
+	
 	$db = new DBC; //db object생성
 	$db->DBI();//db 들어가기
 	
