@@ -45,7 +45,6 @@ else
 	$id=1;
 }
 
-session_start();
 $stu_id= $_SESSION['user_id'];
 $name =  $_SESSION['name'] ;
 $cellphone	= $_SESSION['cellphone'];

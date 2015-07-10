@@ -6,7 +6,7 @@ out();
 	$post_id1=getenv("QUERY_STRING");
 	
 	require_once('./db.php');
-	session_start();
+	
 	$db = new DBC; //db object생성
 	$db->DBI();//db 들어가기
 	$db->query = "select id from comment order by id desc limit 1";
