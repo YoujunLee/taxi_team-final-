@@ -1,5 +1,6 @@
 <?php
-
+include "./session_out.php";
+out();
    $hostname=$_SERVER["HTTP_REFERER"]; //도메인명(호스트)명을 구합니다.
 
   

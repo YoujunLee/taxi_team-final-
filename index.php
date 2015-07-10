@@ -1,6 +1,6 @@
 <?php
 session_start();
-if(isset($_SESSION['user_id']) && isset($_SESSION['user_pw'])) 
+if(isset($_SESSION['user_id']) && isset($_SESSION['user_pw']))
 echo "<script>location.replace('./조회창.html.php');</script>";
 ?>
 <!DOCTYPE html>

@@ -3,6 +3,8 @@
 <?php
 
 include "./php/config.php";
+include "./php/session_out.php";
+out();
 ?>
 
 <!DOCTYPE html>
