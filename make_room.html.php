@@ -3,6 +3,8 @@
 <?php
 
 include "./php/config.php";
+include "./php/session_out.php";
+out();
 ?>
 
 <!DOCTYPE html>
@@ -11,7 +13,7 @@ include "./php/config.php";
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">  
 	<link rel="stylesheet" type="text/css" href="./css/make_room.css"> 
-	<title> Taxi </title>
+	<title>i-Taxi</title>
 </head>
 
 <body>
@@ -25,7 +27,7 @@ include "./php/config.php";
 			<tbody>
 				<tr >
 				<form action="./php/post.php"  method="post">
-					<form action="./php/room_user.php" method="post">
+					<!-- <form action="./php/post.php" method="post"> -->
 					<label for="start">
 					<td class="col-md-3">출발지</td>
 					<td class="col-md-9">
@@ -96,7 +98,7 @@ include "./php/config.php";
 	<input type="button" value="취소" class="btn btn-danger">
 	</p>
 	</div>
-	/form
+	<!-- </form> -->
 	</form>
 	<div class="col-md-4">
 	</div>

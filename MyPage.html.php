@@ -1,8 +1,12 @@
+<?php
+include "./php/session_out.php";
+out();
+?>
 <!DOCTYPE html>
 <html>
 	<head>
 		 <meta charset="utf-8">
-		  <title>마이페이지</title>
+		 <title>i-Taxi</title>
    		 <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="./css/mypage.css">
 	</head>
@@ -19,7 +23,7 @@
 			   <br> 학번
 			   <br> 010-0000-0000
 			   <div class="modify">
-			   <a href="#" class="btn btn-link">개인정보 수정</a>
+			   <a href="./update_mypage.html.php" class="btn btn-link">개인정보 수정</a>
 			   </div>
 			  </div>
 			</div>
@@ -28,13 +32,13 @@
 			  <li class="list-group-item">
 			 	   탑승내역
 			    <div class="modify2">
-			    <a href="#" class="btn btn-link">></a>
+			    <a href="./mypage-탑승내역.html.php" class="btn btn-link">></a>
 			    </div>
 			  </li>
 			  <li class="list-group-item">
 			    공지사항
 			    <div class="modify2">
-			    <a href="#" class="btn btn-link">></a>
+			    <a href="./공지사항.html.php" class="btn btn-link">></a>
 			    </div>
 			  </li>
 			  <li class="list-group-item">

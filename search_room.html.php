@@ -1,3 +1,7 @@
+<?php
+include "./php/session_out.php";
+out();
+?>
 <!-- 방 조회 Page
 .....이유준-->
 <!DOCTYPE html>
@@ -6,7 +10,7 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">  
 	<link rel="stylesheet" type="text/css" href="./css/make_room.css"> 
-	<title> Taxi </title>
+	<title>i-Taxi</title>
 </head>
 
 <body>
@@ -19,7 +23,7 @@
 		<table class="table">
 			<tbody>
 				<tr>
-				<form action="./php/search.php" method="post">
+				<form action="./search_result.html.php" method="post">
 					<label for="search_start1">
 					<td class="col-md-3">출발지</td>
 					<td class="col-md-9">
@@ -29,7 +33,7 @@
 						<option value="E1">E1</option>
 						<option value="고속버스터미널">고속터미널</option>
 						<option value="시외버스터미널">시외버스터미널</option>
-						<option value="육거리">욱거리</option>
+						<option value="육거리">육거리</option>
 						<option value="포항역(KTX)">포항역</option>
 						</select>
 					</td>
@@ -45,7 +49,7 @@
 						<option value="E1">E1</option>
 						<option value="고속버스터미널">고속터미널</option>
 						<option value="시외버스터미널">시외버스터미널</option>
-						<option value="육거리">욱거리</option>
+						<option value="육거리">육거리</option>
 						<option value="포항역(KTX)" selected>포항역</option>
 						</select>
 					</td>
@@ -61,14 +65,14 @@
 			
 				<tr>
 					<label>
-					<td class="col-md-3">시작 시간</td>
+					<td class="col-md-3">출발 시간</td>
 					<td><input type="time" id="start_time1" name="start_time" class="form-control" value="09:00"></td>
 				    </label>
 				</tr>
 
 				<tr>
 					<label>
-					<td class="col-md-3">마침 시간</td>
+					<td class="col-md-3"></td>
 					<td><input type="time" id="end_time1" name="end_time" class="form-control" value="20:00"></td>
 				    </label>
 				</tr>
@@ -77,10 +81,10 @@
 		</table>
 	</div>
 	<p class="text-center">
-	<a href="./php/search.php"></a>
+	
 	<input type="submit" value="방 조회" class="btn btn-info">
 	</p>
-	</a>
+	
 	</form>
 	</div>
 
