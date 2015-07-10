@@ -8,7 +8,6 @@
    		 <link rel="stylesheet" type="text/css" href="../css/box.css">
 	</head>
 	<body>
-	
 		<div class="div_root">
 		<br><br><br><br>
 		<div align="center">
@@ -62,13 +61,8 @@
             }
             return str;
         }
-
-
      var Phone = document.getElementById('Phone');
-     
      Phone.onkeyup = function(event){
-
-     
 
         event = event || window.event;
         var _val = this.value.trim();
@@ -89,12 +83,10 @@
 		        <input type="password" class="form-control" id="inputPasswordTwice" placeholder="Password" name='pass2' required>
 		      </div>
 		    </div>
-		    <br>
-		   
+		    <br>		   
 		     <div class="div_go">
                 <input class="btn btn-lg btn-block" type="submit" value="가입하기">
 			</div>
-
 		</form>
 		</div>
 	</body>
