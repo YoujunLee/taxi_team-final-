@@ -23,7 +23,7 @@ out();
 			   <br> 학번
 			   <br> 010-0000-0000
 			   <div class="modify">
-			   <a href="#" class="btn btn-link">개인정보 수정</a>
+			   <a href="./update_mypage.html.php" class="btn btn-link">개인정보 수정</a>
 			   </div>
 			  </div>
 			</div>
