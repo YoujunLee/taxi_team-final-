@@ -2,7 +2,7 @@
 <html>
 	<head>
 		 <meta charset="utf-8">
-		  <title>마이페이지</title>
+		 <title>i-Taxi</title>
    		 <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="./css/mypage.css">
 	</head>
@@ -28,13 +28,13 @@
 			  <li class="list-group-item">
 			 	   탑승내역
 			    <div class="modify2">
-			    <a href="#" class="btn btn-link">></a>
+			    <a href="./mypage-탑승내역.html.php" class="btn btn-link">></a>
 			    </div>
 			  </li>
 			  <li class="list-group-item">
 			    공지사항
 			    <div class="modify2">
-			    <a href="#" class="btn btn-link">></a>
+			    <a href="./공지사항.html.php" class="btn btn-link">></a>
 			    </div>
 			  </li>
 			  <li class="list-group-item">
