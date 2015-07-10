@@ -4,7 +4,7 @@
 	</head>
 	<body>
 		<?php
-			require_once './php/config.php';
+			require_once './config.php';
 			$db = new DBC;
 			$db->DBI();
 			$db->query = "select num from notice order by num desc limit 1";
@@ -33,14 +33,13 @@
 			
 			if(!$db->result)
 			{
-				
 				echo "<script>alert('fail to posting.');history.back();</script>";
 				$db->DBO();
 				exit;	
 			} 
 			else
 			{
-				echo "<script>location.replace('./notice.php');</script>";
+				echo "<script>location.replace('../공지사항.html.php');</script>";
 			}
 		?>
 	</body>
