@@ -4,6 +4,8 @@
 		<title>공지사항</title></head>
 	<body>
 		<?php	
+		include "./session_out.php";
+out();
 			require_once('./php/db.php');
 		
 			$db = new DBC; //db object생성

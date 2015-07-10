@@ -1,3 +1,7 @@
+<?php
+include "./php/session_out.php";
+out();
+?>
 <!-- 방 조회 Page
 .....이유준-->
 <!DOCTYPE html>
@@ -45,7 +49,7 @@
 						<option value="E1">E1</option>
 						<option value="고속버스터미널">고속터미널</option>
 						<option value="시외버스터미널">시외버스터미널</option>
-						<option value="육거리">욱거리</option>
+						<option value="육거리">육거리</option>
 						<option value="포항역(KTX)" selected>포항역</option>
 						</select>
 					</td>

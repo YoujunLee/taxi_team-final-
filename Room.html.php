@@ -1,3 +1,8 @@
+<?php
+include "./php/session_out.php";
+out();
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,6 +18,8 @@
 	<div class="wrapper">
 	
 	<?php 
+	include "./php/session_out.php";
+    out();
   	    $post_id=getenv("QUERY_STRING"); // Get값으로 넘어온 값들을 구합니다.
 		
 		require_once './php/db.php';
@@ -85,7 +92,7 @@
 		$db->DBI();
 		
 		
-		$db->query = "select * from room_user";
+		$db->query = "SELECT * FROM room_user WHERE post_id='".$post_id."'";
 		$db->DBQ();
 		$i = 1;
   	while($data = $db->result->fetch_assoc())
