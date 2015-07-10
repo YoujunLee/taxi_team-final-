@@ -86,7 +86,7 @@ out();
     	else if($check)
     		echo " <th class="."'col-xs-2 col-md-1'"."><a href='./Room.html.php?".$data[5]."' class='btn btn-warning'>탑승중</a></th>";
 		else 
-    		echo " <th class="."'col-xs-2 col-md-1'"."><a href='./Room.html.php?".$data[5]."' class='btn btn-info'>탑승하기</a></th>";
+    		echo " <th class="."'col-xs-2 col-md-1'"."><a href='./php/탑승하기.php?post_id=".$data[5]."' class='btn btn-info'>탑승하기</a></th>";
         
   		echo " </tr>";
 	  }
