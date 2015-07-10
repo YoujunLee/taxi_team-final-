@@ -8,23 +8,27 @@
 		<link rel="stylesheet" type="text/css" href="./css/mypage.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script> 
-		$(document).ready(function(){
-		    $("#flip").click(function(){
-		        $("#panel").slideToggle("slow");
-		    });
-		});
+			$(document).ready(function(){
+			    $(".flip").click(function(){
+			        $(".panel").slideToggle("slow");
+			    });
+			});
 		</script>
 		
-		<style> 
-		#panel, #flip {
-		    padding: 15px;
-		    text-align: center;
-		    background-color: #f8f8f8;
-		    border: solid 1px #34c6be;
+		<style>
+		.flip {
+			color: #ffffff;
+		    padding: 12px;
+		    text-align: left;
+		    background-color: #34c6be;
 		}
-		
-		#panel {
-		    padding: 50px;
+		 
+		.panel{
+		    padding: 12px;
+		    text-align: left;
+		    background-color: #ffffff;
+		    border: solid 1px #34c6be;
+		    padding: 12px;
 		    display: none;
 		}
 		</style>
@@ -37,60 +41,37 @@
 		</div>
 		<br><br><br>
 		<hr/>
-		<ul class="list-group">
-		  <li class="list-group-item">
-		 	<?php	
-				require_once('./php/config.php');
+		
+		
+		<?php
+			require_once('./php/config.php');
+	
+			$db = new DBC;	 //db object생성
+			$db->DBI();		//db 들어가기
 			
-				$db = new DBC;	 //db object생성
-				$db->DBI();		//db 들어가기
-				
-				$db->query = "select * from notice";
-				$db->DBQ();
-				
-				while($data = $db->result->fetch_assoc())
-				{
-					echo $data['subject']. "(". $data['time']. ")". "<br>";
-				}
-			?>
-		    <div class="modify2">
-		    <a href="#" class="btn btn-link">></a>
-		    </div>
-		  </li>
-		</ul>
-		<div id="flip">
-			<?php	
-				require_once('./php/config.php');
+			$db->query = "select * from notice";
+			$db->DBQ();
+		?>
 			
-				$db = new DBC;	 //db object생성
-				$db->DBI();		//db 들어가기
-				
-				$db->query = "select * from notice";
-				$db->DBQ();
-				
-				while($data = $db->result->fetch_assoc())
-				{
-					echo $data['subject']. "(". $data['time']. ")". "<br>";
-				}
-			?>
-		</div>
-		<div id="panel">
-			<?php	
-				require_once('./php/config.php');
-			
-				$db = new DBC;	 //db object생성
-				$db->DBI();		//db 들어가기
-				
-				$db->query = "select * from notice";
-				$db->DBQ();
-				
-				while($data = $db->result->fetch_assoc())
-				{
-					echo $data['memo']. "<br>";
-				}
-			?>		
-		</div>
-		<hr/>		
+		<?php	
+			while($data = $db->result->fetch_assoc())
+			{
+				?>
+					<div class="flip">
+					<?php	
+						echo $data['subject']. "&nbsp;&nbsp;"."(". $data['time']. ")";
+					?>
+					</div>
+					<div class="panel">
+					<?php	
+						echo $data['memo']. "<br>";
+					?>
+					</div>
+					<br/>
+				<?php
+			}
+		?>
+		<hr/>	
 		</div>
 	</body>
 </html>
