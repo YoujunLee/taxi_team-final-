@@ -7,9 +7,10 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 <html>
 	<head>
 		 <meta charset="utf-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
    		 <title>i-Taxi</title>
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-   		 <link rel="stylesheet" type="text/css" href="../css/로그인.css">
+   		<link rel="stylesheet" type="text/css" href="../css/로그인.css">	
 	</head>
 	<body>
   		<div class="div_root">

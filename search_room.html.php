@@ -10,6 +10,7 @@ out();
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">  
 	<link rel="stylesheet" type="text/css" href="./css/make_room.css"> 
+	<meta name="viewport" content="width=device-width, user-scalabel=no, initial-scale=1">
 	<title>i-Taxi</title>
 </head>
 
