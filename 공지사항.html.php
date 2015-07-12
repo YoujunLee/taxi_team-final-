@@ -16,21 +16,21 @@
 		</script>
 		
 		<style>
-		.flip {
-			color: #ffffff;
-		    padding: 12px;
-		    text-align: left;
-		    background-color: #34c6be;
-		}
-		 
-		.panel{
-		    padding: 12px;
-		    text-align: left;
-		    background-color: #ffffff;
-		    border: solid 1px #34c6be;
-		    padding: 12px;
-		    display: none;
-		}
+			.flip{
+				color: #ffffff;
+			    padding: 12px;
+			    text-align: left;
+			    background-color: #34c6be;
+			}
+			 
+			.panel{
+			    padding: 12px;
+			    text-align: left;
+			    background-color: #ffffff;
+			    border: solid 1px #34c6be;
+			    padding: 12px;
+			    display: none;
+			}
 		</style>
 	</head>
 	<body>
@@ -49,11 +49,11 @@
 			$db = new DBC;	 //db object생성
 			$db->DBI();		//db 들어가기
 			
-			$db->query = "select * from notice";
+			$db->query = "select * from notice order by num desc";
 			$db->DBQ();
 		?>
 			
-		<?php	
+		<?php
 			while($data = $db->result->fetch_assoc())
 			{
 				?>
@@ -71,7 +71,7 @@
 				<?php
 			}
 		?>
-		<hr/>	
+				<hr/>	
 		</div>
 	</body>
 </html>
