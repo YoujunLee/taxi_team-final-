@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, user-scalabel=no, initial-scale=1">
+
 <?php
 include "./php/session_out.php";
 out();

@@ -7,7 +7,6 @@ out();
 <head>
 	<title>i-Taxi</title>
 	<meta charset="utf-8" >
-	 
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">  
 	<link rel="stylesheet" type="text/css" href="./css/search.css">  
 </head>
