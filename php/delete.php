@@ -5,17 +5,19 @@
 <body>
 <?php
 	$hostname=$_SERVER["HTTP_REFERER"];
+	
+	/*
 	echo "<script>
 		   var result=confirm('진신 안탈꺼?');
 		   if(!result)
 		   location.replace('$hostname');
 		   </script>";
-		   
+	*/	   
 	include "./session_out.php";
 	out();
 	require_once './config.php';
-	$post_id=getenv("QUERY_STRING");
 	
+	$post_id=getenv("QUERY_STRING");
 	$stu_id= $_SESSION['user_id'];
 	
 	$db = new DBC;
