@@ -45,7 +45,7 @@ out();
 		$db->DBI();
 		
 		
-		$db->query = "SELECT * FROM room_user WHERE stu_id='".$_SESSION['user_id']."'";
+		$db->query = "SELECT * FROM post WHERE stu_id='".$_SESSION['user_id']."' order by date desc";
 		$db->DBQ();
 		
   	while($data = $db->result->fetch_assoc())
