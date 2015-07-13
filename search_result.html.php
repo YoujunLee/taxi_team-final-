@@ -100,10 +100,11 @@ out();
     	echo " <th class="."'col-xs-2 col-md-3'".">".$data[1]."</th>";
     	echo " <th class="."'col-xs-2 col-md-2'".">".$num2." / ".$data[4]."</th>";
 		
-		if($num2==$data[4])
-    		echo " <th class="."'col-xs-2 col-md-1'"."><a href='#' class='btn btn-danger'>FULL</a></th>";
-    	else if($check)
+		
+    	if($check)
     		echo " <th class="."'col-xs-2 col-md-1'"."><a href='./Room.html.php?".$data[5]."' class='btn btn-warning'>탑승중</a></th>";
+		else if($num2==$data[4])
+    		echo " <th class="."'col-xs-2 col-md-1'"."><a href='#' class='btn btn-danger'>FULL</a></th>";
 		else 
     		echo " <th class="."'col-xs-2 col-md-1'"."><a href='./php/탑승하기.php?post_id=".$data[5]."' class='btn btn-info'>탑승하기</a></th>";
         
