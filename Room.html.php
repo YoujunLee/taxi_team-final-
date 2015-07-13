@@ -116,7 +116,8 @@ out();
 <div class="col-xs-6 col-md-4"></div>
 <div class="col-xs-6 col-md-4">
  
- <a href="./php/delete.php?<?php echo$post_id2; ?>" class="btn btn-danger" >
+ <a href="./php/delete.php?<?php $post_id2 ?>" class="btn btn-danger" >
+ 
  탑승취소</a>
 </div>
 

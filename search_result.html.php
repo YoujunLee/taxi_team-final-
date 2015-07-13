@@ -44,26 +44,19 @@ out();
 </head>
 
 <body class="center">
-<section >
-		
-	<div class="wrapper col-xs-12  col-md-6 col-md-offset-3">
+	<div class="wrapper">
 	    <p><?php echo$date." ".$s_time."~".$e_time;?></p>
 	    <p><?php echo$start."->".$arrive;?></p>
-   
-		</div>
-		
-</section>
+    </div>
 
-<section >
-<div class=" col-xs-12  col-md-6 col-md-offset-3">
 <table class="table table-striped table-hover ">
   <thead>
     <tr class="row">
-      <th class="col-xs-2 col-md-1">#</th>
-      <th class="col-xs-2 col-md-2">출발시간</th>
-      <th class="col-xs-2 col-md-3">출발장소</th>
-      <th class="col-xs-2 col-md-3">도착장소</th>
-      <th class="col-xs-2 col-md-2">탑승인원</th>
+      <th class="col-xs-1 col-md-1">#</th>
+      <th class="col-xs-4 col-md-2">출발시간</th>
+      <th class="col-xs-4 col-md-3">출발장소</th>
+      <th class="col-xs-4 col-md-3">도착장소</th>
+      <th class="col-xs-3 col-md-2">탑승인원</th>
       <th class="col-xs-2 col-md-1">State</th>
     </tr>
   </thead>
@@ -82,11 +75,11 @@ out();
 			$check=true;
 		}	
     	echo "<tr class="."'row'".">";
-    	echo " <th class="."'col-xs-2 col-md-1'".">".$number++."</th>";
-    	echo " <th class="."'col-xs-2 col-md-2'".">".substr($data[3],0,2)." : ".substr($data[3],3,2)."</th>";
-    	echo " <th class="."'col-xs-2 col-md-3'".">".$data[0]."</th>";
-    	echo " <th class="."'col-xs-2 col-md-3'".">".$data[1]."</th>";
-    	echo " <th class="."'col-xs-2 col-md-2'".">".$num2." / ".$data[4]."</th>";
+    	echo " <th class="."'col-xs-1 col-md-1'".">".$number++."</th>";
+    	echo " <th class="."'col-xs-4 col-md-2'".">".substr($data[3],0,2)." : ".substr($data[3],3,2)."</th>";
+    	echo " <th class="."'col-xs-4 col-md-3'".">".$data[0]."</th>";
+    	echo " <th class="."'col-xs-4 col-md-3'".">".$data[1]."</th>";
+    	echo " <th class="."'col-xs-3 col-md-2'".">".$num2." / ".$data[4]."</th>";
 		
 		if($num2==$data[4])
     		echo " <th class="."'col-xs-2 col-md-1'"."><a href='#' class='btn btn-danger'>FULL</a></th>";
@@ -102,12 +95,11 @@ out();
     ?>
    </tbody>
 </table>
-</div>
-</section >
 
-	
-	
-		<div class="col-xs-12 col-md-6 col-md-offset-3">
+<div class="row">
+	<div class="col-xs-6 col-md-4">
+	</div>
+		<div class="col-xs-6 col-md-4">
   		<ul class="pagination pagination-lg">
   			<li class="disabled"><a href="#">«</a></li>
   			<li class="active"><a href="#">1</a></li>
@@ -115,11 +107,13 @@ out();
   			<li><a href="#">3</a></li>
  			<li><a href="#">4</a></li>
 			<li><a href="#">5</a></li>
+			<li><a href="#">6</a></li>
 			<li><a href="#">»</a></li>
 		</ul>
 		</div>
-		
-
+		<div class="col-xs-6 col-md-4"></div>
+		</div>
+</div>
 
 		
 </body>
