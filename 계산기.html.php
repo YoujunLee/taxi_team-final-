@@ -1,5 +1,6 @@
 <HTML>
 <HEAD>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">  
 	<link rel="stylesheet" type="text/css" href="../css/search.css">  
 <scRIPT LANGUAGE=JAVAscRIPT>
@@ -19,6 +20,7 @@ function run()
 </scRIPT>
 </HEAD>
 <BODY class = "center">
+	<div class = "col-xs-12  col-md-6 col-md-offset-3">
 </br></br></br>
 <h1>divide taxi fare</h1>
 <form name="frm1">
@@ -59,6 +61,6 @@ function run()
 
  
 
-
+</div>
 </BODY>
 </HTML>

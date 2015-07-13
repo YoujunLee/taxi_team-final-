@@ -3,16 +3,23 @@ session_start();
 if(isset($_SESSION['user_id']) && isset($_SESSION['user_pw']))
 echo "<script>location.replace('./조회창.html.php');</script>";
 ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
 		 <meta charset="utf-8">
-		 
    		 <title>i-Taxi</title>
+   		<!-- // <meta name="viewport" content="width=device-width, initial-scale=1"> -->
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-   		<link rel="stylesheet" type="text/css" href="../css/로그인.css">	
+   		 <link rel="stylesheet" type="text/css" href="../css/로그인.css">	
+   		 
 	</head>
-	<body>
+	<body class="background_color">
+		<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="./index.php">Home</a></li>
+  <li role="presentation"><a href="./index.php">조회창</a></li>
+  <li role="presentation"><a href="./index.php">Mypage</a></li>
+</ul>
   		<div class="div_root">
 		<br><br><br><br>
 		<div align="center">

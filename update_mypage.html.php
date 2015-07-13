@@ -3,12 +3,13 @@
 <html>
 	<head>
 		 <meta charset="utf-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
    		 <title>개인정보 수정</title>
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="../css/box.css">
 	</head>
-	<body>
-		<div class="div_root">
+	<body class=" col-xs-12  col-md-6 col-md-offset-3">
+		<!-- <div class="div_root"> -->
 		<br><br><br><br>
 		<div align="center">
 				<h2>개인정보 수정</h2>
@@ -97,7 +98,7 @@
                 <a href="./MyPage.html.php" class="btn btn-lg btn-block" value="취소">취소</a>
 			</div>
 		</form>
-		</div>
+		<!-- </div> -->
 	</body>
 </html>
 			

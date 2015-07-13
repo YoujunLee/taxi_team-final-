@@ -10,7 +10,8 @@ out();
    		 <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="./css/mypage.css">
 	</head>
-	<body>
+	<body >
+		<div class=" col-xs-12  col-md-6 col-md-offset-3">
 		<div class="div_root">
 			<br><br><br>
 			<div align="center">
@@ -19,9 +20,16 @@ out();
 			<br>
 			<div class="panel panel-default">
 			  <div class="panel-body">
-			   이름
-			   <br> 학번
-			   <br> 010-0000-0000
+			  	<?php
+		       
+			   $name =  $_SESSION['name'] ;
+			   echo "이름 : "."$name"."<br>";
+			   $stu_id= $_SESSION['user_id'];
+			 	echo "학번 : "."$stu_id"."<br>";
+				$cellphone	= $_SESSION['cellphone'];
+				echo "전화번호 : "."$cellphone"
+		      ?>
+			
 			   <div class="modify">
 			   <a href="./update_mypage.html.php" class="btn btn-link">개인정보 수정</a>
 			   </div>
@@ -52,6 +60,7 @@ out();
 			<div class="div_go">
                 <input class="btn btn-lg btn-block" type="submit" value="로그아웃">
 			</div>
+		</div>
 		</div>
 	</body>
 </html>

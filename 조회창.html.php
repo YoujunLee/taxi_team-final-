@@ -11,10 +11,17 @@ out();
 	<link rel="stylesheet" type="text/css" href="./css/search.css">  
 </head>
 <body class="center">
+	<div class = "col-xs-12  col-md-6 col-md-offset-3">
+		<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="./index.php">Home</a></li>
+  <li role="presentation"><a href="./조회창.html.php">조회창</a></li>
+  <li role="presentation"><a href="./MyPage.html.php">Mypage</a></li>
+</ul>
 <form action='./php/logout.php'>
 <div class="div_go">
                 <input class="btn btn-lg btn-block" type="submit" value="LogOut">
 			</div>
+		
 			
 </form>	
 	<!-- 방만들기, 방조회  -->
@@ -91,7 +98,6 @@ out();
 			</td>
 		</tr>
 	</table>
-
-
+</div>
 </body>
 </html>
