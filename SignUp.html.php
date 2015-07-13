@@ -1,7 +1,3 @@
-<?php
-include "./php/session_out.php";
-out();
-?>
 <!DOCTYPE html>
 
 <html>
