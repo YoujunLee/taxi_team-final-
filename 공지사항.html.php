@@ -54,7 +54,6 @@
 		?>
 			
 		<?php
-			$index=1;	
 			while($data = $db->result->fetch_assoc())
 			{
 				?>
@@ -70,7 +69,6 @@
 					</div>
 					<br/>
 				<?php
-				$index++;
 			}
 		?>
 				<hr/>	
