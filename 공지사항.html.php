@@ -1,18 +1,18 @@
+<?php
+	include "./php/session_out.php";
+	out();
+?>
 <!DOCTYPE html>
 
 <html>
 	<head>
-		<meta charset="utf-8">
+		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
 		<title>공지사항</title>
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="./css/mypage.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script> 
-			$(document).ready(function(){
-			    $(".flip").click(function(){
-			        $(".panel").slideToggle("slow");
-			    });
-			});
+		<script src="./js/mypage.js"></script> 
+			
 		</script>
 		
 		<style>
