@@ -27,12 +27,12 @@ out();
 	
 	if($content==null||$content==''){
 		$db->DBO();
-		echo "<script>location.replace('$hostname');</script>";
+		echo"<script>location.replace('$hostname');</script>";
 		exit;
 	}
 	$db->query = "insert into comment values('".$id."','".$stu_id."','".$post_id1."','".$content."','" . $time. "')";
 	$db->DBQ();
 	$db->DBO();
-	echo "<script>location.replace('$hostname');</script>";
+	echo"<script>location.replace('$hostname');</script>";
 	exit;
 ?>	

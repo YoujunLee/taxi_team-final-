@@ -24,7 +24,7 @@ out();
 		<table class="table">
 			<tbody>
 				<tr>
-				<form action="./search_result.html.php" method="post">
+				<form action="./php/search.php" method="post">
 					<label for="search_start1">
 					<td class="col-md-3">출발지</td>
 					<td class="col-md-9">

@@ -12,7 +12,7 @@
 		   if(!result)
 		   location.replace('$hostname');
 		   </script>";
-		   
+		   	
 	include "./session_out.php";
 	out();
 	require_once './config.php';
@@ -42,12 +42,13 @@
 		$db3->DBI();//db 들어가기
 		$db3->query = "DELETE FROM post WHERE post_id='".$post_id."'";
 		$db3->DBQ();
+		$db3->query = "DELETE FROM comment WHERE post_id='".$post_id."'";
+		$db3->DBQ();
 		$db3->DBO();
 		
-		echo"<script> location.replace('http://52.27.102.99/조회창.html.php')</script>";
-	}
-	
-	echo"<script> location.replace('$hostname')</script>";
+		echo"<script>location.replace('$hostname');</script>";
+	}else{
+	echo"<script>location.replace('$hostname');</script>";}
 ?>
 </body>
 </html>

@@ -111,7 +111,7 @@ out();
    
    }
 	 if($check){
-	echo "<script>location.replace('./search_result.html.php');</script>";
+	echo "<script>location.replace('./make_room.html.php');</script>";
    exit;}
 	?>
 	

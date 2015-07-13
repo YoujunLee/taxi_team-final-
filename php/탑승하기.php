@@ -27,13 +27,25 @@ else
 {
 	$id=1;
 }
+
 $post_id = $_GET['post_id'];
 $stu_id= $_SESSION['user_id'];
 $name =  $_SESSION['name'] ;
 $cellphone	= $_SESSION['cellphone'];
 
+$db2->query = "SELECT start,arrive,date,time FROM room_user where post_id='".$post_id."'";
+$db2->DBQ();
+$num1 = $db2->result->num_rows;
+$data1 = $db2->result->fetch_row();
+$room_start = $data1[0];
+$room_arrive = $data1[1];
+$room_date = $data1[2];
+$room_time = $data1[3];
 
-$db2->query = "insert into room_user values('".$id."', '".$post_id ."','".$stu_id."','".$name."','".$cellphone."')";
+
+
+
+$db2->query = "insert into room_user values('".$id."', '".$post_id ."','".$stu_id."','".$name."','".$cellphone."','".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."')";
 
 
 $db2->DBQ();
