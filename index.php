@@ -3,14 +3,15 @@ session_start();
 if(isset($_SESSION['user_id']) && isset($_SESSION['user_pw']))
 echo "<script>location.replace('./조회창.html.php');</script>";
 ?>
+
 <!DOCTYPE html>
 <html>
 	<head>
 		 <meta charset="utf-8">
-		 
    		 <title>i-Taxi</title>
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-   		<link rel="stylesheet" type="text/css" href="../css/로그인.css">	
+   		 <link rel="stylesheet" type="text/css" href="../css/로그인.css">	
+   		 
 	</head>
 	<body>
   		<div class="div_root">
