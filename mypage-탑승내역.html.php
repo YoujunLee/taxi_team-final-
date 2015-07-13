@@ -8,15 +8,19 @@ out();
 <head>
 	<title>i-Taxi</title>
 	<meta charset="utf-8" >
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="./css/search.css">  
 </head>
 <body class = "center">
 </br>
+<div class=" col-xs-12  col-md-6 col-md-offset-3">
 	<div class="progress progress-striped active">
   <div class="progress-bar" style="width: 99%"></div>
 </div>
+</div>
 </br></br></br>
+<div class=" col-xs-12  col-md-6 col-md-offset-3">
 	<h1>탑승내역</h1>
 	</br>
 </br>
@@ -64,7 +68,9 @@ out();
     	  	</tbody>
   </table>
 </div>
+</div>
 
+<div class=" col-xs-12  col-md-6 col-md-offset-3">
 <ul class="pagination">
   <li class="disabled"><a href="#">«</a></li>
   <li class="active"><a href="#">1</a></li>
@@ -75,6 +81,7 @@ out();
   <li><a href="#">»</a></li>
 </ul>
 
+</div>
 
 </body>
 </html>

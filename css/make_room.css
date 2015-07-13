@@ -2,13 +2,13 @@
 {
    text-align: left;
    background-align: center;
-   margin:auto;
-   width: 40%;
+   /*margin:auto;
+   */
 }
 
  tr
 {
- margin: 100px;	
+ /*margin: 100px;*/
 }
 
 .margin_right{

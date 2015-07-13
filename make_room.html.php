@@ -11,18 +11,20 @@ out();
 <html>
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">  
 	<link rel="stylesheet" type="text/css" href="./css/make_room.css"> 
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
 	<title>i-Taxi</title>
 </head>
 
-<body>
-	<section class="container">
-		<div class="col-md-4">
-		</div>
+<body class = "col-xs-12  col-md-6 col-md-offset-3">
+
+	<!-- <section class="container"> -->
+		<!-- <div class="col-md-4">
+		</div> -->
 		
-		<div class="col-md-4">
+		<!-- <div class="col-md-4"> -->
 		<div class="form-group">
 		<table class="table">
 			<tbody>
@@ -97,11 +99,11 @@ out();
 	<input type="submit" value="방만들기" class=" margin_right btn-info">
 	<input type="button" value="취소" class="btn btn-danger">
 	</p>
-	</div>
+	<!-- </div> -->
 	</form>
-	<div class="col-md-4">
-	</div>
+	<!-- <div class="col-md-4">
+	</div> -->
 
-    </section>
+    <!-- </section> -->
 </body>
 </html>
