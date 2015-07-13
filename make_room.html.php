@@ -13,6 +13,7 @@ out();
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">  
 	<link rel="stylesheet" type="text/css" href="./css/make_room.css"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>i-Taxi</title>
 </head>
 
@@ -27,7 +28,6 @@ out();
 			<tbody>
 				<tr >
 				<form action="./php/post.php"  method="post">
-					<!-- <form action="./php/post.php" method="post"> -->
 					<label for="start">
 					<td class="col-md-3">출발지</td>
 					<td class="col-md-9">
@@ -98,7 +98,6 @@ out();
 	<input type="button" value="취소" class="btn btn-danger">
 	</p>
 	</div>
-	<!-- </form> -->
 	</form>
 	<div class="col-md-4">
 	</div>

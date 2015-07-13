@@ -9,10 +9,7 @@
 	
  
 }
-tr.tableheight
-{
-	max-height: 100%;
-}
+
 .image
 {
 	height:80px;
@@ -20,6 +17,13 @@ tr.tableheight
 	max-height: 100%
 	
 }
+
+tr
+tr.tableheight
+{
+	max-height: 100%;
+}
+
 tr.tr2
 {
 	height:70px;
@@ -28,6 +32,19 @@ tr.tr2
 tr.tr1
 {
 	height:70px;
+}
+
+.btn-center
+{
+	vertical-align : middle;
+}
+tr.trcenter
+{
+	text-align: middle;
+}
+.tablewidth
+{
+	height: 50px
 }
 
 .center
@@ -42,16 +59,4 @@ tr.tr1
 	text-align: center;
 	background-align: center;
 	margin:auto;
-}
-.btn-center
-{
-	vertical-align : middle;
-}
-tr.trcenter
-{
-	text-align: middle;
-}
-.tablewidth
-{
-	height: 50px
 }

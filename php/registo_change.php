@@ -31,7 +31,7 @@ if($pass1 == $pass2)
 } else
 {
 	
-	echo "<script>alert('비밀번호가 맞지 않습니다.');history.back();</script>";
+	echo "<script>alert('아놔~ 비밀번호가 맞지 않습니다.');history.back();</script>";
 	exit;
 }
 
@@ -47,20 +47,19 @@ if($pass==null||$pass=='')
 	exit;
 }
 
-$db->query = "update student_info set cellphone='".$cellphone."' where studentid= '".$stu_id."'" ;
-$db->query = "update student_info set pass='".$pass."' where studentid= '".$stu_id."'" ;
+$db->query = "update student_info set cellphone='".$cellPhone."', password='".$pass."' where studentid='".$stu_id."'" ;
 $db->DBQ();
 
 if(!$db->result)
 {
 	
-	echo "<script>alert('회원가입에 실패하였습니다.');history.back();</script>";
+	echo "<script>alert('앗! 아쉽게 회원가입에 실패하였습니다.');history.back();</script>";
 	$db->DBO();
 	exit;
 	
 } else
 {
-	echo "<script>alert('회원가입 되었습니다. 로그인 화면으로 이동합니다.');location.replace('../index.php');</script>";
+	echo "<script>alert('개인정보가 수정 되었습니다. 재빠르게 조회창으로 이동합니다.');location.replace('../index.php');</script>";
 	$db->DBO();
 	exit;
 }
