@@ -53,7 +53,7 @@
 <body class="center">
 <section >
 		
-	<div class="wrapper col-xs-12  col-md-6 col-md-offset-3">
+	<div class="wrapper col-xs-12 col-md-6 col-md-offset-3">
 	    <?php echo$date." ".$s_time."~".$e_time."<br>";?>
 	    <?php echo$start."->".$arrive;?>
    
@@ -62,7 +62,7 @@
 </section>
 
 <section >
-<div class=" col-xs-12  col-md-6 col-md-offset-3">
+<div class="col-xs-12 col-md-6 col-md-offset-3">
 <table class="table table-striped table-hover ">
   <thead>
     <tr class="row">
