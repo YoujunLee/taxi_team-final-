@@ -10,15 +10,11 @@ out();
 	<meta charset="utf-8" >
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="./css/search.css">  
+	
+	<link rel="stylesheet" type="text/css" href="./css/mypage_change.css">    
 </head>
 <body class = "center">
 </br>
-<div class=" col-xs-12  col-md-6 col-md-offset-3">
-	<div class="progress progress-striped active">
-  <div class="progress-bar" style="width: 99%"></div>
-</div>
-</div>
 </br></br></br>
 <div class=" col-xs-12  col-md-6 col-md-offset-3">
 	<h1>탑승내역</h1>
@@ -29,7 +25,7 @@ out();
   <div class="panel-heading"><h4>최근이용한 택시</h4></div>
 
   <!-- Table -->
-  <table class="table table-striped table-hover tableheight">
+  <table class="table  table-hover tableheight">
 	 <thead>
     	<tr>
     	 <td>방번호</td>
@@ -55,13 +51,15 @@ out();
   	while($data = $db->result->fetch_assoc())
 	{
 		?>
-    	<tr  style="cursor:hand;" onclick="location.href='./Room.html.php?<?php echo $data['post_id']?>'">
+		<div >
+    	<tr class="mypage_hover" style="cursor:hand;" onclick="location.href='./Room.html.php?<?php echo $data['post_id']?>'">
       	 <td><?php echo $data['post_id']?></td>
       	 <td><?php echo $data['date']?></td>
      	 <td><?php echo $data['time']?></td>
      	 <td><?php echo $data['start']?></td>
      	 <td><?php echo $data['arrive']?></td>
    		</tr>
+   		</div>
    		<?php
 	}
 	?>

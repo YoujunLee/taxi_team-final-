@@ -1,0 +1,66 @@
+/**{
+	border: 1px solid blue;
+}*/
+.myposition
+{
+	
+	bottom: 1px;
+	
+	
+ 
+}
+
+.image
+{
+	height:80px;
+	width:80px;
+	max-height: 100%
+	
+}
+
+tr
+tr.tableheight
+{
+	max-height: 100%;
+}
+
+tr.tr2
+{
+	height:70px;
+	background: #bebebe;
+}
+tr.tr1
+{
+	height:70px;
+}
+
+.btn-center
+{
+	vertical-align : middle;
+}
+tr.trcenter
+{
+	text-align: middle;
+}
+.tablewidth
+{
+	height: 50px
+}
+
+.center
+{
+	text-align: center;
+	background-align: center;
+	/*margin:auto;*/
+	/*width: 40%;*/
+}
+.center1
+{
+	text-align: center;
+	background-align: center;
+	margin:auto;
+}
+tr.mypage_hover
+{
+	background-color: transparent;
+}
