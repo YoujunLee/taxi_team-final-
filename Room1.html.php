@@ -14,7 +14,9 @@ out();
 </head>
 <body class="center">
 	<div class = "col-xs-12  col-md-6 col-md-offset-3 padding">
-<nav class="navbar navbar-inverse">
+<nav class="navbar navbar-inverse" style="
+    margin-bottom: 0px;
+">
 <a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
 <ul class="nav navbar-nav navbar-right right">
         <li><a href="./php/logout.php">LogOut</a></li>

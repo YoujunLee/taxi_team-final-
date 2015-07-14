@@ -5,9 +5,6 @@
 {
 	
 	bottom: 1px;
-	
-	
- 
 }
 
 .image
@@ -15,7 +12,6 @@
 	height:80px;
 	width:80px;
 	max-height: 100%
-	
 }
 
 tr
@@ -63,4 +59,14 @@ tr.trcenter
 tr.mypage_hover
 {
 	background-color: transparent;
+}
+.padding{
+	padding-right : 0px !important;
+	padding-left : 0px !important;
+	margin-bottom : 0px !important;
+}
+ul.right{
+	float : right;
+	padding-right : 3%;
+	
 }

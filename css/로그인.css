@@ -33,8 +33,6 @@
 	float:left;
 }
 
-#div_go{
-	width:20%;
-	float:right;
-	color: #34c6be !important;
+.main_color{
+	background-color: #34c6be; !important
 }
