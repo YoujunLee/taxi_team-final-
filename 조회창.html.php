@@ -8,11 +8,15 @@ out();
 	<title>i-Taxi</title>
 	<meta charset="utf-8" >
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">  
-	<link rel="stylesheet" type="text/css" href="./css/search.css">  
+	<link rel="stylesheet" type="text/css" href="./css/search.css">
+	<style>
+		
+	</style>  
 </head>
 <body class="center">
 	<div class = "col-xs-12  col-md-6 col-md-offset-3">
-		<nav class="navbar navbar-default">
+
+		<nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -21,14 +25,11 @@ out();
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">i-taxi</a>
+      <a class="navbar-brand" href="./index.php"><img src="./img/logo.png"></a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="./index.php">Home <span class="sr-only">(current)</span></a></li>
-        
-       </ul>
+      
       
       <ul class="nav navbar-nav navbar-right">
         <li><a href="./php/logout.php">LogOut</a></li>
@@ -76,10 +77,10 @@ out();
 
 	</table>
 	<!-- 택시번호 요금계산기 마이페이지  -->
-	
+	<br>
 	<table class="myposition" name="taxi">
 		<tr class="row">
-			<td class="col-xs-9 col-md-6"><img src="http://image.shutterstock.com/display_pic_with_logo/68929/102419020/stock-vector-vector-taxi-icon-isolated-102419020.jpg" class="image" >
+			<td class="col-xs-9 col-md-6"><img src="./img/taxi.png" class="image" >
 			 	</br>Taxi number
 			</td>
 			
@@ -92,5 +93,6 @@ out();
 		</tr>
 	</table>
 </div>
+
 </body>
 </html>
