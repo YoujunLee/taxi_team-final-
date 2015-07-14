@@ -13,17 +13,15 @@ out();
 <body class="center">
 	<div class = "col-xs-12  col-md-6 col-md-offset-3">
 		<ul class="nav nav-pills">
-  <li role="presentation" class="active"><a href="./index.php">Home</a></li>
-  <li role="presentation"><a href="./조회창.html.php">조회창</a></li>
-  <li role="presentation"><a href="./MyPage.html.php">Mypage</a></li>
-</ul>
-<form action='./php/logout.php'>
-<div class="div_go">
-                <input class="btn btn-lg btn-block" type="submit" value="LogOut">
-			</div>
-		
-			
-</form>	
+  			<li role="presentation" class="active"><a href="./index.php">Home</a></li>
+ 			 <li role="presentation"><a href="./조회창.html.php">조회창</a></li>
+ 			 <li role="presentation"><a href="./MyPage.html.php">Mypage</a></li>
+		</ul>
+	<form action='./php/logout.php'>
+	<div class="div_go">
+        <input class="btn btn-lg btn-block" type="submit" value="LogOut">
+	</div>
+	</form>	
 	<!-- 방만들기, 방조회  -->
 	<table >
 		<tr class="tr1 row">
@@ -92,7 +90,7 @@ out();
 				</br>요금계산기</a>
 			</td>
 			<td class="col-xs-6 col-md-4">
-				<a href="./MyPage.html.php" target="taxi">
+				<a href="./MyPage.html.php" target="_self">
 				<img src="http://pds18.egloos.com/pds/201005/06/59/d0005159_4be26bd1f0632.jpg" class="image" >
 			</br>My Page
 			</td>
