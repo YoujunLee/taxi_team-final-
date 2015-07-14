@@ -7,7 +7,7 @@
 }
 
 .wrapper2{
-  
+  height: 300px;
   position: relative;
    border: 1px solid black;
    margin-top: 0.5%;
@@ -19,18 +19,7 @@ overflow:scroll;
 	
 }
 .wrapper3{
-
   height: 6%;
-  position: relative;
-   
- 
-   
-     
-    
-}
-.wrapper4{
-
- margin-top: 0.5%;
   position: relative;
    
  
