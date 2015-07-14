@@ -17,7 +17,7 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 	<body>
 		<div style="top: 120px" class= "col-xs-12  col-md-4 col-md-offset-4">
 		
-		<div background-color="black" align="center">
+		<div align="center">
 			<img src="./img/logo_big.png">
 		</div>
 		<br><br><br>
@@ -42,12 +42,12 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 					<input type="password" class="form-control" placeholder="Password"  name="logpass" required>
 				</div>
 				<br><br><br>
-	                <input class="btn btn-lg btn-block" type="submit" value="GO">
+	                <input sytle="background-color=#34c6be" class="btn btn-lg btn-block" type="submit" value="GO">
 			</form>
 			<br>			
 		    <!-- 회원가입 버튼 -->
 		    <form action='./SignUp.html.php'>
-		     <input class="btn btn-lg btn-block" type="submit" value="회원가입">
+		     <input sytle="background-color=#34c6be"class="btn btn-lg btn-block" type="submit" value="회원가입">
 		    
 	       </form>
 		   </div>
