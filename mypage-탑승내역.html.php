@@ -28,7 +28,7 @@ out();
   <table class="table  table-hover tableheight">
 	 <thead>
     	<tr>
-    	 <td>방번호</td>
+    	 
      	 <td>날짜</td>
      	 <td>시간</td>
      	 <td>출발</td>
@@ -47,38 +47,69 @@ out();
 		
 		$db->query = "SELECT * FROM post WHERE stu_id='".$_SESSION['user_id']."' order by date desc";
 		$db->DBQ();
+		$num = $db->result->num_rows;
+		$page = 1; 
+		$count = 0;
+        if(isset($_GET["page"]))
+        $page = $_GET["page"];
+	    $page_number =  $page*10 -10;
 		
   	while($data = $db->result->fetch_assoc())
 	{
+		       if($page_number==$count)
+	 	    	if($page_number++<$page*10)
+	 		{
 		?>
 		<div >
     	<tr class="mypage_hover" style="cursor:hand;" onclick="location.href='./Room.html.php?<?php echo $data['post_id']?>'">
-      	 <td><?php echo $data['post_id']?></td>
+      	
       	 <td><?php echo $data['date']?></td>
-     	 <td><?php echo $data['time']?></td>
+     	 <td><?php echo substr($data['time'],0,5)?></td>
      	 <td><?php echo $data['start']?></td>
      	 <td><?php echo $data['arrive']?></td>
    		</tr>
    		</div>
    		<?php
+   		}
+  			else
+				break;
+			$count++;
 	}
+			
 	?>
     	  	</tbody>
   </table>
 </div>
 </div>
 
-<div class=" col-xs-12  col-md-6 col-md-offset-3">
-<ul class="pagination">
-  <li class="disabled"><a href="#">«</a></li>
-  <li class="active"><a href="#">1</a></li>
-  <li><a href="#">2</a></li>
-  <li><a href="#">3</a></li>
-  <li><a href="#">4</a></li>
-  <li><a href="#">5</a></li>
-  <li><a href="#">»</a></li>
-</ul>
+<div class="col-xs-12 col-md-6 col-md-offset-3">
+	<ul class="pagination pagination-lg">
+  		
+	<?php
+	$number;
+	if($page>1)
+	echo "<li><a href='./mypage-탑승내역.html.php'>«맨앞</a></li>";
 
+	if($page>1)
+  	echo "<li><a href='./mypage-탑승내역.html.php?page=".($page-1)."'><이전</a></li>";
+	
+	for($number=floor(($page/5))*5+1;$number<floor(($page/5))*5+6;$number++){
+		if($number<=floor((($num-1)/10))+1){
+	   		if($number!=$page)
+				echo"<li><a href='./mypage-탑승내역.html.php?page=".($number)."'>".$number."</a></li>";
+		else
+			echo"<li class='active'><a href='./mypage-탑승내역.html.php?page=".($number)."'>".$number."</a></li>";
+		}
+	}
+	
+	if($page<floor((($num-1)/10))+1)
+  	echo "<li><a href='./mypage-탑승내역.html.php?page=".($page+1)."'>앞으로></a></li>";
+	
+	if($page<floor((($num-1)/10)+1))
+  	echo "<li><a href='./mypage-탑승내역.html.php?page=".floor(((($num-1)/10)+1))."'>맨뒤»</a></li>";
+  	?>
+ 			
+	</ul>
 </div>
 
 </body>

@@ -34,7 +34,7 @@
     		
 	if($num<=0)
 	{
-		echo "<script>alert('조회가능한 방이 없습니다.');history.back();</script>";
+		echo "<script>alert('조회가능한 방이 없습니다.');location.replace('/search_room.html.php');</script>";
    		exit;
 	}
 
@@ -51,6 +51,14 @@
 </head>
 
 <body class="center">
+		<div class = "col-xs-12  col-md-6 col-md-offset-3 padding">
+<nav class="navbar navbar-inverse">
+<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
+<ul class="nav navbar-nav navbar-right right">
+        <li><a href="./php/logout.php">LogOut</a></li>
+      </ul>
+      </nav>
+</div>
 <section >
 	
 	<div class="wrapper col-xs-12  col-md-6 col-md-offset-3">
