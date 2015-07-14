@@ -51,13 +51,7 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 			<br>
 			<!-- remember id and pw -->
 	        <div align="center" class="checkbox">
-	        <label>
-		        <input type="checkbox" value="remember-me">
-		         로그인 상태 유지
-		    </label>
-		    <!-- 보기 좋게 띄우기 -->
-		    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-		    <!-- 회원가입 버튼 -->
+	         <!-- 회원가입 버튼 -->
 		    <a href="./SignUp.html.php"><button class="btn btn-primary">회원가입→</button></a>
 		    </div>
 		</div>
