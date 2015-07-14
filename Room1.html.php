@@ -13,10 +13,17 @@ out();
 	<link rel="stylesheet" type="text/css" href="../css/index2.css">
 </head>
 <body class="center">
-
-
+	<div class = "col-xs-12  col-md-6 col-md-offset-3 padding">
+<nav class="navbar navbar-inverse">
+<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
+<ul class="nav navbar-nav navbar-right right">
+        <li><a href="./php/logout.php">LogOut</a></li>
+      </ul>
+      </nav>
+</div>
 <section>
 	<div class="wrapper col-xs-12  col-md-6 col-md-offset-3">
+		
 	
 	<?php 
   	    $post_id=getenv("QUERY_STRING"); // Get값으로 넘어온 값들을 구합니다.
@@ -37,7 +44,7 @@ out();
 	</div>
   </section>
   <section>
-    <div class="wrapper2 col-xs-12  col-md-6 col-md-offset-3">
+    <div class="wrapper2 col-xs-12  col-md-6 col-md-offset-3 padding">
 
 	<?php
 		require_once './php/db.php';
@@ -79,7 +86,7 @@ out();
 	
 	</section>
 	<section>
-<div class="wrapper4 col-xs-12  col-md-6 col-md-offset-3">
+<div class="wrapper4 col-xs-12  col-md-6 col-md-offset-3 padding">
 <table class="table table-striped table-hover ">
   <thead class="co">
     <tr class="row">

@@ -14,36 +14,14 @@ out();
 	<title>i-Taxi</title>
 </head>
 
-<body class = "col-xs-12  col-md-6 col-md-offset-3">
+<body class = "col-xs-12  col-md-6 col-md-offset-3 padding">
 <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">i-taxi</a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="./index.php">Home <span class="sr-only">(current)</span></a></li>
-        
-       </ul>
-      
-      <ul class="nav navbar-nav navbar-right">
+<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
+<ul class="nav navbar-nav navbar-right right">
         <li><a href="./php/logout.php">LogOut</a></li>
       </ul>
-    </div>
-  </div>
-</nav>
-	<!-- <section class="container"> -->
-		<!-- <div class="col-md-4">
-		</div> -->
-		
-		<!-- <div class="col-md-4"> -->
+      </nav>
+	
 		<div class="form-group">
 		<table class="table">
 			<tbody>
