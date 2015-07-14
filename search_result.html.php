@@ -52,26 +52,27 @@
 
 <body class="center">
 <section >
-		
+	
 	<div class="wrapper col-xs-12  col-md-6 col-md-offset-3">
-	    <p><?php echo$date." ".$s_time."~".$e_time;?></p>
-	    <p><?php echo$start."->".$arrive;?></p>
+	    <?php echo$date." ".$s_time."~".$e_time."<br>";?>
+	    <?php echo$start."->".$arrive;?>
    
-		</div>
-		
+	</div>
+	
 </section>
 
 <section >
 <div class=" col-xs-12  col-md-6 col-md-offset-3">
+
 <table class="table table-striped table-hover ">
   <thead>
     <tr class="row">
-      <th class="col-xs-2 col-md-1">#</th>
-      <th class="col-xs-2 col-md-2">출발시간</th>
-      <th class="col-xs-2 col-md-3">출발장소</th>
-      <th class="col-xs-2 col-md-3">도착장소</th>
-      <th class="col-xs-2 col-md-2">탑승인원</th>
-      <th class="col-xs-2 col-md-1">State</th>
+      
+      
+      <th class="col-xs-3 col-md-3">출발시간</th>
+      <th class="col-xs-4 col-md-4">장소</th>
+      <th class="col-xs-3 col-md-3">탑승인원</th>
+      <th class="col-xs-2 col-md-2">State</th>
     </tr>
   </thead>
   <tbody>
@@ -103,20 +104,20 @@
 				}	
     	
     		echo "<tr class="."'row'".">";
-    		echo " <th class="."'col-xs-2 col-md-1'".">".($count+1)."</th>";
-    		echo " <th class="."'col-xs-2 col-md-2'".">".substr($data[3],0,2)." : ".substr($data[3],3,2)."</th>";
-    		echo " <th class="."'col-xs-2 col-md-3'".">".$data[0]."</th>";
-    		echo " <th class="."'col-xs-2 col-md-3'".">".$data[1]."</th>";
-    		echo " <th class="."'col-xs-2 col-md-2'".">".$num2." / ".$data[4]."</th>";
+    		
+    		echo " <th class="."'col-xs-3 col-md-3'".">".substr($data[3],0,2)." : ".substr($data[3],3,2)."</th>";
+    		echo " <th class="."'col-xs-4 col-md-4'".">".$data[0]."->"."<br>".$data[1]."</th>";
+    		
+    		echo " <th class="."'col-xs-3 col-md-3'".">".$num2." / ".$data[4]."</th>";
 		
-			if($current_time>$date)
-				echo " <<th class="."'col-xs-2 col-md-1'"."><a href='#' class='btn btn-success'>시간종료</a></th>";
-			else if($check)
-    			echo " <th class="."'col-xs-2 col-md-1'"."><a href='./Room.html.php?".$data[5]."' class='btn btn-warning'>탑승중</a></th>";
+			/*if($current_time>$date)
+				echo " <th class="."'col-xs-2 col-md-2'"."><a href='#' class='btn btn-success'>시간종료</a></th>";
+			*/if($check)
+    			echo " <th class="."'col-xs-2 col-md-2'"."><a href='./Room.html.php?".$data[5]."' class='btn btn-warning'>탑승중</a></th>";
 			else if($num2==$data[4])
-    			echo " <th class="."'col-xs-2 col-md-1'"."><a href='#' class='btn btn-danger'>FULL</a></th>";
+    			echo " <th class="."'col-xs-2 col-md-2'"."><a href='#' class='btn btn-danger'>FULL</a></th>";
 			else 
-    			echo " <th class="."'col-xs-2 col-md-1'"."><a href='./php/탑승하기.php?post_id=".$data[5]."' class='btn btn-info'>탑승하기</a></th>";
+    			echo " <th class="."'col-xs-2 col-md-2'"."><a href='./php/탑승하기.php?post_id=".$data[5]."' class='btn btn-info'>탑승하기</a></th>";
         	echo " </tr>";
   			}
   			else

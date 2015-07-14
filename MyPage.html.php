@@ -41,7 +41,7 @@ out();
 			 	  <a href="./mypage-탑승내역.html.php" class="btn btn-link">탑승내역 </a>
 			  </li>
 			  <li class="list-group-item">
-			 	  <a href="./mypage-탑승내역.html.php" class="btn btn-link">공지사항</a>
+			 	  <a href="./공지사항.html.php" class="btn btn-link">공지사항</a>
 			  </li>
 			</ul>
 			<br><br><br><br>

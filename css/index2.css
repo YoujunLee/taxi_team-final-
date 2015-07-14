@@ -1,41 +1,37 @@
 
 .center{
-  text-align: center;
-   background-align: center;
-   margin:auto;
-  
+	text-align: center;
+  	background-align: center;
+  	margin:auto;
 }
 
 .wrapper2{
-  height: 300px;
-  position: relative;
-   border: 1px solid black;
-   margin-top: 0.5%;
-   margin-bottom: 0.5%;
-     text-align: left;
-     padding-left: 1%;
-font-size: 18px;
-overflow:scroll;
-	
-}
-.wrapper3{
-  height: 6%;
-  position: relative;
-   
- 
-   
-     
-    
+  	height: 300px;
+  	position: relative;
+	border: 1px solid black;
+  	margin-top: 0.5%;
+  	margin-bottom: 0.5%;
+  	text-align: left;
+	padding-left: 1%;
+  	font-size: 16px;
+  	overflow:scroll;	
 }
 
-.wrapper {
+.wrapper4{
+ 	margin-top: 0.5%;   
+}
 
+p{
+	text-align: right;
+	font-size: 13px;
+}
+
+.wrapper{
   height: 10%;
   position: static;
-background-color: grey;
-
+  background-color: grey;
   text-align: center;
-font-size: 18px;
+  font-size: 18px;
 }
 
 thead.co{
