@@ -14,12 +14,36 @@ out();
 	<title>i-Taxi</title>
 </head>
 
-<body>
-	<section class="container">
-		<div class="col-md-4">
-		</div>
+<body class = "col-xs-12  col-md-6 col-md-offset-3">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">i-taxi</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="./index.php">Home <span class="sr-only">(current)</span></a></li>
+        
+       </ul>
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="./php/logout.php">LogOut</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+	<!-- <section class="container"> -->
+		<!-- <div class="col-md-4">
+		</div> -->
 		
-		<div class="col-md-4">
+		<!-- <div class="col-md-4"> -->
 		<div class="form-group">
 		<table class="table">
 			<tbody>
@@ -75,7 +99,7 @@ out();
 
 				<tr>
 					<label>
-					<td class="col-md-3"></td>
+					<td class="col-md-3">도착 시간</td>
 					<td><input type="time" id="end_time1" name="end_time" class="form-control" value="20:00"></td>
 				    </label>
 				</tr>
@@ -89,10 +113,10 @@ out();
 	</p>
 	
 	</form>
-	</div>
+	<!-- </div> -->
 
-	<div class="col-md-4">
-	</div>
+	<!-- <div class="col-md-4">
+	</div> -->
     </section>
 </body>
 </html>

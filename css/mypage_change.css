@@ -60,11 +60,7 @@ tr.trcenter
 	background-align: center;
 	margin:auto;
 }
-tr.change_color
+tr.mypage_hover
 {
-	hover : 
-}
-.rr
-{
-	text-align: right; !important
+	background-color: transparent;
 }
