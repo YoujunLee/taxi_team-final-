@@ -85,7 +85,7 @@ out();
 			</td>
 			
 			<td class="col-xs-6 col-md-4" >
-				<a href="./계산기.html.php" target="taxi">
+				<a href="./계산기.html.php" target="_self">
 				<img src="http://365psd.com/images/premium/thumbs/193/vector-calculator-icon-861700.jpg" class="image " >
 				</br>요금계산기</a>
 			</td>
