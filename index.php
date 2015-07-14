@@ -12,7 +12,7 @@ echo "<script>location.replace('./조회창.html.php');</script>";
    		 <title>i-Taxi</title>
    		<!-- // <meta name="viewport" content="width=device-width, initial-scale=1"> -->
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-   		 <link rel="stylesheet" type="text/css" href="../css/로그인.css">	
+   		 <link rel="stylesheet" type="text/css" href="../css/로그인.css">
 	</head>
 	<body>
 		<div style="top: 120px" class= "col-xs-12  col-md-4 col-md-offset-4">
@@ -42,13 +42,12 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 					<input type="password" class="form-control" placeholder="Password"  name="logpass" required>
 				</div>
 				<br><br><br>
-	                <input sytle="background-color=#34c6be" class="btn btn-lg btn-block" type="submit" value="GO">
+	                <input class="btn btn-lg btn-block" type="submit" value="GO">
 			</form>
 			<br>			
 		    <!-- 회원가입 버튼 -->
 		    <form action='./SignUp.html.php'>
-		     <input sytle="background-color=#34c6be"class="btn btn-lg btn-block" type="submit" value="회원가입">
-		    
+		     <input class="btn btn-lg btn-block" type="submit" value="회원가입">
 	       </form>
 		   </div>
 	</body>
