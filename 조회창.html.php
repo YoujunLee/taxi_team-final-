@@ -92,7 +92,7 @@ out();
 			<td class="col-xs-6 col-md-4">
 				<a href="./MyPage.html.php" target="_self">
 				<img src="http://pds18.egloos.com/pds/201005/06/59/d0005159_4be26bd1f0632.jpg" class="image" >
-			</br>My Page
+			</br>My Page</a>
 			</td>
 		</tr>
 	</table>
