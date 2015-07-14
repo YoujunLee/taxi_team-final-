@@ -38,22 +38,10 @@ out();
 			<br>
 			<ul class="list-group">
 			  <li class="list-group-item">
-			 	   탑승내역
-			    <div class="modify2">
-			    <a href="./mypage-탑승내역.html.php" class="btn btn-link">></a>
-			    </div>
+			 	  <a href="./mypage-탑승내역.html.php" class="btn btn-link">탑승내역 </a>
 			  </li>
 			  <li class="list-group-item">
-			    공지사항
-			    <div class="modify2">
-			    <a href="./공지사항.html.php" class="btn btn-link">></a>
-			    </div>
-			  </li>
-			  <li class="list-group-item">
-			    설정
-			    <div class="modify2">
-			    <a href="#" class="btn btn-link">></a>
-			    </div>
+			 	  <a href="./mypage-탑승내역.html.php" class="btn btn-link">공지사항</a>
 			  </li>
 			</ul>
 			<br><br><br><br>
