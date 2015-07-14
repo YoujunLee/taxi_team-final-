@@ -32,3 +32,19 @@
   border: 1px solid transparent;
   border-radius: 4px;
 }
+ul.right
+{
+	float : right !important; 
+	padding-right: 3%;
+}
+
+img.imgpa
+{
+	margin : -5%;
+}
+
+body.padding
+{
+	padding-right : 0px !important;
+	padding-left : 0px !important;
+}
