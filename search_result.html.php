@@ -52,13 +52,13 @@
 
 <body class="center">
 <section >
-		
+	<!--	
 	<div class="wrapper col-xs-12  col-md-6 col-md-offset-3">
 	    <p><?php echo$date." ".$s_time."~".$e_time;?></p>
 	    <p><?php echo$start."->".$arrive;?></p>
    
-		</div>
-		
+	</div>
+		-->
 </section>
 
 <section >
