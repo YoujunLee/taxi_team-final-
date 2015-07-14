@@ -57,7 +57,11 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 				    <!-- 보기 좋게 띄우기 -->
 		    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
 		    <!-- 회원가입 버튼 -->
+<<<<<<< HEAD
 		    <a href="./SignUp.html.php"><button class="btn btn-lg btn-block" class="main_color">회원가입</button></a>
+=======
+		    <a href="./SignUp.html.php"><button class="btn btn-lg btn-block">회원가입→</button></a>
+>>>>>>> adac102461331c8db1d4417b84d00f8fa39b15f9
 		    </div>
 		</div>
 		<!-- </div> -->
