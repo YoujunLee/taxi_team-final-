@@ -15,12 +15,9 @@ echo "<script>location.replace('./조회창.html.php');</script>";
    		 
 	</head>
 	<body class="background_color">
-		<ul class="nav nav-pills">
-  <li role="presentation" class="active"><a href="./index.php">Home</a></li>
-  <li role="presentation"><a href="./index.php">조회창</a></li>
-  <li role="presentation"><a href="./index.php">Mypage</a></li>
-</ul>
-  		<div class="div_root">
+		<div class = "col-xs-12  col-md-6 col-md-offset-3">
+		
+  		<!-- <div class="div_root"> -->
 		<br><br><br><br>
 		<div align="center">
 			<h2>로그인</h2>
@@ -29,14 +26,17 @@ echo "<script>location.replace('./조회창.html.php');</script>";
   			<!-- Id 입력창 -->
   			<form action='./php/login.php'  method='post'>
 	  		<div class="input-group input-group-lg" class="div_login">
+	  		
 			  <span class="input-group-addon" id="sizing-addon1">
 			  	<img src="../img/login.png">
 			  </span>
 			  <input type="text" class="form-control" placeholder="Student ID" aria-describedby="sizing-addon1" name="logid" required>
+		
 			</div>
 			<br>
 			<!-- Pw 입력창 -->
 			<div class="input-group input-group-lg" class="div_login">
+				
 				<span class="input-group-addon" id="sizing-addon1">
 					<img id="profile-photo" src="../img/pwd.png">
 				</span>
@@ -47,19 +47,15 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 			<div class="div_go">
                 <input class="btn btn-lg btn-block" type="submit" value="GO!">
 			</div>
+			
 		</form>
 			<br>
-			<!-- remember id and pw -->
-	        <div align="center" class="checkbox">
-	        <label>
-		        <input type="checkbox" value="remember-me">
-		         로그인 상태 유지
-		    </label>
-		    <!-- 보기 좋게 띄우기 -->
+				    <!-- 보기 좋게 띄우기 -->
 		    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
 		    <!-- 회원가입 버튼 -->
-		    <a href="./SignUp.html.php"><button class="btn btn-primary">회원가입→</button></a>
+		    <a href="./SignUp.html.php"><button class="btn btn-lg btn-block">회원가입→</button></a>
 		    </div>
 		</div>
+		<!-- </div> -->
 	</body>
 </html>
