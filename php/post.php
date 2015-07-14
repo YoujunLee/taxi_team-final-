@@ -51,7 +51,7 @@ $cellphone	= $_SESSION['cellphone'];
 
 $db3 = new DBC; //db object생성
 $db3->DBI();//db 들어가기
-$db3->query = "SELECT post_id FROM post WHERE stu_id='".$stu_id."' AND date='".$room_date."' AND time='".$room_time."'";
+$db3->query = "SELECT post_id FROM room_user WHERE stu_id='".$stu_id."' AND date='".$room_date."' AND time='".$room_time."'";
 $db3->DBQ();
 $count_room = $db3->result->num_rows;
 
@@ -62,7 +62,7 @@ if($room_date==null||$room_date=='')
 }
 else if($count_room>0)
 {
-	echo "<script>alert('동일 시간대에 이미 방을 생성하셨습니다.'); history.back();</script>";
+	echo "<script>alert('동일 시간대에 참여하신 방이 이미 있습니다.'); history.back();</script>";
 	$db3->DBO();
 	exit;
 }

@@ -42,13 +42,15 @@ $room_arrive = $data1[1];
 $room_date = $data1[2];
 $room_time = $data1[3];
 
-$db3->query = "SELECT id FROM room_user where time='".$room_time."'";
+$db3 = new DBC; //db object생성
+$db3->DBI();//db 들어가기
+$db3->query = "SELECT post_id FROM room_user WHERE stu_id='".$stu_id."' AND time='".$room_time."' AND date='".$room_date."'";
 $db3->DBQ();
 $count_me = $db3->result->num_rows;
 
-if($count_me >0)
+if($count_me>0)
 {
-	echo "<script>alert('동일 시간대에 이미 방을 생성하셨습니다.'); history.back();</script>";
+	echo "<script>alert('동일 시간대에 이미 방을 참여하였습니다.'); history.back();</script>";
 	$db3->DBO();
 	exit;
 }

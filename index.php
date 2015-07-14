@@ -15,43 +15,41 @@ echo "<script>location.replace('./조회창.html.php');</script>";
    		 <link rel="stylesheet" type="text/css" href="../css/로그인.css">	
 	</head>
 	<body>
-		<div class = "col-xs-12  col-md-4 col-md-offset-4">
+		<div style="top: 120px" class= "col-xs-12  col-md-4 col-md-offset-4">
 		
-  		<!-- <div class="div_root"> -->
-		<br><br><br><br>
 		<div align="center">
-			<img width="80%" src="./img/logo_big.png">
+			<img src="./img/logo_big.png">
 		</div>
 		<br><br><br>
+  			
   			<!-- Id 입력창 -->
-  			<form action='./php/login.php'  method='post'>
-	  		<div class="input-group input-group-lg" class="div_login">
-	  		
-			  <span class="input-group-addon" id="sizing-addon1">
-			  	<img src="../img/login.png">
-			  </span>
-			  <input type="text" class="form-control" placeholder="Student ID" aria-describedby="sizing-addon1" name="logid" required>
-		
-			</div>
-			<br>
-			<!-- Pw 입력창 -->
-			<div class="input-group input-group-lg" class="div_login">
-				
-				<span class="input-group-addon" id="sizing-addon1">
-					<img id="profile-photo" src="../img/pwd.png">
-				</span>
-				<input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1"  name="logpass" required>
-			</div>
-			<br><br><br><br>
-			<div class="div_go" class="main_color">
-                <input class="btn btn-lg btn-block" type="submit" value="GO">
-			</div>
+	  		<form action='./php/login.php'  method='post'>
+		  		<div class="input-group input-group-lg" class="div_login">
+		  		
+				  <span class="input-group-addon" id="sizing-addon1">
+				  	<img src="../img/login.png">
+				  </span>
+				  <input type="text" class="form-control" placeholder="Student ID" name="logid" required>
 			
-		</form>
-
+				</div>
+				<br>
+				<!-- Pw 입력창 -->
+				<div class="input-group input-group-lg" class="div_login">
+					
+					<span class="input-group-addon" id="sizing-addon1">
+						<img id="profile-photo" src="../img/pwd.png">
+					</span>
+					<input type="password" class="form-control" placeholder="Password"  name="logpass" required>
+				</div>
+				<br><br><br>
+	                <input sytle="background-color=#34c6be" class="btn btn-lg btn-block" type="submit" value="GO">
+			</form>
 			<br>			
 		    <!-- 회원가입 버튼 -->
-		    <a href="./SignUp.html.php"><button class="btn btn-lg btn-block" class="main_color">회원가입</button></a>
+		    <form action='./SignUp.html.php'>
+		     <input sytle="background-color=#34c6be"class="btn btn-lg btn-block" type="submit" value="회원가입">
+		    
+	       </form>
 		   </div>
 	</body>
 </html>
