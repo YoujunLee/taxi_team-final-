@@ -18,31 +18,27 @@ out();
 	<title>i-Taxi</title>
 </head>
 
-<body class = "col-xs-12  col-md-6 col-md-offset-3">
+<body class = "col-xs-12  col-md-6 col-md-offset-3 padding">
 	
 		<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+  <!-- <div class="container-fluid"> -->
+    <!-- <div class="navbar-header"> -->
+      <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#">i-taxi</a>
-    </div>
-
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="./index.php">Home <span class="sr-only">(current)</span></a></li>
-        
-       </ul>
+      </button> -->
       
-      <ul class="nav navbar-nav navbar-right">
+    <!-- </div> -->
+<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
+    <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
+      
+      <ul class="nav navbar-nav navbar-right right">
         <li><a href="./php/logout.php">LogOut</a></li>
       </ul>
-    </div>
-  </div>
+    <!-- </div> -->
+  <!-- </div> -->
 </nav>
 
 	<!-- <section class="container"> -->
@@ -104,7 +100,7 @@ out();
 				<tr>
 					<label for="make_population">
 					<td class="col-md-5">최대탑승인원</td>
-					<td class="col-md-7"><input type="number" id="make_populaion" name="room_population" class="form-control" min="1" max="4" value="1" ><div class="input-group-addon">최대 탑승 인원 4명</div></td>
+					<td class="col-md-7"><input type="number" id="make_populaion" name="room_population" class="form-control" min="2" max="4" value="4" ><div class="input-group-addon">최대 탑승 인원 4명</div></td>
 					</label>
 				</tr>
 

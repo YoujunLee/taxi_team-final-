@@ -12,7 +12,8 @@ out();
    		 <link rel="stylesheet" type="text/css" href="../css/box.css">
 	</head>
 	<body>
-		<div class="div_root">
+		<div class = "col-xs-12  col-md-4 col-md-offset-4">
+		
 		<br><br><br><br>
 		<div align="center">
 				<h2>개인정보 수정</h2>
