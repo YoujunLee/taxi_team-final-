@@ -14,12 +14,13 @@ out();
 	<title>i-Taxi</title>
 </head>
 
-<body>
-	<section class="container">
-		<div class="col-md-4">
-		</div>
+<body class = "col-xs-12  col-md-6 col-md-offset-3">
+
+	<!-- <section class="container"> -->
+		<!-- <div class="col-md-4">
+		</div> -->
 		
-		<div class="col-md-4">
+		<!-- <div class="col-md-4"> -->
 		<div class="form-group">
 		<table class="table">
 			<tbody>
@@ -75,7 +76,7 @@ out();
 
 				<tr>
 					<label>
-					<td class="col-md-3"></td>
+					<td class="col-md-3">도착 시간</td>
 					<td><input type="time" id="end_time1" name="end_time" class="form-control" value="20:00"></td>
 				    </label>
 				</tr>
@@ -89,10 +90,10 @@ out();
 	</p>
 	
 	</form>
-	</div>
+	<!-- </div> -->
 
-	<div class="col-md-4">
-	</div>
+	<!-- <div class="col-md-4">
+	</div> -->
     </section>
 </body>
 </html>
