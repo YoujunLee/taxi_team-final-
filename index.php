@@ -49,7 +49,7 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 			<br><br>
 			<br><br><br>
 			<div class="div_go" class="main_color">
-                <input class="btn btn-lg btn-block" type="submit" value="GO!">
+                <input class="btn btn-lg btn-block" type="submit" value="GO">
 			</div>
 			
 		</form>
@@ -58,7 +58,6 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 		    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
 		    <!-- 회원가입 버튼 -->
 		    <a href="./SignUp.html.php"><button class="btn btn-lg btn-block" class="main_color">회원가입</button></a>
-		    <a href="./SignUp.html.php"><button class="btn btn-lg btn-block">회원가입→</button></a>
 		    </div>
 		</div>
 		<!-- </div> -->
