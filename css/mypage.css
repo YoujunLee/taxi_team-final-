@@ -19,3 +19,14 @@
 	width:20%;
 	float:right;
 }
+body.padding{
+	padding-right : 0px !important;
+	padding-left : 0px !important ;
+	margin-right: 0px !important;
+	padding-bottom : 0px ;
+	border-bottom : 0px ;
+}
+ul.right{
+	float : right ;
+	margin-right : 0px !important ;
+}

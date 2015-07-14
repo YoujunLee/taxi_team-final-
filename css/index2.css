@@ -29,11 +29,25 @@ p{
 .wrapper{
   height: 10%;
   position: static;
-  background-color: grey;
+  background-color: #34c6be;
   text-align: center;
   font-size: 18px;
 }
 
 thead.co{
   background-color: grey;
+}
+
+.padding{
+	padding-right : 0px !important;
+	padding-left : 0px !important;
+	margin-bottom : 0px !important;
+}
+ul.right{
+	float : right;
+	padding-right : 3%;
+	
+}
+nav.margin{
+	margin-bottom : 0px !important;
 }

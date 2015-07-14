@@ -6,14 +6,24 @@ out();
 <html>
 	<head>
 		 <meta charset="utf-8">
+		 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 		 <title>i-Taxi</title>
    		 <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="./css/mypage.css">
 	</head>
-	<body >
-		<div class=" col-xs-12  col-md-6 col-md-offset-3">
-		<div class="div_root">
-			<br><br><br>
+	<body class="padding">
+		<div class="col-xs-12  col-md-6 col-md-offset-3" style="
+ 		   padding-right: 0px; padding-left: 0px;">
+			
+			<nav class="navbar navbar-inverse">
+			<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
+			<ul class="nav navbar-nav navbar-right right" style=" margin-right: 0px;">
+        <li ><a href="./php/logout.php">LogOut</a></li>
+      </ul>
+      </nav>
+
+		
+			<br>
 			<div align="center">
 				<h2>마이페이지</h2>
 			</div>
@@ -43,12 +53,7 @@ out();
 			  <li class="list-group-item">
 			 	  <a href="./공지사항.html.php" class="btn btn-link">공지사항</a>
 			  </li>
-			</ul>
-			<br><br><br><br>
-			<div class="div_go">
-                <input class="btn btn-lg btn-block" type="submit" value="로그아웃">
-			</div>
-		</div>
+			</ul>		
 		</div>
 	</body>
 </html>

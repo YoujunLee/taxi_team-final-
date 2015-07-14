@@ -33,8 +33,8 @@
 			}
 		</style>
 	</head>
-	<body class = "col-xs-12  col-md-4 col-md-offset-4">
-		
+	<body>
+		<div class = "col-xs-12  col-md-4 col-md-offset-4">
 		<br><br><br>
 		<div align="center">
 				<h2>공지사항</h2>
@@ -72,6 +72,6 @@
 			}
 		?>
 				<hr/>	
-		
+		</div>
 	</body>
 </html>
