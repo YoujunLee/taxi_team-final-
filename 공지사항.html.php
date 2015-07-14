@@ -31,15 +31,33 @@
 			    padding: 12px;
 			    display: none;
 			}
+			body.padding{
+				padding-right : 0px !important;
+				padding-left : 0px !important ;
+				margin-right: 0px !important;
+				padding-bottom : 0px ;
+				border-bottom : 0px ;
+			}
+			ul.right{
+				float : right ;
+				margin-right : 0px !important ;
+			}
+
 		</style>
 	</head>
-	<body>
-		<div class = "col-xs-12  col-md-4 col-md-offset-4">
-		<br><br><br>
+	<body class = "col-xs-12  col-md-4 col-md-offset-4 padding">
+		
+			<nav class="navbar navbar-inverse">
+<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
+<ul class="nav navbar-nav navbar-right right">
+        <li><a href="./php/logout.php">LogOut</a></li>
+      </ul>
+      </nav>
+		<br><br>
 		<div align="center">
 				<h2>공지사항</h2>
 		</div>
-		<br><br><br>
+		<br>
 		<hr/>
 		
 		
