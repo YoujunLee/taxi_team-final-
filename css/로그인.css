@@ -37,6 +37,7 @@
 	width:20%;
 	float:right;
 }
-.background_color{
-	background-image: url("../img/login_bg.jpg");
+
+.main_color{
+	color: #34c6be !important;
 }

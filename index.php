@@ -12,15 +12,19 @@ echo "<script>location.replace('./조회창.html.php');</script>";
    		<!-- // <meta name="viewport" content="width=device-width, initial-scale=1"> -->
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="../css/로그인.css">	
-   		 
+   		 <style>
+   		 	body{
+   		 		background-color: black;
+   		 	}
+   		 </style>
 	</head>
-	<body class="background_color">
+	<body>
 		<div class = "col-xs-12  col-md-6 col-md-offset-3">
 		
   		<!-- <div class="div_root"> -->
 		<br><br><br><br>
 		<div align="center">
-			<h2>로그인</h2>
+			<img src="./img/logo_big.png">
 		</div>
 		<br><br><br>
   			<!-- Id 입력창 -->
@@ -44,23 +48,16 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 			</div>
 			<br><br>
 			<br><br><br>
-			<div class="div_go">
+			<div class="div_go" class="main_color">
                 <input class="btn btn-lg btn-block" type="submit" value="GO!">
 			</div>
 			
 		</form>
 			<br>
-<<<<<<< HEAD
-			<!-- remember id and pw -->
-	        <div align="center" class="checkbox">
-	         <!-- 회원가입 버튼 -->
-		    <a href="./SignUp.html.php"><button class="btn btn-primary">회원가입→</button></a>
-=======
 				    <!-- 보기 좋게 띄우기 -->
 		    <label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
 		    <!-- 회원가입 버튼 -->
-		    <a href="./SignUp.html.php"><button class="btn btn-lg btn-block">회원가입→</button></a>
->>>>>>> aaceb90e1f5e3fd85495542aa6ac898429bbf025
+		    <a href="./SignUp.html.php"><button class="btn btn-lg btn-block" class="main_color">회원가입</button></a>
 		    </div>
 		</div>
 		<!-- </div> -->
