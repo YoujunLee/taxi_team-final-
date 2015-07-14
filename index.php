@@ -20,7 +20,7 @@ echo "<script>location.replace('./조회창.html.php');</script>";
   		<!-- <div class="div_root"> -->
 		<br><br><br><br>
 		<div align="center">
-			<img width="80%" src="./img/logo_big.png">
+			<img  src="./img/logo_big.png">
 		</div>
 		<br><br><br>
   			<!-- Id 입력창 -->
