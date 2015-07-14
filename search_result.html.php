@@ -52,17 +52,18 @@
 
 <body class="center">
 <section >
-	<!--	
+	
 	<div class="wrapper col-xs-12  col-md-6 col-md-offset-3">
 	    <?php echo$date." ".$s_time."~".$e_time."<br>";?>
 	    <?php echo$start."->".$arrive;?>
    
 	</div>
-		-->
+	
 </section>
 
 <section >
 <div class=" col-xs-12  col-md-6 col-md-offset-3">
+
 <table class="table table-striped table-hover ">
   <thead>
     <tr class="row">
@@ -110,7 +111,7 @@
     		echo " <th class="."'col-xs-2 col-md-2'".">".$num2." / ".$data[4]."</th>";
 		
 			if($current_time>$date)
-				echo " <<th class="."'col-xs-2 col-md-1'"."><a href='#' class='btn btn-success'>시간종료</a></th>";
+				echo " <th class="."'col-xs-2 col-md-1'"."><a href='#' class='btn btn-success'>시간종료</a></th>";
 			else if($check)
     			echo " <th class="."'col-xs-2 col-md-1'"."><a href='./Room.html.php?".$data[5]."' class='btn btn-warning'>탑승중</a></th>";
 			else if($num2==$data[4])
