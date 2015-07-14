@@ -49,9 +49,21 @@ $stu_id= $_SESSION['user_id'];
 $name =  $_SESSION['name'] ;
 $cellphone	= $_SESSION['cellphone'];
 
+$db3 = new DBC; //db object생성
+$db3->DBI();//db 들어가기
+$db3->query = "SELECT post_id FROM post WHERE stu_id='".$stu_id."' AND date='".$room_date."' AND time='".$room_time."'";
+$db3->DBQ();
+$count_room = $db3->result->num_rows;
+
 if($room_date==null||$room_date=='')
 {
 	echo "<script>alert('날짜를 입력해 주세요.');history.back();</script>";
+	exit;
+}
+else if($count_room>0)
+{
+	echo "<script>alert('동일 시간대에 이미 방을 생성하셨습니다.'); history.back();</script>";
+	$db3->DBO();
 	exit;
 }
 else if($room_population>4||$room_population<1)
