@@ -12,6 +12,7 @@ out();
 	<link rel="stylesheet" type="text/css" href="../css/index2.css">
 </head>
 <body class="center">
+<div class = "col-xs-12  col-md-6 col-md-offset-3">
 
 
 
@@ -129,6 +130,7 @@ out();
 
 <div class="col-xs-6 col-md-4"></div>
 
+</div>
 </div>
 
 
