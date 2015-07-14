@@ -20,7 +20,7 @@ echo "<script>location.replace('./조회창.html.php');</script>";
   		<!-- <div class="div_root"> -->
 		<br><br><br><br>
 		<div align="center">
-			<img  src="./img/logo_big.png">
+			<img src="./img/logo_big.png">
 		</div>
 		<br><br><br>
   			<!-- Id 입력창 -->
@@ -43,7 +43,7 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 				<input type="password" class="form-control" placeholder="Password" aria-describedby="sizing-addon1"  name="logpass" required>
 			</div>
 			<br><br><br><br>
-			<div class="div_go" class="main_color">
+			<div class="div_go">
                 <input class="btn btn-lg btn-block" type="submit" value="GO">
 			</div>
 			
@@ -51,7 +51,7 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 
 			<br>			
 		    <!-- 회원가입 버튼 -->
-		    <a href="./SignUp.html.php"><button class="btn btn-lg btn-block" class="main_color">회원가입</button></a>
+		    <a href="./SignUp.html.php"><button class="btn btn-lg btn-block">회원가입</button></a>
 		   </div>
 	</body>
 </html>
