@@ -8,11 +8,9 @@ out();
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<title>i-Taxi</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../css/index2.css">
-	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 <body class="center">
 	<div class = "col-xs-12  col-md-6 col-md-offset-3 padding">
@@ -146,10 +144,6 @@ out();
  <a href="./php/delete.php?<?php echo $post_id2; ?>" class="btn btn-danger" >
  
  탑승취소</a>
- <br>
-  <a id="kakao-link-btn" href="javascript:;">
-      <img src="http://dn.api1.kage.kakao.co.kr/14/dn/btqa9B90G1b/GESkkYjKCwJdYOkLvIBKZ0/o.jpg" width="50" height="50">
-   </a>
 </div>
 
 <div class="col-xs-4 col-md-4"></div>
@@ -158,26 +152,5 @@ out();
 
 </section>
 
-
-
-    <script>
-    // 사용할 앱의 JavaScript 키를 설정해 주세요.
-    Kakao.init('99930094479238c325ba429e2ace07a2');
-
-    // 카카오톡 링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
-    Kakao.Link.createTalkLinkButton({
-      container: '#kakao-link-btn',
-      label: '한동대학교 택시 카풀 서비스입니다.',
-      image: {
-        src: 'http://52.27.102.99/img/logo_big.png',
-        width: '300',
-        height: '200'
-      },
-      webButton: {
-        text: 'itaxi',
-        url: 'http://52.27.102.99/' // 앱 설정의 웹 플랫폼에 등록한 도메인의 URL이어야 합니다.
-      }
-    });
-    </script>
 </body>
 </html>
