@@ -1,0 +1,19 @@
+
+.center{
+	text-align: center;
+  	background-align: center;
+  	margin:auto;
+}
+
+
+.padding{
+	padding-right : 0px !important;
+	padding-left : 0px !important;
+	margin-bottom : 0px !important;
+}
+ul.right{
+	float : right;
+	padding-right : 3%;
+	
+}
+

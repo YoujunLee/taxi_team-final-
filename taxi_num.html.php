@@ -17,13 +17,16 @@
       		</ul>
       	</nav>
       	<h1> 포항 콜택시 번호</h1>
+      	<br>
+      	<br>
+      
       	<div class="btn-group-vertical">
-  		  <a href="tel:054-252-1111" class="btn btn-default">포스콜☎</a>
-   		  <a href="#" class="btn btn-default">해맞이콜☎</a>
- 		  <a href="#" class="btn btn-default">육일콜택시☎</a>
-    	  <a href="#" class="btn btn-default">영광콜택시☎</a>
-    	  <a href="#" class="btn btn-default">포항연합콜택시☎</a>
-    	  <a href="#" class="btn btn-default">포항콜택시☎</a>
+  		  <a href="tel:054-252-1111" class="btn btn-default btn-lg btn-block">포스콜☎</a>
+   		  <a href="tel:054-283-8282" class="btn btn-default btn-lg btn-block">해맞이콜☎</a>
+ 		  <a href="tel:054-282-6161" class="btn btn-default btn-lg btn-block">육일콜택시☎</a>
+    	  <a href="tel:054-231-2330" class="btn btn-default btn-lg btn-block">영광콜택시☎</a>
+    	  <a href="tel:054-232-8585" class="btn btn-default btn-lg btn-block">포항연합콜택시☎</a>
+    	  <a href="tel:054-252-8585" class="btn btn-default btn-lg btn-block">포항콜택시☎</a>
 		</div>
 	</div>
 </body>

@@ -71,12 +71,12 @@ out();
 	
 	<!-- 택시번호 요금계산기 마이페이지  -->
 	<br><br><br>
-	<table class = "col-xs-12  col-md-6 col-md-offset-3" >
+<table class="col-xs-12  col-md-6 col-md-offset-3" style="top: 15px;">	
 		<br><br><br>
 		<tr class="row">
-			
-			<a href="./taxi.num.html.php" target="taxi">
-			<td ><img src="./img/taxi.png" class="image" >
+			<td >
+			<a href="./taxi_num.html.php">
+			<img src="./img/taxi.png" class="image" >
 			 	</br>Taxi number</a>
 			</td>
 			
