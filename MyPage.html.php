@@ -44,6 +44,16 @@ out();
 			  </div>
 			</div>
 			<br>
+			<div class="panel panel-default">
+			<!-- Table -->
+			  <table class="table table-hover tableheight" style="text-align: center">
+			  <div>
+			   	<tr onclick="location.href='./mypage-탑승내역.html.php'"><td>탑승내역</td></tr>
+			   	<tr onclick="location.href='./공지사항.html.php'"><td>공지사항</td></tr>
+			  </div>
+			  </table>
+			 </div>
+			<!--
 			<ul class="list-group">
 			  <li class="list-group-item">
 			 	  <a href="./mypage-탑승내역.html.php" class="btn btn-link">탑승내역 </a>
@@ -51,7 +61,8 @@ out();
 			  <li class="list-group-item">
 			 	  <a href="./공지사항.html.php" class="btn btn-link">공지사항</a>
 			  </li>
-			</ul>		
+			</ul>
+			-->		
 		</div>
 	</body>
 </html>
