@@ -31,10 +31,15 @@
 	$db->query = "select start, arrive, date, time,population,post_id from post where start='".$start."' and date='".$date."'and time>='".$s_time."'and time<='".$e_time."'";	
 	$db->DBQ();
 	$num = $db->result->num_rows;
-    		
+    			
 	if($num<=0)
 	{
-		echo "<script>alert('조회가능한 방이 없습니다.');location.replace('/search_room.html.php');</script>";
+		echo "<script>
+		   		var result=confirm('죄회되는 방이 없습니다. 방을 만드시겠습니까?');
+		   		if(result)
+		   			location.replace('../make_room.html.php');
+		   	  </script>";
+   		
    		exit;
 	}
 
