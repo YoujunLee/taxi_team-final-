@@ -16,18 +16,16 @@ out();
  		   padding-right: 0px; padding-left: 0px;">
 			
 			<nav class="navbar navbar-inverse">
-			<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
-			<ul class="nav navbar-nav navbar-right right" style=" margin-right: 0px;">
-        <li ><a href="./php/logout.php">LogOut</a></li>
-      </ul>
-      </nav>
-
-		
-			<br>
+				<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
+				<ul class="nav navbar-nav navbar-right right" style=" margin-right: 0px;">
+	       			 <li><a href="./php/logout.php">LogOut</a></li>
+	   		   </ul>
+      		</nav>
+      		<br>
 			<div align="center">
 				<h2>마이페이지</h2>
 			</div>
-			<br>
+			<br><br>
 			<div class="panel panel-default">
 			  <div class="panel-body">
 			  	<?php
@@ -46,6 +44,16 @@ out();
 			  </div>
 			</div>
 			<br>
+			<div class="panel panel-default">
+			<!-- Table -->
+			  <table class="table table-hover tableheight" style="text-align: center">
+			  <div>
+			   	<tr onclick="location.href='./mypage-탑승내역.html.php'"><td>탑승내역</td></tr>
+			   	<tr onclick="location.href='./공지사항.html.php'"><td>공지사항</td></tr>
+			  </div>
+			  </table>
+			 </div>
+			<!--
 			<ul class="list-group">
 			  <li class="list-group-item">
 			 	  <a href="./mypage-탑승내역.html.php" class="btn btn-link">탑승내역 </a>
@@ -53,7 +61,8 @@ out();
 			  <li class="list-group-item">
 			 	  <a href="./공지사항.html.php" class="btn btn-link">공지사항</a>
 			  </li>
-			</ul>		
+			</ul>
+			-->		
 		</div>
 	</body>
 </html>

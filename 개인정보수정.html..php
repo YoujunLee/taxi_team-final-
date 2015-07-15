@@ -14,11 +14,11 @@ out();
 	<body>
 		<div class = "col-xs-12  col-md-4 col-md-offset-4">
 		
-		<br><br><br><br>
-		<div align="center">
+		<br>
+			<div align="center">
 				<h2>개인정보 수정</h2>
-		</div>
-  		<br><br><br>
+			</div>
+			<br><br>
 		<form  action='./php/registo.php' method='POST' align="center" class="form-horizontal">
 
 		    <div class="form-group">

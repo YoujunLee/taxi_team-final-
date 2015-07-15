@@ -8,7 +8,7 @@
 	
 	
 	echo "<script>
-		   var result=confirm('진신 안탈꺼?');
+		   var result=confirm('정말 안 타시겠습니까?');
 		   if(!result)
 		   location.replace('$hostname');
 		   </script>";

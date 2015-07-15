@@ -15,19 +15,20 @@ out();
 </head>
 <body class = "center">
 	<div class = "col-xs-12  col-md-6 col-md-offset-3 padding">
-<nav class="navbar navbar-inverse">
-<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
-<ul class="nav navbar-nav navbar-right right">
-        <li><a href="./php/logout.php">LogOut</a></li>
-      </ul>
-      </nav>
-</div>
-</br>
-</br></br></br>
-<div class=" col-xs-12  col-md-6 col-md-offset-3">
-	<h1>탑승내역</h1>
-	</br>
-</br>
+		<nav class="navbar navbar-inverse">
+		<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
+		<ul class="nav navbar-nav navbar-right right">
+		        <li><a href="./php/logout.php">LogOut</a></li>
+		      </ul>
+    	</nav>
+	</div>
+
+	<div class=" col-xs-12  col-md-6 col-md-offset-3">
+		<br>
+		<div align="center">
+			<h2>탑승내역</h2>
+		</div>
+		<br><br>
 	<div class="panel panel-default">
   <!-- Default panel contents -->
   <div class="panel-heading"><h4>최근이용한 택시</h4></div>
