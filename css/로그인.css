@@ -36,3 +36,8 @@
 .main_color{
 	background-color: #34c6be; !important
 }
+.wrapper{
+ 	margin-top: 20%;  
+ 	margin-bottom: 20%; 
+ 	text-align: center;
+    border: 1px solid black;
