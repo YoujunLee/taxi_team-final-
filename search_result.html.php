@@ -34,7 +34,7 @@
     		
 	if($num<=0)
 	{
-		echo "<script>alert('조회가능한 방이 없습니다.');location.replace('/search_room.html.php');</script>";
+		echo "<script>alert('조회가능한 방이 없습니다.');history.back();</script>";
    		exit;
 	}
 
