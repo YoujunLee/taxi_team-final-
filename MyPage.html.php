@@ -17,7 +17,7 @@ out();
 			
 			<nav class="navbar navbar-inverse">
 			<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
-			<ul class="nav navbar-nav navbar-right right" style=" margin-right: 0px;">
+			<ul class="nav navbar-nav navbar-right" style=" float:right; margin-right : 0px;">
         <li ><a href="./php/logout.php">LogOut</a></li>
       </ul>
       </nav>
