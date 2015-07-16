@@ -53,39 +53,5 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 	       </form>
 		   </div>
 		   
-		   <!--시도-->
-		   <div class="form">
-		      <div class="tab-content">
-		    
-		        <div id="login">   
-		          <h1>Welcome!</h1>
-		          
-		          <form action="/" method="post">
-		          
-		            <div class="field-wrap">
-		            <label>
-		              Student ID<span class="req">*</span>
-		            </label>
-		            <input type="email"required autocomplete="off"/>
-		          </div>
-		          
-		          <div class="field-wrap">
-		            <label>
-		              Password<span class="req">*</span>
-		            </label>
-		            <input type="password"required autocomplete="off"/>
-		          </div>
-		          
-		          <p class="forgot"><a href="#">Forgot Password?</a></p>
-		          
-		          <button class="button button-block"/>로그인</button>
-		          
-		          </form>
-		
-		        </div>
-		        
-		      </div><!-- tab-content -->
-		      
-		</div> <!-- /form -->
 	</body>
 </html>
