@@ -12,6 +12,7 @@ out();
    		 <link rel="stylesheet" type="text/css" href="./css/mypage.css">
 	</head>
 	<body class="padding">
+		
 		<div class="col-xs-12  col-md-6 col-md-offset-3" style="
  		   padding-right: 0px; padding-left: 0px;">
 			

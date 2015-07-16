@@ -117,8 +117,8 @@ button:hover {
 }
 
 .blam {
-  background-color: #00bff0;
-  border-color: #00bff0;
+  background-color: #FFC0CB;
+  border-color: #F06E6E;
 }
 
 .syke:focus,
@@ -127,8 +127,8 @@ button:hover {
 }
 
 .syke {
-  background-color: #e06464;
-  border-color: #e06464;
+  background-color:#9DE4FF;
+  border-color: #646EFF;
 }
 
 .later:focus,
@@ -137,8 +137,8 @@ button:hover {
 }
 
 .later {
-  background-color: #a8bdc2;
-  border-color: #a8bdc2;
+  background-color: #FFE13C		;
+  border-color: #FF8200;
 }
 .ppp:focus,
 .ppp:hover {
@@ -146,8 +146,8 @@ button:hover {
 }
 
 .ppp {
-  background-color: black;
-  border-color: #00bff0;
+  background-color: #6EE5A3;
+  border-color: #54BD54;
 }
 @-webkit-keyframes pulse {
   100% {
