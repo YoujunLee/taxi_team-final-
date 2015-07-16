@@ -77,7 +77,7 @@ out();
 				<tr>
 					<label>
 					<td class="col-md-3">날짜</td>
-					<td class="col-md-9"><input type="date" id="search_date1" name="search_date" class="form-control" required></td>
+					<td class="col-md-9"><input type="date" id="search_date1" name="search_date" placeholder="YYYYMMDD" class="form-control" required></td>
 				    </label>
 				</tr>
 			
