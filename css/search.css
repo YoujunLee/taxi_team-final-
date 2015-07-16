@@ -70,8 +70,60 @@ tr.change_color
 {
 	text-align: right; !important
 }
-.padding
-{
-	 padding-left: 0px !important;
-    padding-right: 0px !important;
+.logout
+{ padding-left: 2%;
+    padding-right: 2%;
+  text-align: right;
+}
+.logo
+{ padding-left: 2%;
+    padding-right: 2%;
+  text-align: left;
+}
+.navi{
+    padding-left: 2%;
+    padding-right: 2%;
+    height : 55px;
+   background-color: black;
+}
+.btn1{
+  border: 0px none;
+ color : white;
+  background-color: transparent;
+ 
+}
+.btn2{
+  font-size : 25px;
+  border: 0px none;
+ color : black;
+  background-color: transparent;
+ 
+}
+.btn3{
+  
+  border: 0px none;
+ color : black;
+  background-color: transparent;
+ 
+}
+.image-size1{
+  width: 40%;
+  
+  
+}.image-size2{
+  width: 30%;
+  
+}
+
+.div_yg{
+text-align: center;
+}
+.row_padding{
+padding-top : 20%;
+margin-top: 20%;
+}
+.img{
+   height:40px;
+   width:40px;
+   max-height: 100%
 }

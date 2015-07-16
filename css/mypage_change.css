@@ -70,3 +70,51 @@ ul.right{
 	padding-right : 3%;
 	
 }
+.logout
+{ padding-left: 2%;
+    padding-right: 2%;
+  text-align: right;
+}
+.logo
+{ padding-left: 2%;
+    padding-right: 2%;
+  text-align: left;
+}
+.navi{
+    padding-left: 2%;
+    padding-right: 2%;
+    height : 55px;
+   background-color: black;
+}
+.btn1{
+  border: 0px none;
+ color : white;
+  background-color: transparent;
+ 
+}
+.btn2{
+  font-size : 25px;
+  border: 0px none;
+ color : black;
+  background-color: transparent;
+ 
+}
+.btn3{
+  
+  border: 0px none;
+ color : black;
+  background-color: transparent;
+ 
+}
+.image-size1{
+  width: 40%;
+  
+  
+}.image-size2{
+  width: 30%;
+  
+}
+
+.div_yg{
+text-align: center;
+}
