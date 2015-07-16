@@ -56,17 +56,26 @@
 </head>
 
 <body class="center">
-		<div class = "col-xs-12  col-md-6 col-md-offset-3 padding">
-<nav class="navbar navbar-inverse">
-<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
-<ul class="nav navbar-nav navbar-right right">
-        <li><a href="./php/logout.php">LogOut</a></li>
-      </ul>
-      </nav>
-</div>
+	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
+		
+		<tr class="row">
+  
+   <td class = "logo" >
+      <a  href="./조회창.html.php"><img src="./img/logo.png"></a>
+  
+    
+    </td >
+      <td class = "logout">
+      <form action='./php/logout.php'>
+		     <input class="btn1" type="submit" value="LogOut">
+	       </form>
+        </td >
+  </tr>
+		
+	</table>
 <section >
 	
-	<div class="wrapper col-xs-12  col-md-6 col-md-offset-3">
+	<div class="wrapper col-xs-12  col-md-4 col-md-offset-4">
 	    <?php echo$date." ".$s_time."~".$e_time."<br>";?>
 	    <?php echo$start."->".$arrive;?>
    
@@ -75,7 +84,7 @@
 </section>
 
 <section >
-<div class=" col-xs-12  col-md-6 col-md-offset-3">
+<div class=" col-xs-12  col-md-4 col-md-offset-4">
 
 <table class="table table-striped table-hover ">
   <thead>
@@ -146,7 +155,7 @@
 </div>
 </section >
 	
-<div class="col-xs-12 col-md-6 col-md-offset-3">
+<div class="col-xs-12 col-md-4 col-md-offset-4">
 	<ul class="pagination pagination-lg">
   		
 	<?php

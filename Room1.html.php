@@ -13,18 +13,25 @@ out();
 	<link rel="stylesheet" type="text/css" href="../css/index2.css">
 </head>
 <body class="center">
-	<div class = "col-xs-12  col-md-6 col-md-offset-3 padding">
-<nav class="navbar navbar-inverse" style="
-    margin-bottom: 0px;
-">
-<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
-<ul class="nav navbar-nav navbar-right right">
-        <li><a href="./php/logout.php">LogOut</a></li>
-      </ul>
-      </nav>
-</div>
+	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
+		
+		<tr class="row">
+  
+   <td class = "logo" >
+      <a  href="./조회창.html.php"><img src="./img/logo.png"></a>
+  
+    
+    </td >
+      <td class = "logout">
+      <form action='./php/logout.php'>
+		     <input class="btn1" type="submit" value="LogOut">
+	       </form>
+        </td >
+  </tr>
+		
+	</table>
 <section>
-	<div class="wrapper col-xs-12  col-md-6 col-md-offset-3">
+	<div class="wrapper col-xs-12  col-md-4 col-md-offset-4">
 		
 	
 	<?php 
@@ -46,7 +53,7 @@ out();
 	</div>
   </section>
   <section>
-    <div class="wrapper2 col-xs-12  col-md-6 col-md-offset-3 padding">
+    <div class="wrapper2 col-xs-12  col-md-4 col-md-offset-4 ">
 
 	<?php
 		require_once './php/db.php';
@@ -81,14 +88,14 @@ out();
   	echo"<form action=./php/comment_db.php?$post_id2  method=post>";
   	?>
   	
-  	<input class="col-xs-9 col-md-5 col-md-offset-3" type="text" placeholder="댓글을 입력하시오(최대 100자)" name="댓글" id="content">
+  	<input class="col-xs-9 col-md-3 col-md-offset-4" type="text" placeholder="댓글을 입력하시오(최대 100자)" name="댓글" id="content">
   	<input class="col-xs-3 col-md-1" type="submit" value="의견쓰기">
   	
 	</form>
 	
 	</section>
 	<section>
-<div class="wrapper4 col-xs-12  col-md-6 col-md-offset-3 padding">
+<div class="wrapper4 col-xs-12  col-md-4 col-md-offset-4">
 <table class="table table-striped table-hover ">
   <thead class="co">
     <tr class="row">
@@ -134,22 +141,9 @@ out();
    </tbody>
    <!-- 여기까지 바꾼코드 -->
 </table>
+<a href="./php/delete.php?<?php echo $post_id2; ?>" class="btn btn-danger" > 탑승취소</a>
 </div>
 </section>
-<section>
 
-<div class="col-xs-4 col-md-4"></div>
-<div class="col-xs-4 col-md-4">
- 
- <a href="./php/delete.php?<?php echo $post_id2; ?>" class="btn btn-danger" >
- 
- 탑승취소</a>
-</div>
-
-<div class="col-xs-4 col-md-4"></div>
-
-</div>
-
-</section>
 </body>
 </html>

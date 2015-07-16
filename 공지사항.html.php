@@ -46,13 +46,27 @@
 		</style>
 	</head>
 	<body>
-		<div class = "col-xs-12  col-md-6 col-md-offset-3">
-			<nav class="navbar navbar-inverse">
-			<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
-			<ul class="nav navbar-nav navbar-right right">
-	      	  <li><a href="./php/logout.php">LogOut</a></li>
-	     	 </ul>
-	     	 </nav>
+		
+		<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
+		
+		<tr class="row">
+  
+   <td class = "logo" >
+      <a  href="./조회창.html.php"><img src="./img/logo.png"></a>
+  
+    
+    </td >
+      <td class = "logout">
+      <form action='./php/logout.php'>
+		     <input class="btn1" type="submit" value="LogOut">
+	       </form>
+        </td >
+  </tr>
+		
+	</table>
+	
+		<div class = "col-xs-12  col-md-4 col-md-offset-4">
+			
 			<br>
 			<div align="center">
 					<h2>공지사항</h2>
