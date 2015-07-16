@@ -1,118 +1,111 @@
 /**{
 	border: 1px solid blue;
 }*/
-.myposition
-{
-	
+.myposition{
 	bottom: 1px;
-	
-	
- 
 }
 
-.image
-{
+.image{
 	height:80px;
 	width:80px;
 	max-height: 100%
-	
 }
 
 tr
-tr.tableheight
-{
+tr.tableheight{
 	max-height: 100%;
 }
 
-tr.tr2
-{
+tr.tr2{
 	height:70px;
-	/*background: #E5E5E5;*/
-}
-tr.tr1
-{
-	height:70px;
+	background: #708090;
+	opacity: 0.7;
 }
 
-.btn-center
-{
+tr.tr1{
+	height:70px;	
+	background: #CFCFCF;
+	opacity: 0.7;
+}
+}
+
+.btn-center{
 	vertical-align : middle;
 }
-tr.trcenter
-{
+
+tr.trcenter{
 	text-align: middle;
 }
-.tablewidth
-{
+
+.tablewidth{
 	height: 50px
 }
 
-.center
-{
+.center{
 	text-align: center;
 	background-align: center;
-	/*margin:auto;*/
-	/*width: 40%;*/
-	 padding-left: 0px;
+	padding-left: 0px;
     padding-right: 0px;
 }
-.center1
-{
+
+.center1{
 	text-align: center;
 	background-align: center;
 	margin:auto;
 }
-tr.change_color
-{
+
+tr.change_color{
 	hover : 
 }
-.rr
-{
+
+.rr{
 	text-align: right; !important
 }
-.logout
-{ padding-left: 2%;
+
+.logout{
+ 	padding-left: 2%;
     padding-right: 2%;
-  text-align: right;
+  	text-align: right;
 }
-.logo
-{ padding-left: 2%;
+
+.logo{
+ 	padding-left: 2%;
     padding-right: 2%;
-  text-align: left;
+  	text-align: left;
 }
+
 .navi{
     padding-left: 2%;
     padding-right: 2%;
     height : 55px;
-   background-color: black;
+	background-color: black;
 }
+
 .btn1{
-  border: 0px none;
- color : white;
-  background-color: transparent;
- 
+	border: 0px none;
+ 	color : white;
+  	background-color: transparent;
 }
+
 .btn2{
-  font-size : 25px;
-  border: 0px none;
-  color : black;
-  background-color: transparent;
- 
+	font-size : 25px;
+  	border: 0px none;
+  	color : black;
+	background-color: transparent;
 }
+
 .btn3{
-  
-  border: 0px none;
- color : black;
-  background-color: transparent;
- 
+	 border: 0px none;
+ 	 color : black;
+  	 background-color: transparent;
 }
+
 .image-size1{
-  width: 40%;
-  
-  
-}.image-size2{
-  width: 30%;
-  
+	width: 40%;
+}
+
+.image-size2{
+ 	 width: 30%;
 }
 
 .img{
@@ -129,6 +122,9 @@ a.noul:hover{
  text-decoration:none !important 
 }
 
-table.background{
-	background-image: url(./img/main_back.png');
+.backg{
+	background-image:url('../img/main_back.png'); 
+	background-repeat:no-repeat;
+	background-size: 120%;
+
 }
