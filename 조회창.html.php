@@ -13,86 +13,104 @@ out();
 	
 </head>
 <body class="center">
-	
-
-		<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
-		
+		<table class="navi col-xs-12 col-md-4 col-md-offset-4">	
 		<tr class="row">
-  
-   <td class = "logo" >
-      <a  href="./index.php"><img src="./img/logo.png"></a>
-  
-    
-    </td >
-      <td class = "logout">
-      <form action='./php/logout.php'>
+		   <td class = "logo" >
+      		   <a href="./index.php">
+      		   	<img src="./img/logo.png">
+      		   </a>
+  		   </td>
+      	   
+      	   <td class = "logout">
+      		<form action='./php/logout.php'>
 		     <input class="btn1" type="submit" value="LogOut">
-	       </form>
-        </td >
-  </tr>
+	        </form>
+           </td>
+  		 </tr>
 		
-	</table>
-
-
-			
+	</table>			
 	<!-- 방만들기, 방조회  -->
 
 	<table class = "col-xs-12  col-md-4 col-md-offset-4">
 		<tr class="tr1 row">
-			<td >
+			<td>
 			<form action='./make_room.html.php'>
+			<label for="make_room">
+			<a href="./make_room.html.php" class="noul">
+			 <img src="./img/make_room.png" class="img">
+			 &nbsp; &nbsp;
+			</a>
 		     <input class="btn2" type="submit" value="방만들기">
-	       </form>
-			
+		    </label> 
+	        </form>
 			</td>
-			</tr>
-		<tr class = "tr2 row" >
-			<td  >
-				<form action='./search_room.html.php'>
-		     <input class="btn2" type="submit" value="방조회">
-	       </form>
+		</tr>
+		
+		<tr class = "tr2 row">
+			<td>
+			<form action='./search_room.html.php'>
+			<label for="search_room">
+			<a href="./search_room.html.php" class="noul">
+			 <img src="./img/search.png" class="img">
+			  &nbsp; &nbsp;
+			</a>
+		     <input class="btn2" type="submit" value="택시조회">
+	        </form>
 			</td>
-			</tr>
+		</tr>
+		
 		<tr class = "tr1 row" >
-			<td  >
-				<form action='./mypage-탑승내역.html.php'>
+			<td>
+			<form action='./mypage-탑승내역.html.php'>
+			<label for="list">
+			<a href="./mypage-탑승내역.html.php" class="noul">
+			 <img src="./img/list.png" class="img">
+			  &nbsp; &nbsp;
+			</a>
 		     <input class="btn2" type="submit" value="탑승내역">
-	       </form>
+		    </form>
 			</td>
+		</tr>
+		
 		<tr class="tr2 row">
-			<td  >
-				<form action='./MyPage.html.php'>
-		     <input class="btn2" type="submit" value="MyPage">
-	       </form>
+			<td>
+			<form action='./MyPage.html.php'>
+			<label for="mypage">
+			<a href="./MyPage.html.php" class="noul">
+			 <img src="./img/mypage.png" class="img">
+			  &nbsp; &nbsp;
+			</a>
+		    <input class="btn2" type="submit" value="MyPage">
+	        </form>
 			</td>
 		</tr>	
 	</table>
-	
+
+	<table class="col-xs-12  col-md-4 col-md-offset-4" >
+	<tr class="row">
+	<td>
+	&nbsp;
+	</td>
+	</tr>
+	</table>
 	<!-- 택시번호 요금계산기 마이페이지  -->
 	
-<table class=" col-xs-12  col-md-4 col-md-offset-4" >	
-		
+	<table class="col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
-			<td >
-			<form class="div_yg" action='./taxi_num.html.php'>
+			<td>
+			<form action='./taxi_num.html.php'>
 			  <input class = "image-size1" type="image" src="./img/taxi.png"><br>
 			  <input class="btn3" type="submit" value="Taxi number">
-	       </form>
-			
+	        </form>
 			</td>
 			
-			<td  >
-			<form class="div_yg" action='./계산기.html.php'>
+			<td>
+			<form action='./계산기.html.php'>
 			  <input class = "image-size2" type="image" src="http://365psd.com/images/premium/thumbs/193/vector-calculator-icon-861700.jpg"><br>
 			  <input class="btn3" type="submit" value="요금계산기">
-	       </form>
-			
+	        </form>
 			</td>
-			
 		</tr>
-		
 	</table>
-	
-
 </body>
 </html>

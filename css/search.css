@@ -27,7 +27,7 @@ tr.tableheight
 tr.tr2
 {
 	height:70px;
-	background: #bebebe;
+	background: #E5E5E5;
 }
 tr.tr1
 {
@@ -115,15 +115,14 @@ tr.change_color
   
 }
 
-.div_yg{
-text-align: center;
-}
-.row_padding{
-padding-top : 20%;
-margin-top: 20%;
-}
 .img{
-   height:40px;
-   width:40px;
-   max-height: 100%
+	height:40px;
+	width:40px;
+	max-height: 100%
 }
+
+.menu{
+float :left;
+}
+
+a.noul:hover { text-decoration:none !important }
