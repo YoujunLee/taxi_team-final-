@@ -16,10 +16,11 @@
         	<li><a href="./php/logout.php">LogOut</a></li>
       		</ul>
       	</nav>
-      	<h1> 포항 콜택시 번호</h1>
       	<br>
-      	<br>
-      
+			<div align="center">
+				<h2>포항 택시 번호</h2>
+			</div>
+			<br><br>
       	<div class="btn-group-vertical">
   		  <a href="tel:054-252-1111" class="btn btn-default btn-lg btn-block">포스콜☎</a>
    		  <a href="tel:054-283-8282" class="btn btn-default btn-lg btn-block">해맞이콜☎</a>
