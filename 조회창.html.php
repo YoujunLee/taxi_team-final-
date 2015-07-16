@@ -12,32 +12,26 @@ out();
 	<link rel="stylesheet" type="text/css" href="./css/search.css">
 	
 </head>
+
 <body class="center">
-	
-
-		<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
-		
+	<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
-  
-   <td class = "logo" >
-      <a  href="./조회창.html.php"><img src="./img/logo.png"></a>
-  
-    
-    </td >
-      <td class = "logout">
-      <form action='./php/logout.php'>
-		     <input class="btn1" type="submit" value="LogOut">
-	       </form>
-        </td >
-  </tr>
-		
+		   <td class = "logo" >
+      			<a  href="./조회창.html.php">
+      				<img src="./img/logo.png">
+      			</a>
+  		   </td>
+      	   <td class = "logout">
+      	   		<form action='./php/logout.php'>
+		     		<input class="btn1" type="submit" value="LogOut">
+	       		</form>
+           </td>
+  		</tr>
 	</table>
-
-
 			
 	<!-- 방만들기, 방조회  -->
 
-	<table class = "col-xs-12  col-md-4 col-md-offset-4">
+	<table class = "col-xs-12  col-md-4 col-md-offset-4 background">
 		<tr class="tr1 row">
 			<td >
 			<form action='./make_room.html.php'>

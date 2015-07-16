@@ -27,7 +27,7 @@ tr.tableheight
 tr.tr2
 {
 	height:70px;
-	background: #E5E5E5;
+	/*background: #E5E5E5;*/
 }
 tr.tr1
 {
@@ -95,7 +95,7 @@ tr.change_color
 .btn2{
   font-size : 25px;
   border: 0px none;
- color : black;
+  color : black;
   background-color: transparent;
  
 }
@@ -125,4 +125,10 @@ tr.change_color
 float :left;
 }
 
-a.noul:hover { text-decoration:none !important }
+a.noul:hover{
+ text-decoration:none !important 
+}
+
+table.background{
+	background-image: url(./img/main_back.png');
+}
