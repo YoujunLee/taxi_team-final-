@@ -47,7 +47,7 @@ out();
   </section>
   <section>
     <div class="wrapper2 col-xs-12  col-md-6 col-md-offset-3">
-
+	<table>
 	<?php
 		require_once './php/db.php';
 		
@@ -59,17 +59,27 @@ out();
 		$db2 = new DBC;
 		$db2->DBI();
 		echo "<hr>";
+		
 		while($data = $db->result->fetch_assoc())
-		{   
+		{
+			 
 			$db2->query= "SELECT name FROM student_info WHERE studentid= '".$data['stu_id']."'";
 		    $db2->DBQ();   
 			$data2 = $db2->result->fetch_row() ;
 			$comment_name = $data2[0];
-			echo $comment_name.":   &nbsp;".$data['content']."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."<br>"."<p>".substr($data['time'],0,16)."<p>"."<hr>";
+			?>
+			
+			
+			<tr>
+				
+			<th><?php echo $comment_name.":   &nbsp;".$data['content']."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."<br>"."<p>".substr($data['time'],0,16)."<p>"."<hr>";?>
+			</th></tr>
+			<?php  
 		}		
 		$db->DBO();
 		$db2->DBO();
 	?>
+	</table>
 	</div>
   </section>
   
