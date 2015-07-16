@@ -18,35 +18,27 @@ out();
 	<title>i-Taxi</title>
 </head>
 
-<body class = "col-xs-12  col-md-6 col-md-offset-3 padding">
+<body class = "center">
 	
-		<nav class="navbar navbar-inverse">
-  <!-- <div class="container-fluid"> -->
-    <!-- <div class="navbar-header"> -->
-      <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button> -->
-      
-    <!-- </div> -->
-<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
-    <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
-      
-      <ul class="nav navbar-nav navbar-right right">
-        <li><a href="./php/logout.php">LogOut</a></li>
-      </ul>
-    <!-- </div> -->
-  <!-- </div> -->
-</nav>
 
-	<!-- <section class="container"> -->
-		<!-- <div class="col-md-4">
-		</div> -->
+		<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
 		
-		<!-- <div class="col-md-4"> -->
-		<div class="form-group">
+		<tr class="row">
+  
+   <td class = "logo" >
+      <a  href="./index.php"><img src="./img/logo.png"></a>
+  
+    
+    </td >
+      <td class = "logout">
+      <form action='./php/logout.php'>
+		     <input class="btn1" type="submit" value="LogOut">
+	       </form>
+        </td >
+  </tr>
+		
+	</table>
+		<div class="form-group col-xs-12  col-md-4 col-md-offset-4">
 		<table class="table">
 			<tbody>
 				<tr >
@@ -113,13 +105,13 @@ out();
 			
 			</tbody>
 		</table>
-	</div>
-	
-	<p class="text-center">
-		
+	<div class = "div_yg">
 	<input type="submit" value="방만들기" class=" margin_right btn-info">
 	<input type="button" value="취소" class="btn btn-danger">
-	</p>
+	</div>
+	</div>
+	
+	
 	<!-- </div> -->
 	</form>
 	<!-- <div class="col-md-4">
