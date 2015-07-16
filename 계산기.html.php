@@ -36,33 +36,30 @@
 		<div class = "col-xs-12  col-md-4 col-md-offset-4">
 			<br>
 			<div align="center">
-				<h2>요금계산기</h2>
+				<h2>요금 계산기</h2>
 			</div>
 			<br><br>
 			<form name="frm1">
 			<table class = "center1">
 				<tr>
-				<td>
-					<input type="text" size=10 name="input1"> 원을
-				</td>
-				<td>
-					<h3>&nbsp; </h3>
-				</td>
-				<td>
-				<div class="col-lg-10">
-				     <select class="form-control" id="select" name="input2" >
-				          <option>2</option>
-				          <option>3</option>
-				          <option>4</option>
-				        </select>
-				        </div>
-				</td>
-				<td>
-					 명이 나누면, 
-				</td>
+					<td>
+						<input type="tel" size=10 name="input1"> 원을
+					</td>
+					<td>
+					<div class="col-lg-10">
+					     <select class="form-control" id="select" name="input2" >
+					          <option>2</option>
+					          <option>3</option>
+					          <option>4</option>
+					        </select>
+					        </div>
+					</td>
+					<td>
+						 명이 나누면, 
+					</td>
 				</tr>
 				<tr>
-					 &nbsp;&nbsp;1명당 내야할 돈은 <input type="text" size=10 name="input3">원 입니다.
+					 <td>&nbsp;&nbsp;1명당 내야할 돈은 <input type="text" size=10 name="input3">원 입니다.</td>
 				</tr>
 				<!--
 				<tr>
