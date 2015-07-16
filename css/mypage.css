@@ -27,7 +27,7 @@ body.padding{
 	border-bottom : 0px ;
 }
 ul.right{
-	float : right ;
+	float : right !!important;
 	margin-right : 0px !important ;
 }
 .logout

@@ -13,9 +13,8 @@ echo "<script>location.replace('./조회창.html.php');</script>";
    		<!-- // <meta name="viewport" content="width=device-width, initial-scale=1"> -->
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="../css/로그인.css">
-
-
-
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="./js/set.js"></script> 
 	</head>
 	<body>
 		<div class= "col-xs-12  col-md-4 col-md-offset-4">
@@ -48,5 +47,6 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 		     <input class="btn btn-lg btn-block" type="submit" value="회원가입">
 	       </form>
 		   </div>
+		   
 	</body>
 </html>
