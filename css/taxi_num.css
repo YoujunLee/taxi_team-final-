@@ -1,15 +1,21 @@
+body{
+	background : url('http://cfile10.uf.tistory.com/image/2456D24152D0D5072478E4') no-repeat
+}
 
 .center{
 	text-align: center;
   	background-align: center;
   	margin:auto;
-}
+  
+  	
+  	 }
 
 
 .padding{
 	padding-right : 0px !important;
 	padding-left : 0px !important;
 	margin-bottom : 0px !important;
+	
 }
 ul.right{
 	float : right;
@@ -17,3 +23,6 @@ ul.right{
 	
 }
 
+li {
+    list-style: none;
+    }

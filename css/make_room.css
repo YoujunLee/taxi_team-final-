@@ -48,3 +48,29 @@ body.padding
 	padding-right : 0px !important;
 	padding-left : 0px !important;
 }
+.logout
+{ padding-left: 2%;
+    padding-right: 2%;
+  text-align: right;
+}
+.logo
+{ padding-left: 2%;
+    padding-right: 2%;
+  text-align: left;
+}
+.navi{
+    padding-left: 2%;
+    padding-right: 2%;
+    height : 55px;
+   background-color: black;
+}
+
+.btn1{
+  border: 0px none;
+ color : white;
+  background-color: transparent;
+ 
+}
+.div_yg{
+text-align: center;
+}
