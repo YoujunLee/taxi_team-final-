@@ -55,18 +55,17 @@ out();
 				<h3>방조회</h3></a>
 			</td>
 			</tr>
-		<tr class="tr1 row">
-			<td  >
-				<a href="./MyPage.html.php">
-				<h3>MyPage</h3></a>
-			</td>
-		</tr>
-		<tr class = "tr2 row" >
+		<tr class = "tr1 row" >
 			<td  >
 				<a href="./mypage-탑승내역.html.php" >
 				<h3>탑승내역</h3></a>
 			</td>
-			
+		<tr class="tr2 row">
+			<td  >
+				<a href="./MyPage.html.php">
+				<h3>MyPage</h3></a>
+			</td>
+		</tr>	
 	</table>
 	
 	<!-- 택시번호 요금계산기 마이페이지  -->

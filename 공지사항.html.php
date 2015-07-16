@@ -45,51 +45,51 @@
 
 		</style>
 	</head>
-	<body class = "col-xs-12  col-md-4 col-md-offset-4 padding">
-		
+	<body>
+		<div class = "col-xs-12  col-md-6 col-md-offset-3">
 			<nav class="navbar navbar-inverse">
-<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
-<ul class="nav navbar-nav navbar-right right">
-        <li><a href="./php/logout.php">LogOut</a></li>
-      </ul>
-      </nav>
-		<br><br>
-		<div align="center">
-				<h2>공지사항</h2>
-		</div>
-		<br>
-		<hr/>
-		
-		
-		<?php
-			require_once('./php/config.php');
-	
-			$db = new DBC;	 //db object생성
-			$db->DBI();		//db 들어가기
+			<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
+			<ul class="nav navbar-nav navbar-right right">
+	      	  <li><a href="./php/logout.php">LogOut</a></li>
+	     	 </ul>
+	     	 </nav>
+			<br>
+			<div align="center">
+					<h2>공지사항</h2>
+			</div>
+			<br>
+			<hr/>
 			
-			$db->query = "select * from notice order by num desc";
-			$db->DBQ();
-		?>
 			
-		<?php
-			while($data = $db->result->fetch_assoc())
-			{
-				?>
-					<div class="flip">
-					<?php	
-						echo $data['subject']. "&nbsp;&nbsp;"."(". $data['time']. ")";
+			<?php
+				require_once('./php/config.php');
+		
+				$db = new DBC;	 //db object생성
+				$db->DBI();		//db 들어가기
+				
+				$db->query = "select * from notice order by num desc";
+				$db->DBQ();
+			?>
+				
+			<?php
+				while($data = $db->result->fetch_assoc())
+				{
 					?>
-					</div>
-					<div class="panel">
-					<?php	
-						echo $data['memo']. "<br>";
-					?>
-					</div>
-					<br/>
-				<?php
-			}
-		?>
-				<hr/>	
+						<div class="flip">
+						<?php	
+							echo $data['subject']. "&nbsp;&nbsp;"."(". $data['time']. ")";
+						?>
+						</div>
+						<div class="panel">
+						<?php	
+							echo $data['memo']. "<br>";
+						?>
+						</div>
+						<br/>
+					<?php
+				}
+			?>
+			<hr/>	
 		</div>
 	</body>
 </html>
