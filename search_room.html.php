@@ -14,15 +14,28 @@ out();
 	<title>i-Taxi</title>
 </head>
 
-<body class = "col-xs-12  col-md-6 col-md-offset-3 padding">
-<nav class="navbar navbar-inverse">
-<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
-<ul class="nav navbar-nav navbar-right right">
-        <li><a href="./php/logout.php">LogOut</a></li>
-      </ul>
-      </nav>
+<body class = "center">
+
+
+		<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
+		
+		<tr class="row">
+  
+   <td class = "logo" >
+      <a  href="./index.php"><img src="./img/logo.png"></a>
+  
+    
+    </td >
+      <td class = "logout">
+      <form action='./php/logout.php'>
+		     <input class="btn1" type="submit" value="LogOut">
+	       </form>
+        </td >
+  </tr>
+		
+	</table>
 	
-		<div class="form-group">
+		<div class="form-group col-xs-12  col-md-4 col-md-offset-4">
 		<table class="table">
 			<tbody>
 				<tr>
@@ -84,17 +97,19 @@ out();
 			
 			</tbody>
 		</table>
-	</div>
-	<p class="text-center">
-	
+		
+		<div class = "div_yg">
 	<input type="submit" value="방 조회" class="btn btn-info">
-	</p>
+	</div>
+		
+	</div>
+	
 	
 	</form>
 	<!-- </div> -->
 
 	<!-- <div class="col-md-4">
 	</div> -->
-    </section>
+    
 </body>
 </html>
