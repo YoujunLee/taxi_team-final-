@@ -14,12 +14,14 @@ echo "<script>location.replace('./조회창.html.php');</script>";
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="../css/로그인.css">
 
+
+
 	</head>
 	<body>
 		<div class= "col-xs-12  col-md-4 col-md-offset-4">
 		
 		<div class="wrapper">
-			<img src="./img/logo_big.png" class="img-responsive">
+			<img src="./img/logo_big.png"  width = "100%" >
 		</div>
 		
   			
