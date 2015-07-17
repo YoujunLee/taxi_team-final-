@@ -6,29 +6,14 @@
 <?php
 	include "./php/session_out.php";
 	out();
-    if(!isset($_SESSION['search_start'])){
-		echo "<script>location.replace('../index.php');</script>";
-   		exit;
-	}
-	
-	$start = $_SESSION['search_start'];
-	$arrive = $_SESSION['search_arrive'];
-	$date = $_SESSION['search_date'];
-	$s_time= $_SESSION['start_time'];
-	$e_time = $_SESSION['end_time'];
-
+    
 	require_once './php/config.php';
-   
+
 	$db = new DBC;
 	$db->DBI();
-	if($start!='전체보기'&&$arrive!='전체보기')
-	$db->query = "select start, arrive, date, time,population,post_id from post where start='".$start."' and arrive='".$arrive."'and date='".$date."'and time>='".$s_time."'and time<='".$e_time."' ORDER BY time";
-	else if($start=='전체보기'&&$arrive=='전체보기')
-	$db->query = "select start, arrive, date, time,population,post_id from post where date='".$date."'and time>='".$s_time."'and time<='".$e_time."'ORDER BY time";
-	else if($start=='전체보기')
-	$db->query = "select start, arrive, date, time,population,post_id from post where arrive='".$arrive."'and date='".$date."'and time>='".$s_time."'and time<='".$e_time."'ORDER BY time";
-	else 
-	$db->query = "select start, arrive, date, time,population,post_id from post where start='".$start."' and date='".$date."'and time>='".$s_time."'and time<='".$e_time."'ORDER BY time";	
+	
+	$db->query = "select start, arrive, date, time,population,post_id from post ORDER BY date desc,time desc";
+		
 	$db->DBQ();
 	$num = $db->result->num_rows;
     			
@@ -76,8 +61,7 @@
 <section >
 	
 	<div class="wrapper col-xs-12  col-md-4 col-md-offset-4">
-	    <?php echo$date." ".$s_time."~".$e_time."<br>";?>
-	    <?php echo$start."->".$arrive;?>
+	    <h3>전체조회</h3>
    
 	</div>
 	
@@ -126,7 +110,7 @@
     	
     		echo "<tr class="."'row'".">";
     		
-    		echo " <th class="."'col-xs-3 col-md-3'".">".substr($data[3],0,2)." : ".substr($data[3],3,2)."</th>";
+    		echo " <th class="."'col-xs-3 col-md-3'".">".$data[2]."<br>".substr($data[3],0,2)." : ".substr($data[3],3,2)."</th>";
     		echo " <th class="."'col-xs-7 col-md-7'".">".$data[0]." → "."<br>".$data[1]."</th>";
     		$current_time = date("Y-m-d h:i:s");
 
@@ -141,7 +125,7 @@
         	echo " </tr>";
   			}
   			else
-				break
+				break;
 	
 	        $count++;
 	  }
@@ -161,25 +145,25 @@
 	<?php
 	$number;
 	if($page>1)
-	echo "<li><a href='./search_result.html.php'>«</a></li>";
+	echo "<li><a href='./search_result_all.html.php'>«</a></li>";
 
 	if($page>1)
-  	echo "<li><a href='./search_result.html.php?page=".($page-1)."'><</a></li>";
+  	echo "<li><a href='./search_result_all.html.php?page=".($page-1)."'><</a></li>";
 	
 	for($number=floor((($page-1)/3))*3+1;$number<floor((($page-1)/3))*3+4;$number++){
 		if($number<=floor((($num-1)/10))+1){
 	   		if($number!=$page)
-				echo"<li><a href='./search_result.html.php?page=".($number)."'>".$number."</a></li>";
+				echo"<li><a href='./search_result_all.html.php?page=".($number)."'>".$number."</a></li>";
 		else
-			echo"<li class='active'><a href='./search_result.html.php?page=".($number)."'>".$number."</a></li>";
+			echo"<li class='active'><a href='./search_result_all.html.php?page=".($number)."'>".$number."</a></li>";
 		}
 	}
 	
 	if($page<floor((($num-1)/10))+1)
-  	echo "<li><a href='./search_result.html.php?page=".($page+1)."'>></a></li>";
+  	echo "<li><a href='./search_result_all.html.php?page=".($page+1)."'>></a></li>";
 	
 	if($page<floor((($num-1)/10)+1))
-  	echo "<li><a href='./search_result.html.php?page=".floor(((($num-1)/10)+1))."'>»</a></li>";
+  	echo "<li><a href='./search_result_all.html.php?page=".floor(((($num-1)/10)+1))."'>»</a></li>";
   	?>
  			
 	</ul>
