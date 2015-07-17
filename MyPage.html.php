@@ -18,16 +18,17 @@ out();
   			   <td class = "logo" >
       				<a  href="./조회창.html.php"><img src="./img/logo.png"></a>
   			   </td >
+  			   <td class = "title">마이페이지</td >
 				<td class = "logout">
     			  <form action='./php/logout.php'>
 		     	  <input class="btn1" type="submit" value="LogOut">
 	              </form>
-        </td >
-  </tr>
+      		    </td >
+      		</tr>
+		</table>
 		
-	</table>
-		
-		<div class="col-xs-12  col-md-4 col-md-offset-4">
+		<br><br><br><br><br><br>
+		<div top-padding:"20%" class="col-xs-12  col-md-4 col-md-offset-4">
 			<div class="panel panel-default">
 			  <div class="panel-body">
 			  	<?php

@@ -17,22 +17,19 @@ out();
 <body class = "center">
 
 
-		<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
-		
+	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
-  
-   <td class = "logo" >
-      <a  href="./조회창.html.php"><img src="./img/logo.png"></a>
-  
-    
-    </td >
-      <td class = "logout">
-      <form action='./php/logout.php'>
-		     <input class="btn1" type="submit" value="LogOut">
-	       </form>
-        </td >
-  </tr>
-		
+   			<td class = "logo" >
+      			<a  href="./조회창.html.php">
+      				<img src="./img/logo.png">
+      			</a>
+  		    </td>
+      		<td class = "logout">
+      			<form action='./php/logout.php'>
+		     		<input class="btn1" type="submit" value="LogOut">
+	       		</form>
+        	</td>
+  		</tr>
 	</table>
 	
 		<div class="form-group col-xs-12  col-md-4 col-md-offset-4">
@@ -75,21 +72,21 @@ out();
 				</tr>		
 				
 				<tr>
-					<label>
+					<label for="search_date1">
 					<td class="col-md-3">날짜</td>
 					<td class="col-md-9"><input type="date" id="search_date1" name="search_date" placeholder="YYYYMMDD" class="form-control" required></td>
 				    </label>
 				</tr>
 			
 				<tr>
-					<label>
+					<label for="start_time1">
 					<td class="col-md-3">출발 시간</td>
 					<td><input type="time" id="start_time1" name="start_time" class="form-control" value="09:00"></td>
 				    </label>
 				</tr>
 
 				<tr>
-					<label>
+					<label for="end_time1">
 					<td class="col-md-3">도착 시간</td>
 					<td><input type="time" id="end_time1" name="end_time" class="form-control" value="20:00"></td>
 				    </label>
@@ -99,17 +96,9 @@ out();
 		</table>
 		
 		<div class = "div_yg">
-	<input type="submit" value="방 조회" class="btn btn-info">
-	</div>
-		
-	</div>
-	
-	
+			<input type="submit" value="방 조회" class="btn btn-info">
+		</div>
+		</div>
 	</form>
-	<!-- </div> -->
-
-	<!-- <div class="col-md-4">
-	</div> -->
-    
 </body>
 </html>
