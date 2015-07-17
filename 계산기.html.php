@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -26,7 +27,6 @@
   			   <td class = "logo" >
       				<a  href="./조회창.html.php"><img src="./img/logo.png"></a>
   			   </td >
-  			   <td class = "title">요금 계산기</td >
 				<td class = "logout">
     			  <form action='./php/logout.php'>
 		     	  <input class="btn1" type="submit" value="LogOut">
@@ -58,7 +58,7 @@
 				<tr><td>	&nbsp;	</td></tr>
 				<tr>
 				<td>
-					<input type="button" name="btn1" style="background-color:#34C6BE; color: #ffffff;" value="=" onclick=run()>
+					<input type="button" name="btn1" value="=" onclick=run()>
 				</td>
 					 <td>￦  <input type="text" size=10 name="input3"></td>
 				</tr>

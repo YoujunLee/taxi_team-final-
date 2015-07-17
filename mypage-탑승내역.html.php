@@ -22,7 +22,6 @@ out();
    <td class = "logo" >
         <a  href="./조회창.html.php"><img src="./img/logo.png"></a>
     </td >
-    <td class = "title">탑승내역</td >
       <td class = "logout">
       <form action='./php/logout.php'>
 		     <input class="btn1" type="submit" value="LogOut">
