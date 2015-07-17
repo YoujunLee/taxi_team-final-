@@ -52,7 +52,6 @@
 			   <td class = "logo" >
 			      <a  href="./조회창.html.php"><img src="./img/logo.png"></a>
 			    </td >
-			     <td class = "title">공지사항</td >
 			      <td class = "logout">
 			      <form action='./php/logout.php'>
 					     <input class="btn1" type="submit" value="LogOut">
@@ -65,8 +64,7 @@
 		<div class = "col-xs-12  col-md-4 col-md-offset-4">
 			
 			
-		<br><br><br>
-			<hr/>
+		<br><br>
 			<?php
 				require_once('./php/config.php');
 		

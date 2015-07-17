@@ -16,7 +16,6 @@
   			   <td class = "logo" >
       				<a  href="./조회창.html.php"><img src="./img/logo.png"></a>
   			   </td >
-  			   <td class = "title">개인정보 수정</td >
 				<td class = "logout">
     			  <form action='./php/logout.php'>
 		     	  <input class="btn1" type="submit" value="LogOut">
@@ -106,7 +105,7 @@
 		    </div>
 		    <br>		   
 		     <div class="div_go">
-                <input class="btn btn-lg btn-block" type="submit" value="변경">
+                <input class="btn btn-lg btn-block" type="submit" style="background-color:#34C6BE; color: #ffffff;" value="변경">
                 <a href="./MyPage.html.php" class="btn btn-lg btn-block" value="취소">취소</a>
 			</div>
 		</form>

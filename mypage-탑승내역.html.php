@@ -22,7 +22,6 @@ out();
    <td class = "logo" >
         <a  href="./조회창.html.php"><img src="./img/logo.png"></a>
     </td >
-    <td class = "title">탑승내역</td >
       <td class = "logout">
       <form action='./php/logout.php'>
 		     <input class="btn1" type="submit" value="LogOut">
@@ -96,17 +95,17 @@ out();
 </div>
 
 <div class="col-xs-12 col-md-6 col-md-offset-3">
-	<ul class="pagination pagination-lg" >
+	<ul class="pagination pagination-lg">
   		
 	<?php
 	$number;
 	if($page>1)
-	echo "<li><a href='./mypage-탑승내역.html.php'>«</a></li>";
+	echo "<li><a href='./mypage-탑승내역.html.php'>«맨앞</a></li>";
 
 	if($page>1)
-  	echo "<li><a href='./mypage-탑승내역.html.php?page=".($page-1)."'><</a></li>";
+  	echo "<li><a href='./mypage-탑승내역.html.php?page=".($page-1)."'><이전</a></li>";
 	
-	for($number=floor(($page/3))*3+1;$number<floor(($page/3))*3+4;$number++){
+	for($number=floor(($page/5))*5+1;$number<floor(($page/5))*5+6;$number++){
 		if($number<=floor((($num-1)/10))+1){
 	   		if($number!=$page)
 				echo"<li><a href='./mypage-탑승내역.html.php?page=".($number)."'>".$number."</a></li>";
@@ -116,10 +115,10 @@ out();
 	}
 	
 	if($page<floor((($num-1)/10))+1)
-  	echo "<li><a href='./mypage-탑승내역.html.php?page=".($page+1)."'>></a></li>";
+  	echo "<li><a href='./mypage-탑승내역.html.php?page=".($page+1)."'>앞으로></a></li>";
 	
 	if($page<floor((($num-1)/10)+1))
-  	echo "<li><a href='./mypage-탑승내역.html.php?page=".floor(((($num-1)/10)+1))."'>»</a></li>";
+  	echo "<li><a href='./mypage-탑승내역.html.php?page=".floor(((($num-1)/10)+1))."'>맨뒤»</a></li>";
   	?>
  			
 	</ul>
