@@ -48,7 +48,7 @@ out();
 					<option value="E1">E1</option>
 					<option value="고속버스터미널">고속터미널</option>
 					<option value="시외버스터미널">시외버스터미널</option>
-					<option value="육거리">욱거리</option>
+					<option value="육거리">육거리</option>
 					<option value="포항역(KTX)">포항역</option>
 					</select>
 				</td>
@@ -64,7 +64,7 @@ out();
 					<option value="E1">E1</option>
 					<option value="고속버스터미널">고속터미널</option>
 					<option value="시외버스터미널">시외버스터미널</option>
-					<option value="육거리">욱거리</option>
+					<option value="육거리">육거리</option>
 					<option value="포항역(KTX)" selected>포항역</option>
 					</select>
 				</td>
@@ -94,21 +94,17 @@ out();
 			<tr>
 				<label for="make_population">
 				<td class="col-md-5">최대탑승인원</td>
-					<td class="col-md-7"><input type="number" id="make_populaion" name="room_population" class="form-control" min="2" max="4" value="4" ><div class="input-group-addon">최대 탑승 인원 4명</div></td>
+					<td class="col-md-7"><input type="number" id="make_populaion" name="room_population" class="form-control" min="2" max="4" value="4" >
+						<div style="color:#34C6BE">
+							  ※  최대 탑승 인원: 4명
+						</div>
+					</td>
 					</label>
 				</tr>
-
-				<tr>
-					<label for="make_memo">
-					<td class="col-md-3">Memo</td>
-					<td class="col-md-9"> <textarea id="make_memo" name="room_memo" class="form-control" placeholder="특이사항" cols="5"> </textarea></td>
-					</label>
-				</tr>
-			
 			</tbody>
 		</table>
 	<div class = "div_yg">
-	<input type="submit" value="방만들기" class=" margin_right btn-info">
+	<input type="submit" value="방만들기" class=" margin_right btn-info" style="background-color:#34c6be; color: #ffffff;">
 	<input type="button" value="취소" class="btn btn-danger">
 	</div>
 	</div>

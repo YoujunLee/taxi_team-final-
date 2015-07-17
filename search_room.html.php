@@ -95,8 +95,8 @@ out();
 			</tbody>
 		</table>
 		
-		<div class = "div_yg">
-			<input type="submit" value="방 조회" class="btn btn-info">
+		<div class = "div_yg" >
+			<input type="submit" value="방 조회" class="btn btn-info" style="background-color:#34c6be; color: #ffffff;">
 		</div>
 		</div>
 	</form>

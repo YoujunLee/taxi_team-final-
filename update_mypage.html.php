@@ -7,20 +7,25 @@
    		 <title>개인정보 수정</title>
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="../css/box.css">
+   		 <link rel="stylesheet" type="text/css" href="../css/mypage.css">
 	</head>
-	<body class=" col-xs-12  col-md-6 col-md-offset-3 padding">
-		<nav class="navbar navbar-inverse">
-<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
-<ul class="nav navbar-nav navbar-right right">
-        <li><a href="./php/logout.php">LogOut</a></li>
-      </ul>
-      </nav>
+	<body>
+		
+		<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
+			<tr class="row">
+  			   <td class = "logo" >
+      				<a  href="./조회창.html.php"><img src="./img/logo.png"></a>
+  			   </td >
+				<td class = "logout">
+    			  <form action='./php/logout.php'>
+		     	  <input class="btn1" type="submit" value="LogOut">
+	              </form>
+      		    </td >
+      		</tr>
+		</table>
+		<br><br><br><br><br><br>
+		<div class=" col-xs-12  col-md-4 col-md-offset-4">
 		<!-- <div class="div_root"> -->
-		<br>
-		<div align="center">
-				<h2>개인정보 수정</h2>
-		</div>
-  		<br>
 		<form  action='./php/registo_change.php' method='POST'  class="form-horizontal">
 
 		    <div class="form-group">
@@ -100,7 +105,7 @@
 		    </div>
 		    <br>		   
 		     <div class="div_go">
-                <input class="btn btn-lg btn-block" type="submit" value="변경">
+                <input class="btn btn-lg btn-block" type="submit" style="background-color:#34C6BE; color: #ffffff;" value="변경">
                 <a href="./MyPage.html.php" class="btn btn-lg btn-block" value="취소">취소</a>
 			</div>
 		</form>

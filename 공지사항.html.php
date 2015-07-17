@@ -48,33 +48,23 @@
 	<body>
 		
 		<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
-		
-		<tr class="row">
-  
-   <td class = "logo" >
-      <a  href="./조회창.html.php"><img src="./img/logo.png"></a>
-  
-    
-    </td >
-      <td class = "logout">
-      <form action='./php/logout.php'>
-		     <input class="btn1" type="submit" value="LogOut">
-	       </form>
-        </td >
-  </tr>
+			<tr class="row">
+			   <td class = "logo" >
+			      <a  href="./조회창.html.php"><img src="./img/logo.png"></a>
+			    </td >
+			      <td class = "logout">
+			      <form action='./php/logout.php'>
+					     <input class="btn1" type="submit" value="LogOut">
+				       </form>
+			        </td >
+			  </tr>
 		
 	</table>
 	
 		<div class = "col-xs-12  col-md-4 col-md-offset-4">
 			
-			<br>
-			<div align="center">
-					<h2>공지사항</h2>
-			</div>
-			<br>
-			<hr/>
 			
-			
+		<br><br>
 			<?php
 				require_once('./php/config.php');
 		
@@ -99,11 +89,10 @@
 							echo $data['memo']. "<br>";
 						?>
 						</div>
-						<br/>
+						<hr/>
 					<?php
 				}
-			?>
-			<hr/>	
+			?>	
 		</div>
 	</body>
 </html>

@@ -22,12 +22,12 @@ out();
     			  <form action='./php/logout.php'>
 		     	  <input class="btn1" type="submit" value="LogOut">
 	              </form>
-        </td >
-  </tr>
+      		    </td >
+      		</tr>
+		</table>
 		
-	</table>
-		
-		<div class="col-xs-12  col-md-4 col-md-offset-4">
+		<br><br><br><br><br><br>
+		<div top-padding:"20%" class="col-xs-12  col-md-4 col-md-offset-4">
 			<div class="panel panel-default">
 			  <div class="panel-body">
 			  	<?php

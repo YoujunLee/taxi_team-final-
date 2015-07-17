@@ -21,8 +21,6 @@ out();
   
    <td class = "logo" >
         <a  href="./조회창.html.php"><img src="./img/logo.png"></a>
-  
-    
     </td >
       <td class = "logout">
       <form action='./php/logout.php'>
@@ -33,16 +31,10 @@ out();
 		
 	</table>
 	
-
+	<br><br><br><br><br><br>
 	<div class=" col-xs-12  col-md-6 col-md-offset-3">
-		<br>
-		<div align="center">
-			<h2>탑승내역</h2>
-		</div>
-		<br><br>
 	<div class="panel panel-default">
   <!-- Default panel contents -->
-  <div class="panel-heading"><h4>최근이용한 택시</h4></div>
 
   <!-- Table -->
   <table class="table  table-hover tableheight">
