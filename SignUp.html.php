@@ -9,11 +9,11 @@
 	</head>
 	<body>
 		<div class="div_root">
-		<br><br><br><br>
+		<br><br>
 		<div align="center">
-				<h2 style="color:#34c6be">WELCOME!</h2>
+				<h2 style="color:#34C6BE">WELCOME!</h2>
 		</div>
-  		<br><br><br>
+		<br><br>
 		<form  action='./php/registo.php' method='POST' align="center" class="form-horizontal">
 
 		    <div class="form-group">
@@ -83,9 +83,9 @@
 		        <input type="password" class="form-control" id="inputPasswordTwice" placeholder="Password" name='pass2' required>
 		      </div>
 		    </div>
-		    <br>		   
+		    <br><br>		   
 		     <div class="div_go">
-                <input class="btn btn-lg btn-block" style="background-color:#34c6be; color: #ffffff;" type="submit" value="가입하기">
+                <input class="btn btn-lg btn-block" style="background-color:#34C6BE; color: #ffffff;" type="submit" value="가입하기">
 			</div>
 		</form>
 		</div>
