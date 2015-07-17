@@ -58,7 +58,7 @@
 				<tr><td>	&nbsp;	</td></tr>
 				<tr>
 				<td>
-					<input type="button" name="btn1" value="=" onclick=run()>
+					<input type="button" name="btn1" style="background-color:#34C6BE; color: #ffffff;" value="=" onclick=run()>
 				</td>
 					 <td>￦  <input type="text" size=10 name="input3"></td>
 				</tr>

@@ -27,8 +27,11 @@
 		      <div class="col-lg-10">
 		        <input type="text"  onKeyPress="if ((event.keyCode<46)||(event.keyCode>57)||(event.keyCode==47)) event.returnValue=false;" class="form-control" id="inputStudentId" placeholder="Student ID" name='student_no' maxlength="8" required>
 		      </div>
+		     <div style="color:#34C6BE">
+		      	※  학번은 가입 후 수정할 수 없으니 정확히 입력해주세요!
+		     </div>
 		    </div>
-		    <br><br>
+		      <br>
 		    <div class="form-group">
 		      <label for="inputcellPhone" class="col-lg-2 control-label">핸드폰번호</label>
 		      <div class="col-lg-10">
