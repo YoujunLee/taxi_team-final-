@@ -41,30 +41,27 @@
 			<table class = "center1">
 				<tr>
 					<td>
-						<input type="tel" size=10 name="input1"> 원을
+						￦  <input type="tel" size=10 name="input1">
 					</td>
+					<td>	÷</td>
 					<td>
-					<div class="col-lg-10">
+					<div class="col-lg-4">
 					     <select class="form-control" id="select" name="input2" >
 					          <option>2</option>
 					          <option>3</option>
 					          <option>4</option>
 					        </select>
 					        </div>
-					</td>
-					<td>
-						 명이 나누면, 
-					</td>
+					명</td>
 				</tr>
+				<tr><td>	&nbsp;	</td></tr>
+				<tr><td>	&nbsp;	</td></tr>
 				<tr>
-					 <td>&nbsp;&nbsp;1명당 내야할 돈은 <input type="text" size=10 name="input3">원 입니다.</td>
-				</tr>
-				<!--
-				<tr>
+				<td>
 					<input type="button" name="btn1" value="=" onclick=run()>
+				</td>
+					 <td>￦  <input type="text" size=10 name="input3"></td>
 				</tr>
-				-->
-			
 		</table>
 	    </form>
 	</div>
