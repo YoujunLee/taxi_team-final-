@@ -4,7 +4,7 @@
 	<head>
 		 <meta charset="utf-8">
 		 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-   		 <title>회원가입</title>
+   		 <title>비밀번호 찾기</title>
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="../css/box.css">
 	</head>
@@ -12,10 +12,10 @@
 		
 		<br>
 		<div align="center">
-				<h2 style="color:#34C6BE">WELCOME!</h2>
+				<h2 style="color:#34C6BE">비밀번호 찾기</h2>
 		</div>
 		<br><br>
-		<form  action='./php/registo.php' method='POST' align="center" class="form-horizontal">
+		<form  action='./php/find.php' method='POST' align="center" class="form-horizontal">
 
 		    <div class="form-group">
 		      <label for="inputName" class="col-xs-4 col-md-2 control-label">이름</label>
@@ -28,10 +28,7 @@
 		      <div class="col-xs-8 col-md-10 ">
 		        <input type="text"  onKeyPress="if ((event.keyCode<46)||(event.keyCode>57)||(event.keyCode==47)) event.returnValue=false;" class="form-control" id="inputStudentId" placeholder="Student ID" name='student_no' maxlength="8" required>
 		      </div>
-		     <div style="color:#34C6BE">
-		      	※  학번은 가입 후 수정할 수 없으니 정확히 입력해주세요!
-		     </div>
-		    </div>
+		        </div>
 		      <br>
 		    <div class="form-group">
 		      <label for="inputcellPhone" class="col-xs-4 col-md-2  control-label">핸드폰번호</label>
@@ -75,21 +72,10 @@
 </script> 
 		      </div>
 		    </div>
-			<div class="form-group">
-		      <label for="inputPassword" class="col-xs-4 col-md-2  control-label">비밀번호</label>
-		      <div class="col-xs-8 col-md-10 ">
-		        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name='pass1' required>
-		      </div>
-		    </div>
-		    <div class="form-group">
-		      <label for="inputPasswordTwice" class="col-xs-4 col-md-2  control-label">비밀번호<br>확인</label>
-		      <div class="col-xs-8 col-md-10 ">
-		        <input type="password" class="form-control" id="inputPasswordTwice" placeholder="Password" name='pass2' required>
-		      </div>
-		    </div>
-		   
+			
+		    
 		     <div class="form-group">
-		      <label  class="col-xs-4 col-md-2  control-label">비밀번호<br>찾을시 질문</label>
+		      <label  class="col-xs-4 col-md-2  control-label">가입했을시<br>질문</label>
 		      <div class="col-xs-8 col-md-10 ">
 		        <select  name="question" class="form-control">
 						<option value="아버지의 성함은?" selected>아버지의 성함은?</option>
@@ -111,7 +97,7 @@
 		    </div>
 		    <br>	   
 		     <div class="div_go">
-                <input class="btn btn-lg btn-block" style="background-color:#34C6BE; color: #ffffff;" type="submit" value="가입하기">
+                <input class="btn btn-lg btn-block" style="background-color:#34C6BE; color: #ffffff;" type="submit" value="찾기">
 			</div>
 		</form>
 		

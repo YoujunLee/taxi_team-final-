@@ -21,6 +21,8 @@ $pass1 = $_POST['pass1'];
 $pass2 = $_POST['pass2'];
 $name = $_POST['name'];
 $student_no = $_POST['student_no'];
+$question = $_POST['question'];
+$answer = $_POST['answer'];
 
 
 
@@ -68,7 +70,7 @@ if($num==1)
    exit;
 } 
 
-$db->query = "insert into student_info values ('".$student_no."', '".$name."','".$cellPhone."','".$pass."')";
+$db->query = "insert into student_info values ('".$student_no."', '".$name."','".$cellPhone."','".$pass."','".$question."','".$answer."')";
 $db->DBQ();
 
 if(!$db->result)
