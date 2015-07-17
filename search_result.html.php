@@ -87,7 +87,7 @@
 </section>
 
 <section >
-<div class=" col-xs-12  col-md-4 col-md-offset-4">
+<div class="padding col-xs-12  col-md-4 col-md-offset-4">
 
 <table class="table table-striped table-hover ">
   <thead>
