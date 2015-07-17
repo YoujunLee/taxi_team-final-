@@ -16,10 +16,13 @@
 	padding-left: 1%;
   	font-size: 16px;
   	overflow:auto;	
+  	
 }
 
 .wrapper4{
  	margin-top: 0.5%;   
+ 	padding-right: 0px;
+    padding-left: 0px;
 }
 
 p{
@@ -30,7 +33,7 @@ p{
 .wrapper{
   height: 10%;
   position: static;
-  background-color: #34c6be;
+  background-color: #E9F57A;
   text-align: center;
   font-size: 18px;
 }
