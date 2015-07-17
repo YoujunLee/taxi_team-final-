@@ -130,7 +130,7 @@ out();
 			    <?php
    					}
 	 				if($check){
-						echo "<script>location.replace('./search_result.html.php');</script>"; exit;}
+						echo "<script>history.go(-2);</script>"; exit;}
 				?>
 	
    				</tbody>
