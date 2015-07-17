@@ -11,7 +11,7 @@ out();
 <html>
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">  
 	<link rel="stylesheet" type="text/css" href="./css/make_room.css"> 
 	<title>i-Taxi</title>
@@ -94,10 +94,9 @@ out();
 			<tr>
 				<label for="make_population">
 				<td class="col-md-5">최대탑승인원</td>
-					<td class="col-md-7"><input type="number" id="make_populaion" name="room_population" class="form-control" min="2" max="4" value="4" >
-						<div style="color:#34C6BE">
-							  ※ 본인 포함, 최소 탑승 인원: 2명/ 최대 탑승 인원: 4명
-						</div>
+					<td class="col-md-7">
+						<input type="number" id="make_populaion" name="room_population" class="form-control" min="2" max="4" value="4" >
+						<div style="color:#34C6BE">※ 최소탑승인원: 2명<br> &nbsp;&nbsp;&nbsp;최대탑승인원: 4명</div>
 					</td>
 					</label>
 				</tr>
@@ -108,13 +107,6 @@ out();
 	<input type="button" value="취소" class="btn btn-danger">
 	</div>
 	</div>
-	
-	
-	<!-- </div> -->
-	</form>
-	<!-- <div class="col-md-4">
-	</div> -->
-
-    <!-- </section> -->
+</form>
 </body>
 </html>

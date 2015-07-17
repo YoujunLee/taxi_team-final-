@@ -34,15 +34,19 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 			<div class="div1">
 		    	<input type="password" class="form-control" placeholder="Password"  name="logpass" required>
 			</div>
+					
 			<br><br><br>
 	            <input class="btn btn-lg btn-block" type="submit" style="background-color:#34c6be; color: #ffffff;" value="GO">
 		</form>
 		<br>			
-		
+
 		<!-- 회원가입 버튼 -->
 		<form action='./SignUp.html.php'>
 			<input class="btn btn-lg btn-block" type="submit" style="background-color:#ffde00; color: #ffffff;" value="회원가입">
 	    </form>
+	    <form class="right_go" action='./password.html.php'>
+			<input class = "btn1" type="submit" value="비밀번호 찾기">
+		</form>
 		</div>
 	</body>
 </html>
