@@ -89,7 +89,7 @@
 							echo $data['memo']. "<br>";
 						?>
 						</div>
-						<hr/>
+						<br>
 					<?php
 				}
 			?>	
