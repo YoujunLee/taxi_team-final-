@@ -94,7 +94,7 @@ out();
 			<tr>
 				<label for="make_population">
 				<td class="col-md-5">최대탑승인원</td>
-					<td class="col-md-7"><input type="number" id="make_populaion" name="room_population" class="form-control" min="2" max="4" value="4" ><div class="input-group-addon">최대 탑승 인원 4명</div></td>
+					<td class="col-md-7"><input type="number" id="make_populaion" name="room_population" class="form-control" min="2" max="4" value="4" >※  최대 탑승 인원: 4명</td>
 					</label>
 				</tr>
 
@@ -108,7 +108,7 @@ out();
 			</tbody>
 		</table>
 	<div class = "div_yg">
-	<input type="submit" value="방만들기" class=" margin_right btn-info">
+	<input type="submit" value="방만들기" class=" margin_right btn-info" style="background-color:#34c6be; color: #ffffff;">
 	<input type="button" value="취소" class="btn btn-danger">
 	</div>
 	</div>
