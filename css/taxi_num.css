@@ -1,13 +1,11 @@
-body{
-	background : url('http://cfile10.uf.tistory.com/image/2456D24152D0D5072478E4') no-repeat
+.backg{
+	/*background-image : url("../img/tax_num.png") ; */
+	background-size: cover; 
+    background-repeat: no-repeat;
 }
-
 .center{
 	text-align: center;
-  	background-align: center;
-  	margin:auto;
-  
-  	
+  	background-align: center;	
   	 }
 
 
@@ -26,3 +24,7 @@ ul.right{
 li {
     list-style: none;
     }
+.picture{
+	    opacity: 0.5;
+}
+

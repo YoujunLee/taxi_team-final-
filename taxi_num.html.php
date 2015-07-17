@@ -6,11 +6,14 @@
    	 <title>i-Taxi</title>
    	 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
    	 <link rel="stylesheet" type="text/css" href="../css/taxi_num.css">
-   	  <link rel="stylesheet" type="text/css" href="../css/practice.css">
+   	 
+   	  <!-- <link rel="stylesheet" type="text/css" href="../css/practice.css"> -->
    	 
 </head>
-<body class="center">
-	<div class= "col-xs-12  col-md-4 col-md-offset-4 padding">
+<body class="center " >
+	
+	<div class= "col-xs-12  col-md-4 col-md-offset-4 padding ">
+		
 		<nav class="navbar navbar-inverse">
 			<a class="navbar-brand" href="./index.php"><img class="imgpa" src="./img/logo.png"></a>
 			<ul class="nav navbar-nav navbar-right right">
@@ -18,18 +21,24 @@
       		</ul>
       	</nav>
       	<br>
+      	
 			<div align="center">
 				<h2>포항 택시 번호</h2>
 			</div>
 			<br>
-      	<div class="group">
-  		  <a href="tel:054-252-1111"><button class="blam anim">포스콜☎</button></a><br>
-   		  <a href="tel:054-283-8282"><button style="-webkit-animation-delay: .3s;animation-delay: .3s;" class="syke anim">해맞이콜☎</button></a><br>
- 		  <a href="tel:054-282-6161"><button style="-webkit-animation-delay: .6s;animation-delay: .6s;" class="later anim">육일콜택시☎</button></a><br>
-    	  <a href="tel:054-231-2330"><button style="-webkit-animation-delay: .12s;animation-delay: .12s;" class="ppp anim">영광콜택시☎</button></a>
-    	
+			<table class="backg table table-hover tableheight" style="text-align: center" >
+			  <div>
+			   	<tr onclick="location.href='tel:054-252-1111'" class=" btn btn-default btn-lg btn-block"><td><h2>포스콜☎</h2></td></tr>
+			   	<tr onclick="location.href='tel:054-283-8282'" class="btn btn-default btn-lg btn-block"><td><h2>해맞이콜☎</h2></td></tr>
+			   	<tr onclick="location.href='tel:054-282-6161'" class="btn btn-default btn-lg btn-block"><td><h2>육일콜☎</h2></td></tr>
+			   	<tr onclick="location.href='tel:054-231-2330'" class="btn btn-default btn-lg btn-block"><td><h2>영광콜☎</h2></td></tr>
+			  </div>
+			  </table>
+      
+    	<br><br><br><br><br><br>
 		</div>
-	</div>
 	
+	
+
 </body>
 </html>
