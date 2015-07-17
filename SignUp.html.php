@@ -11,7 +11,7 @@
 		<div class="div_root">
 		<br><br><br><br>
 		<div align="center">
-				<h2>회원가입</h2>
+				<h2 style="color:#34c6be">WELCOME!</h2>
 		</div>
   		<br><br><br>
 		<form  action='./php/registo.php' method='POST' align="center" class="form-horizontal">
@@ -85,7 +85,7 @@
 		    </div>
 		    <br>		   
 		     <div class="div_go">
-                <input class="btn btn-lg btn-block" type="submit" value="가입하기">
+                <input class="btn btn-lg btn-block" style="background-color:#34c6be; color: #ffffff;" type="submit" value="가입하기">
 			</div>
 		</form>
 		</div>
