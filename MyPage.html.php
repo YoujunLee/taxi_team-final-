@@ -55,16 +55,12 @@ out();
 			  </div>
 			  </table>
 			 </div>
-			<!--
-			<ul class="list-group">
-			  <li class="list-group-item">
-			 	  <a href="./mypage-탑승내역.html.php" class="btn btn-link">탑승내역 </a>
-			  </li>
-			  <li class="list-group-item">
-			 	  <a href="./공지사항.html.php" class="btn btn-link">공지사항</a>
-			  </li>
-			</ul>
-			-->		
+		
+		<br><br><br><br>
+			<div><hr/>
+			  	   <div>Please contact us (<a>handongitaxi@gmail.com</a>)<br>@Launched by PyungKang Kim, YouJun Lee, Maria Jeong, Minkyu YANG 
+			  </div>
+			</div>
 		</div>
 	</body>
 </html>
