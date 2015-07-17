@@ -10,7 +10,7 @@
 	</head>
 	<body class="col-xs-12 col-md-4 col-md-offset-4 " >
 		
-		<br><br>
+		<br>
 		<div align="center">
 				<h2 style="color:#34C6BE">WELCOME!</h2>
 		</div>
