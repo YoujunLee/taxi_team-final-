@@ -62,12 +62,12 @@ tr.change_color{
 	text-align: right; !important
 }
 
-.logout{
- 	padding-left: 2%;
+.logout
+{
+	padding-left: 2%;
     padding-right: 2%;
-  	text-align: right;
+    text-align: right;
 }
-
 .logo{
  	padding-left: 2%;
     padding-right: 2%;
@@ -128,3 +128,10 @@ a.noul:hover{
 	background-size: 120%;
 
 }
+.title{
+	color: white;
+	padding-left: -2%;
+    padding-right: 2%;
+    text-align: center;
+}
+
