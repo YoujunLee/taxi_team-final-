@@ -20,7 +20,7 @@ out();
 		<tr class="row">
   
    <td class = "logo" >
-      <a  href="./index.php"><img src="./img/logo.png"></a>
+        <a  href="./조회창.html.php"><img src="./img/logo.png"></a>
   
     
     </td >

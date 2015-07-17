@@ -22,7 +22,7 @@ out();
 		<tr class="row">
   
    <td class = "logo" >
-      <a  href="./index.php"><img src="./img/logo.png"></a>
+      <a  href="./조회창.html.php"><img src="./img/logo.png"></a>
   
     
     </td >
@@ -77,7 +77,7 @@ out();
 				<tr>
 					<label>
 					<td class="col-md-3">날짜</td>
-					<td class="col-md-9"><input type="date" id="search_date1" name="search_date" class="form-control" required></td>
+					<td class="col-md-9"><input type="date" id="search_date1" name="search_date" placeholder="YYYYMMDD" class="form-control" required></td>
 				    </label>
 				</tr>
 			

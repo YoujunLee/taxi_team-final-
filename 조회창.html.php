@@ -8,106 +8,145 @@ out();
 	<title>i-Taxi</title>
 	<meta charset="utf-8" >
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">  
 	<link rel="stylesheet" type="text/css" href="./css/search.css">
-	
+	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
+
 <body class="center">
-		<table class="navi col-xs-12 col-md-4 col-md-offset-4">	
+	
+	<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
 		   <td class = "logo" >
-      		   <a href="./index.php">
-      		   	<img src="./img/logo.png">
-      		   </a>
+      			<a  href="./조회창.html.php">
+      				<img src="./img/logo.png">
+      			</a>
   		   </td>
-      	   
       	   <td class = "logout">
-      		<form action='./php/logout.php'>
-		     <input class="btn1" type="submit" value="LogOut">
-	        </form>
+      	   		<form action='./php/logout.php'>
+		     		<input class="btn1" type="submit" value="LogOut">
+	       		</form>
            </td>
-  		 </tr>
-		
-	</table>			
+  		</tr>
+	</table>
+			
 	<!-- 방만들기, 방조회  -->
-
-	<table class = "col-xs-12  col-md-4 col-md-offset-4">
-		<tr class="tr1 row">
+	<table class="col-xs-12  col-md-4 col-md-offset-4 backg">
+		<tr class="tr1">
 			<td>
 			<form action='./make_room.html.php'>
-			<label for="make_room">
-			<a href="./make_room.html.php" class="noul">
-			 <img src="./img/make_room.png" class="img">
-			 &nbsp; &nbsp;
-			</a>
-		     <input class="btn2" type="submit" value="방만들기">
-		    </label> 
-	        </form>
+				<a href="./make_room.html.php" class="noul">
+					<img src=./img/make_room.png class="img">
+					&nbsp;&nbsp;&nbsp;
+				</a>
+		    	<input class="btn2" type="submit" value="방만들기">
+	    	</form>
 			</td>
 		</tr>
 		
-		<tr class = "tr2 row">
+		<tr class = "tr2">
 			<td>
 			<form action='./search_room.html.php'>
-			<label for="search_room">
-			<a href="./search_room.html.php" class="noul">
-			 <img src="./img/search.png" class="img">
-			  &nbsp; &nbsp;
-			</a>
-		     <input class="btn2" type="submit" value="택시조회">
-	        </form>
+				<a href="./search_room.html.php" class="noul">
+					<img src=./img/search.png class="img">
+					&nbsp;&nbsp;&nbsp;
+				</a>
+		     	<input class="btn2" type="submit" value="택시조회">
+	       </form>
 			</td>
 		</tr>
 		
-		<tr class = "tr1 row" >
+		<tr class = "tr1" >
 			<td>
 			<form action='./mypage-탑승내역.html.php'>
-			<label for="list">
-			<a href="./mypage-탑승내역.html.php" class="noul">
-			 <img src="./img/list.png" class="img">
-			  &nbsp; &nbsp;
-			</a>
-		     <input class="btn2" type="submit" value="탑승내역">
-		    </form>
-			</td>
+				<a href="./mypage-탑승내역.html.php" class="noul">
+					<img src=./img/list.png class="img">
+					&nbsp;&nbsp;&nbsp;
+				</a>
+		     	<input class="btn2" type="submit" value="탑승내역">
+	       </form>
+		   </td>
 		</tr>
 		
-		<tr class="tr2 row">
+		<tr class="tr2">
 			<td>
 			<form action='./MyPage.html.php'>
-			<label for="mypage">
-			<a href="./MyPage.html.php" class="noul">
-			 <img src="./img/mypage.png" class="img">
-			  &nbsp; &nbsp;
-			</a>
-		    <input class="btn2" type="submit" value="MyPage">
-	        </form>
-			</td>
+		     	<a href="./MyPage.html.php" class="noul">
+					<img src=./img/mypage.png class="img">
+					&nbsp;&nbsp;&nbsp;
+				</a>
+		    	<input class="btn2" type="submit" value="MyPage">
+	       </form>
+		   </td>
 		</tr>	
 	</table>
-
-	<table class="col-xs-12  col-md-4 col-md-offset-4" >
-	<tr class="row">
-	<td>
-	&nbsp;
-	</td>
-	</tr>
+	
+	<!-- blank -->
+	
+	<table class = "col-xs-12  col-md-4 col-md-offset-4 ">
+		<tr>
+			<td>
+				&nbsp;
+			</td>
+		</tr>
 	</table>
+
 	<!-- 택시번호 요금계산기 마이페이지  -->
 	
-	<table class="col-xs-12  col-md-4 col-md-offset-4" >	
+	<table class=" col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
 			<td>
-			<form action='./taxi_num.html.php'>
-			  <input class = "image-size1" type="image" src="./img/taxi.png"><br>
-			  <input class="btn3" type="submit" value="Taxi number">
+			<form class="div_yg" action='./taxi_num.html.php'>
+			  <a href="./taxi_num.html.php" class="noul">
+			  <img src="./img/calltaxi.png" class="img"><br>
+			  <input class="btn3" type="submit" value="콜택시">
+	    	</form>
+			</td>
+			
+			<td>
+			<form class="div_yg" action='./계산기.html.php'>
+			  <a href="./계산기.html.php" class="noul">
+			  <img src="./img/cacul.png" class="img"><br>
+			  <input class="btn3" type="submit" value="계산기">
+			  </a>
 	        </form>
 			</td>
 			
 			<td>
-			<form action='./계산기.html.php'>
-			  <input class = "image-size2" type="image" src="http://365psd.com/images/premium/thumbs/193/vector-calculator-icon-861700.jpg"><br>
-			  <input class="btn3" type="submit" value="요금계산기">
+			<form class="div_yg" action='javascript:;'>
+			  <a id="kakao-link-btn" href="javascript:;" >
+			  <img src="./img/kakao.png" class="img"><br>
+			  </a>
+			  <input id="kakao-link-btn" class="btn3" type="submit" value="친구초대">
+			  </form>
+	      
+	        
+	        <script>
+			    Kakao.init('99930094479238c325ba429e2ace07a2');
+
+   				Kakao.Link.createTalkLinkButton({
+      				container: '#kakao-link-btn',
+      				label: 'itaxi HGU 택시 카풀 서비스에 오신걸 환영합니다.',
+      				image: {
+       						 src: './img/logo.png',
+        					width: '200',
+      						height: '100'	
+      				},
+     				 webButton: {
+        						text: 'itaxi',
+       							url: 'https://52.27.102.99' 
+      				}		
+   			   });
+	        </script>
+			</td>
+			
+			<td>
+			<form class="div_yg" action='./공지사항.html.php'>
+			  <a href="./공지사항.html.php" class="noul">
+			  <img src="./img/tel.png" class="img"><br>
+			  <input class="btn3" type="submit" value="공지사항">
+			  </a>
 	        </form>
 			</td>
 		</tr>
