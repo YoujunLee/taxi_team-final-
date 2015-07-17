@@ -65,8 +65,7 @@
 		<div class = "col-xs-12  col-md-4 col-md-offset-4">
 			
 			
-		<br><br><br>
-			<hr/>
+		<br><br>
 			<?php
 				require_once('./php/config.php');
 		
