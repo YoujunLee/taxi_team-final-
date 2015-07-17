@@ -41,9 +41,9 @@
 			<table class = "center1">
 				<tr>
 					<td>
-						￦  <input type="tel" size=10 name="input1">
+						<input type="tel" size=10 name="input1"> 원
 					</td>
-					<td>	÷</td>
+					<td>	/</td>
 					<td>
 					<div class="col-lg-4">
 					     <select class="form-control" id="select" name="input2" >
@@ -60,7 +60,7 @@
 				<td>
 					<input type="button" name="btn1" value="=" onclick=run()>
 				</td>
-					 <td>￦  <input type="text" size=10 name="input3"></td>
+					 <td><input type="text" size=10 name="input3"> 원</td>
 				</tr>
 		</table>
 	    </form>

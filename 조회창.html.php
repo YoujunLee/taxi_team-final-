@@ -33,15 +33,15 @@ out();
 			
 	<!-- 방만들기, 방조회  -->
 	<table class="col-xs-12  col-md-4 col-md-offset-4 backg">
-		<tr class="tr1">
-			<td>
-			<form action='./make_room.html.php'>
-				<a href="./make_room.html.php" class="noul">
+		<tr class="tr1 noul" href="./make_room.html.php">
+			
+			
+				<td>
 					<img src=./img/make_room.png class="img">
 					&nbsp;&nbsp;&nbsp;
-				</a>
+				
 		    	<input class="btn2" type="submit" value="방만들기">
-	    	</form>
+	    	
 			</td>
 		</tr>
 		
@@ -58,15 +58,17 @@ out();
 		</tr>
 		
 		<tr class = "tr1" >
-			<td>
+			<a href="./mypage-탑승내역.html.php" class="noul">
+				<td>
 			<form action='./mypage-탑승내역.html.php'>
-				<a href="./mypage-탑승내역.html.php" class="noul">
+				
 					<img src=./img/list.png class="img">
 					&nbsp;&nbsp;&nbsp;
-				</a>
+				
 		     	<input class="btn2" type="submit" value="탑승내역">
 	       </form>
 		   </td>
+		   </a>
 		</tr>
 		
 		<tr class="tr2">
