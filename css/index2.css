@@ -2,7 +2,7 @@
 .center{
 	text-align: center;
   	background-align: center;
-  	margin:auto;
+  	margin: none;
 }
 
 .wrapper2{
@@ -16,12 +16,10 @@
 	padding : 0px;
 	background-color: #F7F7F7;
     opacity: 0.8;
-  
-	background-size: 100%;
+  	background-size: 100%;
   	font-size: 14px;
-  	overflow:scroll;	
-  	font-family:url('../font/NanumGothic.ttf');
-  	
+  	overflow:auto;	
+  	font-family:url('../font/NanumGothic.ttf');	
 }
 
  ::-webkit-scrollbar {
@@ -44,9 +42,6 @@
     padding-left: 0px;
 }
 
-.wrapper5{
-	margin-bottom:2%;
-}
 
 p{
 	text-align: right;
