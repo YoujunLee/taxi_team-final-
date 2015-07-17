@@ -101,14 +101,6 @@ out();
 					</td>
 					</label>
 				</tr>
-
-				<tr>
-					<label for="make_memo">
-					<td class="col-md-3">Memo</td>
-					<td class="col-md-9"> <textarea id="make_memo" name="room_memo" class="form-control" placeholder="특이사항" cols="5"> </textarea></td>
-					</label>
-				</tr>
-			
 			</tbody>
 		</table>
 	<div class = "div_yg">
