@@ -9,13 +9,18 @@
   	height: 300px;
   	weight: 700px;
   	position: relative;
-	border: 1px solid black;
-  	margin-top: 0.5%;
-  	margin-bottom: 0.5%;
+	border: 1px solid gray;
+  	margin-top: 0.1%;
+  	margin-bottom: 0.2%;
   	text-align: left;
-	padding-left: 1%;
-  	font-size: 16px;
+	padding : 0px;
+	background-color: #F7F7F7;
+    opacity: 0.8;
+  
+	background-size: 100%;
+  	font-size: 14px;
   	overflow:auto;	
+  	font-family:url('../font/NanumGothic.ttf');
   	
 }
 
@@ -27,15 +32,17 @@
 
 p{
 	text-align: right;
-	font-size: 13px;
+	font-size: 12px;
 }
 
 .wrapper{
   height: 10%;
   position: static;
-  background-color: #E9F57A;
+  background-color: #ffde00;
   text-align: center;
-  font-size: 18px;
+  font-size: 15px;
+  opacity: 0.6;
+  color:black;
 }
 
 thead.co{
@@ -103,4 +110,24 @@ nav.margin{
 
 .div_yg{
 text-align: center;
+}
+
+.table1 {
+  margin : 0px;
+  width: 100%;
+  max-width: 100%;
+  
+}
+.table1 > thead > tr > th,
+.table1 > tbody > tr > th,
+.table1 > tfoot > tr > th,
+.table1 > thead > tr > td,
+.table1 > tbody > tr > td,
+.table1 > tfoot > tr > td {
+  padding-left: 1%;
+  padding-right: 1%; 
+  padding-top: 1%;
+  vertical-align: top;
+  border-top: 1px solid #ddd;
+  color:black;
 }

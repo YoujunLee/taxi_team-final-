@@ -14,25 +14,22 @@ out();
 </head>
 <body class="center">
 	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
-		
 		<tr class="row">
-  
-   <td class = "logo" >
-      <a  href="./조회창.html.php"><img src="./img/logo.png"></a>
-  
-    
-    </td >
-      <td class = "logout">
-      <form action='./php/logout.php'>
-		     <input class="btn1" type="submit" value="LogOut">
-	       </form>
-        </td >
-  </tr>
-		
+  		   <td class = "logo" >
+      	       <a  href="./조회창.html.php">
+      	       	  <img src="./img/logo.png">
+      	       </a>
+    	   </td>
+     	   <td class = "logout">
+      		   <form action='./php/logout.php'>
+		     	  <input class="btn1" type="submit" value="LogOut">
+	     	   </form>
+           </td>
+  		</tr>
 	</table>
+
 <section>
 	<div class="wrapper col-xs-12  col-md-4 col-md-offset-4">
-		
 	
 	<?php 
   	    $post_id=getenv("QUERY_STRING"); // Get값으로 넘어온 값들을 구합니다.
@@ -49,12 +46,13 @@ out();
 		
 		$db->DBO();
 	?>
-	
 	</div>
-  </section>
-  <section>
-    <div class="wrapper2 col-xs-12  col-md-4 col-md-offset-4 ">
+</section>
 
+<section>
+    <div class="wrapper2 col-xs-12  col-md-4 col-md-offset-4 ">
+	<table class="table1">
+	<tbody>
 	<?php
 		require_once './php/db.php';
 		
@@ -65,18 +63,21 @@ out();
 		
 		$db2 = new DBC;
 		$db2->DBI();
-		echo "<hr>";
 		while($data = $db->result->fetch_assoc())
 		{   
 			$db2->query= "SELECT name FROM student_info WHERE studentid= '".$data['stu_id']."'";
 		    $db2->DBQ();   
 			$data2 = $db2->result->fetch_row() ;
 			$comment_name = $data2[0];
-			echo $comment_name.":   &nbsp;".$data['content']."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."<br>"."<p>".substr($data['time'],0,16)."<p>"."<hr>";
+			echo "<tr>";
+			echo "<td>".$comment_name.":&nbsp;".$data['content']."&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"."<br>"."<p>".substr($data['time'],0,16)."<p>"."</td>";
+			echo "</tr>";
 		}		
 		$db->DBO();
 		$db2->DBO();
 	?>
+	</tbody>
+	</table>
 	</div>
   </section>
   
