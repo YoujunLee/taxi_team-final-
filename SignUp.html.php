@@ -87,7 +87,7 @@
 		        <input type="password" class="form-control" id="inputPasswordTwice" placeholder="Password" name='pass2' required>
 		      </div>
 		    </div>
-		    <br><br>		   
+		    <br>	   
 		     <div class="div_go">
                 <input class="btn btn-lg btn-block" style="background-color:#34C6BE; color: #ffffff;" type="submit" value="가입하기">
 			</div>
