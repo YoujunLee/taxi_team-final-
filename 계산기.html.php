@@ -38,13 +38,17 @@
 		<br><br><br><br><br><br>
 		<div class = "col-xs-12  col-md-4 col-md-offset-4">
 			<form name="frm1">
-			<table class = "center1">
+			<table class = "table">
 				<tr>
 					<td>
-						<input type="tel" size=10 name="input1"> 원
+						<h1><input type="tel" size=10 name="input1"> 원</h1>
 					</td>
-					<td>	/</td>
-					<td>
+				</tr>
+				<tr>
+					<td><h1>÷</h1></td>
+				</tr>
+				<tr>
+					<td><h1>
 					<div class="col-lg-4">
 					     <select class="form-control" id="select" name="input2" >
 					          <option>2</option>
@@ -52,15 +56,15 @@
 					          <option>4</option>
 					        </select>
 					        </div>
-					명</td>
+					        	명
+					</h1></td>
 				</tr>
-				<tr><td>	&nbsp;	</td></tr>
-				<tr><td>	&nbsp;	</td></tr>
 				<tr>
-				<td>
-					<input type="button" name="btn1" value="=" onclick=run()>
-				</td>
-					 <td><input type="text" size=10 name="input3"> 원</td>
+					<td>
+						<h1><input type="button" name="btn1" value="=" onclick=run()>
+							<input type="text" size=10 name="input3"> 원
+						</h1>
+					</td>
 				</tr>
 		</table>
 	    </form>
