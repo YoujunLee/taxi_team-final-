@@ -1,14 +1,6 @@
-.center
-{
+.center{
    text-align: left;
    background-align: center;
-   /*margin:auto;
-   */
-}
-
- tr
-{
- /*margin: 100px;*/
 }
 
 .margin_right{
@@ -32,26 +24,25 @@
   border: 1px solid transparent;
   border-radius: 4px;
 }
-ul.right
-{
+
+ul.right{
 	float : right !important; 
 	padding-right: 3%;
 }
 
-img.imgpa
-{
+img.imgpa{
 	margin : -5%;
 }
 
-body.padding
-{
+body.padding{
 	padding-right : 0px !important;
 	padding-left : 0px !important;
 }
-.logout
-{ padding-left: 2%;
-    padding-right: 2%;
-  text-align: right;
+
+.logout{
+	 padding-left: 2%;
+     padding-right: 2%;
+  	 text-align: right;
 }
 .logo
 { padding-left: 2%;
@@ -62,7 +53,7 @@ body.padding
     padding-left: 2%;
     padding-right: 2%;
     height : 55px;
-   background-color: black;
+    background-color: black;
 }
 
 .btn1{
@@ -74,3 +65,27 @@ body.padding
 .div_yg{
 text-align: center;
 }
+
+.btn2{
+	text-align: center;
+	background-color: #6EE5A3;
+	opacity: 0.8;	
+}
+
+.row{
+	height: 10px;
+}
+
+h4{
+	margin: 0px;
+	padding: 0px;
+}
+
+a.noul:hover{
+ text-decoration:none !important 
+}
+
+a:link {text-decoration: none; color: #000000;}
+a:visited {text-decoration: none; color: #000000;}
+a:active {text-decoration: none; color: #000000;}
+a:hover {text-decoration: underline; color: #7C8B8F;}
