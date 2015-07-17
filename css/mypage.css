@@ -31,13 +31,13 @@ ul.right{
 	margin-right : 0px !important ;
 }
 .logout
-{ padding-left: 2%;
+{
+	 padding-left: 2%;
     padding-right: 2%;
   text-align: right;
 }
 .logo
 { padding-left: 2%;
-    padding-right: 2%;
   text-align: left;
 }
 .navi{
@@ -77,4 +77,11 @@ ul.right{
 
 .div_yg{
 text-align: center;
+}
+
+.title{
+	color: white;
+	padding-left: -2%;
+    padding-right: 2%;
+    text-align: center;
 }

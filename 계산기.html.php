@@ -22,51 +22,46 @@
 	</head>
 	<body class = "center">
 		<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
-		<tr class="row">
-		   <td class = "logo" >
-     			 <a  href="./index.php"><img src="./img/logo.png"></a>
-		   </td >
-  		   <td class = "logout">
-        	<form action='./php/logout.php'>
-		     <input class="btn1" type="submit" value="LogOut">
-	       </form>
-          </td >
- 		 </tr>
+			<tr class="row">
+  			   <td class = "logo" >
+      				<a  href="./조회창.html.php"><img src="./img/logo.png"></a>
+  			   </td >
+  			   <td class = "title">요금 계산기</td >
+				<td class = "logout">
+    			  <form action='./php/logout.php'>
+		     	  <input class="btn1" type="submit" value="LogOut">
+	              </form>
+      		    </td >
+      		</tr>
 		</table>
+		
+		<br><br><br><br><br><br>
 		<div class = "col-xs-12  col-md-4 col-md-offset-4">
-			<br>
-			<div align="center">
-				<h2>요금 계산기</h2>
-			</div>
-			<br><br>
 			<form name="frm1">
 			<table class = "center1">
 				<tr>
 					<td>
-						<input type="tel" size=10 name="input1"> 원을
+						￦  <input type="tel" size=10 name="input1">
 					</td>
+					<td>	÷</td>
 					<td>
-					<div class="col-lg-10">
+					<div class="col-lg-4">
 					     <select class="form-control" id="select" name="input2" >
 					          <option>2</option>
 					          <option>3</option>
 					          <option>4</option>
 					        </select>
 					        </div>
-					</td>
-					<td>
-						 명이 나누면, 
-					</td>
+					명</td>
 				</tr>
+				<tr><td>	&nbsp;	</td></tr>
+				<tr><td>	&nbsp;	</td></tr>
 				<tr>
-					 <td>&nbsp;&nbsp;1명당 내야할 돈은 <input type="text" size=10 name="input3">원 입니다.</td>
+				<td>
+					<input type="button" name="btn1" style="background-color:#34C6BE; color: #ffffff;" value="=" onclick=run()>
+				</td>
+					 <td>￦  <input type="text" size=10 name="input3"></td>
 				</tr>
-				<!--
-				<tr>
-					<input type="button" name="btn1" value="=" onclick=run()>
-				</tr>
-				-->
-			
 		</table>
 	    </form>
 	</div>
