@@ -45,7 +45,7 @@ out();
 					<select id="start" size="1" name="room_start" class="form-control">
 					<option value="한동대학교 택시 승강장" selected>한동대 택시승강장</option>
 					<option value="양덕 하나로마트">양덕 하나로마트</option>
-					<option value="E1">E1</option>
+					<option value="E1">E1 주유소</option>
 					<option value="고속버스터미널">고속터미널</option>
 					<option value="시외버스터미널">시외버스터미널</option>
 					<option value="육거리">육거리</option>
@@ -61,7 +61,7 @@ out();
 					<select id="arrive" size="1" name="room_arrive" class="form-control">
 					<option value="한동대학교 택시 승강장">한동대 택시승강장</option>
 					<option value="양덕 하나로마트">양덕 하나로마트</option>
-					<option value="E1">E1</option>
+					<option value="E1">E1 주유소</option>
 					<option value="고속버스터미널">고속터미널</option>
 					<option value="시외버스터미널">시외버스터미널</option>
 					<option value="육거리">육거리</option>
@@ -96,7 +96,7 @@ out();
 				<td class="col-md-5">최대탑승인원</td>
 					<td class="col-md-7"><input type="number" id="make_populaion" name="room_population" class="form-control" min="2" max="4" value="4" >
 						<div style="color:#34C6BE">
-							  ※  최대 탑승 인원: 4명
+							  ※ 본인 포함, 최소 탑승 인원: 2명/ 최대 탑승 인원: 4명
 						</div>
 					</td>
 					</label>
