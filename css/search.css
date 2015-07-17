@@ -19,13 +19,13 @@ tr.tableheight{
 tr.tr2{
 	height:70px;
 	background: #708090;
-	opacity: 0.7;
+	opacity: 0.8;
 }
 
 tr.tr1{
 	height:70px;	
 	background: #CFCFCF;
-	opacity: 0.7;
+	opacity: 0.8;
 }
 }
 
@@ -123,7 +123,7 @@ a.noul:hover{
 }
 
 .backg{
-	background-image:url('../img/main_back.png'); 
+	background-image:url('../img/main_taxi.png'); 
 	background-repeat:no-repeat;
 	background-size: 120%;
 
