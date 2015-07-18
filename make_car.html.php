@@ -42,7 +42,7 @@ out();
 					출발지
 				</td>
 				<td class="col-md-9">
-					<input type="text" id="start" name="car_start" class="form-control" required>
+					<input type="text" id="start" name="car_start" value="한동대" class="form-control" required>
 				</td>
 				</label>
 			
@@ -50,7 +50,7 @@ out();
 				<label for="arrive">
 				<td class="col-md-3">도착지</td>
 				<td class="col-md-9">
-					<input type="text" id="arrive" name="car_arrive" class="form-control" required>
+					<input type="text" id="arrive" name="car_arrive" value="서울" class="form-control" required>
 				</td>
 				</label>
 			</tr>		
@@ -81,16 +81,16 @@ out();
 				<label for="car">
 				<td class="col-md-3">차종</td>
 				<td class="col-md-9">
-					<input type="text" id="car" name="car_num" class="form-control" required>
+					<input type="text" id="car" name="car_num" value="에쿠스" class="form-control" required>
 				</td>
 				</label>
 			</tr>
 			
 			<tr>
-				<label for="arrive">
+				<label for="price">
 				<td class="col-md-3">가격</td>
 				<td class="col-md-9">
-					<input type="tel" id="arrive" name="car_arrive" class="form-control" required>
+					<input type="tel" id="price" name="car_price" value="10000" class="form-control" required>
 				</td>
 				</label>
 			</tr>
@@ -99,7 +99,7 @@ out();
 				<label for="make_population">
 				<td class="col-md-5">최대탑승인원</td>
 					<td class="col-md-7">
-						<input type="tel" id="make_populaion" name="room_population" class="form-control" min="2" max="4" maxlength="1" value="4" >
+						<input type="tel" id="make_populaion" name="car_population" class="form-control" min="2" max="4" maxlength="1" value="4" >
 					</td>
 					</label>
 			</tr>
