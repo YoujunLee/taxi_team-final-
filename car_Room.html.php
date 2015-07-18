@@ -45,6 +45,7 @@ out();
 		echo "<b>".$data[0]." ".$data[1]."<br>".$data[2]." → ".$data[3]."<br>차종: ".$data[4]." / 가격: ".$data[5]."원</b>";
 		
 		$db->DBO();
+		
 	?>
 	</div>
 </section>

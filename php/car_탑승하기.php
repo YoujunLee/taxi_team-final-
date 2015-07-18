@@ -11,7 +11,7 @@ require_once './config.php';
 
 $db2 = new DBC; //db object생성
 $db2->DBI();//db 들어가기
-$db2->query = "SELECT id FROM room_user ORDER BY id desc LIMIT 1";
+$db2->query = "SELECT id FROM car_user ORDER BY id desc LIMIT 1";
 $db2->DBQ();
 $num1 = $db2->result->num_rows;
 $data1 = $db2->result->fetch_row();
@@ -29,7 +29,7 @@ $stu_id= $_SESSION['user_id'];
 $name =  $_SESSION['name'] ;
 $cellphone	= $_SESSION['cellphone'];
 
-$db2->query = "SELECT start,arrive,date,time FROM room_user where post_id='".$post_id."'";
+$db2->query = "SELECT start,arrive,date,time FROM car_user where post_id='".$post_id."'";
 $db2->DBQ();
 $num1 = $db2->result->num_rows;
 $data1 = $db2->result->fetch_row();
@@ -40,7 +40,7 @@ $room_time = $data1[3];
 
 $db3 = new DBC; //db object생성
 $db3->DBI();//db 들어가기
-$db3->query = "SELECT post_id FROM room_user WHERE stu_id='".$stu_id."' AND time='".$room_time."' AND date='".$room_date."'";
+$db3->query = "SELECT post_id FROM car_user WHERE stu_id='".$stu_id."' AND time='".$room_time."' AND date='".$room_date."'";
 $db3->DBQ();
 $count_me = $db3->result->num_rows;
 
@@ -51,11 +51,11 @@ if($count_me>0)
 	exit;
 }
 
-$db2->query = "insert into room_user values('".$id."', '".$post_id ."','".$stu_id."','".$name."','".$cellphone."','".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."')";
+$db2->query = "insert into car_user values('".$id."', '".$post_id ."','".$stu_id."','".$name."','".$cellphone."','".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."')";
 $db2->DBQ();
 $db2->DBO();
 
-echo "<script>location.replace('../Room.html.php?".$post_id."');</script>";
+echo "<script>location.replace('../car_Room.html.php?".$post_id."');</script>";
 
 ?>
 </body>

@@ -175,6 +175,27 @@ text-align: center;
   text-align:left;
 }
 
+.table3 {
+  margin : 0px;
+  width: 100%;
+  max-width: 100%;  
+}
+.table3 > thead > tr > th,
+.table3 > tbody > tr > th,
+.table3 > tfoot > tr > th,
+.table3 > thead > tr > td,
+.table3 > tbody > tr > td,
+.table3 > tfoot > tr > td {
+  padding-left: 1px;
+  padding-right: 1px; 
+  padding-top: 1%;
+  padding-bottom: 1%;
+  vertical-align: center;
+  border-top: 1px solid #ddd;
+  color:black;
+  text-align:left;
+}
+
 .title{
 	text-align: center;
 	background-color: #fef19c;
