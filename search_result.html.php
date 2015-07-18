@@ -87,20 +87,17 @@
 </section>
 
 <section >
-<div class=" col-xs-12  col-md-4 col-md-offset-4">
+<div class="padding col-xs-12  col-md-4 col-md-offset-4">
 
-<table class="table table-striped table-hover ">
+<table class="table1 table-striped table-hover ">
   <thead>
     <tr class="row">
-      
-
-      <th class="col-xs-3 col-md-3">출발시간</th>
-      <th class="col-xs-7 col-md-7">장소</th>
-      <th class="col-xs-2 col-md-2">State</th>
+	  <th class="col-xs-3 col-md-3">시간</th>
+      <th class="col-xs-7 col-md-7">장소 <span class="padding" style="font-size: 10px">(출발지→도착지)</span></th>
+      <th class="col-xs-2 col-md-2" style="text-align:center">상태</th>
     </tr>
   </thead>
   <tbody>
- 
   <?php
      $page = 1; 
      if(isset($_GET["page"]))
@@ -127,10 +124,9 @@
 					$check=true;
 				}	
     	
-    		echo "<tr class="."'row'".">";
-    		
-    		echo " <th class="."'col-xs-3 col-md-3'".">".substr($data[3],0,2)." : ".substr($data[3],3,2)."</th>";
-    		echo " <th class="."'col-xs-7 col-md-7'".">".$data[0]." → "."<br>".$data[1]."</th>";
+    		echo "<td class="."'row'".">";
+    		echo " <td class="."'col-xs-3 col-md-3'".">".substr($data[3],0,2)." : ".substr($data[3],3,2)."</th>";
+    		echo " <td class="."'col-xs-7 col-md-7'".">".$data[0]." → "."<br>".$data[1]."</th>";
     		$current_time = date("Y-m-d h:i:s");
 
 			if($current_time>$data[2]." ".$data[3])
