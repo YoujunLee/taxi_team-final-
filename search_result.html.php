@@ -92,15 +92,12 @@
 <table class="table1 table-striped table-hover ">
   <thead>
     <tr class="row">
-      
-
-      <th class="col-xs-3 col-md-3">출발시간</th>
-      <th class="col-xs-7 col-md-7">장소</th>
-      <th class="col-xs-2 col-md-2">State</th>
+	  <th class="col-xs-3 col-md-3">시간</th>
+      <th class="col-xs-7 col-md-7">장소 <span class="padding" style="font-size: 10px">(출발지→도착지)</span></th>
+      <th class="col-xs-2 col-md-2">상태</th>
     </tr>
   </thead>
   <tbody>
- 
   <?php
      $page = 1; 
      if(isset($_GET["page"]))

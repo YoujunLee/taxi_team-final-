@@ -134,10 +134,7 @@ out();
 				?>
 	
    				</tbody>
-   
-   				<!-- 여기까지 바꾼코드 -->
-			</table>
-
+   			</table>
 		<a href="./php/delete.php?<?php echo $post_id2; ?>" class="btn btn-danger" > 탑승취소</a>
 		</div>
 	</section>

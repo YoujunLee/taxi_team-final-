@@ -65,9 +65,9 @@
   
   			<thead>
     			<tr class="row">
-      			    <th class="col-xs-4 col-md-4">출발시간</th>
-      				<th class="col-xs-6 col-md-6">장소</th>
-      				<th class="col-xs-2 col-md-2">State</th>
+      			    <th class="col-xs-3 col-md-3">시간</th>
+      				<th class="col-xs-7 col-md-7">장소 <span class="padding" style="font-size: 10px">(출발지→도착지)</span></th>
+      				<th class="col-xs-2 col-md-2">상태</th>
     			</tr>
   			</thead>
   
@@ -117,7 +117,7 @@
 							break;
 	
 	        		$count++;
-	  				}
+	  			}
 	
 					$db->DBO();
 					$db2->DBO();
@@ -126,7 +126,7 @@
 			</table>
 			</div>
 	</section >
-	
+	<!-- Page 넘기는 장치-->
 	<div class="col-xs-12 col-md-4 col-md-offset-4">
 	<ul class="pagination pagination-lg">
 		<?php

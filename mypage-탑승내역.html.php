@@ -10,120 +10,135 @@ out();
 	<meta charset="utf-8" >
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-	
+	<link rel="stylesheet" type="text/css" href="./css/index2.css">    
+	<link rel="stylesheet" type="text/css" href="./css/index3.css">    
 	<link rel="stylesheet" type="text/css" href="./css/mypage_change.css">    
 </head>
+
 <body class = "center">
-	
-		<table class=" navi col-xs-12  col-md-6 col-md-offset-3" >	
-		
+	<table class=" navi col-xs-12  col-md-6 col-md-offset-3" >	
 		<tr class="row">
-  
-   <td class = "logo" >
-        <a  href="./조회창.html.php"><img src="./img/logo.png"></a>
-    </td >
-      <td class = "logout">
-      <form action='./php/logout.php'>
-		     <input class="btn1" type="submit" value="LogOut">
-	       </form>
-        </td >
-  </tr>
-		
+			<td class = "logo" >
+		        <a  href="./조회창.html.php"><img src="./img/logo.png"></a>
+    		</td>
+      
+      		<td class = "logout">
+      			<form action='./php/logout.php'>
+		     		<input class="btn1" type="submit" value="LogOut">
+	       		</form>
+        	</td>
+  		</tr>
 	</table>
 	
-	<br><br><br><br><br><br>
-	<div class=" col-xs-12  col-md-6 col-md-offset-3">
-	<div class="panel panel-default">
-  <!-- Default panel contents -->
-
-  <!-- Table -->
-  <table class="table  table-hover tableheight">
-	 <thead>
-    	<tr>
-    	 
-     	 <td>날짜</td>
-     	 <td>시간</td>
-     	 <td>출발</td>
-     	 <td>도착</td>
-   		</tr>
- 	 </thead>
-	 <tbody>
-	 	<?php
-		require_once './php/db.php';
-		
-		$stu_id= $_SESSION['user_id'];
-		
-		$db = new DBC;
-		$db->DBI();
-		
-		
-		$db->query = "SELECT * FROM post WHERE stu_id='".$_SESSION['user_id']."' order by date desc";
-		$db->DBQ();
-		$num = $db->result->num_rows;
-		$page = 1; 
-		$count = 0;
-        if(isset($_GET["page"]))
-        $page = $_GET["page"];
-	    $page_number =  $page*10 -10;
-		
-  	while($data = $db->result->fetch_assoc())
-	{
-		       if($page_number==$count)
-	 	    	if($page_number++<$page*10)
-	 		{
-		?>
-		<div >
-    	<tr class="mypage_hover" style="cursor:hand;" onclick="location.href='./Room.html.php?<?php echo $data['post_id']?>'">
-      	
-      	 <td><?php echo $data['date']?></td>
-     	 <td><?php echo substr($data['time'],0,5)?></td>
-     	 <td><?php echo $data['start']?></td>
-     	 <td><?php echo $data['arrive']?></td>
-   		</tr>
+	<section >
+		<div class="title col-xs-12  col-md-4 col-md-offset-4">
+	    	<h4><span style="color:black"><b>본인 탑승내역</b></span></h4>
    		</div>
-   		<?php
-   		}
-  			else
-				break;
-			$count++;
-	}
-			
-	?>
-    	  	</tbody>
-  </table>
-</div>
-</div>
-
-<div class="col-xs-12 col-md-6 col-md-offset-3">
-	<ul class="pagination pagination-lg">
-  		
-	<?php
-	$number;
-	if($page>1)
-	echo "<li><a href='./mypage-탑승내역.html.php'>«맨앞</a></li>";
-
-	if($page>1)
-  	echo "<li><a href='./mypage-탑승내역.html.php?page=".($page-1)."'><이전</a></li>";
+	</section>
 	
-	for($number=floor(($page/5))*5+1;$number<floor(($page/5))*5+6;$number++){
-		if($number<=floor((($num-1)/10))+1){
-	   		if($number!=$page)
-				echo"<li><a href='./mypage-탑승내역.html.php?page=".($number)."'>".$number."</a></li>";
-		else
-			echo"<li class='active'><a href='./mypage-탑승내역.html.php?page=".($number)."'>".$number."</a></li>";
-		}
-	}
-	
-	if($page<floor((($num-1)/10))+1)
-  	echo "<li><a href='./mypage-탑승내역.html.php?page=".($page+1)."'>앞으로></a></li>";
-	
-	if($page<floor((($num-1)/10)+1))
-  	echo "<li><a href='./mypage-탑승내역.html.php?page=".floor(((($num-1)/10)+1))."'>맨뒤»</a></li>";
-  	?>
- 			
-	</ul>
-</div>
+	<div class="padding col-xs-12  col-md-6 col-md-offset-3">
+		<table class="table1 table-striped table-hover ">
+  			<thead>
+    			<tr class="row">
+	  				<th class="col-xs-3 col-md-3">시간</th>
+      				<th class="col-xs-7 col-md-7">장소 <span class="padding" style="font-size: 10px">(출발지→도착지)</span></th>
+      				<th class="col-xs-2 col-md-2">상태</th>
+    			</tr>
+  			</thead>
+	 		<tbody>
+	 		<?php
+				require_once './php/db.php';
+				
+				$user_id=$_SESSION['user_id'];
+				
+				$db = new DBC;
+				$db->DBI();
+				$db->query = "SELECT start, arrive, date, time, population, post_id FROM post WHERE stu_id='".$user_id."' ORDER BY date desc,time desc";
+				$db->DBQ();
+				
+				$db2 = new DBC;
+				$db2->DBI();
+				
+				$page = 1; 
+     			if(isset($_GET["page"]))
+     				$page = $_GET["page"];
+	 			$count = 0;
+	 			$page_number =  $page*10 -10;
+	 			$check = false;
+  	 			$num = $db->result->num_rows;
+  	 
+  	 			while($data = $db->result->fetch_row())
+	 			{
+	 				if($page_number==$count)
+	 					if($page_number++<$page*10)
+	 					{
+	 						$check = false;
+	 						$db2->query = "select post_id, stu_id from room_user where post_id = '".$data[5]."'"; 
+	 						$db2->DBQ();
+	    					$num2 = $db2->result->num_rows;
+    	
+			    			while($data2 = $db2->result->fetch_row())
+    						{ 
+								if($data2[1]== $_SESSION['user_id'])
+								$check=true;
+							}	
+    	
+    						echo "<td class="."'row'".">";
+    			    		echo " <td class="."'col-xs-3 col-md-3'".">".$data[2]."<br>".substr($data[3],0,2)." : ".substr($data[3],3,2)."</th>";
+    						echo " <td class="."'col-xs-7 col-md-7'".">".$data[0]." → "."<br>".$data[1]."</th>";
+    						$current_time = date("Y-m-d h:i:s");
 
+							if($current_time>$data[2]." ".$data[3])
+								echo " <th class="."'col-xs-2 col-md-2'"."><a href='./Room.html.php?".$data[5]."' class='btn btn-success1'>시간<br>종료</a></th>";
+							else if($check)
+    							echo " <th class="."'col-xs-2 col-md-2'"."><a href='./Room.html.php?".$data[5]."' class='btn btn-warning1'>참여중<br>".$num2."/".$data[4]."</a></th>";
+							else if($num2==$data[4])
+    							echo " <th class="."'col-xs-2 col-md-2'"."><a href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data[4]."</a></th>";
+							else 
+    							echo " <th class="."'col-xs-2 col-md-2'"."><a href='./php/탑승하기.php?post_id=".$data[5]."' class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
+        					
+        					echo " </tr>";
+  						}
+  						else
+							break;
+	
+	        		$count++;
+	  				}
+	
+					$db->DBO();
+					$db2->DBO();
+    			?>	
+    		</tbody>
+  		</table>
+	</div>
+	<!-- Page 넘기는 장치-->
+	<div class="col-xs-12 col-md-6 col-md-offset-3">
+		<ul class="pagination pagination-lg">
+  		<?php
+			$number;
+			if($page>1)
+				echo "<li><a href='./search_result_all.html.php'>«</a></li>";
+
+			if($page>1)
+  				echo "<li><a href='./search_result_all.html.php?page=".($page-1)."'><</a></li>";
+	
+			for($number=floor((($page-1)/3))*3+1;$number<floor((($page-1)/3))*3+4;$number++){
+				if($number<=floor((($num-1)/10))+1){
+			   		if($number!=$page)
+						echo"<li><a href='./search_result_all.html.php?page=".($number)."'>".$number."</a></li>";
+					else
+						echo"<li class='active'><a href='./search_result_all.html.php?page=".($number)."'>".$number."</a></li>";
+				}
+			}
+	
+			if($page<floor((($num-1)/10))+1)
+  				echo "<li><a href='./search_result_all.html.php?page=".($page+1)."'>></a></li>";
+	
+			if($page<floor((($num-1)/10)+1))
+  				echo "<li><a href='./search_result_all.html.php?page=".floor(((($num-1)/10)+1))."'>»</a></li>";
+  		?>
+ 		</ul>
+	</div>
 </body>
 </html>
 
