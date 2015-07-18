@@ -40,7 +40,7 @@ out();
 					<img src=./img/make_room.png class="img">
 					&nbsp;&nbsp;&nbsp;
 				</a>
-		    	<input class="btn2" type="submit" value="방만들기">
+		    	<input class="btn2" type="submit" value="택시모집">
 	    	</form>
 			</td>
 		</tr>
@@ -57,29 +57,42 @@ out();
 			</td>
 		</tr>
 		
+			
+		<tr class="tr1" onclick="location.href='./make_car.html.php'">
+			<td>
+			<form action='./make_car.html.php'>
+		     	<a href="./make_car.html.php" class="noul">
+					<img src=./img/car.png class="img">
+					&nbsp;&nbsp;&nbsp;
+				</a>
+		    	<input class="btn2" type="submit" value="카풀모집">
+	       </form>
+		   </td>
+		</tr>
+		
+		<tr class="tr2" onclick="location.href='./search_car.html.php'">
+			<td>
+			<form action='./search_car.html.php'>
+		     	<a href="./search_car.html.php" class="noul">
+					<img src=./img/car_s.png class="img">
+					&nbsp;&nbsp;&nbsp;
+				</a>
+		    	<input class="btn2" type="submit" value="카풀조회">
+	       </form>
+		   </td>
+		</tr>		
+		
 		<tr class = "tr1" onclick="location.href='./mypage-탑승내역.html.php'">
 			<td>
 			<form action='./mypage-탑승내역.html.php'>
 				<a href="./mypage-탑승내역.html.php" class="noul">
-					<img src=./img/list.png class="img">
+					<img src=./img/list.png class="img2">
 					&nbsp;&nbsp;&nbsp;
 				</a>
 		     	<input class="btn2" type="submit" value="탑승내역">
 	       </form>
 		   </td>
 		</tr>
-		
-		<tr class="tr2" onclick="location.href='./MyPage.html.php'">
-			<td>
-			<form action='./MyPage.html.php'>
-		     	<a href="./MyPage.html.php" class="noul">
-					<img src=./img/mypage.png class="img">
-					&nbsp;&nbsp;&nbsp;
-				</a>
-		    	<input class="btn2" type="submit" value="MyPage">
-	       </form>
-		   </td>
-		</tr>	
 	</table>
 	
 	<!-- blank -->
@@ -143,9 +156,9 @@ out();
 			
 			<td>
 			<form class="div_yg" action='./공지사항.html.php'>
-			  <a href="./공지사항.html.php" class="noul">
-			  <img src="./img/tel.png" class="img"><br>
-			  <input class="btn3" type="submit" value="공지사항">
+			  <a href="./MyPage.html.php" class="noul">
+			  <img src="./img/mypage.png" class="img"><br>
+			  <input class="btn3" type="submit" value="My Page">
 			  </a>
 	        </form>
 			</td>
