@@ -18,14 +18,14 @@
 		<form  action='./php/registo.php' method='POST' align="center" class="form-horizontal">
 
 		    <div class="form-group">
-		      <label for="inputName" class="col-xs-4 col-md-2 control-label">이름</label>
-		      <div class="col-xs-8 col-md-10">
+		      <label for="inputName" class="col-xs-4 col-md-3 control-label">이름</label>
+		      <div class="col-xs-8 col-md-9">
 		        <input type="text" class="form-control" id="inputName" placeholder="Name" name='name' required>
 		      </div>
 		    </div>
 		    <div class="form-group">
-		      <label for="inputStudentId" class="col-xs-4 col-md-2  control-label">학번</label>
-		      <div class="col-xs-8 col-md-10 ">
+		      <label for="inputStudentId" class="col-xs-4 col-md-3  control-label">학번</label>
+		      <div class="col-xs-8 col-md-9 ">
 		        <input type="text"  onKeyPress="if ((event.keyCode<46)||(event.keyCode>57)||(event.keyCode==47)) event.returnValue=false;" class="form-control" id="inputStudentId" placeholder="Student ID" name='student_no' maxlength="8" required>
 		      </div>
 		     <div style="color:#34C6BE">
@@ -34,8 +34,8 @@
 		    </div>
 		      <br>
 		    <div class="form-group">
-		      <label for="inputcellPhone" class="col-xs-4 col-md-2  control-label">핸드폰번호</label>
-		      <div class="col-xs-8 col-md-10 ">
+		      <label for="inputcellPhone" class="col-xs-4 col-md-3  control-label">핸드폰번호</label>
+		      <div class="col-xs-8 col-md-9 ">
 		        <input type="text" onKeyPress="if ((event.keyCode<46)||(event.keyCode>57)||(event.keyCode==47)) event.returnValue=false;" class="form-control" id="Phone" placeholder="Phone Number" name='cellPhone' maxlength="13" required>
 		      <script>
 		       function autoHypenPhone(str){
@@ -76,21 +76,21 @@
 		      </div>
 		    </div>
 			<div class="form-group">
-		      <label for="inputPassword" class="col-xs-4 col-md-2  control-label">비밀번호</label>
-		      <div class="col-xs-8 col-md-10 ">
+		      <label for="inputPassword" class="col-xs-4 col-md-3  control-label">비밀번호</label>
+		      <div class="col-xs-8 col-md-9 ">
 		        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name='pass1' required>
 		      </div>
 		    </div>
 		    <div class="form-group">
-		      <label for="inputPasswordTwice" class="col-xs-4 col-md-2  control-label">비밀번호<br>확인</label>
-		      <div class="col-xs-8 col-md-10 ">
+		      <label for="inputPasswordTwice" class="col-xs-4 col-md-3  control-label">비밀번호<br>확인</label>
+		      <div class="col-xs-8 col-md-9 ">
 		        <input type="password" class="form-control" id="inputPasswordTwice" placeholder="Password" name='pass2' required>
 		      </div>
 		    </div>
 		   
 		     <div class="form-group">
-		      <label  class="col-xs-4 col-md-2  control-label">비밀번호<br>찾을시 질문</label>
-		      <div class="col-xs-8 col-md-10 ">
+		      <label  class="col-xs-4 col-md-3  control-label">비밀번호<br>찾을시 질문</label>
+		      <div class="col-xs-8 col-md-9 ">
 		        <select  name="question" class="form-control">
 						<option value="아버지의 성함은?" selected>아버지의 성함은?</option>
 						<option value="어머님의 성함은?">어머님의 성함은?</option>
@@ -104,8 +104,8 @@
 		      </div>
 		    </div>
 		     <div class="form-group">
-		      <label class="col-xs-4 col-md-2  control-label">대답</label>
-		       <div class="col-xs-8 col-md-10">
+		      <label class="col-xs-4 col-md-3  control-label">대답</label>
+		       <div class="col-xs-8 col-md-9">
 		        <input name="answer" type="text" class="form-control"  required>
 		      </div>
 		    </div>
