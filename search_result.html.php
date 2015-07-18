@@ -94,7 +94,7 @@
     <tr class="row">
 	  <th class="col-xs-3 col-md-3">시간</th>
       <th class="col-xs-7 col-md-7">장소 <span class="padding" style="font-size: 10px">(출발지→도착지)</span></th>
-      <th class="col-xs-2 col-md-2">상태</th>
+      <th class="col-xs-2 col-md-2 style="text-align:center"">상태</th>
     </tr>
   </thead>
   <tbody>
