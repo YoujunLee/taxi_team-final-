@@ -9,70 +9,71 @@
    		 <link rel="stylesheet" type="text/css" href="../css/box.css">
 	</head>
 	<body class="col-xs-12 col-md-4 col-md-offset-4 " >
-		
 		<br>
 		<div align="center">
 				<h2 style="color:#34C6BE">WELCOME!</h2>
 		</div>
 		<br><br>
 		<form  action='./php/registo.php' method='POST' align="center" class="form-horizontal">
-
 		    <div class="form-group">
-		      <label for="inputName" class="col-xs-4 col-md-3 control-label">이름</label>
-		      <div class="col-xs-8 col-md-9">
-		        <input type="text" class="form-control" id="inputName" placeholder="Name" name='name' required>
-		      </div>
+		    	  <label for="inputName" class="col-xs-4 col-md-3 control-label">이름</label>
+	        <div class="col-xs-8 col-md-9">
+		          <input type="text" class="form-control" id="inputName" placeholder="Name" name='name' required>
 		    </div>
-		    <div class="form-group">
-		      <label for="inputStudentId" class="col-xs-4 col-md-3  control-label">학번</label>
-		      <div class="col-xs-8 col-md-9 ">
-		        <input type="text"  onKeyPress="if ((event.keyCode<46)||(event.keyCode>57)||(event.keyCode==47)) event.returnValue=false;" class="form-control" id="inputStudentId" placeholder="Student ID" name='student_no' maxlength="8" required>
-		      </div>
-		     <div style="color:#34C6BE">
-		      	※  학번은 가입 후 수정할 수 없으니 정확히 입력해주세요!
-		     </div>
 		    </div>
-		      <br>
+		
 		    <div class="form-group">
-		      <label for="inputcellPhone" class="col-xs-4 col-md-3  control-label">핸드폰번호</label>
-		      <div class="col-xs-8 col-md-9 ">
-		        <input type="text" onKeyPress="if ((event.keyCode<46)||(event.keyCode>57)||(event.keyCode==47)) event.returnValue=false;" class="form-control" id="Phone" placeholder="Phone Number" name='cellPhone' maxlength="13" required>
+			      <label for="inputStudentId" class="col-xs-4 col-md-3  control-label">학번</label>
+		    <div class="col-xs-8 col-md-9 ">
+		          <input type="tel"  onKeyPress="if ((event.keyCode<46)||(event.keyCode>57)||(event.keyCode==47)) event.returnValue=false;" class="form-control" id="inputStudentId" placeholder="Student ID" name='student_no' maxlength="8" required>
+		    </div>
+		    </div>
+		    <p class="notice">
+		      	※ 혹시 모를 사고에 대비하여, 외부인 가입을 제한 중 입니다.<br>본교 학생이 정보가 없다고 뜰 시, <span style="color:red">hguitaxi@gmail.com</span><br>e-mail 보내주시면 바로 조치해드리겠습니다.  
+		    </p>		
+		    <div class="form-group">
+		    	<label for="inputcellPhone" class="col-xs-4 col-md-3  control-label">핸드폰번호</label>
+		    <div class="col-xs-8 col-md-9 ">
+		        <input type="tel" onKeyPress="if ((event.keyCode<46)||(event.keyCode>57)||(event.keyCode==47)) event.returnValue=false;" class="form-control" id="Phone" placeholder="Phone Number" name='cellPhone' maxlength="13" required>
 		      <script>
-		       function autoHypenPhone(str){
-            str = str.replace(/[^0-9]/g, '');
-            var tmp = '';
-            if( str.length < 4){
-                return str;
-            }else if(str.length < 7){
-                tmp += str.substr(0, 3);
-                tmp += '-';
-                tmp += str.substr(3);
-                return tmp;
-            }else if(str.length < 11){
-                tmp += str.substr(0, 3);
-                tmp += '-';
-                tmp += str.substr(3, 3);
-                tmp += '-';
-                tmp += str.substr(6);
-                return tmp;
-            }else{              
-                tmp += str.substr(0, 3);
-                tmp += '-';
-                tmp += str.substr(3, 4);
-                tmp += '-';
-                tmp += str.substr(7);
-                return tmp;
-            }
-            return str;
-        }
-     var Phone = document.getElementById('Phone');
-     Phone.onkeyup = function(event){
-
-        event = event || window.event;
-        var _val = this.value.trim();
-        this.value = autoHypenPhone(_val) ;
-}
-</script> 
+		      	function autoHypenPhone(str){
+            		str = str.replace(/[^0-9]/g, '');
+            		var tmp = '';
+            		if( str.length < 4){
+                		return str;
+            		}
+            		else if(str.length < 7){
+                		tmp += str.substr(0, 3);
+                		tmp += '-';
+                		tmp += str.substr(3);
+                		return tmp;
+            		}
+            		else if(str.length < 11){
+                		tmp += str.substr(0, 3);
+                		tmp += '-';
+                		tmp += str.substr(3, 3);
+                		tmp += '-';
+                		tmp += str.substr(6);
+                		return tmp;
+            		}
+            		else{              
+                		tmp += str.substr(0, 3);
+                		tmp += '-';
+                		tmp += str.substr(3, 4);
+                		tmp += '-';
+                		tmp += str.substr(7);
+                		return tmp;
+            		}
+            		return str;
+        		}
+     			var Phone = document.getElementById('Phone');
+     			
+     			Phone.onkeyup = function(event){
+		        	event = event || window.event;
+		        	var _val = this.value.trim();
+		        	this.value = autoHypenPhone(_val) ;
+				}
+			</script> 
 		      </div>
 		    </div>
 			<div class="form-group">
