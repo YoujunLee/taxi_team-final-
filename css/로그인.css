@@ -37,21 +37,20 @@
 .main_color{
 	background-color: #34c6be; !important
 }
+
 .wrapper{
  	margin-top: 20%;  
  	margin-bottom: 10%; 
  	text-align: center;
-    }
+}
     
- .div1{
- 
-
- }
- .btn1{
-	
-  	border: 0px none;
-  	
-	background-color: transparent;
+.btn1{
+	margin-top:15px;
+	padding:1%;
+	color:white;
+	border: 0px none;
+  	border-radius : 8%;
+	background-color: #d96d63;
 }
 .right_go{
 	
