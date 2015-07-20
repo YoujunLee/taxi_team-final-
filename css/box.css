@@ -47,3 +47,9 @@ ul.right{
 	float : right;
 	padding-right: 3%;
 }
+
+.notice{
+	color:#34C6BE;
+	text-align:right;
+	margin-right:2px;
+	}	

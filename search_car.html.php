@@ -10,7 +10,7 @@
 
 	$db = new DBC;
 	$db->DBI();
-	$db->query = "select start, arrive, date, time,population,post_id from post ORDER BY date desc,time desc";
+	$db->query = "select start, arrive, date, time,population,post_id, price from car_post ORDER BY date desc,time desc";
 	$db->DBQ();
 	$num = $db->result->num_rows;
     			
@@ -19,7 +19,7 @@
 		echo "<script>
 		   		var result=confirm('죄회되는 방이 없습니다. 방을 만드시겠습니까?');
 		   		if(result)
-		   			location.replace('../make_room.html.php');
+		   			location.replace('../make_car.html.php');
 		   	  </script>";
    		exit;
 	}
@@ -55,18 +55,19 @@
 	
 	<section >
 		<div class="title col-xs-12  col-md-4 col-md-offset-4">
-	    	<h4><b>전체조회</b></h4>
+	    	<h4><b>카풀조회</b></h4>
    		</div>
 	</section>
 
 	<section>
 		<div class="padding col-xs-12  col-md-4 col-md-offset-4">
-			<table class="table2 table-striped table-hover ">
+			<table class="table3 table-striped table-hover ">
   
   			<thead>
     			<tr class="row">
       			    <th class="col-xs-3 col-md-3">시간</th>
-      				<th class="col-xs-7 col-md-7 ">장소 <span class="padding" style="font-size: 10px">(출발지→도착지)</span></th>
+      				<th class="col-xs-4 col-md-4">장소 <span class="padding" style="font-size: 10px">(출발지→도착지)</span></th>
+      				 <th class="col-xs-3 col-md-3" style="text-align:center">가격</th>
       				<th class="col-xs-2 col-md-2" style="text-align:center">상태</th>
     			</tr>
   			</thead>
@@ -87,7 +88,7 @@
 	 					if($page_number++<$page*10)
 	 					{
 	 						$check = false;
-	 						$db2->query = "select post_id, stu_id from room_user where post_id = '".$data[5]."'"; 
+	 						$db2->query = "select post_id, stu_id from car_user where post_id = '".$data[5]."'"; 
 	 						$db2->DBQ();
 	    					$num2 = $db2->result->num_rows;
     	
@@ -98,18 +99,19 @@
 							}	
     	
     						echo "<td class="."'row'".">";
-    			    		echo " <td class="."'col-xs-3 col-md-3'".">" .$data[2]."<br>".substr($data[3],0,2)." : ".substr($data[3],3,2)."</th>";
-    						echo " <td class="."'col-xs-7 col-md-7'".">".$data[0]." → "."<br>".$data[1]."</th>";
+    			    		echo " <td class="."'col-xs-3 col-md-3'".">".$data[2]."<br>".substr($data[3],0,2)." : ".substr($data[3],3,2)."</td>";
+    						echo " <td class="."'col-xs-7 col-md-7'".">".$data[0]." → "."<br>".$data[1]."</td>";
+							echo " <td class="."'col-xs-7 col-md-7'"." style="."'text-align:center'".">".$data[6]."원</td>";
     						$current_time = date("Y-m-d h:i:s");
 
 							if($current_time>$data[2]." ".$data[3])
 								echo " <th class="."'col-xs-2 col-md-2'"."><a href='#' class='btn btn-success1'>시간<br>종료</a></th>";
 							else if($check)
-    							echo " <th class="."'col-xs-2 col-md-2'"."><a href='./Room.html.php?".$data[5]."' class='btn btn-warning1'>참여중<br>".$num2."/".$data[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"."><a href='./car_Room.html.php?".$data[5]."' class='btn btn-warning1'>참여중<br>".$num2."/".$data[4]."</a></th>";
 							else if($num2==$data[4])
     							echo " <th class="."'col-xs-2 col-md-2'"."><a href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data[4]."</a></th>";
 							else 
-    							echo " <th class="."'col-xs-2 col-md-2'"."><a href='./php/탑승하기.php?post_id=".$data[5]."' class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"."><a href='./php/car_탑승하기.php?post_id=".$data[5]."' class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
         					
         					echo " </tr>";
   						}
@@ -132,25 +134,25 @@
 		<?php
 			$number;
 			if($page>1)
-				echo "<li><a href='./search_result_all.html.php'>«</a></li>";
+				echo "<li><a href='./search_car.html.php'>«</a></li>";
 
 			if($page>1)
-  				echo "<li><a href='./search_result_all.html.php?page=".($page-1)."'><</a></li>";
+  				echo "<li><a href='./search_car.html.php?page=".($page-1)."'><</a></li>";
 	
 			for($number=floor((($page-1)/3))*3+1;$number<floor((($page-1)/3))*3+4;$number++){
 				if($number<=floor((($num-1)/10))+1){
 			   		if($number!=$page)
-						echo"<li><a href='./search_result_all.html.php?page=".($number)."'>".$number."</a></li>";
+						echo"<li><a href='./search_car.html.php?page=".($number)."'>".$number."</a></li>";
 					else
-						echo"<li class='active'><a href='./search_result_all.html.php?page=".($number)."'>".$number."</a></li>";
+						echo"<li class='active'><a href='./search_car.html.php?page=".($number)."'>".$number."</a></li>";
 				}
 			}
 	
 			if($page<floor((($num-1)/10))+1)
-  				echo "<li><a href='./search_result_all.html.php?page=".($page+1)."'>></a></li>";
+  				echo "<li><a href='./search_car.html.php?page=".($page+1)."'>></a></li>";
 	
 			if($page<floor((($num-1)/10)+1))
-  				echo "<li><a href='./search_result_all.html.php?page=".floor(((($num-1)/10)+1))."'>»</a></li>";
+  				echo "<li><a href='./search_car.html.php?page=".floor(((($num-1)/10)+1))."'>»</a></li>";
   		?>
  	</ul>
 	</div>

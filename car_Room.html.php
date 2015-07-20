@@ -38,13 +38,14 @@ out();
 
 		$db = new DBC;
 		$db->DBI();
-		$db->query = "SELECT date, time, start, arrive FROM post WHERE post_id='".$post_id."'";
+		$db->query = "SELECT date, time, start, arrive, car, price FROM car_post WHERE post_id='".$post_id."'";
 		$db->DBQ();
 		
 		$data=$db->result->fetch_row();
-		echo "<b>".$data[0]." ".$data[1]."<br>".$data[2]." → ".$data[3]."</b>";
+		echo "<b>".$data[0]." ".$data[1]."<br>".$data[2]." → ".$data[3]."<br>차종: ".$data[4]." / 가격: ".$data[5]."원</b>";
 		
 		$db->DBO();
+		
 	?>
 	</div>
 </section>
@@ -58,7 +59,7 @@ out();
 		
 		$db = new DBC;
 		$db->DBI();
-		$db->query = "SELECT * FROM comment WHERE post_id='".$post_id."'";  //방 별로 다른 commet 출력. 
+		$db->query = "SELECT * FROM car_comment WHERE post_id='".$post_id."'";  //방 별로 다른 commet 출력. 
 		$db->DBQ();
 		
 		$db2 = new DBC;
@@ -86,7 +87,7 @@ out();
   	<div class="wrapper5">
    	<?php
  	 	$post_id2=getenv("QUERY_STRING");
-  		echo"<form action=./php/comment_db.php?$post_id2  method=post>";
+  		echo"<form action=./php/car_comment_db.php?$post_id2  method=post>";
   	?>
   	
   		<input class="col-xs-9 col-md-3 col-md-offset-4" type="text" placeholder="댓글을 입력하시오(최대 100자)" name="댓글" id="content">
@@ -113,7 +114,7 @@ out();
 					$check = true;
 					$db = new DBC;
 					$db->DBI();
-					$db->query = "SELECT * FROM room_user WHERE post_id='".$post_id."'";
+					$db->query = "SELECT * FROM car_user WHERE post_id='".$post_id."'";
 					$db->DBQ();
 					$i = 1;
   	
@@ -134,11 +135,8 @@ out();
 				?>
 	
    				</tbody>
-   
-   				<!-- 여기까지 바꾼코드 -->
-			</table>
-
-		<a href="./php/delete.php?<?php echo $post_id2; ?>" class="btn btn-danger" > 탑승취소</a>
+   			</table>
+		<a href="./php/car_delete.php?<?php echo $post_id2; ?>" class="btn btn-danger" > 탑승취소</a>
 		</div>
 	</section>
 </body>

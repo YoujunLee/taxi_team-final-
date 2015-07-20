@@ -1,4 +1,4 @@
-<!-- 방 만드는 Page
+<!-- car full 방 만드는 Page
 .....이유준-->
 <?php
 
@@ -36,21 +36,13 @@ out();
 	<table class="table">
 		<tbody>
 			<tr>
-			<form action="./php/post.php"  method="post">
+			<form action="./php/post_car.php"  method="post">
 				<label for="start">
 				<td class="col-md-3">
 					출발지
 				</td>
 				<td class="col-md-9">
-					<select id="start" size="1" name="room_start" class="form-control">
-					<option value="한동대학교 택시 승강장" selected>한동대 택시승강장</option>
-					<option value="양덕 하나로마트">양덕 하나로마트</option>
-					<option value="E1">E1 주유소</option>
-					<option value="고속버스터미널">고속터미널</option>
-					<option value="시외버스터미널">시외버스터미널</option>
-					<option value="육거리">육거리</option>
-					<option value="포항역(KTX)">포항역</option>
-					</select>
+					<input type="text" id="start" name="car_start" value="한동대" class="form-control" required>
 				</td>
 				</label>
 			
@@ -58,15 +50,7 @@ out();
 				<label for="arrive">
 				<td class="col-md-3">도착지</td>
 				<td class="col-md-9">
-					<select id="arrive" size="1" name="room_arrive" class="form-control">
-					<option value="한동대학교 택시 승강장">한동대 택시승강장</option>
-					<option value="양덕 하나로마트">양덕 하나로마트</option>
-					<option value="E1">E1 주유소</option>
-					<option value="고속버스터미널">고속터미널</option>
-					<option value="시외버스터미널">시외버스터미널</option>
-					<option value="육거리">육거리</option>
-					<option value="포항역(KTX)" selected>포항역</option>
-					</select>
+					<input type="text" id="arrive" name="car_arrive" value="서울" class="form-control" required>
 				</td>
 				</label>
 			</tr>		
@@ -76,7 +60,9 @@ out();
 				<td class="col-md-3">
 					날짜
 				</td>
-				<td class="col-md-9"><input type="date" id="make_date" name="room_date" class="form-control" placeholder="YYYYMMDD"></td>
+				<td class="col-md-9">
+					<input type="date" id="make_date" name="car_date" class="form-control" placeholder="YYYYMMDD" required>
+				</td>
 				</label>
 			</tr>
 			
@@ -86,20 +72,37 @@ out();
 					시간
 				</td>
 				<td class="col-md-9">
-					<input type="time" id="make_time" name="room_time" class="form-control" value="09:00">
+					<input type="time" id="make_time" name="car_time" class="form-control" value="09:00">
 				</td>
 				</label>
 			</tr>
 
 			<tr>
+				<label for="car">
+				<td class="col-md-3">차종</td>
+				<td class="col-md-9">
+					<input type="text" id="car" name="car_num" value="에쿠스" class="form-control" required>
+				</td>
+				</label>
+			</tr>
+			
+			<tr>
+				<label for="price">
+				<td class="col-md-3">가격</td>
+				<td class="col-md-9">
+					<input type="tel" id="price" name="car_price" value="10000" class="form-control" required>
+				</td>
+				</label>
+			</tr>
+			
+			<tr>
 				<label for="make_population">
 				<td class="col-md-5">최대탑승인원</td>
 					<td class="col-md-7">
-						<input type="tel" id="make_populaion" name="room_population" class="form-control" maxlength="1" min="2" max="4" value="4" >
-						<div style="color:#34C6BE">※ 최소탑승인원: 2명<br> &nbsp;&nbsp;&nbsp;최대탑승인원: 4명</div>
+						<input type="tel" id="make_populaion" name="car_population" class="form-control" min="2" max="4" maxlength="1" value="4" >
 					</td>
 					</label>
-				</tr>
+			</tr>
 			</tbody>
 		</table>
 	<div class = "div_yg">

@@ -106,7 +106,7 @@
 		    <br>		   
 		     <div class="div_go">
                 <input class="btn btn-lg btn-block" type="submit" style="background-color:#34C6BE; color: #ffffff;" value="변경">
-                <a href="./MyPage.html.php" class="btn btn-lg btn-block" value="취소">취소</a>
+                <a href="./MyPage.html.php" class="btn btn-lg btn-block" style="background-color:red; color: #ffffff; opacity:0.8;" value="취소">취소</a>
 			</div>
 		</form>
 		<!-- </div> -->
