@@ -20,6 +20,8 @@
 		   		var result=confirm('죄회되는 방이 없습니다. 방을 만드시겠습니까?');
 		   		if(result)
 		   			location.replace('../make_car.html.php');
+		   			else 
+		   		   location.replace('./조회창.html.php');
 		   	  </script>";
    		exit;
 	}
