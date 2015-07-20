@@ -86,7 +86,7 @@
 		      <label for="inputPasswordTwice" class="col-xs-4 col-md-3  control-label">비밀번호<br>확인</label>
 		      <div class="col-xs-8 col-md-9 ">
 		        <input type="password" class="form-control" id="inputPasswordTwice" placeholder="Password" name='pass2' required>
-		        <input type="text" id="test" class="checkpass">
+		        <input type="text" id="test" class="checkpass" readOnly>
 		      </div>
 		    </div>
 		    <script>
