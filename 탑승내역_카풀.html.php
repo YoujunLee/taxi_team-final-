@@ -41,7 +41,7 @@ out();
 		</td>
 		<td class=" col-xs-4  col-md-4">
 		<form class="yg_float" action = './mypage-탑승내역.html.php'>
-	    	<input class="btn5" type="submit" value="택시 내역 Go">
+	    	<input style="background-color: #ffffff" class="btn5" type="submit" value="택시 내역 Go">
 	    	</form>
 		</td>
 	    	
@@ -108,9 +108,10 @@ out();
     	
     						echo "<td class="."'row'".">";
     			    		echo " <td class="."'col-xs-3 col-md-3'".">".$data1[2]."<br>".substr($data1[3],0,2)." : ".substr($data1[3],3,2)."</th>";
-    						echo " <td class="."'col-xs-4 col-md-4'".">".$data1[0]." → "."<br>".$data1[1]."</th>";
+    						echo " <td class="."'col-xs-4 col-md-4'".">".$data1[0]."<br>"." →  ".$data1[1]."</th>";
 							echo " <td class="."'col-xs-3 col-md-3'"." style="."'text-align:center'".">".$data1[6]."원</td>";
-    							date_default_timezone_set("Asia/Seoul");
+    						$current_time = new DateTime;
+							$current_time->setTimezone(new DateTimezone("asia/seoul"));	
     						$current_time = date("Y-m-d h:i:s");
                             echo $current_time;
 							echo $data1[2]." ".$data1[3];
