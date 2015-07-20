@@ -42,7 +42,7 @@ out();
 					출발지
 				</td>
 				<td class="col-md-9">
-					<input type="text" id="start" name="car_start" value="한동대" class="form-control" autofocus required>
+					<input type="text" id="start" name="car_start" placeholder="한동대" class="form-control" autofocus required>
 				</td>
 				</label>
 			
@@ -50,7 +50,7 @@ out();
 				<label for="arrive">
 				<td class="col-md-3">도착지</td>
 				<td class="col-md-9">
-					<input type="text" id="arrive" name="car_arrive" value="서울" class="form-control" required>
+					<input type="text" id="arrive" name="car_arrive" placeholder="서울" class="form-control" required>
 				</td>
 				</label>
 			</tr>		
@@ -72,7 +72,7 @@ out();
 					시간
 				</td>
 				<td class="col-md-9">
-					<input type="time" id="make_time" name="car_time" class="form-control" value="09:00">
+					<input type="time" id="make_time" name="car_time" class="form-control" placeholder="09:00">
 				</td>
 				</label>
 			</tr>
@@ -81,7 +81,7 @@ out();
 				<label for="car">
 				<td class="col-md-3">차종</td>
 				<td class="col-md-9">
-					<input type="text" id="car" name="car_num" value="모닝" class="form-control" required>
+					<input type="text" id="car" name="car_num" placeholder="모닝" class="form-control" required>
 				</td>
 				</label>
 			</tr>
@@ -90,7 +90,7 @@ out();
 				<label for="price">
 				<td class="col-md-3">가격</td>
 				<td class="col-md-9">
-					<input type="tel" id="price" name="car_price" onkeyup="getNumber(this)" onchange="getNumber(this)" value="10,000" class="form-control" required >
+					<input type="tel" id="price" name="car_price" onkeyup="getNumber(this)" onchange="getNumber(this)" placeholder="10,000" class="form-control" required >
 				<script type="text/javascript">
 				var rgx1 = /\D/g;  
 				var rgx2 = /(\d+)(\d{3})/; 
@@ -122,7 +122,7 @@ out();
 				<label for="make_population">
 				<td class="col-md-5">최대탑승인원</td>
 					<td class="col-md-7">
-						<input type="tel" id="make_populaion" name="car_population" class="form-control" min="2" max="4" maxlength="1" value="4" >
+						<input type="tel" id="make_populaion" name="car_population" class="form-control" min="2" max="4" maxlength="1" placeholder="4" >
 					</td>
 					</label>
 			</tr>
