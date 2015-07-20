@@ -47,6 +47,9 @@ ul.right{
 	float : right;
 	padding-right: 3%;
 }
+.checkpass{
+	border : none;
+}
 
 .notice{
 	color:#34C6BE;
