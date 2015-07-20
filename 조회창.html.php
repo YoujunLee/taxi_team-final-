@@ -142,13 +142,13 @@ out();
       				container: '#kakao-link-btn',
       				label: 'itaxi HGU 택시 카풀 서비스에 오신걸 환영합니다.',
       				image: {
-       						 src: './img/logo.png',
+       						 src: 'http://itaxi.handong.edu/img/logo_big.png',
         					width: '200',
       						height: '100'	
       				},
      				 webButton: {
         						text: 'itaxi',
-       							url: 'https://52.27.102.99' 
+       							url: 'https://itaxi.handong.edu' 
       				}		
    			   });
 	        </script>
