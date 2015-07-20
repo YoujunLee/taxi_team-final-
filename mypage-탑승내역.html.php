@@ -32,7 +32,7 @@ out();
 	
 	<section >
 		<div class="title col-xs-12  col-md-4 col-md-offset-4">
-	    	<h4><span style="color:black"><b>본인 탑승내역</b></span></h4>
+	    	<h4><span style="color:black"><b>택시 탑승내역</b></span></h4>
    		</div>
 	</section>
 	
