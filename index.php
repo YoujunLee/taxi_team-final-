@@ -27,7 +27,7 @@ echo "<script>location.replace('./조회창.html.php');</script>";
   		<!-- Id 입력창 -->
 	  	<form action='./php/login.php'  method='post'>
 			<div class="div1">
-			    <input type="tel" class="form-control" placeholder="Student ID" name="logid" required>
+			    <input type="tel" class="form-control" autofocus placeholder="Student ID" name="logid" required>
 			</div>
 			<br>
 			<!-- Pw 입력창 -->
