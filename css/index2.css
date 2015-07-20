@@ -123,8 +123,9 @@ nav.margin{
 .btn5{
   text-align: right;
   font-size : 12px;
-  border: none;
+  border: solid 1px;
   color : #34c6be;
+  border-radius: 10%;
   background-color: transparent;
  
 }
