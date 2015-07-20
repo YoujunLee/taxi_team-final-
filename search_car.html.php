@@ -54,7 +54,7 @@
 	</table>
 	
 	<section >
-		<div class="title col-xs-12  col-md-4 col-md-offset-4">
+		<div style="background-color: #dcdcdc" class="title col-xs-12  col-md-4 col-md-offset-4">
 	    	<h4><b>카풀조회</b></h4>
    		</div>
 	</section>
