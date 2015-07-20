@@ -133,20 +133,20 @@ out();
 	 				if($check){
 						echo "<script>history.go(-2);</script>"; exit;}
 				?>
-	
+				
    				</tbody>
    			</table>
 		<?php
 			$db2 = new DBC;
 			$db2->DBI();
-			$db2->query = "SELECT date, time FROM room_user WHERE post_id='".$post_id."'";
+			$db2->query = "SELECT date, time FROM car_user WHERE post_id='".$post_id."'";
 			$db2->DBQ();
 			$data=$db2->result->fetch_row();
 			
 			date_default_timezone_set("Asia/Seoul");
     		$current_time = date("Y-m-d h:i:s");
 			
-			//if($current_time<$data[0]." ".$data[1])
+			if($current_time<$data[0]." ".$data[1])
 				echo "<a href='./php/car_delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";
 			
 			$db->DBO();
