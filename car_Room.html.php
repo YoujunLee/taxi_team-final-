@@ -146,8 +146,8 @@ out();
 			date_default_timezone_set("Asia/Seoul");
     		$current_time = date("Y-m-d h:i:s");
 			
-			if($current_time<$data[0]." ".$data[1])
-				echo "<a href='./php/delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";
+			//if($current_time<$data[0]." ".$data[1])
+				echo "<a href='./php/car_delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";
 			
 			$db->DBO();
 			$db2->DBO();
