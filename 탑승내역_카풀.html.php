@@ -52,7 +52,7 @@ out();
 	</section>
 	
 	<div class="padding col-xs-12  col-md-4 col-md-offset-4">
-		<table class="table1 table-striped table-hover ">
+		<table class="table3 table-striped table-hover ">
   			<thead>
     			<tr class="row">
 	  				<th class="col-xs-3 col-md-3" >시간</th>

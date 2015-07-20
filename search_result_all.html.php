@@ -61,7 +61,7 @@
 
 	<section>
 		<div class="padding col-xs-12  col-md-4 col-md-offset-4">
-			<table class="table2 table-striped table-hover ">
+			<table class="table3 table-striped table-hover ">
   
   			<thead>
     			<tr class="row">
