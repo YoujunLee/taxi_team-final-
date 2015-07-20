@@ -52,13 +52,13 @@
       		</tr>
 		</table>
 		
-		<br><br><br><br><br><br>
+
 		<div class = "col-xs-12  col-md-4 col-md-offset-4">
 			<form name="frm1">
 			<table class = "table">
 				<tr>
 					<td>
-						<h1><input type="tel" size=10 name="input1"> 원</h1>
+						<h1><input type="tel" size=10 placeholder="     총 금액" name="input1" autofocus=""> 원</h1>
 					</td>
 				</tr>
 				<tr>
@@ -66,24 +66,24 @@
 				</tr>
 				<tr>
 					<td>
-					<table float="center">
-						<tr><h1><td>
-						<input type="image" src="./img/person2.png" class="calimg" onclick="run2(); return false;" hight="120px" width="100px"></td>
-						<td><input type="image" src="./img/person3.png" class="calimg"  onclick="run3(); return false;"hight="100px" width="100px"></td>
-						<td><input type="image" src="./img/person4.png" class="calimg"  onclick="run4(); return false;"hight="120px" width="100px"></td>
+					<table style="margin: auto" >
+						<tr><h1><td class="col-xs-4 col-md-4">
+						<img class="outline" src="./img/person2.png"  onclick="run2(); return false;"></td>
+						<td class="col-xs-4 col-md-4"><img src="./img/person3.png" class="outline" onclick="run3(); return false;"></td>
+						<td class="col-xs-4 col-md-4"><img src="./img/person4.png"  class="outline" onclick="run4(); return false;"></td>
 						</h1></td></tr>
 						<tr><h3>
-							<td>2명</td>
-							<td>3명</td>
-							<td>4명</td>
+							<td class="col-xs-4 col-md-4">2명</td>
+							<td class="col-xs-4 col-md-4">3명</td>
+							<td class="col-xs-4 col-md-4">4명</td>
 						</h3></tr>
 					</table>
 					</h1></td>
 				</tr>
 				<tr>
-					<td>
+					<td><h1>
 
-							<input type="text" size=10 name="input3"> 원
+							<input type="text" size=10 placeholder="     결과 값" name="input3"> 원
 						</h1>
 					</td>
 				</tr>

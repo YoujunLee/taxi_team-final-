@@ -31,7 +31,7 @@ out();
 	</table>
 	
 	<section >
-		<table class="title col-xs-12  col-md-4 col-md-offset-4">
+		<table class="title col-xs-12  col-md-4 col-md-offset-4"  style="background-color: #dcdcdc">
 		<tr class="row">
 		<td class=" col-xs-4  col-md-4">
    

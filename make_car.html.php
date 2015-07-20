@@ -81,7 +81,7 @@ out();
 				<label for="car">
 				<td class="col-md-3">차종</td>
 				<td class="col-md-9">
-					<input type="text" id="car" name="car_num" value="에쿠스" class="form-control" required>
+					<input type="text" id="car" name="car_num" value="모닝" class="form-control" required>
 				</td>
 				</label>
 			</tr>
@@ -90,7 +90,30 @@ out();
 				<label for="price">
 				<td class="col-md-3">가격</td>
 				<td class="col-md-9">
-					<input type="tel" id="price" name="car_price" value="10000" class="form-control" required>
+					<input type="tel" id="price" name="car_price" onkeyup="getNumber(this)" onchange="getNumber(this)" value="10,000" class="form-control" required >
+				<script type="text/javascript">
+				var rgx1 = /\D/g;  
+				var rgx2 = /(\d+)(\d{3})/; 
+				function getNumber(obj){
+	
+			     var num01;
+     		     var num02;
+     			 num01 = obj.value;
+     			 num02 = num01.replace(rgx1,"");
+  			     num01 = setComma(num02);
+     			 obj.value =  num01;
+				 }
+
+				 function setComma(inNum){
+     
+    			 var outNum;
+  			     outNum = inNum; 
+    			 while (rgx2.test(outNum)) {
+    		     outNum = outNum.replace(rgx2, '$1' + ',' + '$2');
+      			 }
+    			 return outNum;
+				}
+				</script>
 				</td>
 				</label>
 			</tr>

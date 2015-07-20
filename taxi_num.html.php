@@ -6,7 +6,7 @@
    	 <title>i-Taxi</title>
    	 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
    	 <link rel="stylesheet" type="text/css" href="../css/taxi_num.css">
-   	 
+   	 <link rel="stylesheet" type="text/css" href="./css/111.css">
    	  <!-- <link rel="stylesheet" type="text/css" href="../css/practice.css"> -->
    	 
 </head>
@@ -25,17 +25,21 @@
            </td>
   		</tr>
 	</table>
-	
-	  		<div class= "col-xs-12  col-md-4 col-md-offset-4 padding">
-			 	<a href="tel:054-252-1111" class="backg1 btn btn-default btn-lg btn-block"><h2>포스콜</h2><h4></h4> 054-252-1111</h4></a>
-			   	<a href="tel:054-283-8282" class="backg2 btn btn-default btn-lg btn-block"><h2>해맞이콜</h2><h4></h4> 054-283-8282</h4></a>
-			   	<a href="tel:054-282-6161" class="backg3 btn btn-default btn-lg btn-block"><h2>육일콜</h2><h4></h4> 054-282-6161</h4></a>
-			   	<a href="tel:054-231-2330" class="backg4 btn btn-default btn-lg btn-block"><h2>영광콜 </h2><h4></h4> 054-231-2330</h4></a>
-         	
 		
-		</div>
-	
-	
+	<ul class="col-xs-12  col-md-4 col-md-offset-4 padding">
+  <li><a href="tel:054-252-1111" class="eat"><span>
+        <h1>포스콜</h1>
+        <p>054-252-1111</p></span></a></li>
+  <li><a href="tel:054-283-8282" class="drink"><span>
+        <h1>해맞이콜</h1>
+        <p>054-283-8282</p></span></a></li>
+  <li><a href="tel:054-282-6161" class="play"><span>
+        <h1>육일콜</h1>
+        <p>054-282-6161</p></span></a></li>
+  <li><a href="tel:054-231-2330" class="relax"><span>
+        <h1>영광콜</h1>
+        <p>054-231-2330</p></span></a></li>
+</ul>	
 
 </body>
 </html>
