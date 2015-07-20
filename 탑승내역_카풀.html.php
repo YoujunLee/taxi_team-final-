@@ -32,7 +32,7 @@ out();
 	
 	<section >
 		<table class="title col-xs-12  col-md-4 col-md-offset-4">
-		<tr class="row">
+		<tr class="row" style="background-color: #dcdcdc">
 		<td class=" col-xs-4  col-md-4">
    
 		</td>
