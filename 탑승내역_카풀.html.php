@@ -37,11 +37,11 @@ out();
    
 		</td>
 		<td class="padding col-xs-4  col-md-4">
-				<h4><span style="color:black"><b>택시 탑승내역 </b> </span></h4>
+				<h4><span style="color:black"><b>카풀 탑승내역 </b> </span></h4>
 		</td>
 		<td class=" col-xs-4  col-md-4">
-		<form class="yg_float" action = './탑승내역_카풀.html.php'>
-	    	<input class="btn5" type="submit" value="카풀 내역">
+		<form class="yg_float" action = './mypage-탑승내역.html.php'>
+	    	<input class="btn5" type="submit" value="택시 내역">
 	    	</form>
 		</td>
 	    	
@@ -68,7 +68,7 @@ out();
 				
 				$db3 = new DBC;
 				$db3->DBI();
-				$db3->query= "SELECT post_id FROM room_user WHERE stu_id='".$user_id."'ORDER BY date desc,time desc";
+				$db3->query= "SELECT post_id FROM car_user WHERE stu_id='".$user_id."'ORDER BY date desc,time desc";
 				$db3->DBQ();
 				
 				$db = new DBC;
@@ -86,7 +86,7 @@ out();
 				
 				while($data= $db3->result->fetch_row())
 				{
-				$db->query = "SELECT start, arrive, date, time, population, post_id FROM post WHERE post_id='".$data[0]."' ";
+				$db->query = "SELECT start, arrive, date, time, population, post_id, price FROM car_post WHERE post_id='".$data[0]."' ";
 				$db->DBQ();
 				while($data1=$db->result->fetch_row())
 				{
@@ -95,7 +95,7 @@ out();
 	 					if($page_number++<$page*10)
 	 					{
 	 						$check = false;
-	 						$db2->query = "SELECT post_id, stu_id from room_user WHERE post_id = '".$data1[5]."'"; 
+	 						$db2->query = "SELECT post_id, stu_id from car_user WHERE post_id = '".$data1[5]."'"; 
 	 						$db2->DBQ();
 							$num2 = $db2->result->num_rows;
     	
@@ -107,8 +107,9 @@ out();
     	
     						echo "<td class="."'row'".">";
     			    		echo " <td class="."'col-xs-3 col-md-3'".">".$data1[2]."<br>".substr($data1[3],0,2)." : ".substr($data1[3],3,2)."</th>";
-    						echo " <td class="."'col-xs-7 col-md-7'".">".$data1[0]." → "."<br>".$data1[1]."</th>";
-    						date_default_timezone_set("Asia/Seoul");
+    						echo " <td class="."'col-xs-5 col-md-5'".">".$data1[0]." → "."<br>".$data1[1]."</th>";
+							echo " <td class="."'col-xs-2 col-md-2'"." style="."'text-align:center'".">".$data1[6]."원</td>";
+    							date_default_timezone_set("Asia/Seoul");
     						$current_time = date("Y-m-d h:i:s");
 
 							if($current_time>$data1[2]." ".$data1[3])
@@ -141,25 +142,25 @@ out();
   		<?php
 			$number;
 			if($page>1)
-				echo "<li><a href='./mypage-탑승내역.html.php'>«</a></li>";
+				echo "<li><a href='./탑승내역_카풀.html.php'>«</a></li>";
 
 			if($page>1)
-  				echo "<li><a href='./mypage-탑승내역.html.php?page=".($page-1)."'><</a></li>";
+  				echo "<li><a href='./탑승내역_카풀.html.php?page=".($page-1)."'><</a></li>";
 	
 			for($number=floor((($page-1)/3))*3+1;$number<floor((($page-1)/3))*3+4;$number++){
 				if($number<=floor((($num-1)/10))+1){
 			   		if($number!=$page)
-						echo"<li><a href='./mypage-탑승내역.html.php?page=".($number)."'>".$number."</a></li>";
+						echo"<li><a href='./탑승내역_카풀.html.php?page=".($number)."'>".$number."</a></li>";
 					else
-						echo"<li class='active'><a href='./mypage-탑승내역.html.php?page=".($number)."'>".$number."</a></li>";
+						echo"<li class='active'><a href='./탑승내역_카풀.html.php?page=".($number)."'>".$number."</a></li>";
 				}
 			}
 	
 			if($page<floor((($num-1)/10))+1)
-  				echo "<li><a href='./mypage-탑승내역.html.php?page=".($page+1)."'>></a></li>";
+  				echo "<li><a href='./탑승내역_카풀.html.php?page=".($page+1)."'>></a></li>";
 	
 			if($page<floor((($num-1)/10)+1))
-  				echo "<li><a href='./mypage-탑승내역.html.php?page=".floor(((($num-1)/10)+1))."'>»</a></li>";
+  				echo "<li><a href='./탑승내역_카풀.html.php?page=".floor(((($num-1)/10)+1))."'>»</a></li>";
   		?>
  		</ul>
 	</div>

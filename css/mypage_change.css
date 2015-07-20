@@ -121,7 +121,8 @@ text-align: center;
 
 .title{
 	color: white;
-	padding-left: -2%;
-    padding-right: 2%;
+	padding-left: 0%;
+    padding-right: 0%;
     text-align: center;
+    
 }

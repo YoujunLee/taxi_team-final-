@@ -120,6 +120,14 @@ nav.margin{
 	border: 0px none;
 	height:27px;	
 }
+.btn5{
+  text-align: right;
+  font-size : 12px;
+  border: none;
+  color : #34c6be;
+  background-color: transparent;
+ 
+}
 .image-size1{
   width: 40%;
   
@@ -132,7 +140,14 @@ nav.margin{
 .div_yg{
 text-align: center;
 }
+.yg_float{
+text-align: right;
 
+}
+.yg_float2{
+text-align: right;
+
+}
 .table1 {
   margin : 0px;
   width: 100%;
