@@ -11,14 +11,31 @@
 			 sum = num1 / num2;
 			 return sum ;
 			}
-			function run()
+			function run2()
 			{
 			 var n1, n2;
 			 n1=eval(document.frm1.input1.value);
-			 n2=eval(document.frm1.input2.value);
+			 n2=2;
 			 result = hab( n1 , n2 );
 			 document.frm1.input3.value=result;
 			}
+			function run3()
+			{
+			 var n1, n2;
+			 n1=eval(document.frm1.input1.value);
+			 n2=3;
+			 result = hab( n1 , n2 );
+			 document.frm1.input3.value=result;
+			}
+			function run4()
+			{
+			 var n1, n2;
+			 n1=eval(document.frm1.input1.value);
+			 n2=4;
+			 result = hab( n1 , n2 );
+			 document.frm1.input3.value=result;
+			}
+			
 		</script>
 	</head>
 	<body class = "center">
@@ -48,20 +65,24 @@
 					<td><h1>÷</h1></td>
 				</tr>
 				<tr>
-					<td><h1>
-					<div class="col-lg-4">
-					     <select class="form-control" id="select" name="input2" >
-					          <option>2</option>
-					          <option>3</option>
-					          <option>4</option>
-					        </select>
-					        </div>
-					        	명
+					<td>
+					<table float="center">
+						<tr><h1><td>
+						<input type="image" src="./img/person2.png" class="calimg" onclick="run2(); return false;" hight="120px" width="100px"></td>
+						<td><input type="image" src="./img/person3.png" class="calimg"  onclick="run3(); return false;"hight="100px" width="100px"></td>
+						<td><input type="image" src="./img/person4.png" class="calimg"  onclick="run4(); return false;"hight="120px" width="100px"></td>
+						</h1></td></tr>
+						<tr><h3>
+							<td>2명</td>
+							<td>3명</td>
+							<td>4명</td>
+						</h3></tr>
+					</table>
 					</h1></td>
 				</tr>
 				<tr>
 					<td>
-						<h1><input type="button" name="btn1" value="=" onclick=run()>
+
 							<input type="text" size=10 name="input3"> 원
 						</h1>
 					</td>
