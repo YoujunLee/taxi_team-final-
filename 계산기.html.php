@@ -21,7 +21,7 @@ out();
 			 n1=eval(document.frm1.input1.value);
 			 n2=2;
 			 result = hab( n1 , n2 );
-			 document.frm1.input3.value=result;
+			 document.frm1.input3.value=Math.round(result);
 			}
 			function run3()
 			{
@@ -29,7 +29,7 @@ out();
 			 n1=eval(document.frm1.input1.value);
 			 n2=3;
 			 result = hab( n1 , n2 );
-			 document.frm1.input3.value=result;
+			 document.frm1.input3.value=Math.round(result);
 			}
 			function run4()
 			{
@@ -37,7 +37,7 @@ out();
 			 n1=eval(document.frm1.input1.value);
 			 n2=4;
 			 result = hab( n1 , n2 );
-			 document.frm1.input3.value=result;
+			 document.frm1.input3.value=Math.round(result);
 			}
 			
 		</script>
