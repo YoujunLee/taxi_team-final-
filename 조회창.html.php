@@ -155,7 +155,7 @@ out();
 			</td>
 			
 			<td>
-			<form class="div_yg" action='./공지사항.html.php'>
+			<form class="div_yg" action='./MyPage.html.php'>
 			  <a href="./MyPage.html.php" class="noul">
 			  <img src="./img/mypage.png" class="img"><br>
 			  <input class="btn3" type="submit" value="My Page">
