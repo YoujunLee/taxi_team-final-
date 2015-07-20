@@ -41,7 +41,7 @@ out();
 		</td>
 		<td class=" col-xs-4  col-md-4">
 		<form class="yg_float" action = './mypage-탑승내역.html.php'>
-	    	<input style="background-color: #ffffff" class="btn5" type="submit" value="택시 내역 Go">
+	    	<input class="btn5" type="submit" value="택시 내역 Go">
 	    	</form>
 		</td>
 	    	
@@ -113,7 +113,8 @@ out();
     						$current_time = new DateTime;
 							$current_time->setTimezone(new DateTimezone("asia/seoul"));	
     						$current_time = date("Y-m-d h:i:s");
-
+                            echo $current_time;
+							echo $data1[2]." ".$data1[3];
 							if($current_time>$data1[2]." ".$data1[3])
 								echo " <th class="."'col-xs-2 col-md-2'"."><a href='./car_Room.html.php?".$data1[5]."' class='btn btn-success1'>시간<br>종료</a></th>";
 							else if($check)
