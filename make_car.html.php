@@ -42,7 +42,7 @@ out();
 					출발지
 				</td>
 				<td class="col-md-9">
-					<input type="text" id="start" name="car_start" value="한동대" class="form-control" required>
+					<input type="text" id="start" name="car_start" value="한동대" class="form-control" autofocus required>
 				</td>
 				</label>
 			

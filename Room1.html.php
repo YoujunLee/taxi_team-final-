@@ -89,7 +89,7 @@ out();
   		echo"<form action=./php/comment_db.php?$post_id2  method=post>";
   	?>
   	
-  		<input class="col-xs-9 col-md-3 col-md-offset-4" type="text" placeholder="댓글을 입력하시오(최대 100자)" name="댓글" id="content">
+  		<input class="col-xs-9 col-md-3 col-md-offset-4" type="text" placeholder="댓글을 입력하시오(최대 100자)" name="댓글" autofocus id="content">
   		<input class="col-xs-3 col-md-1 btn4" type="submit" value="댓글달기">
   	</form>
   	</div>
@@ -138,7 +138,22 @@ out();
    				<!-- 여기까지 바꾼코드 -->
 			</table>
 
-		<a href="./php/delete.php?<?php echo $post_id2; ?>" class="btn btn-danger" > 탑승취소</a>
+		<?php
+			$db2 = new DBC;
+			$db2->DBI();
+			$db2->query = "SELECT date, time FROM room_user WHERE post_id='".$post_id."'";
+			$db2->DBQ();
+			$data=$db2->result->fetch_row();
+			
+			date_default_timezone_set("Asia/Seoul");
+    		$current_time = date("Y-m-d h:i:s");
+			
+			if($current_time<$data[0]." ".$data[1])
+				echo "<a href='./php/delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";
+			
+			$db->DBO();
+			$db2->DBO();
+		?>
 		</div>
 	</section>
 </body>
