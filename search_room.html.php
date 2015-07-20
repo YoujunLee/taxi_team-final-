@@ -36,8 +36,8 @@ out();
 			<tbody>
 				
 				<tr>
-					<td colspan="2" class="btn2">
-					<a href="./search_result_all.html.php" class="noul">
+					<td colspan="2" class="btn2" >
+					<a href="./search_result_all.html.php" class="noul" >
 						<h4>전체 택시 조회 (click!)</h4>
 					</a>
 					</td>

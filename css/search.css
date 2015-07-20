@@ -150,6 +150,16 @@ a.noul:hover{
 	
 .calimg
 {
-	height:30px;
-	width:30px;
+	
+	margin: auto;
+	
+}
+.outline
+{
+	hight : 70px;
+	width:70px;
+	border: 0px none;
+	outline : none;
+	text-decoration:none;
+	
 }

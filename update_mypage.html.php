@@ -30,7 +30,7 @@
 
 		    <div class="form-group">
 		      <label for="inputName" class="control-label col-xs-4 col-md-3 ">이름</label>
-		      <div class="col-xs-6 col-md-9">
+		      <div class="col-xs-8 col-md-9">
 		      <?php
 		       session_start();
 			   $name =  $_SESSION['name'] ;
@@ -40,7 +40,7 @@
 		    </div>
 		    <div class="form-group">
 		      <label for="inputStudentId" class="control-label col-xs-4 col-md-3 ">학번</label>
-		      <div class="col-xs-6 col-md-9">
+		      <div class="col-xs-8 col-md-9">
 		        <?php
 		         
 			 	  $stu_id= $_SESSION['user_id'];
@@ -51,7 +51,7 @@
 		    <br><br>
 		    <div class="form-group">
 		      <label for="inputcellPhone" class="control-label col-xs-4 col-md-3 ">핸드폰번호</label>
-		      <div class="col-xs-6 col-md-9 ">
+		      <div class="col-xs-8 col-md-9 ">
 		        <input type="text" onKeyPress="if ((event.keyCode<46)||(event.keyCode>57)||(event.keyCode==47)) event.returnValue=false;" class="form-control" id="Phone" placeholder="Phone Number" name='cellPhone' maxlength="13" required>
 		      <script>
 		       function autoHypenPhone(str){
@@ -91,18 +91,66 @@
 </script> 
 		      </div>
 		    </div>
+		    <div class="form-group">
+		      <label for="inputPassword" class="control-label col-xs-4 col-md-3 ">기존<br>비밀번호</label>
+		      <div class="col-xs-8 col-md-9">
+		        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name='pass' required>
+		      </div>
+		    </div>
+		    
 			<div class="form-group">
 		      <label for="inputPassword" class="control-label col-xs-4 col-md-3 ">비밀번호</label>
-		      <div class="col-xs-6 col-md-9">
-		        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name='pass1' required>
+		      <div class="col-xs-8 col-md-9">
+		        <input type="password" class="form-control" id="inputPassword1" placeholder="Re-Password" name='pass1' required>
 		      </div>
 		    </div>
 		    <div class="form-group">
-		      <label for="inputPasswordTwice" class="control-label col-xs-4 col-md-3 ">비밀번호 확인</label>
-		      <div class="col-xs-6 col-md-9">
-		        <input type="password" class="form-control" id="inputPasswordTwice" placeholder="Password" name='pass2' required>
+		      <label for="inputPasswordTwice" class="control-label col-xs-4 col-md-3 ">비밀번호<br>확인</label>
+		      <div class="col-xs-8 col-md-9">
+		        <input type="password" class="form-control" id="inputPasswordTwice" placeholder="Re-Password" name='pass2' required>
+		        <input type="text" id="test" class="checkpass">
 		      </div>
 		    </div>
+		    <script>
+		      var pass1 = document.getElementById('inputPassword1');
+		      var pass2 = document.getElementById('inputPasswordTwice');
+		      var test = document.getElementById('test');
+		       pass1.onkeyup = function(event){
+
+               event = event || window.event;
+                if(pass1.value == null || pass1.value == ""){
+                test.value ="";
+                }else if(pass2.value == null || pass2.value == ""){
+                test.value ="";
+                }
+               else if( pass2.value != pass1.value)
+               {
+                test.style.color="red";
+                test.value ="비밀번호 불일치";
+               }else if( pass2.value == pass1.value)
+               {
+               test.style.color="green";
+                test.value = "비밀번호 일치";
+               }
+             }
+               pass2.onkeyup = function(event){
+
+               event = event || window.event;
+                if(pass2.value == null || pass2.value == ""){
+                test.value ="";
+                }
+               else if( pass2.value != pass1.value)
+               {
+                test.style.color="red";
+                test.value ="비밀번호 불일치";
+               }else if( pass2.value == pass1.value)
+               {
+               test.style.color="green";
+                test.value = "비밀번호 일치";
+               }
+             }
+              
+		    </script>
 		    <br>		   
 		     <div class="div_go">
                 <input class="btn btn-lg btn-block" type="submit" style="background-color:#34C6BE; color: #ffffff;" value="변경">

@@ -19,11 +19,20 @@ session_start();
 $stu_id= $_SESSION['user_id'];
 $name =  $_SESSION['name'] ;
 $cellPhone = $_POST['cellPhone'];
+$pass = $_POST['pass'];
 $pass1 = $_POST['pass1'];
 $pass2 = $_POST['pass2'];
 
+$db->query = "select studentid, name, cellphone, password from student_info where studentid='".$stu_id."' and password='".$pass."'";
+$db->DBQ();
 
-
+$num = $db->result->num_rows;
+if($num!=1)
+{
+	echo "<script>alert('기존 비밀번호가 맞지 않습니다.');history.back();</script>";
+	$db->DBO();
+	exit;
+}
 
 if($pass1 == $pass2)
 {
@@ -31,7 +40,7 @@ if($pass1 == $pass2)
 } else
 {
 	
-	echo "<script>alert('아놔~ 비밀번호가 맞지 않습니다.');history.back();</script>";
+	echo "<script>alert('비밀번호가 맞지 않습니다.');history.back();</script>";
 	exit;
 }
 
@@ -59,7 +68,7 @@ if(!$db->result)
 	
 } else
 {
-	echo "<script>alert('개인정보가 수정 되었습니다. 재빠르게 조회창으로 이동합니다.');location.replace('../index.php');</script>";
+	echo "<script>alert('개인정보가 수정 되었습니다. 조회창으로 이동합니다.');location.replace('../index.php');</script>";
 	$db->DBO();
 	exit;
 }
