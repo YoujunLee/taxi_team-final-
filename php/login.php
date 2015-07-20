@@ -14,8 +14,9 @@ require_once './config.php';
 $db = new DBC;
 $db->DBI();
 
-$studentid = $_POST['logid'];
-$pass = $_POST['logpass'];
+
+$studentid = str_replace("'", "/'", $_POST['logid']);  //str 문을 통하여 보안강화
+$pass = str_replace("'", "/'", $_POST['logpass']);
 
 $db->query = "select studentid, name, cellphone, password from student_info where studentid='".$studentid."' and password='".$pass."'";
 $db->DBQ();
