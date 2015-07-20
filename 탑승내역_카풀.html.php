@@ -41,7 +41,7 @@ out();
 		</td>
 		<td class=" col-xs-4  col-md-4">
 		<form class="yg_float" action = './mypage-탑승내역.html.php'>
-	    	<input class="btn5" type="submit" value="택시 내역">
+	    	<input class="btn5" type="submit" value="택시 내역 Go">
 	    	</form>
 		</td>
 	    	

@@ -28,7 +28,7 @@ $room_arrive = $_POST['room_arrive'];
 $room_date = $_POST['room_date'];
 $room_time = $_POST['room_time'];
 $room_population = $_POST['room_population'];
-$room_memo = $_POST['room_memo'];
+
 
 $db2 = new DBC; //db object생성
 $db2->DBI();//db 들어가기
@@ -72,7 +72,7 @@ else if($room_population>4||$room_population<1)
 	exit;
 }
 
-$db->query = "insert into post values ('".$post_id ."','".$stu_id."','".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."','".$room_population."', '".$room_memo."')";
+$db->query = "insert into post values ('".$post_id ."','".$stu_id."','".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."','".$room_population."', '1')";
 $db2->query = "insert into room_user values('".$id."', '".$post_id ."','".$stu_id."','".$name."','".$cellphone."','".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."')";
 
 $db->DBQ();
