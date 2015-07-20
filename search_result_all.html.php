@@ -100,6 +100,7 @@
     						echo "<td class="."'row'".">";
     			    		echo " <td class="."'col-xs-3 col-md-3'".">" .$data[2]."<br>".substr($data[3],0,2)." : ".substr($data[3],3,2)."</th>";
     						echo " <td class="."'col-xs-7 col-md-7'".">".$data[0]." → "."<br>".$data[1]."</th>";
+    						date_default_timezone_set("Asia/Seoul");
     						$current_time = date("Y-m-d h:i:s");
 
 							if($current_time>$data[2]." ".$data[3])

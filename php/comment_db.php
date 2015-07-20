@@ -2,7 +2,7 @@
 include "./session_out.php";
 out();
    	$hostname=$_SERVER["HTTP_REFERER"]; //도메인명(호스트)명을 구합니다.
-
+	date_default_timezone_set("Asia/Seoul");
 	$post_id1=getenv("QUERY_STRING");
 	
 	require_once('./db.php');
