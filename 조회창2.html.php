@@ -34,16 +34,16 @@ out();
 	
 
 		<ul class="col-xs-12  col-md-4 col-md-offset-4 padding">
-  <li><a href="#" class="eat"><span>
+  <li><a href="./make_room.html.php" class="eat"><span>
         <h1>방만들기</h1>
         <p>here</p></span></a></li>
-  <li><a href="#" class="drink"><span>
+  <li><a href="./search_room.html.php" class="drink"><span>
         <h1>방조회</h1>
         <p>here</p></span></a></li>
-  <li><a href="#" class="play"><span>
+  <li><a href="./mypage-탑승내역.html.php'" class="play"><span>
         <h1>MyPage</h1>
         <p>here</p></span></a></li>
-  <li><a href="#" class="relax"><span>
+  <li><a href="./MyPage.html.php" class="relax"><span>
         <h1>탑승내역</h1>
         <p>here</p></span></a></li>
 </ul>	
