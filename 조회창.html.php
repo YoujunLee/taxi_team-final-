@@ -148,7 +148,7 @@ out();
       				},
      				 webButton: {
         						text: 'itaxi',
-       							url: 'https://itaxi.handong.edu' 
+       							url: 'http://itaxi.handong.edu' 
       				}		
    			   });
 	        </script>
