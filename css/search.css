@@ -92,6 +92,7 @@ tr.change_color{
   	border: 0px none;
   	color : black;
 	background-color: transparent;
+	outline: none;
 }
 
 .btn3{
