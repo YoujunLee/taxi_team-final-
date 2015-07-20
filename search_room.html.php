@@ -105,7 +105,8 @@ out();
 		</table>
 		
 		<div class = "div_yg" >
-			<input type="submit" value="방 조회" class="btn btn-info" style="background-color:#34c6be; color: #ffffff;">
+			<input type="submit" value="방 조회" class="margin_right btn btn-info" style="background-color:#34c6be; color: #ffffff;">
+			<a href="./조회창.html.php"><input type="button" value="취소" class="btn btn-danger"></a>
 		</div>
 		</div>
 	</form>
