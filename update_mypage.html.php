@@ -91,16 +91,23 @@
 </script> 
 		      </div>
 		    </div>
+		    <div class="form-group">
+		      <label for="inputPassword" class="control-label col-xs-4 col-md-3 ">기존<br>비밀번호</label>
+		      <div class="col-xs-6 col-md-9">
+		        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name='pass' required>
+		      </div>
+		    </div>
+		    
 			<div class="form-group">
 		      <label for="inputPassword" class="control-label col-xs-4 col-md-3 ">비밀번호</label>
 		      <div class="col-xs-6 col-md-9">
-		        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name='pass1' required>
+		        <input type="password" class="form-control" id="inputPassword" placeholder="Re-Password" name='pass1' required>
 		      </div>
 		    </div>
 		    <div class="form-group">
-		      <label for="inputPasswordTwice" class="control-label col-xs-4 col-md-3 ">비밀번호 확인</label>
+		      <label for="inputPasswordTwice" class="control-label col-xs-4 col-md-3 ">비밀번호<br>확인</label>
 		      <div class="col-xs-6 col-md-9">
-		        <input type="password" class="form-control" id="inputPasswordTwice" placeholder="Password" name='pass2' required>
+		        <input type="password" class="form-control" id="inputPasswordTwice" placeholder="Re-Password" name='pass2' required>
 		      </div>
 		    </div>
 		    <br>		   
