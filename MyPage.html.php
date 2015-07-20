@@ -58,7 +58,7 @@ out();
 		
 		<br><br><br><br>
 			<div><hr/>
-			  	   <div>Please contact us (<a>handongitaxi@gmail.com</a>)<br>@Launched by YouJun Lee, PyungKang Kim, Maria Jeong, Minkyu Yang 
+			  	   <div>Please contact us (<a>hguitaxi@gmail.com</a>)<br>@Launched by YouJun Lee, PyungKang Kim, Maria Jeong, Minkyu Yang 
 			  </div>
 			</div>
 		</div>
