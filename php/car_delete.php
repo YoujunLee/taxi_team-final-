@@ -4,7 +4,7 @@
 </head>
 <body>
 <?php
-    include "./php/session_out.php";
+    include "./session_out.php";
     out();
 	$hostname=$_SERVER["HTTP_REFERER"];
 	
@@ -15,8 +15,7 @@
 		   location.replace('$hostname');
 		   </script>";
 		   	
-	include "./session_out.php";
-	out();
+	
 	require_once './config.php';
 	
 	$post_id=getenv("QUERY_STRING");

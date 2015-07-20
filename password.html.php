@@ -31,7 +31,7 @@
 		        </div>
 		      <br>
 		    <div class="form-group">
-		      <label for="inputcellPhone" class="col-xs-4 col-md-3  control-label">핸드폰번호</label>
+		      <label for="inputcellPhone" class="col-xs-4 col-md-3  control-label">핸드폰</label>
 		      <div class="col-xs-8 col-md-9 ">
 		        <input type="text" onKeyPress="if ((event.keyCode<46)||(event.keyCode>57)||(event.keyCode==47)) event.returnValue=false;" class="form-control" id="Phone" placeholder="Phone Number" name='cellPhone' maxlength="13" required>
 		      <script>
@@ -75,7 +75,7 @@
 			
 		    
 		     <div class="form-group">
-		      <label  class="col-xs-4 col-md-3  control-label">가입했을시<br>질문</label>
+		      <label  class="col-xs-4 col-md-3  control-label">질문</label>
 		      <div class="col-xs-8 col-md-9 ">
 		        <select  name="question" class="form-control">
 						<option value="아버지의 성함은?" selected>아버지의 성함은?</option>

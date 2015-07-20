@@ -54,7 +54,7 @@
 	</table>
 	
 	<section >
-		<div class="title col-xs-12  col-md-4 col-md-offset-4">
+		<div class="title col-xs-12  col-md-4 col-md-offset-4" style="background-color: #dcdcdc">
 	    	<h4><b>전체조회</b></h4>
    		</div>
 	</section>
@@ -99,7 +99,7 @@
     	
     						echo "<td class="."'row'".">";
     			    		echo " <td class="."'col-xs-3 col-md-3'".">" .$data[2]."<br>".substr($data[3],0,2)." : ".substr($data[3],3,2)."</th>";
-    						echo " <td class="."'col-xs-7 col-md-7'".">".$data[0]." → "."<br>".$data[1]."</th>";
+    						echo " <td class="."'col-xs-7 col-md-7'".">".$data[0]."<br>"." →  ".$data[1]."</th>";
     						date_default_timezone_set("Asia/Seoul");
     						$current_time = date("Y-m-d h:i:s");
 
