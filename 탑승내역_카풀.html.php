@@ -41,7 +41,7 @@ out();
 		</td>
 		<td class=" col-xs-4  col-md-4">
 		<form class="yg_float" action = './mypage-탑승내역.html.php'>
-	    	<input style="background-color: #ffffff" class="btn5" type="submit" value="택시 내역 Go">
+	    	<input class="btn5" type="submit" value="택시 내역 Go">
 	    	</form>
 		</td>
 	    	
@@ -114,13 +114,13 @@ out();
     						$current_time = date("Y-m-d h:i:s");
 
 							if($current_time>$data1[2]." ".$data1[3])
-								echo " <th class="."'col-xs-2 col-md-2'"."><a href='./Room.html.php?".$data1[5]."' class='btn btn-success1'>시간<br>종료</a></th>";
+								echo " <th class="."'col-xs-2 col-md-2'"."><a href='./car_Room.html.php?".$data1[5]."' class='btn btn-success1'>시간<br>종료</a></th>";
 							else if($check)
-    							echo " <th class="."'col-xs-2 col-md-2'"."><a href='./Room.html.php?".$data1[5]."' class='btn btn-warning1'>참여중<br>".$num2."/".$data1[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"."><a href='./car_Room.html.php?".$data1[5]."' class='btn btn-warning1'>참여중<br>".$num2."/".$data1[4]."</a></th>";
 							else if($num2==$data[4])
     							echo " <th class="."'col-xs-2 col-md-2'"."><a href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data1[4]."</a></th>";
 							else 
-    							echo " <th class="."'col-xs-2 col-md-2'"."><a href='./php/탑승하기.php?post_id=".$data1[5]."' class='btn btn-info1'>탑승<br>".$num2."/".$data1[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"."><a href='./php/car_탑승하기.php?post_id=".$data1[5]."' class='btn btn-info1'>탑승<br>".$num2."/".$data1[4]."</a></th>";
         					
         					echo " </tr>";
   						}

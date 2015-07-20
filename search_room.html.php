@@ -52,6 +52,8 @@ out();
 						<option value="전체보기" selected>전체보기</option>
 						<option value="한동대학교 택시 승강장" selected>한동대 택시승강장</option>
 						<option value="양덕 하나로마트">양덕 하나로마트</option>
+						<option value="장흥초">장흥초</option>
+					    <option value="북부해수욕장">북부해수욕장</option>
 						<option value="E1">E1 주유소</option>
 						<option value="고속버스터미널">고속터미널</option>
 						<option value="시외버스터미널">시외버스터미널</option>
@@ -71,6 +73,8 @@ out();
 						<option value="한동대학교 택시 승강장">한동대 택시승강장</option>
 						<option value="양덕 하나로마트">양덕 하나로마트</option>
 						<option value="E1">E1 주유소</option>
+						<option value="장흥초">장흥초</option>
+						<option value="북부해수욕장">북부해수욕장</option>
 						<option value="고속버스터미널">고속터미널</option>
 						<option value="시외버스터미널">시외버스터미널</option>
 						<option value="육거리">육거리</option>

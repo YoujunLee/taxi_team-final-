@@ -29,7 +29,7 @@
 		    </div>
 		    </div>
 		    <p class="notice">
-		      	※ 혹시 모를 사고에 대비하여, 외부인 가입을 제한 중 입니다.<br>본교 학생이 정보가 없다고 뜰 시, <span style="color:red">hguitaxi@gmail.com</span><br>e-mail 보내주시면 바로 조치해드리겠습니다.  
+		      	※ 혹시 모를 사고에 대비하여,<br>외부인 가입을 제한 중 입니다.<br>본교 학생이 정보가 없다고 뜰 시, <span style="color:red">hguitaxi@gmail.com</span><br>e-mail 보내주시면 바로 조치해드리겠습니다.  
 		    </p>		
 		    <div class="form-group">
 		    	<label for="inputcellPhone" class="col-xs-4 col-md-3  control-label">핸드폰번호</label>
