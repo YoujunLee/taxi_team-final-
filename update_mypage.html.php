@@ -32,7 +32,9 @@
 		      <label for="inputName" class="control-label col-xs-4 col-md-3 ">이름</label>
 		      <div class="col-xs-8 col-md-9">
 		      <?php
-		       session_start();
+		       include "./php/session_out.php";
+               out();
+		       
 			   $name =  $_SESSION['name'] ;
 			   echo "$name";
 		      ?>

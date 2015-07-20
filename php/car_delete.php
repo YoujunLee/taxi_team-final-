@@ -4,6 +4,8 @@
 </head>
 <body>
 <?php
+    include "./php/session_out.php";
+    out();
 	$hostname=$_SERVER["HTTP_REFERER"];
 	
 	

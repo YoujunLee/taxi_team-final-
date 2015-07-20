@@ -14,8 +14,9 @@ require_once './config.php';
 
 $db = new DBC; //db object생성
 $db->DBI();//db 들어가기
+include "./php/session_out.php";
+out();
 
-session_start();
 $stu_id= $_SESSION['user_id'];
 $name =  $_SESSION['name'] ;
 $cellPhone = $_POST['cellPhone'];
