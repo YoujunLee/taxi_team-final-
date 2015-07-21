@@ -25,16 +25,18 @@
       		</tr>
 		</table>
 		<div class = "col-xs-12  col-md-4 col-md-offset-4">
-		<br><br><br>
-
-		<form name="myForm" method="post" action="./php/insert.php">
-			제목 : <input name="subject" type="text" size=50  maxlength=70> <br/><br/>
-			문의사항 : <textarea name="memo" cols=55 rows=20  maxlength=500></textarea>
-			<br/>
-			<br/>
-			<div class="qna">
-				<input type="submit" value="문의하기"/>
+		<br>
+		<form align="center" name="myForm" method="post" action="./php/insert.php">
+			<div>
+				제목  <input name="subject" type="text" size=40  maxlength=70>
 			</div>
+			<br/>
+			<div>
+				내용  <textarea align="center" name="memo" cols=42 rows=20  maxlength=500></textarea>
+			</div>
+			<br/>
+				<input class="btn5" type="submit" value="문의하기"/>
+			<br/>
 			</div>
 		</form>
 	</body>
