@@ -22,7 +22,7 @@ out();
 	
 	$stu_id =  $_SESSION['user_id'] ;
 	$content = $_POST['댓글'];
-	$time = date("Y-m-d h:i:s");
+	$current_time = date("Y-m-d H:i:s");
 	
 	
 	if($content==null||$content==''){
@@ -30,7 +30,7 @@ out();
 		echo"<script>location.replace('$hostname');</script>";
 		exit;
 	}
-	$db->query = "insert into comment values('".$id."','".$stu_id."','".$post_id1."','".$content."','" . $time. "')";
+	$db->query = "insert into comment values('".$id."','".$stu_id."','".$post_id1."','".$content."','" . $current_time. "')";
 	$db->DBQ();
 	$db->DBO();
 	echo"<script>location.replace('$hostname');</script>";
