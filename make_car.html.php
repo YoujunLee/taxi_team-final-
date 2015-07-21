@@ -26,7 +26,7 @@ out();
       
       		<td class = "logout">
       			<form action='./php/logout.php'>
-		     		<input class="btn1" type="submit" value="LogOut">
+		     		<img src="./img/power.png" width="30px" height="30px">
 	       		</form>
         	</td>
   		</tr>
@@ -122,7 +122,7 @@ out();
 				<label for="make_population">
 				<td class="col-md-5">최대탑승인원</td>
 					<td class="col-md-7">
-						<input type="tel" id="make_populaion" name="car_population" class="form-control" min="2" max="4" maxlength="1" value="4" >
+						<input type="tel" id="make_populaion" name="car_population" class="form-control" min="2" max="4" maxlength="1" placeholder="ex) 4" >
 					</td>
 					</label>
 			</tr>

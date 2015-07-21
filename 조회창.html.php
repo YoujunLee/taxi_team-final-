@@ -24,9 +24,9 @@ out();
       			</a>
   		   </td>
       	   <td class = "logout">
-      	   		<form action='./php/logout.php'>
-		     		<input class="btn1" type="submit" value="LogOut">
-	       		</form>
+      	   		<a href='./php/logout.php'>
+		     		<img src="./img/power.png" width="30px" height="30px">
+	       		</a>
            </td>
   		</tr>
 	</table>

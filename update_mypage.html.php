@@ -23,7 +23,7 @@
       		    </td >
       		</tr>
 		</table>
-		<br><br><br><br><br><br>
+		<br/><br><br><br><br>
 		<div class=" col-xs-12  col-md-4 col-md-offset-4">
 		<!-- <div class="div_root"> -->
 		<form  action='./php/registo_change.php' method='POST'  class="form-horizontal">
@@ -50,7 +50,7 @@
 		        ?>
 		    </div>
 		    </div>
-		    <br><br>
+		    <br>
 		    <div class="form-group">
 		      <label for="inputcellPhone" class="control-label col-xs-4 col-md-3 ">핸드폰번호</label>
 		      <div class="col-xs-8 col-md-9 ">
@@ -151,15 +151,31 @@
                 test.value = "비밀번호 일치";
                }
              }
-              
+
 		    </script>
-		    <br>		   
-		     <div class="div_go">
-                <input class="btn btn-lg btn-block" type="submit" style="background-color:#34C6BE; color: #ffffff;" value="변경">
-                <a href="./MyPage.html.php" class="btn btn-lg btn-block" style="background-color:red; color: #ffffff; opacity:0.8;" value="취소">취소</a>
-			</div>
 		</form>
-		<!-- </div> -->
+	</div>
+		     <br/><br/><br/>
+		    
+		     <table class=" col-xs-12  col-md-4 col-md-offset-4">
+		     <tr>
+		     	<td>
+	                <a href="./MyPage.html.php" class="btn btn-lg btn-block" style="background-color:#ffde00; color: #ffffff; opacity:0.8;" value="취소">취소</a>
+                </td>
+                <td>
+                	<input class="btn btn-lg btn-block" type="submit" style="background-color:#34C6BE; color: #ffffff;" value="변경">
+				</td>
+			</tr>
+			</table>
+			
+			
+		     <!--
+		     <div>
+                <a href="./MyPage.html.php" class="btn btn-lg btn-block" style="background-color:red; color: #ffffff; opacity:0.8;" value="취소">취소</a>
+                <input class="btn btn-lg btn-block" type="submit" style="background-color:#34C6BE; color: #ffffff;" value="변경">
+			</div>
+			-->
+
 	</body>
 </html>
 			

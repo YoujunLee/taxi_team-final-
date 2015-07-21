@@ -50,8 +50,8 @@ out();
 			<!-- Table -->
 			  <table class="table table-hover tableheight" style="text-align: center">
 			  <div>
-			   	<tr onclick="location.href='./mypage-탑승내역.html.php'"><td>탑승내역</td></tr>
-			   	<tr onclick="location.href='./공지사항.html.php'"><td>공지사항</td></tr>
+  			   	<tr onclick="location.href='./공지사항.html.php'"><td>공지사항</td></tr>
+			   	<tr onclick="location.href='./QnA.html.php'"><td>Q & A</td></tr>
 			  </div>
 			  </table>
 			 </div>
