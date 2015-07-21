@@ -90,5 +90,15 @@ text-align: center;
 }
 
 .qna{
-	text-align : right;
+	text-align : center;
+	float: center;
+}
+
+.btn5{
+	background-color : #34C6BE;
+	color : white;
+	border: 0px none;
+	height : 27px;
+	width : 110px;
+	float : center;
 }
