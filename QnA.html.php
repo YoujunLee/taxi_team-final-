@@ -37,7 +37,7 @@
 			</div>
 			<br/>
 			<div>
-				<input name="memo" cols=42 rows=20  maxlength=500 placehorder="문의사항을 입력해주세요.">
+				<textarea name="memo" cols=42 rows=20  maxlength=500 placehorder=" 문의사항을 입력해주세요."></textarea>
 			</div>
 			<br/>
 				<input class="btn5" type="submit" value="문의하기"/>
