@@ -22,6 +22,28 @@
   	font-family:url('../font/NanumGothic.ttf');	
 }
 
+.margin_right{
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  
+}
+
+
+
  ::-webkit-scrollbar {
     -webkit-appearance: auto;
     width: 4px;
@@ -42,6 +64,21 @@
     padding-left: 0px;
 }
 
+.wrapper5{
+  	height: 300px;
+  	weight: 700px;
+  	position: relative;
+	border: 1px solid gray;
+  	margin-top: 0.1%;
+  	margin-bottom: 0.2%;
+  	text-align: justify;
+	background-color: #F7F7F7;
+    opacity: 0.8;
+  	background-size: 100%;
+  	font-size: 14px;
+  	overflow:auto;	
+  	font-family:url('../font/NanumGothic.ttf');	
+}
 
 p{
 	text-align: right;
@@ -78,9 +115,21 @@ nav.margin{
 }
 
 .logout
-{ padding-left: 2%;
-    padding-right: 2%;
-  text-align: right;
+{
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-top : 12px;
+    margin : auto ;
+    float : right ;
+   }
+   
+.logout1
+{
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-top : 13px;
+    margin : auto ;
+    float : right ;
 }
 .logo
 { padding-left: 2%;
@@ -138,6 +187,12 @@ nav.margin{
   
 }
 
+.image-size3{
+  width: 25%;
+  float:left; 
+  margin:0%; !important;
+  
+}
 .div_yg{
 text-align: center;
 }

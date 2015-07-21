@@ -17,16 +17,21 @@
   			   <td class = "logo" >
       				<a  href="./조회창.html.php"><img src="./img/logo.png"></a>
   			   </td >
-				<td class = "logout">
-    			  <form action='./php/logout.php'>
-		     	  <input class="btn1" type="submit" value="LogOut">
-	              </form>
-      		    </td >
+				 <td class = "logout">
+      	   		<a href='./php/logout.php'>
+      	   			<img src="./img/power.png" width="30px" height="30px">
+	       		</a>
+           </td>
+      	   <td class = "logout1">
+      	   		<a href='./조회창.html.php'>
+		     		<img src="./img/home.png" width="25px" height="25px">
+	       		</a>
+           </td>
       		</tr>
 		</table>
 		<div class = "col-xs-12  col-md-4 col-md-offset-4">
 		<br>
-		<form align="center" name="myForm" method="post" action="./php/insert.php">
+		<form align="center" name="myForm" method="post" action="./php/insert_QnA.php">
 			<div>
 				제목  <input name="subject" type="text" size=40  maxlength=70>
 			</div>

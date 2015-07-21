@@ -23,9 +23,14 @@ out();
       				<img src="./img/logo.png">
       			</a>
   		   </td>
-      	   <td class = "logout">
+  		   <td class = "logout">
       	   		<a href='./php/logout.php'>
-		     		<img src="./img/power.png" width="30px" height="30px">
+      	   			<img src="./img/power.png" width="30px" height="30px">
+	       		</a>
+           </td>
+      	   <td class = "logout1">
+      	   		<a href='./조회창.html.php'>
+		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>
   		</tr>
