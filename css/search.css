@@ -64,10 +64,21 @@ tr.change_color{
 
 .logout
 {
-	padding-left: 2%;
-    padding-right: 2%;
-    text-align: right;
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-top : 12px;
+    margin : auto ;
+    float : right ;
+   }
+.logout1
+{
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-top : 13px;
+    margin : auto ;
+    float : right ;
 }
+
 .logo{
  	padding-left: 2%;
     padding-right: 2%;

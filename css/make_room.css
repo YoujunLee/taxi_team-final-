@@ -39,10 +39,21 @@ body.padding{
 	padding-left : 0px !important;
 }
 
-.logout{
-	 padding-left: 2%;
-     padding-right: 2%;
-  	 text-align: right;
+.logout
+{
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-top : 12px;
+    margin : auto ;
+    float : right ;
+   }
+.logout1
+{
+	padding-left: 10px;
+    padding-right: 10px;
+    padding-top : 13px;
+    margin : auto ;
+    float : right ;
 }
 .logo
 { padding-left: 2%;
@@ -89,3 +100,4 @@ a:link {text-decoration: none; color: #000000;}
 a:visited {text-decoration: none; color: #000000;}
 a:active {text-decoration: none; color: #000000;}
 a:hover {text-decoration: underline; color: #7C8B8F;}
+
