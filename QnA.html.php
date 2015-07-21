@@ -33,11 +33,11 @@
 		<br>
 		<form align="center" name="myForm" method="post" action="./php/insert_QnA.php">
 			<div>
-				제목  <input name="subject" type="text" size=40  maxlength=70>
+				<input name="subject" type="text" size=40  maxlength=70 placeholder=" 제목을 입력해주세요.">
 			</div>
 			<br/>
 			<div>
-				내용  <textarea align="center" name="memo" cols=42 rows=20  maxlength=500></textarea>
+				<input name="memo" cols=42 rows=20  maxlength=500 placehorder="문의사항을 입력해주세요.">
 			</div>
 			<br/>
 				<input class="btn5" type="submit" value="문의하기"/>

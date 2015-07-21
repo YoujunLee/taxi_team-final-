@@ -156,6 +156,9 @@
                 <input class="btn btn-lg btn-block" style="background-color:#34C6BE; color: #ffffff;" type="submit" value="가입하기">
 			</div>
 		</form>
+		<div class="col-xs-12  col-md-4 col-md-offset-4 "> 
+			&nbsp;
+		</div>
 		
 	</body>
 </html>
