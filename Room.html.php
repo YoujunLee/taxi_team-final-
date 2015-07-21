@@ -50,22 +50,22 @@ out();
 </section>
 
 <section>
-    <div class="wrapper2 col-xs-12  col-md-4 col-md-offset-4 ">
-	<table class="table1">
+    <div class="wrapper2 col-xs-12  col-md-4 col-md-offset-4 " id="display" name="remotediv">
+    	<table class="table1">
 	<tbody>
 	<?php
 		require_once './php/db.php';
 		
 		$db = new DBC;
 		$db->DBI();
-		$db->query = "SELECT * FROM comment WHERE post_id='".$post_id."'";  //방 별로 다른 commet 출력. 
+		$db->query = "SELECT * FROM comment WHERE post_id='".$post_id."' ORDER BY time desc ";  //방 별로 다른 commet 출력. 
 		$db->DBQ();
 		
 		$db2 = new DBC;
 		$db2->DBI();
 		while($data = $db->result->fetch_assoc())
 		{   
-			$db2->query= "SELECT name FROM student_info WHERE studentid= '".$data['stu_id']."'";
+			$db2->query= "SELECT studentid FROM student_info WHERE studentid= '".$data['stu_id']."'";
 		    $db2->DBQ();   
 			$data2 = $db2->result->fetch_row() ;
 			$comment_name = $data2[0];
@@ -101,7 +101,7 @@ out();
   				<thead class="co">
     				<tr class="row">
       					<th class="col-xs-2 col-md-2">No.</th>
-      					<th class="col-xs-4 col-md-4">Name</th>
+      					<th class="col-xs-4 col-md-4">Student id</th>
       					<th class="col-xs-6 col-md-6">Phone</th>
     				</tr>
   				</thead>
@@ -123,7 +123,7 @@ out();
     
     			<tr class="row">
       				<th class="col-xs-2 col-md-2"><?php echo $i?></th>
-      				<th class="col-xs-4 col-md-4"><?php echo $data['name']?></th>
+      				<th class="col-xs-4 col-md-4"><?php echo $data['stu_id']?></th>
       				<th class="col-xs-6 col-md-6"><?php echo $data['cellphone']?></th>
     			</tr>
     			<?php $i=$i+1; ?>
