@@ -4,7 +4,7 @@
 }
 
 .margin_right{
-  display: inline-block;
+  
   padding: 6px 12px;
   margin: 0 80px 0px 0px;
   font-size: 14px;
@@ -23,7 +23,7 @@
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
-}
+ }
 
 ul.right{
 	float : right !important; 

@@ -84,7 +84,7 @@ out();
   
   <section>
   
-  	<div class="wrapper5">
+  	<div >
    	<?php
  	 	$post_id2=getenv("QUERY_STRING");
   		echo"<form action=./php/car_comment_db.php?$post_id2  method=post>";
