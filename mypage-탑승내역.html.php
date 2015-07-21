@@ -73,7 +73,7 @@ out();
 				
 				$db3 = new DBC;
 				$db3->DBI();
-				$db3->query= "SELECT post_id FROM room_user WHERE stu_id='".$user_id."'ORDER BY date desc,time desc";
+				$db3->query= "SELECT post_id FROM room_user WHERE stu_id='".$user_id."' ORDER BY date desc,time desc";
 				$db3->DBQ();
 				
 				$db = new DBC;
@@ -108,14 +108,17 @@ out();
     						{ 
 								if($data2[1]== $_SESSION['user_id'])
 								$check=true;
-							}	
-    	
+							}
+							date_default_timezone_set("Asia/Seoul");
+    						$current_time = date("Y-m-d H:i:s");
+					?>
+					
+							<tr <?php if($current_time<$data1[2]." ".$data1[3]){ ?>onclick="location.href='./Room.html.php?<?php echo $data1[5]; ?>'"<?php } ?>> 
+    						<?php	
     						echo "<td class="."'row'".">";
     			    		echo " <td class="."'col-xs-3 col-md-3'".">".$data1[2]."<br>".substr($data1[3],0,2)." : ".substr($data1[3],3,2)."</th>";
     						echo " <td class="."'col-xs-7 col-md-7'".">".$data1[0]."<br>"."&nbsp;&nbsp;"." →&nbsp;&nbsp;".$data1[1]."</th>";
-    						date_default_timezone_set("Asia/Seoul");
-    						$current_time = date("Y-m-d H:i:s");
-						
+    									
 
 							if($current_time>$data1[2]." ".$data1[3])
 								echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='./Room.html.php?".$data1[5]."' class='btn btn-success1'>시간<br>종료</a></th>";
@@ -125,8 +128,9 @@ out();
     							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data1[4]."</a></th>";
 							else 
     							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='./php/탑승하기.php?post_id=".$data1[5]."' class='btn btn-info1'>탑승<br>".$num2."/".$data1[4]."</a></th>";
-        					
-        					echo " </tr>";
+        					?>
+        					</tr>
+        				<?php
   						}
   						else
 							break;
@@ -137,7 +141,7 @@ out();
 					$db->DBO();
 					$db2->DBO();
 					$db3->DBO();
-    			?>	
+    					?>	
     		</tbody>
   		</table>
 	</div>

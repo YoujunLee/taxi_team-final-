@@ -127,7 +127,7 @@
 				}	
 				date_default_timezone_set("Asia/Seoul");
     			$current_time = date("Y-m-d H:i:s");	
-    		?>
+    ?>
     		
     		<tr <?php if($current_time<$data[2]." ".$data[3]){ ?>onclick="location.href='./Room.html.php?<?php echo $data[5]; ?>'"<?php } ?>> 
     		<?php
@@ -144,7 +144,6 @@
     			echo " <th class="."'col-xs-2 col-md-2'"."><a href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data[4]."</a></th>";
 			else 
     			echo " <th class="."'col-xs-2 col-md-2'"."><a href='./php/탑승하기.php?post_id=".$data[5]."' class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
-        	//echo " </tr>";
         	?>
         	</tr>
         	<?php
