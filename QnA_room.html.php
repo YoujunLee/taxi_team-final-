@@ -71,7 +71,7 @@
 				$db = new DBC;	 //db object생성
 				$db->DBI();		//db 들어가기
 				
-				$db->query = "select * from notice order by num desc";
+				$db->query = "select * from QnA order by num desc";
 				$db->DBQ();
 			?>
 				
