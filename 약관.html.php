@@ -7,7 +7,6 @@
    		 <title>iTaxi</title>
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="../css/index2.css">
-   		 <link rel="stylesheet" type="text/css" href="./css/make_room.css"> 
 	</head>
 	<body class="center">
 	
@@ -199,7 +198,7 @@
 	</section>
 	
 	<div class="col-xs-12  col-md-4 col-md-offset-4 "> 
-		<p><label><input type="checkbox" name="agree_y" value="agree_y" checked="checked"> 약관을 모두 읽었으며 동의합니다.</label></p>
+		<p><label><input type="checkbox" name="agree" id="agree" value="agree" checked="checked"> 약관을 모두 읽었으며 동의합니다.</label></p>
 	</div>
 	
 	<section>
@@ -328,11 +327,11 @@
     </section>
     
     <div class="col-xs-12  col-md-4 col-md-offset-4 "> 
-		<p><label><input type="checkbox" name="agree2_y" value="agree2_y" checked="checked"> 정책을 모두 읽었으며 동의합니다.</label></p>
+		<p><label><input type="checkbox" name="agree2" id="agree2" value="agree2" checked="checked"> 정책을 모두 읽었으며 동의합니다.</label></p>
 	</div>
    
    <div class="div_yg col-xs-12  col-md-4 col-md-offset-4 "> 
-		<label><input type="submit"  value="다음 단계" class=" margin_right "style="background-color:#34c6be; color: #ffffff;"></label>
+		<input type="submit"  value="다음 단계" class="margin_right "style="background-color:#34c6be; color: #ffffff;">
 	</div>
     </form>
     <div class="col-xs-12  col-md-4 col-md-offset-4 "> 
