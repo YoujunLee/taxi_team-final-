@@ -23,7 +23,7 @@
       		    </td >
       		</tr>
 		</table>
-		<br><br><br><br><br><br>
+		<br/><br><br><br><br>
 		<div class=" col-xs-12  col-md-4 col-md-offset-4">
 		<!-- <div class="div_root"> -->
 		<form  action='./php/registo_change.php' method='POST'  class="form-horizontal">
@@ -50,7 +50,7 @@
 		        ?>
 		    </div>
 		    </div>
-		    <br><br>
+		    <br>
 		    <div class="form-group">
 		      <label for="inputcellPhone" class="control-label col-xs-4 col-md-3 ">핸드폰번호</label>
 		      <div class="col-xs-8 col-md-9 ">
@@ -151,11 +151,11 @@
                 test.value = "비밀번호 일치";
                }
              }
-              
+
 		    </script>
 		</form>
 	</div>
-		    <br>		   
+		     <br/><br/><br/>
 		     <table class=" col-xs-12  col-md-4 col-md-offset-4">
 		     <tr>
 		     	<td>
