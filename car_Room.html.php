@@ -10,6 +10,7 @@ out();
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>i-Taxi</title>
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"> 
+	<link rel="stylesheet" type="text/css" href="../css/index2.css"> 
 </head>
 <body class="center">
 	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
@@ -19,10 +20,15 @@ out();
       	       	  <img src="./img/logo.png">
       	       </a>
     	   </td>
-     	   <td class = "logout">
-      		   <form action='./php/logout.php'>
-		     	 <img src="./img/power.png" width="30px" height="30px">
-	     	   </form>
+     	    <td class = "logout">
+      	   		<a href='./php/logout.php'>
+      	   			<img src="./img/power.png" width="30px" height="30px">
+	       		</a>
+           </td>
+      	   <td class = "logout1">
+      	   		<a href='./조회창.html.php'>
+		     		<img src="./img/home.png" width="25px" height="25px">
+	       		</a>
            </td>
   		</tr>
 	</table>
