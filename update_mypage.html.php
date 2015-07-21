@@ -153,13 +153,25 @@
              }
               
 		    </script>
-		    <br>		   
-		     <div class="div_go">
-                <input class="btn btn-lg btn-block" type="submit" style="background-color:#34C6BE; color: #ffffff;" value="변경">
-                <a href="./MyPage.html.php" class="btn btn-lg btn-block" style="background-color:red; color: #ffffff; opacity:0.8;" value="취소">취소</a>
-			</div>
 		</form>
-		<!-- </div> -->
+	</div>
+		    <br>		   
+		     <table class=" col-xs-12  col-md-4 col-md-offset-4">
+		     <tr>
+		     	<td>
+                <a href="./MyPage.html.php" class="btn btn-lg btn-block" style="background-color:red; color: #ffffff; opacity:0.8;" value="취소">취소</a>
+                </td>
+                <td>
+                <input class="btn btn-lg btn-block" type="submit" style="background-color:#34C6BE; color: #ffffff;" value="변경">
+				</td>
+			</tr>
+			</table>
+		     <!--
+		     <div>
+                <a href="./MyPage.html.php" class="btn btn-lg btn-block" style="background-color:red; color: #ffffff; opacity:0.8;" value="취소">취소</a>
+                <input class="btn btn-lg btn-block" type="submit" style="background-color:#34C6BE; color: #ffffff;" value="변경">
+			</div>
+			-->
 	</body>
 </html>
 			
