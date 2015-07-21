@@ -106,18 +106,18 @@
     	
     						echo "<td class="."'row'".">";
     			    		echo " <td class="."'col-xs-3 col-md-3'".">" .$data[2]."<br>".substr($data[3],0,2)." : ".substr($data[3],3,2)."</th>";
-    						echo " <td class="."'col-xs-7 col-md-7'".">".$data[0]."<br>"." →  ".$data[1]."</th>";
+    						echo " <td class="."'col-xs-7 col-md-7'".">".$data[0]."<br>"."&nbsp;&nbsp;"." →&nbsp;&nbsp;".$data[1]."</th>";
     						date_default_timezone_set("Asia/Seoul");
     						$current_time = date("Y-m-d h:i:s");
 
 							if($current_time>$data[2]." ".$data[3])
-								echo " <th class="."'col-xs-2 col-md-2'"."><a href='#' class='btn btn-success1'>시간<br>종료</a></th>";
+								echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-success1'>시간<br>종료</a></th>";
 							else if($check)
-    							echo " <th class="."'col-xs-2 col-md-2'"."><a href='./Room.html.php?".$data[5]."' class='btn btn-warning1'>참여중<br>".$num2."/".$data[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='./car_Room.html.php?".$data[5]."' class='btn btn-warning1'>참여중<br>".$num2."/".$data[4]."</a></th>";
 							else if($num2==$data[4])
-    							echo " <th class="."'col-xs-2 col-md-2'"."><a href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data[4]."</a></th>";
 							else 
-    							echo " <th class="."'col-xs-2 col-md-2'"."><a href='./php/탑승하기.php?post_id=".$data[5]."' class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='./php/car_탑승하기.php?post_id=".$data[5]."' class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
         					
         					echo " </tr>";
   						}

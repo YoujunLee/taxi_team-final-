@@ -67,7 +67,7 @@ out();
 			<table class = "table">
 				<tr>
 					<td>
-						<h1><input type="tel" size=10 placeholder="     총 금액" name="input1" autofocus=""> 원</h1>
+						<h1><input type="tel" size=10 placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;총 금액" name="input1" autofocus=""> 원</h1>
 					</td>
 				</tr>
 				<tr>
@@ -92,7 +92,7 @@ out();
 				<tr>
 					<td><h1>
 
-							<input type="text" size=10 placeholder="     결과 값" name="input3"> 원
+							<input type="text" size=10 placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;결과값" name="input3"> 원
 						</h1>
 					</td>
 				</tr>
