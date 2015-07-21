@@ -106,7 +106,10 @@
     						$current_time = date("Y-m-d H:i:s");
 				?>
 				
-							<tr <?php if($current_time<$data[2]." ".$data[3]){ ?>onclick="location.href='./car_Room.html.php?<?php echo $data[5]; ?>'"<?php } ?>> 
+							<tr <?php if($check==false)
+									   	{?>onclick="location.href='./php/car_탑승하기.php?post_id=<?php echo $data[5]; ?>'"<?php }
+									   else if($current_time<$data[2]." ".$data[3])
+										{ ?>onclick="location.href='./car_Room.html.php?<?php echo $data[5]; ?>'"<?php }  ?>> 
 							<?php
     						echo "<td class="."'row'".">";
     			    		echo " <td class="."'col-xs-3 col-md-3'".">".$data[2]."<br>".substr($data[3],0,2)." : ".substr($data[3],3,2)."</td>";

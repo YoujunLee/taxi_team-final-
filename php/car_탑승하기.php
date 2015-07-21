@@ -5,6 +5,15 @@
 </head>
 <body>
 <?php
+
+	echo "<script>
+		   var result=confirm('탑승 하시시겠습니까? 출발시간 30분 이전에는 취소가 불가능합니다.');
+		   if(result==false)
+		   location.replace('../search_car.html.php');
+		   else
+		   	return;
+		   </script>";
+
 include "./session_out.php";
 out();
 require_once './config.php';

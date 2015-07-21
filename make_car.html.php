@@ -137,6 +137,10 @@ out();
 	<input type="submit" value="방만들기" class=" margin_right btn-info" style="background-color:#34c6be; color: #ffffff;">
 	<a href="./조회창.html.php"><input type="button" value="취소" class="btn btn-danger"></a>
 	</div>
+	<div class="div2">
+	<br>
+			    <p>Tip: 방 내부에서 세부일정에 대해 이야기 나눌 수 있습니다.</p>
+	</div>
 	</div>
 </form>
 </body>
