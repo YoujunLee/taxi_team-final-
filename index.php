@@ -41,7 +41,7 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 		<br>			
 
 		<!-- 회원가입 버튼 -->
-		<form action='./SignUp.html.php'>
+		<form action='./약관.html.php'>
 			<input class="btn btn-lg btn-block" type="submit" style="background-color:#ffde00; color: #ffffff;" value="회원가입">
 	    </form>
 	    <form class="right_go" action='./password.html.php'>
