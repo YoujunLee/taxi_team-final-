@@ -20,7 +20,11 @@ $pass = str_replace("'", "/'", $_POST['logpass']);
 
 $db->query = "select studentid, name, cellphone, password from student_info where studentid='".$studentid."' and password='".$pass."'";
 $db->DBQ();
-
+if(!$db->result)
+{
+   echo "<script>alert('학번과 비밀번호가 맞지 않습니다.');location.replace('../index.php');</script>";
+   exit;
+}
 $num = $db->result->num_rows;
 $data = $db->result->fetch_row();
 

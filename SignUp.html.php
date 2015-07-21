@@ -4,7 +4,7 @@
 	<head>
 		 <meta charset="utf-8">
 		 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-   		 <title>회원가입</title>
+   		 <title>iTaxi</title>
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="../css/box.css">
 	</head>
