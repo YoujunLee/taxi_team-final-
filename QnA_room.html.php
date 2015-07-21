@@ -87,6 +87,7 @@
 						<div class="panel">
 						<?php	
 							echo $data['memo']. "<br>";
+							echo "<br>"."학번: ". $data['stu_id']."<br>"."작성자: ". $data['name']."<br>"."핸드폰 번호: ". $data['phone_num'];
 						?>
 						</div>
 						<br>
