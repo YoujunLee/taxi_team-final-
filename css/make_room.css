@@ -55,10 +55,10 @@ body.padding{
     margin : auto ;
     float : right ;
 }
-.logo
-{ padding-left: 2%;
+.logo{
+ 	padding-left: 2%;
     padding-right: 2%;
-  text-align: left;
+  	text-align: left;
 }
 .navi{
     padding-left: 2%;

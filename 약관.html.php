@@ -11,7 +11,7 @@
 	<body class="center">
 	
 	<div class="padding col-xs-12  col-md-4 col-md-offset-4 "> 
-		<img src="./img/logo_big.png" class="image-size3 ">
+		<a href="./index.php"><img src="./img/logo_big.png" class="image-size3 "></a>
 	</div>
 	<div class="col-xs-12  col-md-4 col-md-offset-4 "> 
 	&nbsp;

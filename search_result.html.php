@@ -125,12 +125,16 @@
 					if($data2[1]== $_SESSION['user_id'])
 					$check=true;
 				}	
-    	
+				date_default_timezone_set("Asia/Seoul");
+    			$current_time = date("Y-m-d H:i:s");	
+    		?>
+    		
+    		<tr <?php if($current_time<$data[2]." ".$data[3]){ ?>onclick="location.href='./Room.html.php?<?php echo $data[5]; ?>'"<?php } ?>> 
+    		<?php
     		echo "<td class="."'row'".">";
     		echo " <td class="."'col-xs-3 col-md-3'".">".substr($data[3],0,2)." : ".substr($data[3],3,2)."</th>";
     		echo " <td class="."'col-xs-7 col-md-7'".">".$data[0]." → "."<br>".$data[1]."</th>";
-    		date_default_timezone_set("Asia/Seoul");
-    		$current_time = date("Y-m-d h:i:s");
+    		
 
 			if($current_time>$data[2]." ".$data[3])
 				echo " <th class="."'col-xs-2 col-md-2'"."><a href='#' class='btn btn-success1'>시간<br>종료</a></th>";
@@ -140,7 +144,10 @@
     			echo " <th class="."'col-xs-2 col-md-2'"."><a href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data[4]."</a></th>";
 			else 
     			echo " <th class="."'col-xs-2 col-md-2'"."><a href='./php/탑승하기.php?post_id=".$data[5]."' class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
-        	echo " </tr>";
+        	//echo " </tr>";
+        	?>
+        	</tr>
+        	<?php
   			}
   			else
 				break;

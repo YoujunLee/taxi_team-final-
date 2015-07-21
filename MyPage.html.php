@@ -56,14 +56,14 @@ out();
 			  <table class="table table-hover tableheight" style="text-align: center">
 			  <div>
   			   	<tr onclick="location.href='./공지사항.html.php'"><td>공지사항</td></tr>
-			   	<tr onclick="location.href='./QnA.html.php'"><td>Q & A</td></tr>
+			   	<tr onclick="location.href='./QnA.html.php'"><td>1:1 문의</td></tr>
 			  </div>
 			  </table>
 			 </div>
 		
 		<br><br><br><br>
 			<div><hr/>
-			  	   <div>Please contact us (<a>hguitaxi@gmail.com</a>)<br>@Launched by YouJun Lee, PyungKang Kim, Maria Jeong, Minkyu Yang 
+			  	   <div>Please contact us (<a>hguitaxi@gmail.com</a>)<br>@Launched by YouJun Lee, PyungKang Kim, Maria Jeong, MinGyu Yang 
 			  </div>
 			</div>
 		</div>

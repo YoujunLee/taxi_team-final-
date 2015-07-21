@@ -105,7 +105,7 @@ out();
 				<td class="col-md-5">최대탑승인원</td>
 					<td class="col-md-7">
 						<input type="tel" id="make_populaion" name="room_population" class="form-control" maxlength="1" min="2" max="4" value="4" >
-						<div style="color:#34C6BE">※ 최소탑승인원: 2명<br> &nbsp;&nbsp;&nbsp;최대탑승인원: 4명</div>
+						<div style="color:#34C6BE">※ 최소탑승인원: 2명<br> &nbsp;&nbsp;&nbsp;&nbsp;최대탑승인원: 4명</div>
 					</td>
 					</label>
 				</tr>
