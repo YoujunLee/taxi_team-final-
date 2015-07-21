@@ -9,8 +9,7 @@ out();
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>i-Taxi</title>
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="../css/index2.css">
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"> 
 </head>
 <body class="center">
 	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
