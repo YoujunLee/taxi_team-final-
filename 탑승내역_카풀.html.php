@@ -113,8 +113,7 @@ out();
     						$current_time = new DateTime;
 							$current_time->setTimezone(new DateTimezone("asia/seoul"));	
     						$current_time = date("Y-m-d h:i:s");
-                            echo $current_time;
-							echo $data1[2]." ".$data1[3];
+                            
 							if($current_time>$data1[2]." ".$data1[3])
 								echo " <th class="."'col-xs-2 col-md-2'"."><a href='./car_Room.html.php?".$data1[5]."' class='btn btn-success1'>시간<br>종료</a></th>";
 							else if($check)
