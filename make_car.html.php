@@ -42,7 +42,7 @@ out();
 					출발지
 				</td>
 				<td class="col-md-9">
-					<input type="text" id="start" name="car_start" value="한동대" class="form-control" autofocus required>
+					<input type="text" id="start" name="car_start" placeholder="ex) 한동대" class="form-control" autofocus required>
 				</td>
 				</label>
 			
@@ -50,7 +50,7 @@ out();
 				<label for="arrive">
 				<td class="col-md-3">도착지</td>
 				<td class="col-md-9">
-					<input type="text" id="arrive" name="car_arrive" value="서울" class="form-control" required>
+					<input type="text" id="arrive" name="car_arrive" placeholder="ex) 서울" class="form-control" required>
 				</td>
 				</label>
 			</tr>		
@@ -81,7 +81,7 @@ out();
 				<label for="car">
 				<td class="col-md-3">차종</td>
 				<td class="col-md-9">
-					<input type="text" id="car" name="car_num" value="모닝" class="form-control" required>
+					<input type="text" id="car" name="car_num" placeholder="ex) 페라리" class="form-control" required>
 				</td>
 				</label>
 			</tr>
@@ -90,7 +90,7 @@ out();
 				<label for="price">
 				<td class="col-md-3">가격</td>
 				<td class="col-md-9">
-					<input type="tel" id="price" name="car_price" onkeyup="getNumber(this)" onchange="getNumber(this)" value="10,000" class="form-control" required >
+					<input type="tel" id="price" name="car_price" onkeyup="getNumber(this)" onchange="getNumber(this)" placeholder="ex) 10,000" class="form-control" required >
 				<script type="text/javascript">
 				var rgx1 = /\D/g;  
 				var rgx2 = /(\d+)(\d{3})/; 

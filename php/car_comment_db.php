@@ -22,7 +22,7 @@ out();
 	
 	$stu_id =  $_SESSION['user_id'] ;
 	$content = $_POST['댓글'];
-	$time = date("Y-m-d h:i:s");
+	$time = date("Y-m-d H:i:s");
 	
 	
 	if($content==null||$content==''){
