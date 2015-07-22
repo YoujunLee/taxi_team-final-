@@ -50,10 +50,10 @@ $db->DBQ();
  
 $num = $db->result->num_rows;
 if($num==1)	
-{
-   while($data = $db->result->fetch_row())
-	 {$pass = $data[0]; }
-   echo "<script>alert('비밀번호는 (".$pass.") 입니다.');location.replace('../index.php');</script>";
+{  $hash = password_hash("1234", PASSWORD_DEFAULT);
+   $db->query = "update student_info set cellphone='".$cellPhone."', password='".$hash."' where studentid='".$student_no."'" ;
+   $db->DBQ();
+   echo "<script>alert('비밀번호는 ("."1234".") 입니다.로그인 후 비밀번호를 변경해주세요');location.replace('../index.php');</script>";
    $db->DBO();
    exit;
 }else

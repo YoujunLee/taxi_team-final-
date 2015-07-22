@@ -134,12 +134,10 @@
 		      <label  class="col-xs-4 col-md-3  control-label">비밀번호<br>찾을시 질문</label>
 		      <div class="col-xs-8 col-md-9 ">
 		        <select  name="question" class="form-control">
-						<option value="아버지의 성함은?" selected>아버지의 성함은?</option>
-						<option value="어머님의 성함은?">어머님의 성함은?</option>
-						<option value="제일 좋아하는 선생님 이름은?">제일 좋아하는 선생님 이름은?</option>
-						<option value="가장 인상깊게 본 책의 제목은?">가장 인상깊게 본 책의 제목은?</option>
+						<option value="제일 좋아하는 교수님 성함은?">제일 좋아하는 교수님 성함은?</option>
+						<option value="제일 인상깊게 본 책의 제목은?">제일 인상깊게 본 책의 제목은?</option>
 						<option value="제일 좋아하는 동물은?">제일 좋아하는 동물은?</option>
-						<option value="가장 인상깊게 본 영화의 제목은?">가장 인상깊게 본 영화의 제목은?</option>
+						<option value="제일 인상깊게 본 영화의 제목은?">제일 인상깊게 본 영화의 제목은?</option>
 						<option value="어렸을 때 꿈은?">어렸을 때 꿈은?</option>
 						<option value="제일 좋아하는 가수 이름은?">제일 좋아하는 가수 이름은?</option>
 						</select>

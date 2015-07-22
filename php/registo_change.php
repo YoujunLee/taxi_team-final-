@@ -24,10 +24,29 @@ $pass = $_POST['pass'];
 $pass1 = $_POST['pass1'];
 $pass2 = $_POST['pass2'];
 
-$db->query = "select studentid, name, cellphone, password from student_info where studentid='".$stu_id."' and password='".$pass."'";
+$db->query = "select studentid, name, cellphone, password from student_info where studentid='".$stu_id."'";
 $db->DBQ();
-
+$data = $db->result->fetch_row();
 $num = $db->result->num_rows;
+if(!$db->result)
+{
+	
+	echo "<script>alert('개인정보 수정에 실패하였습니다. 다시 시도하시기바랍니다.');history.back();</script>";
+	$db->DBO();
+	exit;
+	
+}
+
+if (password_verify($pass, $data[3])) {
+  	;  // 비밀번호가 맞음 
+                }else 
+                { 
+       echo "<script>alert('기존 비밀번호가 맞지 않습니다.');history.back();</script>";
+	$db->DBO();
+	exit;
+		            // 비밀번호가 틀림 
+                } 
+
 if($num!=1)
 {
 	echo "<script>alert('기존 비밀번호가 맞지 않습니다.');history.back();</script>";
@@ -56,14 +75,14 @@ if($pass==null||$pass=='')
 	echo "<script>alert('비밀번호를 입력해주세요.');history.back();</script>";
 	exit;
 }
-
-$db->query = "update student_info set cellphone='".$cellPhone."', password='".$pass."' where studentid='".$stu_id."'" ;
+$hash = password_hash($pass, PASSWORD_DEFAULT);
+$db->query = "update student_info set cellphone='".$cellPhone."', password='".$hash."' where studentid='".$stu_id."'" ;
 $db->DBQ();
 
 if(!$db->result)
 {
 	
-	echo "<script>alert('앗! 아쉽게 회원가입에 실패하였습니다.');history.back();</script>";
+	echo "<script>alert('개인정보 수정에 실패하였습니다. 다시 시도하시기바랍니다.');history.back();</script>";
 	$db->DBO();
 	exit;
 	
