@@ -26,13 +26,21 @@ $pass2 = $_POST['pass2'];
 
 $db->query = "select studentid, name, cellphone, password from student_info where studentid='".$stu_id."'";
 $db->DBQ();
-
+$data = $db->result->fetch_row();
 $num = $db->result->num_rows;
+if(!$db->result)
+{
+	
+	echo "<script>alert('개인정보 수정에 실패하였습니다. 다시 시도하시기바랍니다.');history.back();</script>";
+	$db->DBO();
+	exit;
+	
+}
 
 if (password_verify($pass, $data[3])) {
   	;  // 비밀번호가 맞음 
-                } 
-else { 
+                }else 
+                { 
        echo "<script>alert('기존 비밀번호가 맞지 않습니다.');history.back();</script>";
 	$db->DBO();
 	exit;
