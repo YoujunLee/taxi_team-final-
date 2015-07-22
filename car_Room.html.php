@@ -136,7 +136,7 @@ out();
 			    <?php
    					}
 	 				if($check){
-						echo "<script>history.go(-2);</script>"; exit;}
+						echo "<script>history.back();</script>"; exit;}
 				?>
 				
    				</tbody>
