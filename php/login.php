@@ -20,12 +20,14 @@ $pass = str_replace("'", "/'", $_POST['logpass']);
 
 $db->query = "select studentid, name, cellphone, password from student_info where studentid='".$studentid."'";
 $db->DBQ();
-if(!$db->result)
+$num = $db->result->num_rows;
+if($num!=1)
 {
    echo "<script>alert('회원가입이 안되있습니다. 가입 후 이용해주시기바랍니다.');location.replace('../index.php');</script>";
+   $db->DBO();
    exit;
 }
-$num = $db->result->num_rows;
+
 $data = $db->result->fetch_row();
 
 if (password_verify($pass, $data[3])) {
@@ -33,6 +35,7 @@ if (password_verify($pass, $data[3])) {
                 } 
 else { 
         echo "<script>alert('학번과 비밀번호가 맞지 않습니다.');location.replace('../index.php');</script>";
+	$db->DBO();
    exit;
 		            // 비밀번호가 틀림 
                 } 
