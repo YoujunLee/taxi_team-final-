@@ -7,21 +7,16 @@
 		 
 <?php
  
- $password = "1234";
- $hash = password_hash($password, PASSWORD_DEFAULT);
- 
- $data = $hash;
- $password = "1234";
- echo  $hash.'<br>';
- 
-  if (password_verify($password, $data)) {
-  	echo "됬나"; 
-                    // 비밀번호가 맞음 
-                } else { 
-         echo  "안됬나";
-		            // 비밀번호가 틀림 
-                } 
- 
+ $to = "gt136@naver.com";
+ $subject = "Test";
+ $message = "hello";
+ $from = "gt136@naver.com";
+ $header = "From:".$from."";
+ $result = mail($to, $subject, $message,$header);
+ if($result)
+ echo "finish";
+ else	
+ echo "아놔";
  
 ?> 
 		 </body>
