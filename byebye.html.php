@@ -1,6 +1,9 @@
 <?php
-include "./php/session_out.php";
-out();
+	session_start();
+	session_unset('user_id');
+	session_unset('user_pw');
+	session_unset('name');
+	session_unset('cellphone');
 ?>
 <!DOCTYPE html>
 <html>
@@ -31,6 +34,7 @@ out();
 			  <div class="panel-body">
 			  		탈퇴가 완료되었습니다.<br />그동안 <a style="color: #34C6BE">iTaxi</a>를 이용해주셔서 감사합니다.<br />오늘도 행복한 하루 보내세요 :) 
 			  		<br /><br />
+					<a href="./index.html.php"><input type="submit" value="처음으로 돌아가기" class="margin_right btn btn-info" style="background-color:#34c6be; color: #ffffff; border-color: #34C6BE"></a>
 			  </div>
 			</div>
 		</div>
