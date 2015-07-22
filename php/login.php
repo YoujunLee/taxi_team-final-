@@ -22,7 +22,7 @@ $db->query = "select studentid, name, cellphone, password from student_info wher
 $db->DBQ();
 if(!$db->result)
 {
-   echo "<script>alert('학번과 비밀번호가 맞지 않습니다.');location.replace('../index.php');</script>";
+   echo "<script>alert('회원가입이 안되있습니다. 가입 후 이용해주시기바랍니다.');location.replace('../index.php');</script>";
    exit;
 }
 $num = $db->result->num_rows;
