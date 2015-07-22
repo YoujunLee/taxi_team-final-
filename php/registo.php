@@ -88,10 +88,10 @@ if($num==1)
    exit;
 }
 
-
+$hash = password_hash($pass, PASSWORD_DEFAULT);
 	
 
-$db->query = "insert into student_info values ('".$student_no."', '".$name."','".$cellPhone."','".$pass."','".$question."','".$answer."')";
+$db->query = "insert into student_info values ('".$student_no."', '".$name."','".$cellPhone."','".$hash."','".$question."','".$answer."')";
 $db->DBQ();
 
 if(!$db->result)

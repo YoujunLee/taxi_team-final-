@@ -18,7 +18,7 @@ $db->DBI();
 $studentid = str_replace("'", "/'", $_POST['logid']);  //str 문을 통하여 보안강화
 $pass = str_replace("'", "/'", $_POST['logpass']);
 
-$db->query = "select studentid, name, cellphone, password from student_info where studentid='".$studentid."' and password='".$pass."'";
+$db->query = "select studentid, name, cellphone, password from student_info where studentid='".$studentid."'";
 $db->DBQ();
 if(!$db->result)
 {
@@ -28,12 +28,23 @@ if(!$db->result)
 $num = $db->result->num_rows;
 $data = $db->result->fetch_row();
 
+if (password_verify($pass, $data[3])) {
+  	;  // 비밀번호가 맞음 
+                } 
+else { 
+        echo "<script>alert('학번과 비밀번호가 맞지 않습니다.');location.replace('../index.php');</script>";
+   exit;
+		            // 비밀번호가 틀림 
+                } 
+ 
+
+
 $db->DBO();
 if($num==1)
 {
 	 session_start();
    $_SESSION['user_id'] = $studentid;
-   $_SESSION['user_pw'] = $pass;
+   $_SESSION['user_pw'] = $data[3];
    $_SESSION['name'] = $data[1]; 
    $_SESSION['cellphone'] = $data[2]; 
    
