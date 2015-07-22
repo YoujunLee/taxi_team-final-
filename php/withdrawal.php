@@ -19,66 +19,43 @@
 		
 		$pass = $_POST['pass'];
 		
-		$db->query = "select studentid, name, cellphone, password from student_info where studentid='".$stu_id."'";
+		$db->query = "select password from student_info where studentid = '".$_SESSION['user_id']."'";
 		$db->DBQ();
 		$data = $db->result->fetch_row();
 		$num = $db->result->num_rows;
-		if(!$db->result)
-		{
-			
-			echo "<script>alert('개인정보 수정에 실패하였습니다. 다시 시도하시기바랍니다.');history.back();</script>";
-			$db->DBO();
-			exit;
-			
-		}
-		
-		if (password_verify($pass, $data[3])) {
-		  	;  // 비밀번호가 맞음 
-		                }else 
-		                { 
-		       echo "<script>alert('기존 비밀번호가 맞지 않습니다.');history.back();</script>";
-			$db->DBO();
-			exit;
-				            // 비밀번호가 틀림 
-		                } 
-		
-		if($num!=1)
-		{
-			echo "<script>alert('기존 비밀번호가 맞지 않습니다.');history.back();</script>";
-			$db->DBO();
-			exit;
-		}
-		
-		if($pass1 == $pass2)
-		{
-			$pass = $pass1;
-		} else
-		{
-			
-			echo "<script>alert('비밀번호가 맞지 않습니다.');history.back();</script>";
-			exit;
-		}
-		
-		
-		$hash = password_hash($pass, PASSWORD_DEFAULT);
-		$db->query = "update student_info set cellphone='".$cellPhone."', password='".$hash."' where studentid='".$stu_id."'" ;
-		$db->DBQ();
 		
 		if(!$db->result)
 		{
-			
-			echo "<script>alert('개인정보 수정에 실패하였습니다. 다시 시도하시기바랍니다.');history.back();</script>";
-			$db->DBO();
-			exit;
-			
-		} else
-		{
-			echo "<script>alert('개인정보가 수정 되었습니다. 조회창으로 이동합니다.');location.replace('../index.php');</script>";
+			echo "<script>alert('탈퇴에 실패하였습니다. <br/> 다시 시도해주세요.');history.back();</script>";
 			$db->DBO();
 			exit;
 		}
 		
-		
+		if (password_verify($pass, $data[0]))
+		{
+		  	
+			$db->query = "DELETE from student_info where studentid='".$_SESSION['user_id']."'";
+			$db->DBQ();
+			
+			if(!$db->result)
+			{
+				
+				echo "<script>alert('탈퇴에 실패하였습니다. <br/> 다시 시도해주세요.');history.back();</script>";
+				$db->DBO();
+				exit;
+				
+			}
+			else
+			{
+				echo "location.replace('../byebye.php');</script>";
+			}
+		}  			// 비밀번호가 맞음 
+		else
+		{ 
+		     echo "<script>alert('비밀번호가 맞지 않습니다. <br/> 다시 입력해주세요.');history.back();</script>";
+			$db->DBO();
+			exit;
+		}	        // 비밀번호가 틀림 
 		
 		?>
 </body>
