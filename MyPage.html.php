@@ -70,7 +70,7 @@ out();
 			  </table>
 			 </div>
 		
-		<br><br><br><br>
+		<br /><br /><br />
 			<div><hr/>
 			  	   <div>Please contact us (<a>hguitaxi@gmail.com</a>)<br>@Launched by YouJun Lee, PyungKang Kim, Maria Jeong, MinGyu Yang 
 			  </div>

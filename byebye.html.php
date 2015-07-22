@@ -39,14 +39,8 @@ out();
 			</div>
 			<div class="panel panel-default" style="text-align: center; border: none;">
 			  <div class="panel-body">
-			  		정말 탈퇴하시겠습니까?
+			  		탈퇴가 완료되었습니다!<br />그동안 <a style="color: #34C6BE">iTaxi</a>를 이용해주셔서 감사합니다.<br />오늘도 행복한 하루 보내세요 :) 
 			  		<br /><br />
-			  		<div class = "div_yg" >
-						<a href="./byebye.html.php"><input type="submit" value="탈퇴" class="margin_right btn btn-info" style="background-color:#34c6be; color: #ffffff; border-color: #34C6BE"></a>
-						<input style="border: none; width: 50px;" />
-						<a href="./MyPage.html.php"><input type="button" value="취소" class="btn btn-danger"></a>
-					</div>
-					<br />
 			  </div>
 			</div>
 		</div>
