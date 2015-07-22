@@ -135,7 +135,7 @@ out();
 			    <?php
    					}
 	 				if($check){
-						echo "<script>history.go(-2);</script>"; exit;}
+						echo "<script>history.back();</script>"; exit;}
 					
 				?>
 	
@@ -158,6 +158,7 @@ out();
 									
 			if($result<-1800)
 				echo "<a href='./php/delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";
+				
 			else
 				echo "<a href='#' class="."'btn btn-danger'"." > 취소불가</a>";
 			

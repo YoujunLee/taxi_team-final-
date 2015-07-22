@@ -5,6 +5,7 @@
 </head>
 <body>
 <?php
+
 include "./session_out.php";
 out();
 require_once './config.php';

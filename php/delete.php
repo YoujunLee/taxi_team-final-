@@ -9,8 +9,10 @@
 	
 	echo "<script>
 		   var result=confirm('정말 안 타시겠습니까?');
-		   if(!result)
-		   location.replace('$hostname');
+		   if(result==true){
+		  location.replace('http://www.naver.com/');
+		   exit;
+		   }
 		   </script>";
 		   	
 	include "./session_out.php";
@@ -46,9 +48,9 @@
 		$db3->DBQ();
 		$db3->DBO();
 		
-		echo"<script>location.replace('$hostname');</script>";
+		echo"<script>history.back();</script>";
 	}else{
-	echo"<script>location.replace('$hostname');</script>";}
+	echo"<script>history.back();</script>";}
 ?>
 </body>
 </html>
