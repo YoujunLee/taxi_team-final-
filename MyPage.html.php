@@ -10,7 +10,15 @@ out();
 		 <title>i-Taxi</title>
    		 <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="./css/mypage.css">
+   	     <script type="text/javascript">
+	   		function popupOpen(){
+				var popUrl = "test.html";	//팝업창에 출력될 페이지 URL
+				var popOption = "width=370, height=360, resizable=no, scrollbars=no, status=no;";    //팝업창 옵션(optoin)
+					window.open(popUrl,"",popOption);
+			}
+		</script>
 	</head>
+	
 	<body>
 		
 		<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
@@ -57,11 +65,12 @@ out();
 			  <div>
   			   	<tr onclick="location.href='./공지사항.html.php'"><td>공지사항</td></tr>
 			   	<tr onclick="location.href='./QnA.html.php'"><td>1:1 문의</td></tr>
+			   	<tr onclick="location.href='./withdrawal.html.php'"><td>회원탈퇴</td></tr>
 			  </div>
 			  </table>
 			 </div>
 		
-		<br><br><br><br>
+		<br /><br /><br />
 			<div><hr/>
 			  	   <div>Please contact us (<a>hguitaxi@gmail.com</a>)<br>@Launched by YouJun Lee, PyungKang Kim, Maria Jeong, MinGyu Yang 
 			  </div>
