@@ -49,7 +49,7 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 		</form>
 		<div class="div2">
 			   
-			   <p>본 서비스는 모바일 환경에 최적화 되어있습니다.</p>
+			   <span>본 서비스는 모바일 환경에 최적화 되어있습니다.</span>
 		</div>
 		
 		</div>
