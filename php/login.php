@@ -34,7 +34,7 @@ if (password_verify($pass, $data[3])) {
   	;  // 비밀번호가 맞음 
                 } 
 else { 
-        echo "<script>alert('학번과 비밀번호가 맞지 않습니다.');location.replace('../index.php');</script>";
+        echo "<script>alert('학번 또는 비밀번호가 맞지 않습니다.');location.replace('../index.php');</script>";
 	$db->DBO();
    exit;
 		            // 비밀번호가 틀림 
