@@ -31,7 +31,7 @@ out();
       		</tr>
 		</table>
 
-		<form  action='./php/widthdrawal.php' method='POST'  class="form-horizontal">
+		<form  action='./php/withdrawal.php' method='POST'  class="form-horizontal">
 		<div top-padding:"20%" class="col-xs-12  col-md-4 col-md-offset-4">
 			<div class="panel panel-default" style="text-align: center; border: none;">
 			  <div class="panel-body">
@@ -43,7 +43,7 @@ out();
 			  		<div class="form-group" >
 				      <label for="inputPassword" class="col-xs-4 col-md-3  control-label" style="text-align: center">비밀번호를<br />입력해주세요</label>
 				      <div class="col-xs-8 col-md-9 ">
-				        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name='pass' required>
+				        <input type="password" class="form-control" id="inputPassword" placeholder="Please enter your Password" name='pass' required>
 				      </div>
 				    </div>
 			  		<br />
