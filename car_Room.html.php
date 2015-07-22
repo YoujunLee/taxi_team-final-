@@ -150,13 +150,21 @@ out();
 			
 			date_default_timezone_set("Asia/Seoul");
     		$current_time = date("Y-m-d H:i:s");
-			
-			if($current_time<$data[0]." ".$data[1])
+			/*30분 구하는 코드*/
+			$result=strtotime($current_time)-strtotime($data[0]." ".$data[1]);
+									
+			if($result<-1800)
 				echo "<a href='./php/car_delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";
+			else
+				echo "<a href='#' class="."'btn btn-danger'"." > 취소불가</a>";
 			
 			$db->DBO();
 			$db2->DBO();
 		?>
+		<div class="div2">
+			
+			    <span>Tip: 출발시간 30분전에는 취소가 불가능합니다.</span>
+		</div>
 		</div>
 	</section>
 </body>

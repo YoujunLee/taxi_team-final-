@@ -101,14 +101,14 @@
 		    <div class="form-group">
 		      <label for="inputPassword" class="control-label col-xs-4 col-md-3 ">기존<br>비밀번호</label>
 		      <div class="col-xs-8 col-md-9">
-		        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name='pass' required>
+		        <input type="password" class="form-control" id="inputPassword" placeholder="Pre Password" name='pass' required>
 		      </div>
 		    </div>
 		    
 			<div class="form-group">
-		      <label for="inputPassword" class="control-label col-xs-4 col-md-3 ">비밀번호</label>
+		      <label for="inputPassword" class="control-label col-xs-4 col-md-3 ">새로운<br>비밀번호</label>
 		      <div class="col-xs-8 col-md-9">
-		        <input type="password" class="form-control" id="inputPassword1" placeholder="Re-Password" name='pass1' required>
+		        <input type="password" class="form-control" id="inputPassword1" placeholder="New Password" name='pass1' required>
 		      </div>
 		    </div>
 		    <div class="form-group">

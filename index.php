@@ -47,6 +47,12 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 	    <form class="right_go" action='./password.html.php'>
 			<input class = "btn1" type="submit" value="비밀번호 찾기">
 		</form>
+		<div class="div2">
+			   
+			   <p>본 서비스는 모바일 환경에 최적화 되어있습니다.</p>
 		</div>
+		
+		</div>
+		
 	</body>
 </html>

@@ -101,3 +101,13 @@ a:visited {text-decoration: none; color: #000000;}
 a:active {text-decoration: none; color: #000000;}
 a:hover {text-decoration: underline; color: #7C8B8F;}
 
+.div2{
+	color:gray;
+	text-align: center;
+	padding: 0%; !important;
+	margin-top: 10px;
+}
+
+p{
+	padding: 0%;
+	margin: 0%;}
