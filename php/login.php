@@ -23,7 +23,7 @@ $db->DBQ();
 $num = $db->result->num_rows;
 if($num!=1)
 {
-   echo "<script>alert('회원가입이 안되있습니다. 가입 후 이용해주시기바랍니다.');location.replace('../index.php');</script>";
+   echo "<script>alert('회원가입이 안돼있습니다. 가입 후 이용해주시기바랍니다.');location.replace('../index.php');</script>";
    $db->DBO();
    exit;
 }
