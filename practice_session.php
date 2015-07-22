@@ -1,28 +1,34 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		 <meta charset="utf-8">
-		 </head>
-		 <body>
-		 
-<?php
- 
- $password = "1234";
- $hash = password_hash($password, PASSWORD_DEFAULT);
- 
- $data = $hash;
- $password = "1234";
- echo  $hash.'<br>';
- 
-  if (password_verify($password, $data)) {
-  	echo "됬나"; 
-                    // 비밀번호가 맞음 
-                } else { 
-         echo  "안됬나";
-		            // 비밀번호가 틀림 
-                } 
- 
- 
-?> 
-		 </body>
-		 </html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+
+function message(){
+	
+	var message = "당신은 남자입니까?";
+	
+	var result = confirm("취소");
+	
+	
+	if(result==true){
+	
+	alert("키큼?");
+	
+	}else{
+	
+	alert("예쁨?");
+	
+	}
+	
+}
+
+</script>
+</head>
+<body>
+
+<input type="button" value="confirm" onclick="message()">
+
+</body>
+</html>
