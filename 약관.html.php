@@ -10,12 +10,14 @@
 	</head>
 	<body class="center">
 	<br />
+	<!-- 네비게이션 바 -->
 	<div class="padding col-xs-12  col-md-4 col-md-offset-4 "> 
 		<a href="./index.php"><img src="./img/logo_big.png" class="image-size3 "></a>
 	</div>
 	<div class="col-xs-12  col-md-4 col-md-offset-4 "> 
 	&nbsp;
 	</div>
+	<!-- 이용 약관 -->
 	<section>
     	<div class="wrapper5 col-xs-12  col-md-4 col-md-offset-4 ">    		
 			<form action="./php/agree.php"  method="post">
@@ -196,11 +198,11 @@
 		</div>
 		
 	</section>
-	
+	<!-- 체크박스 -->
 	<div class="col-xs-12  col-md-4 col-md-offset-4 "> 
 		<p><label><input type="checkbox" name="agree" id="agree" value="agree" checked="checked"> 약관을 모두 읽었으며 동의합니다.</label></p>
 	</div>
-	
+	<!-- 개인정보보호정책 -->
 	<section>
     	<div class="wrapper5 col-xs-12  col-md-4 col-md-offset-4 ">  
 			<h3>iTaxi 개인정보보호정책</h3>  
@@ -325,11 +327,11 @@
 			E - M A I L　:　hguitaxi@gmail.com<br>    
     	</div>
     </section>
-    
+    <!-- 체크박스 -->
     <div class="col-xs-12  col-md-4 col-md-offset-4 "> 
 		<p><label><input type="checkbox" name="agree2" id="agree2" value="agree2" checked="checked"> 정책을 모두 읽었으며 동의합니다.</label></p>
 	</div>
-   
+	<!-- 회원가입 페이지로 이동 -->   
    <div class="div_yg col-xs-12  col-md-4 col-md-offset-4 "> 
 		<input type="submit"  value="다음 단계" class="margin_right "style="background-color:#34c6be; color: #ffffff;">
 	</div>

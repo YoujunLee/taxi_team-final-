@@ -15,7 +15,7 @@ out();
 </head>
 
 <body class="center">
-	
+	<!-- 네비게이션 바 -->
 	<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
 		   <td class = "logo" >
@@ -36,8 +36,9 @@ out();
   		</tr>
 	</table>
 			
-	<!-- 방만들기, 방조회  -->
+	<!-- 메뉴 버튼들 -->
 	<table class="col-xs-12  col-md-4 col-md-offset-4 backg">
+		<!-- 택시모집 -->
 		<tr class="tr1" onclick="location.href='./make_room.html.php'">
 			<td>
 			<form action='./make_room.html.php'>
@@ -49,7 +50,7 @@ out();
 	    	</form>
 			</td>
 		</tr>
-		
+		<!-- 택시조회 -->
 		<tr class = "tr2" onclick="location.href='./search_room.html.php'">
 			<td>
 			<form action='./search_room.html.php'>
@@ -61,8 +62,7 @@ out();
 	       </form>
 			</td>
 		</tr>
-		
-			
+		<!-- 카풀모집 -->
 		<tr class="tr1" onclick="location.href='./make_car.html.php'">
 			<td>
 			<form action='./make_car.html.php'>
@@ -74,7 +74,7 @@ out();
 	       </form>
 		   </td>
 		</tr>
-		
+		<!-- 카풀조회 -->
 		<tr class="tr2" onclick="location.href='./search_car.html.php'">
 			<td>
 			<form action='./search_car.html.php'>
@@ -86,7 +86,7 @@ out();
 	       </form>
 		   </td>
 		</tr>		
-		
+		<!-- 탑승내역 -->
 		<tr class = "tr1" onclick="location.href='./mypage-탑승내역.html.php'">
 			<td>
 			<form action='./mypage-탑승내역.html.php'>
@@ -99,10 +99,8 @@ out();
 		   </td>
 		</tr>
 	</table>
-	
 	<!-- blank -->
-	
-	<table class = "col-xs-12  col-md-4 col-md-offset-4 ">
+		<table class = "col-xs-12  col-md-4 col-md-offset-4 ">
 		<tr>
 			<td>
 				&nbsp;
@@ -110,7 +108,7 @@ out();
 		</tr>
 	</table>
 
-	<!-- 택시번호 요금계산기 마이페이지  -->
+	<!-- 택시번호 요금계산기 친구초대 마이페이지  -->
 	
 	<table class=" col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">

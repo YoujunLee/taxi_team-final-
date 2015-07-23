@@ -18,6 +18,7 @@ out();
 </head>
 
 <body class = "center">
+	<!-- 네비게이션 바 -->
 	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
   			<td class = "logo" >
@@ -36,7 +37,7 @@ out();
            </td>
   		</tr>
 	</table>
-		
+	<!-- 출발지, 도착지, 날짜, 시간, 최대탑승인원 -->	
 	<div class="form-group col-xs-12  col-md-4 col-md-offset-4">
 	<table class="table">
 		<tbody>

@@ -14,6 +14,7 @@
 				<h2 style="color:#34C6BE">WELCOME!</h2>
 		</div>
 		<br><br>
+		<!-- 이름 -->
 		<form  action='./php/registo.php' method='POST' align="center" class="form-horizontal">
 		    <div class="form-group">
 		    	  <label for="inputName" class="col-xs-4 col-md-3 control-label">이름</label>
@@ -21,7 +22,7 @@
 		          <input type="text" class="form-control" id="inputName" placeholder="Name" name='name' required>
 		    </div>
 		    </div>
-		
+		<!-- 학번 -->
 		    <div class="form-group">
 			      <label for="inputStudentId" class="col-xs-4 col-md-3  control-label">학번</label>
 		    <div class="col-xs-8 col-md-9 ">
@@ -30,7 +31,8 @@
 		    </div>
 		    <p class="notice">
 		      	※ 혹시 모를 사고에 대비하여,<br>외부인 가입을 제한 중 입니다.<br>본교 학생이 정보가 없다고 뜰 시, <span style="color:red">hguitaxi@gmail.com</span><br>e-mail 보내주시면 바로 조치해드리겠습니다.  
-		    </p>		
+		    </p>
+		    <!-- 핸드폰번호 -->		
 		    <div class="form-group">
 		    	<label for="inputcellPhone" class="col-xs-4 col-md-3  control-label">핸드폰번호</label>
 		    <div class="col-xs-8 col-md-9 ">
@@ -76,12 +78,14 @@
 			</script> 
 		      </div>
 		    </div>
+		    <!-- 비밀번호 -->
 			<div class="form-group">
 		      <label for="inputPassword" class="col-xs-4 col-md-3  control-label">비밀번호</label>
 		      <div class="col-xs-8 col-md-9 ">
 		        <input type="password" class="form-control" id="inputPassword" placeholder="Password" name='pass1' required>
 		      </div>
 		    </div>
+		    <!-- 비밀번호 확인 -->
 		    <div class="form-group">
 		      <label for="inputPasswordTwice" class="col-xs-4 col-md-3  control-label">비밀번호<br>확인</label>
 		      <div class="col-xs-8 col-md-9 ">
@@ -89,6 +93,7 @@
 		        <input type="text" id="test" class="checkpass" readOnly>
 		      </div>
 		    </div>
+		    <!-- 비밀번호 일치 확인 -->
 		    <script>
 		      var pass1 = document.getElementById('inputPassword');
 		      var pass2 = document.getElementById('inputPasswordTwice');
@@ -129,7 +134,7 @@
              }
               
 		    </script>
-		   
+		   <!-- 비밀번호 찾을시 질문 -->
 		     <div class="form-group">
 		      <label  class="col-xs-4 col-md-3  control-label">비밀번호<br>찾을시 질문</label>
 		      <div class="col-xs-8 col-md-9 ">
@@ -143,13 +148,15 @@
 						</select>
 		      </div>
 		    </div>
+		    <!-- 대답 -->
 		     <div class="form-group">
 		      <label class="col-xs-4 col-md-3  control-label">대답</label>
 		       <div class="col-xs-8 col-md-9">
 		        <input name="answer" type="text" class="form-control"  required>
 		      </div>
 		    </div>
-		    <br>	   
+		    <br>
+		    <!-- 가입하기 버튼 -->   
 		     <div class="div_go">
                 <input class="btn btn-lg btn-block" style="background-color:#34C6BE; color: #ffffff;" type="submit" value="가입하기">
 			</div>
