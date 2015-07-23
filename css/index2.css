@@ -261,3 +261,7 @@ text-align: right;
 	padding: 0%; !important;
 	margin-top: 10px;
 }
+
+.margin_y{
+	margin-right:30px; !important;
+}

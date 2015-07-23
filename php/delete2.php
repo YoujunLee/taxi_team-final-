@@ -38,7 +38,7 @@
 		$db3->DBQ();
 		$db3->DBO();
 		
-		echo"<script>history.go(-2);</script>";
+		echo"<script>history.go(-2) ;</script>";
 	}else{
 	echo"<script>history.go(-2);</script>";}
 ?>
