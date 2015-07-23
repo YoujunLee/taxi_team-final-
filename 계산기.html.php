@@ -67,7 +67,7 @@ out();
 			<table class = "table">
 				<tr>
 					<td>
-						<h1><input type="tel" size=10 placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;총 금액" name="input1" autofocus=""> 원</h1>
+						<h2><input type="tel" size=10 placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;총 금액" name="input1" autofocus=""> 원</h2>
 					</td>
 				</tr>
 				<tr>
@@ -75,7 +75,7 @@ out();
 				</tr>
 				<tr>
 					<td>
-					<table style="margin: auto" >
+					<table style="margin: auto" rules: "none" >
 						<tr><h1><td class="col-xs-4 col-md-4">
 						<img class="outline" src="./img/person2.png"  onclick="run2(); return false;"></td>
 						<td class="col-xs-4 col-md-4"><img src="./img/person3.png" class="outline" onclick="run3(); return false;"></td>
@@ -90,10 +90,10 @@ out();
 					</h1></td>
 				</tr>
 				<tr>
-					<td><h1>
+					<td><h2>
 
 							<input type="text" size=10 placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;결과값" name="input3"> 원
-						</h1>
+						</h2>
 					</td>
 				</tr>
 		</table>

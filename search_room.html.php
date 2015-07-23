@@ -41,7 +41,7 @@ out();
 			<tbody>
 				
 				<tr >
-					<td style="background-color: #005666" colspan="2" class="btn2" >
+					<td style="background-color: #005666; border-color: #005666;" colspan="2" class="btn2" >
 					<a href="./search_result_all.html.php" class="noul" >
 						<h4 style="color:#ffffff">전체 택시 조회 (click !)</h4>
 					</a>
