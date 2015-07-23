@@ -91,7 +91,6 @@
 	 				if($page_number==$count)
 	 					if($page_number++<$page*10)
 	 					{
-	 						$check = false;
 							$check2 = false;
 	 						$db2->query = "select post_id, stu_id from room_user where post_id = '".$data[5]."'"; 
 	 						$db2->DBQ();
@@ -99,9 +98,6 @@
 							   	
 			    			while($data2 = $db2->result->fetch_row())
     						{ 
-								if($num2>1)
-								$check=true;
-								
 								if($data2[1]== $_SESSION['user_id'])
 								$check2=true;
 							}
@@ -113,16 +109,20 @@
 							
 						?>
 												
-    						<tr <?php if($check==false)
-											{?>onclick="location.href='./php/탑승하기.php?post_id=<?php echo $data[5]; ?>'"<?php }
-									  else if($check2==true)
-											{?>onclick="location.href='./Room.html.php?<?php echo $data[5]; ?>'"<?php } 
-									  else if($num2==$data[4])
+    						<tr <?php if($check2==false)
+									   {
+										if($check2==false&&$num2==$data[4])
 									  		{?>onclick="location.href='#'"<?php }
-									  else if($current_time<$data[2]." ".$data[3])
-											{?>onclick="location.href='./Room.html.php?<?php echo $data[5]; ?>'"<?php }  
-									  else
-									  		{?>onclick="location.href='#'"<?php } ?>>
+										else if($current_time>$data[2]." ".$data[3])
+											{?>onclick="location.href='#'"<?php } 
+										else	
+											{?>onclick="location.href='./php/탑승하기질문.php?post_id=<?php echo $data[5]; ?>'"<?php }
+									   }
+									  else if($check2==true)
+											{?>onclick="location.href='./Room.html.php?<?php echo $data[5]; ?>'"<?php } ?>>
+									  
+									 
+									
     						<?php
     						echo "<td class="."'row'".">";
     			    		echo " <td class="."'col-xs-3 col-md-3'".">" .$data[2]."<br>".substr($data[3],0,2)." : ".substr($data[3],3,2)."</th>";
@@ -132,12 +132,12 @@
 								echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-success1'>시간<br>종료</a></th>";
 							else if($num2==$data[4])
     							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data[4]."</a></th>";
-							else if($check)
+							else if($check2==true)
     							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-warning1'>참여중<br>".$num2."/".$data[4]."</a></th>";
 							else 
-    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='./php/탑승하기질문.php?post_id=".$data[5]."' class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
     							
-									?>
+							?>
 									
         					</tr>
         				<?php
