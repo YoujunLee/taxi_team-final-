@@ -156,7 +156,6 @@ out();
 			/*30분 구하는 코드*/
 			$result=strtotime($current_time)-strtotime($data[0]." ".$data[1]);
 			?>
-			<a onclick="history.go(-1)" class="btn btn-info margin_y"> 목록으로</a>
 			<?php						
 			if($result<-1800)
 				echo "<a href='./php/delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";
