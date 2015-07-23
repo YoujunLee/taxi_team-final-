@@ -112,7 +112,7 @@
 				?>
 				
 							<tr <?php if($check==false)
-											{?>onclick="location.href='./php/car_탑승하기.php?post_id=<?php echo $data[5]; ?>'"<?php }
+											{?>onclick="location.href='./php/car_탑승하기질문.php?post_id=<?php echo $data[5]; ?>'"<?php }
 									  else if($check2==true)
 											{?>onclick="location.href='./car_Room.html.php?<?php echo $data[5]; ?>'"<?php } 
 									  else if($num2==$data[4])
