@@ -8,12 +8,12 @@
 	$post_id=getenv("QUERY_STRING");
 	
 	echo "<script>
-		   var result=confirm('탑승하시겠습니까?');
+		   var result=confirm('정말 나가시겠습니까?');
 		   if(result==true){
-		  location.replace('./탑승하기2.php?".$post_id."');
+		  location.replace('./car_delete2.php?".$post_id."');
 		   exit;
 		   }else{
-		 
+		   	history.go(-1);	 
 		   		exit;
 		   	}
 		   </script>";
