@@ -78,6 +78,9 @@
 		      <label  class="col-xs-4 col-md-3  control-label">질문</label>
 		      <div class="col-xs-8 col-md-9 ">
 		        <select  name="question" class="form-control">
+		        	    <option value="아버지 성함은?">아버지 성함은?</option>
+		                <option value="어머니 성함은?">어머니 성함은?</option>
+		                <option value="초등학교 이름은?">초등학교 이름은?</option>
 						<option value="제일 좋아하는 교수님 성함은?">제일 좋아하는 교수님 성함은?</option>
 						<option value="제일 인상깊게 본 책의 제목은?">제일 인상깊게 본 책의 제목은?</option>
 						<option value="제일 좋아하는 동물은?">제일 좋아하는 동물은?</option>
