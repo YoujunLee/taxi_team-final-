@@ -75,7 +75,7 @@ else if($room_population>4)
 }
 else if($room_population<=1)
 {
-	echo "<script>alert('최소 탑승인원은 1명 입니다.'); history.back();</script>";
+	echo "<script>alert('최소 탑승인원은 2명 입니다.'); history.back();</script>";
 	$db3->DBO();
 	exit;
 }

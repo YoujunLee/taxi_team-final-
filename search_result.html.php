@@ -139,7 +139,7 @@
 											{?>onclick="location.href='./php/탑승하기질문.php?post_id=<?php echo $data[5]; ?>'"<?php }
 									   }
 									  else if($check2==true)
-											{?>onclick="location.href='./Room.html.php?<?php echo $data[5]; ?>'"<?php } ?>>									
+											{?>onclick="location.href='./Room1.html.php?<?php echo $data[5]; ?>'"<?php } ?>>									
     						<?php
     						echo "<td class="."'row'".">";?>
     			    		<td class="col-xs-3 col-md-3"><?php echo $data[2]; ?> <br> <?php echo substr($data[3],0,2)." : ".substr($data[3],3,2); ?><?php if($check2==true) echo " &nbsp;☆"; ?>
