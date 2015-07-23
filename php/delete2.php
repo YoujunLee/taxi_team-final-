@@ -4,11 +4,7 @@
 </head>
 <body>
 <?php
-	$hostname=$_SERVER["HTTP_REFERER"];
-	
-	
-	
-		   	
+	$hostname=$_SERVER["HTTP_REFERER"];		   	
 	include "./session_out.php";
 	out();
 	require_once './config.php';

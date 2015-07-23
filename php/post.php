@@ -58,6 +58,7 @@ $count_room = $db3->result->num_rows;
 if($room_date==null||$room_date=='')
 {
 	echo "<script>alert('날짜를 입력해 주세요.');history.back();</script>";
+	$db3->DBO();
 	exit;
 }
 else if($count_room>0)
@@ -66,9 +67,16 @@ else if($count_room>0)
 	$db3->DBO();
 	exit;
 }
-else if($room_population>4||$room_population<1)
+else if($room_population>4)
 {
-	echo "<script>alert('최대 인원은 4명 입니다.');history.back();</script>";
+	echo "<script>alert('최대 탑승인원은 4명입니다. '); history.back();</script>";
+	$db3->DBO();
+	exit;
+}
+else if($room_population<=1)
+{
+	echo "<script>alert('최소 탑승인원은 1명 입니다.'); history.back();</script>";
+	$db3->DBO();
 	exit;
 }
 
