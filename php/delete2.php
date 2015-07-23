@@ -4,11 +4,7 @@
 </head>
 <body>
 <?php
-	$hostname=$_SERVER["HTTP_REFERER"];
-	
-	
-	
-		   	
+	$hostname=$_SERVER["HTTP_REFERER"];		   	
 	include "./session_out.php";
 	out();
 	require_once './config.php';
@@ -42,7 +38,7 @@
 		$db3->DBQ();
 		$db3->DBO();
 		
-		echo"<script>history.go(-2);</script>";
+		echo"<script>history.go(-2) ;</script>";
 	}else{
 	echo"<script>history.go(-2);</script>";}
 ?>

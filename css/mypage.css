@@ -30,16 +30,7 @@ ul.right{
 	float : right !!important;
 	margin-right : 0px !important ;
 }
-.logout
-{
-	 padding-left: 2%;
-    padding-right: 2%;
-  text-align: right;
-}
-.logo
-{ padding-left: 2%;
-  text-align: left;
-}
+
 .navi{
     padding-left: 2%;
     padding-right: 2%;
@@ -101,22 +92,6 @@ text-align: center;
 	height : 27px;
 	width : 110px;
 	float : center;
-}
-.logout
-{
-	padding-left: 10px;
-    padding-right: 10px;
-    padding-top : 12px;
-    margin : auto ;
-    float : right ;
-   }
-.logout1
-{
-	padding-left: 10px;
-    padding-right: 10px;
-    padding-top : 13px;
-    margin : auto ;
-    float : right ;
 }
 
 .div_yg{
