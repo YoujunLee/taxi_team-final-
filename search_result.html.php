@@ -22,13 +22,13 @@
 	$db = new DBC;
 	$db->DBI();
 	if($start!='전체보기'&&$arrive!='전체보기')
-	$db->query = "select start, arrive, date, time,population,post_id from post where start='".$start."' and arrive='".$arrive."'and date='".$date."'and time>='".$s_time."'and time<='".$e_time."' ORDER BY time";
+	$db->query = "select start, arrive, date, time,population,post_id from post where start='".$start."' and arrive='".$arrive."'and date='".$date."'and time>='".$s_time."'and time<='".$e_time."' ORDER BY date desc,time desc";
 	else if($start=='전체보기'&&$arrive=='전체보기')
-	$db->query = "select start, arrive, date, time,population,post_id from post where date='".$date."'and time>='".$s_time."'and time<='".$e_time."'ORDER BY time";
+	$db->query = "select start, arrive, date, time,population,post_id from post where date='".$date."'and time>='".$s_time."'and time<='".$e_time."'ORDER BY date desc,time desc";
 	else if($start=='전체보기')
-	$db->query = "select start, arrive, date, time,population,post_id from post where arrive='".$arrive."'and date='".$date."'and time>='".$s_time."'and time<='".$e_time."'ORDER BY time";
+	$db->query = "select start, arrive, date, time,population,post_id from post where arrive='".$arrive."'and date='".$date."'and time>='".$s_time."'and time<='".$e_time."'ORDER BY date desc,time desc";
 	else 
-	$db->query = "select start, arrive, date, time,population,post_id from post where start='".$start."' and date='".$date."'and time>='".$s_time."'and time<='".$e_time."'ORDER BY time";	
+	$db->query = "select start, arrive, date, time,population,post_id from post where start='".$start."' and date='".$date."'and time>='".$s_time."'and time<='".$e_time."'ORDER BY date desc,time desc";	
 	$db->DBQ();
 	$num = $db->result->num_rows;
     			
@@ -116,39 +116,68 @@
 	 		if($page_number++<$page*10)
 	 		{
 	 			$check = false;
+				$check2= false;
 	 			$db2->query = "select post_id, stu_id from room_user where post_id = '".$data[5]."'"; 
 	 			$db2->DBQ();
 	    		$num2 = $db2->result->num_rows;
     	
-    			while($data2 = $db2->result->fetch_row())
-    			{ 
-					if($data2[1]== $_SESSION['user_id'])
-					$check=true;
-				}	
+    				while($data2 = $db2->result->fetch_row())
+    				{ 
+								if($num2>1)
+								$check=true;
+								
+								if($data2[1]== $_SESSION['user_id'])
+								$check2=true;
+					}
 				date_default_timezone_set("Asia/Seoul");
     			$current_time = date("Y-m-d H:i:s");	
     ?>
     		
-    		<tr <?php if($check==false)
-							{?>onclick="location.href='./php/탑승하기.php?post_id=<?php echo $data[5]; ?>'"<?php }
-				      else if($current_time<$data[2]." ".$data[3])
-							{ ?>onclick="location.href='./Room.html.php?<?php echo $data[5]; ?>'"<?php }  ?>> 
-    		<?php
-    		echo "<td class="."'row'".">";
-    		echo " <td class="."'col-xs-3 col-md-3'".">".substr($data[3],0,2)." : ".substr($data[3],3,2)."</th>";
-    		echo " <td class="."'col-xs-7 col-md-7'".">".$data[0]." → "."<br>".$data[1]."</th>";
-    		
-
-			if($current_time>$data[2]." ".$data[3])
-				echo " <th class="."'col-xs-2 col-md-2'"."><a href='#' class='btn btn-success1'>시간<br>종료</a></th>";
-			else if($check)
-    			echo " <th class="."'col-xs-2 col-md-2'"."><a href='./Room.html.php?".$data[5]."' class='btn btn-warning1'>참여중<br>".$num2."/".$data[4]."</a></th>";
-			else if($num2==$data[4])
-    			echo " <th class="."'col-xs-2 col-md-2'"."><a href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data[4]."</a></th>";
-			else 
-    			echo " <th class="."'col-xs-2 col-md-2'"."><a href='./php/탑승하기.php?post_id=".$data[5]."' class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
-        	?>
-        	</tr>
+    			<tr <?php if($check==false)
+											{?>onclick="location.href='./php/탑승하기.php?post_id=<?php echo $data[5]; ?>'"<?php }
+									  else if($check2==true)
+											{?>onclick="location.href='./Room.html.php?<?php echo $data[5]; ?>'"<?php } 
+									  else if($num2==$data[4])
+									  		{?>onclick="location.href='#'"<?php }
+									  else if($current_time<$data[2]." ".$data[3])
+											{?>onclick="location.href='./Room.html.php?<?php echo $data[5]; ?>'"<?php }  
+									  else
+									  		{?>onclick="location.href='#'"<?php } ?>>
+    						<?php
+    						echo "<td class="."'row'".">";
+    			    		echo " <td class="."'col-xs-3 col-md-3'".">" .$data[2]."<br>".substr($data[3],0,2)." : ".substr($data[3],3,2)."</th>";
+    						echo " <td class="."'col-xs-7 col-md-7'".">".$data[0]."<br>"."&nbsp;&nbsp;"." →&nbsp;&nbsp;".$data[1]."</th>";
+    						
+							if($current_time>$data[2]." ".$data[3])
+								echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-success1'>시간<br>종료</a></th>";
+							else if($num2==$data[4])
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data[4]."</a></th>";
+							else if($check)
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-warning1'>참여중<br>".$num2."/".$data[4]."</a></th>";
+							else 
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'".">
+    							<input='button' onclick='next()'  class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
+									?>
+									<?php
+									
+									$post_id=getenv("QUERY_STRING");
+									echo "<script>
+										  	function next(){
+											var result=confirm('탑승하시겠습니까?');
+										    if(result==true)
+										    {
+											location.replace('./php/탑승하기.php?post_id=".$data[5]."');
+											exit;
+											}
+											else
+											{
+		   									history.go(1);
+		   									exit;
+		   									}
+		   									}
+		   									</script>";
+			  						?>
+        					</tr>
         	<?php
   			}
   			else

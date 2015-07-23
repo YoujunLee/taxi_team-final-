@@ -47,7 +47,7 @@ $count_me = $db3->result->num_rows;
 
 if($count_me>0)
 {
-	echo "<script>alert('동일 시간대에 이미 방을 참여하였습니다.'); history.back();</script>";
+	echo "<script>alert('동일 시간대에 이미 방을 참여하였습니다.'); history.go(-2);</script>";
 	$db3->DBO();
 	exit;
 }
