@@ -43,7 +43,7 @@ out();
 			<td>
 			<form action='./make_room.html.php'>
 				<a href="./make_room.html.php" class="noul">
-					<img src="./img/make_room.png" class="img">
+					<img src="./img/taxi.png" class="img">
 					&nbsp;&nbsp;&nbsp;
 				</a>
 		    	<input class="btn2" type="submit" value="택시모집">
