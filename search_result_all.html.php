@@ -132,31 +132,13 @@
 								echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-success1'>시간<br>종료</a></th>";
 							else if($num2==$data[4])
     							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data[4]."</a></th>";
-							else if($check==false)
+							else if($check)
     							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-warning1'>참여중<br>".$num2."/".$data[4]."</a></th>";
 							else 
-    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'".">
-    							<input='button' onclick='next()'  class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='./php/탑승하기질문.php?post_id=".$data[5]."' class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
+    							
 									?>
-									<?php
 									
-									$post_id=getenv("QUERY_STRING");
-									echo "<script>
-										  	function next(){
-											var result=confirm('탑승하시겠습니까?');
-										    if(result==true)
-										    {
-											location.replace('./php/탑승하기.php?post_id=".$data[5]."');
-											exit;
-											}
-											else
-											{
-		   									history.go(1);
-		   									exit;
-		   									}
-		   									}
-		   									</script>";
-			  						?>
         					</tr>
         				<?php
   						}
