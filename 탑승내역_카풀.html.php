@@ -16,6 +16,7 @@ out();
 </head>
 
 <body class = "center">
+<script>  window.setTimeout('window.location.reload()',100000); </script>
 	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
 			<td class = "logo" >

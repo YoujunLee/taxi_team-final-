@@ -16,6 +16,7 @@ out();
 </head>
 
 <body class = "center">
+<script>  window.setTimeout('window.location.reload()',100000); </script>
 	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
 			<td class = "logo" >
@@ -131,10 +132,10 @@ out();
     						
 							if($current_time>$data1[2]." ".$data1[3])
 								echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-success1'>시간<br>종료</a></th>";
-							else if($num2==$data1[4])
-    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data1[4]."</a></th>";
 							else if($check2==true)
     							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-warning1'>참여중<br>".$num2."/".$data1[4]."</a></th>";
+							else if($num2==$data1[4])
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data1[4]."</a></th>";
 							else 
     							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-info1'>탑승<br>".$num2."/".$data1[4]."</a></th>";
 							?>					
