@@ -1,3 +1,4 @@
+<!-- Login page -->
 <?php
 session_start();
 if(isset($_SESSION['user_id']) && isset($_SESSION['user_pw']))
@@ -10,7 +11,6 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 		 <meta charset="utf-8">
 		 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
    		 <title>i-Taxi</title>
-   		<!-- // <meta name="viewport" content="width=device-width, initial-scale=1"> -->
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="../css/로그인.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
