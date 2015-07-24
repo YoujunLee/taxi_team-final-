@@ -13,6 +13,10 @@ echo "<script>location.replace('./조회창.html.php');</script>";
    		 <title>i-Taxi</title>
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="../css/로그인.css">
+   		 <link rel="apple-touch-icon-precomposed">
+   		 
+   		 <script type="text/javascript" src="./js/bookmark_bubble.js"></script>
+   		 <script type="text/javascript" src="./js/example.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="./js/set.js"></script> 
 	</head>
