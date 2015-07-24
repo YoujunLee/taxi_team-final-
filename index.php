@@ -13,8 +13,9 @@ echo "<script>location.replace('./조회창.html.php');</script>";
    		 <title>i-Taxi</title>
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="../css/로그인.css">
-   		 <link rel="apple-touch-icon-precomposed">
-   		 
+   		 <meta name="apple-mobile-web-app-capable" content="yes" />
+   		 <link rel="apple-touch-icon-precomposed" href="./img/logo_big.png" />
+   		 <link rel="apple-touch-icon" href="./img/logo_big.png" />
    		 <script type="text/javascript" src="./js/bookmark_bubble.js"></script>
    		 <script type="text/javascript" src="./js/example.js"></script>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -55,7 +56,7 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 			   
 			   <span>본 서비스는 모바일 환경에 최적화 되어있습니다.</span>
 		</div>
-		
+	
 		</div>
 		
 	</body>
