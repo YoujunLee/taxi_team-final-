@@ -11,6 +11,7 @@ out();
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">  
 	<link rel="stylesheet" type="text/css" href="./css/search.css">
+	<link rel="stylesheet" type="text/css" href="./css/조회창_그냥.css">
 	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 
@@ -37,12 +38,12 @@ out();
 	</table>
 			
 	<!-- 방만들기, 방조회  -->
-	<table class="col-xs-12  col-md-4 col-md-offset-4 backg">
+	<table class="col-xs-12  col-md-4 col-md-offset-4 ">
 		<tr class="tr1" onclick="location.href='./make_room.html.php'">
 			<td>
 			<form action='./make_room.html.php'>
 				<a href="./make_room.html.php" class="noul">
-					<img src=./img/make_room.png class="img">
+					<img src="./img/taxi.png" class="img">
 					&nbsp;&nbsp;&nbsp;
 				</a>
 		    	<input class="btn2" type="submit" value="택시모집">
@@ -54,7 +55,7 @@ out();
 			<td>
 			<form action='./search_room.html.php'>
 				<a href="./search_room.html.php" class="noul">
-					<img src=./img/search.png class="img">
+					<img src="./img/car_s.png" class="img">
 					&nbsp;&nbsp;&nbsp;
 				</a>
 		     	<input class="btn2" type="submit" value="택시조회">
@@ -67,7 +68,7 @@ out();
 			<td>
 			<form action='./make_car.html.php'>
 		     	<a href="./make_car.html.php" class="noul">
-					<img src=./img/car.png class="img">
+					<img src="./img/car.png" class="img">
 					&nbsp;&nbsp;&nbsp;
 				</a>
 		    	<input class="btn2" type="submit" value="카풀모집">
@@ -79,7 +80,7 @@ out();
 			<td>
 			<form action='./search_car.html.php'>
 		     	<a href="./search_car.html.php" class="noul">
-					<img src=./img/car_s.png class="img">
+					<img src="./img/car_s.png" class="img">
 					&nbsp;&nbsp;&nbsp;
 				</a>
 		    	<input class="btn2" type="submit" value="카풀조회">
@@ -91,7 +92,7 @@ out();
 			<td>
 			<form action='./mypage-탑승내역.html.php'>
 				<a href="./mypage-탑승내역.html.php" class="noul">
-					<img src=./img/list.png class="img2">
+					<img src="./img/list.png" class="img2">
 					&nbsp;&nbsp;&nbsp;
 				</a>
 		     	<input class="btn2" type="submit" value="탑승내역">
