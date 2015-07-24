@@ -37,7 +37,7 @@ out();
 	</table>
 			
 	<!-- 방만들기, 방조회  -->
-	<table rules="rows" bordercolor="white" class="col-xs-12  col-md-4 col-md-offset-4" >
+	<table class="col-xs-12  col-md-4 col-md-offset-4" >
 		<tr class="tr1" onclick="location.href='./make_room.html.php'">
 			<td>
 			<form action='./make_room.html.php'>

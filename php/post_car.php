@@ -87,11 +87,6 @@ else if($count_room>0)
 	$db3->DBO();
 	exit;
 }
-else if($car_population>4||$car_population<1)
-{
-	echo "<script>alert('최대 인원은 4명 입니다.');history.back();</script>";
-	exit;
-}
 
 $db->query = "insert into car_post values ('".$post_id ."','".$stu_id."','".$car_start."', '".$car_arrive."','".$car_date."','".$car_time."','".$car_population."', '".$car_num."', '".$car_price."')";
 $db2->query = "insert into car_user values('".$id."', '".$post_id ."','".$stu_id."','".$name."','".$cellphone."','".$car_start."', '".$car_arrive."','".$car_date."','".$car_time."')";
