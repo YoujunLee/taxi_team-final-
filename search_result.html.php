@@ -35,7 +35,7 @@
 	if($num<=0)
 	{
 		echo "<script>
-		   		var result=confirm('죄회되는 방이 없습니다. 방을 만드시겠습니까?');
+		   		var result=confirm('조회되는 방이 없습니다. 방을 만드시겠습니까?');
 		   		if(result)
 		   			location.replace('../make_room.html.php');
 		   		else

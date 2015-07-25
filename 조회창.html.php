@@ -169,6 +169,20 @@ out();
 	        </form>
 			</td>
 		</tr>
+		<!-- 가입자수 출력-->
+		<tr class="row">
+		<?php
+			require_once './php/config.php';
+		
+			$db = new DBC; //db object생성
+			$db->DBI();//db 들어가기
+			$db->query = "SELECT studentid FROM student_info";
+			$db->DBQ();
+			$num = $db->result->num_rows;
+		?>
+			<td colspan="4" style="text-align:right; padding-right: 10px;"><br><b>사용자수: <span style="color:red;"> <?php echo $num; ?></span>명 </b></td>
+		</tr>
 	</table>
+	<?php $db->DBO(); ?>
 </body>
 </html>
