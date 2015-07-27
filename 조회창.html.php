@@ -53,8 +53,8 @@ out();
 		
 		<tr class = "tr2" onclick="location.href='./search_room.html.php'">
 			<td>
-			<form action='./search_room.html.php'>
-				<a href="./search_room.html.php" class="noul">
+			<form action='./search_result_all.html.php'>
+				<a href="./search_result_all.html.php" class="noul">
 					<img src="./img/car_s.png" class="img">
 					&nbsp;&nbsp;&nbsp;
 				</a>

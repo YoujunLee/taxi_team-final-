@@ -13,7 +13,6 @@ out();
 	<link rel="stylesheet" type="text/css" href="../css/index2.css">
 </head>
 <body class="center">
-	<!-- 네비게이션 바 -->
 	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
   		   <td class = "logo" >
@@ -43,20 +42,19 @@ out();
 		require_once './php/db.php';
 
 		$db = new DBC;
-		$db->DBI();//db 시작
-		$db->query = "SELECT date, time, start, arrive FROM post WHERE post_id='".$post_id."'";//post에서 post_id와 같은 값중 data, time, start, arrive를 선택
-		$db->DBQ(); 
+		$db->DBI();
+		$db->query = "SELECT date, time, start, arrive FROM post WHERE post_id='".$post_id."'";
+		$db->DBQ();
 		
 		$data=$db->result->fetch_row();
-		echo $data[0]." ".$data[1]."<br>".$data[2]." → ".$data[3];// data, time, start, arrive 출력
+		echo $data[0]." ".$data[1]."<br>".$data[2]." → ".$data[3];
 		
-		$db->DBO(); //db종료
+		$db->DBO();
 	?>
 	</div>
 </section>
 
 <section>
-	
     <div class="wrapper2 col-xs-12  col-md-4 col-md-offset-4 ">
 	<table class="table1">
 	<tbody>
