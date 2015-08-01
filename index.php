@@ -16,10 +16,10 @@ echo "<script>location.replace('./조회창.html.php');</script>";
    		 <meta name="apple-mobile-web-app-capable" content="yes" />
    		 <link rel="apple-touch-icon-precomposed" href="./img/logo_big.png" />
    		 <link rel="apple-touch-icon" href="./img/logo_big.png" />
-   		 <script type="text/javascript" src="./js/bookmark_bubble.js"></script>
-   		 <script type="text/javascript" src="./js/example.js"></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		<script src="./js/set.js"></script> 
+   		 <script type="text/javascript" src="./js/fastclick.js"></script>
+   		  <script type="text/javascript" src="./js/index.js"></script>
+		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		 <script src="./js/set.js"></script> 
 	</head>
 	
 	<body>
