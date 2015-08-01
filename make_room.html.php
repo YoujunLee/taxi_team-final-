@@ -18,6 +18,7 @@ out();
 </head>
 
 <body class = "center">
+	<!-- 네비게이션 바 -->
 	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
   			<td class = "logo" >
@@ -36,10 +37,11 @@ out();
            </td>
   		</tr>
 	</table>
-		
+	<!-- 출발지, 도착지, 날짜, 시간, 최대탑승인원 -->	
 	<div class="form-group col-xs-12  col-md-4 col-md-offset-4">
 	<table class="table">
 		<tbody>
+			<!-- 출발지 -->
 			<tr>
 			<form action="./php/post.php"  method="post">
 				<label for="start">
@@ -60,7 +62,8 @@ out();
 					</select>
 				</td>
 				</label>
-			
+			</tr>
+			<!-- 도착지 -->
 			<tr>
 				<label for="arrive">
 				<td class="col-md-3">도착지</td>
@@ -79,7 +82,7 @@ out();
 				</td>
 				</label>
 			</tr>		
-				
+			<!-- 날짜	 -->
 			<tr>
 				<label for="make_date">
 				<td class="col-md-3">
@@ -88,7 +91,7 @@ out();
 				<td class="col-md-9"><input type="date" id="make_date" name="room_date" class="form-control" placeholder="YYYYMMDD"></td>
 				</label>
 			</tr>
-			
+			<!-- 시간	 -->
 			<tr>
 				<label for="make_time">
 				<td class="col-md-3">
@@ -99,7 +102,7 @@ out();
 				</td>
 				</label>
 			</tr>
-
+		<!-- 최대탑승인원 -->
 			<tr>
 				<label for="make_population">
 				<td class="col-md-5">최대탑승인원</td>
@@ -111,6 +114,7 @@ out();
 				</tr>
 			</tbody>
 		</table>
+		<!-- 방만들기 버튼, 취소 버튼 -->
 	<div class = "div_yg">
 	<input type="submit" value="방만들기" class=" margin_right btn-info" style="background-color:#34c6be; color: #ffffff;">
 	<a href="./조회창.html.php"><input type="button" value="취소" class="btn btn-danger"></a>
