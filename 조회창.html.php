@@ -51,7 +51,7 @@ out();
 			</td>
 		</tr>
 		
-		<tr class = "tr2" onclick="location.href='./search_room.html.php'">
+		<tr class = "tr2" onclick="location.href='./search_result_all.html.php'">
 			<td>
 			<form action='./search_result_all.html.php'>
 				<a href="./search_result_all.html.php" class="noul">
