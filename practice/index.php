@@ -11,15 +11,15 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 		 <meta charset="utf-8">
 		 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
    		 <title>i-Taxi</title>
-   		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-   		 <link rel="stylesheet" type="text/css" href="../css/로그인.css">
+   		 <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+   		 <link rel="stylesheet" type="text/css" href="./css/로그인.css">
    		 <meta name="apple-mobile-web-app-capable" content="yes" />
    		 <link rel="apple-touch-icon-precomposed" href="./img/logo_big.png" />
    		 <link rel="apple-touch-icon" href="./img/logo_big.png" />
-   		 <script type="text/javascript" src="./js/fastclick.js"></script>
-   		  <script type="text/javascript" src="./js/index.js"></script>
-		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		 <script src="./js/set.js"></script> 
+   		 <script type="text/javascript" src="./js/bookmark_bubble.js"></script>
+   		 <script type="text/javascript" src="./js/example.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="./js/set.js"></script> 
 	</head>
 	
 	<body>

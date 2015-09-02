@@ -13,6 +13,14 @@ out();
    	 <link rel="stylesheet" type="text/css" href="./css/111.css">
    	  <!-- <link rel="stylesheet" type="text/css" href="../css/practice.css"> -->
    	 
+   	 <!-- 전화걸기 스크립트 -->
+<script type="text/javascript"> 
+function callNumber(num){
+   location.href="tel:"+num;
+}
+</script> 
+
+
 </head>
 <body class="center " >
 		<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
