@@ -32,7 +32,7 @@ out();
 	       		</a>
            </td>
       	   <td class = "logout1">
-      	   		<a href='./조회창.html.php'>
+      	   		<a href='./main.html.php'>
 		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>
@@ -63,7 +63,7 @@ out();
 			<!-- Table -->
 			  <table class="table table-hover tableheight" style="text-align: center">
 			  <div>
-  			   	<tr onclick="location.href='./공지사항.html.php'"><td>공지사항</td></tr>
+  			   	<tr onclick="location.href='./announce.html.php'"><td>공지사항</td></tr>
 			   	<tr onclick="location.href='./QnA.html.php'"><td>1:1 문의</td></tr>
 			   	<tr onclick="location.href='./withdrawal.html.php'"><td>회원탈퇴</td></tr>
 			  </div>

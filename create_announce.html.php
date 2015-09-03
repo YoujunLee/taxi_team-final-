@@ -1,5 +1,5 @@
+<!-- url 타고 들어가서 공지문을 작성할 수 있다 -->
 <!DOCTYPE html>
-
 <?php
 	include "./php/session_out.php";
 	out();

@@ -46,7 +46,7 @@ out();
 				<h4><span style="color:black"><b>카풀 탑승내역 </b> </span></h4>
 		</td>
 		<td class=" col-xs-4  col-md-4">
-		<form class="yg_float" action = './mypage-탑승내역.html.php'>
+		<form class="yg_float" action = './history.html.php'>
 	    	<input class="btn5" type="submit" value="택시 내역 Go">
 	    	</form>
 		</td>
@@ -163,25 +163,25 @@ out();
   		<?php
 			$number;
 			if($page>1)
-				echo "<li><a href='./탑승내역_카풀.html.php'>«</a></li>";
+				echo "<li><a href='./car_history.html.php'>«</a></li>";
 
 			if($page>1)
-  				echo "<li><a href='./탑승내역_카풀.html.php?page=".($page-1)."'><</a></li>";
+  				echo "<li><a href='./car_history.html.php?page=".($page-1)."'><</a></li>";
 	
 			for($number=floor((($page-1)/3))*3+1;$number<floor((($page-1)/3))*3+4;$number++){
 				if($number<=floor((($num-1)/10))+1){
 			   		if($number!=$page)
-						echo"<li><a href='./탑승내역_카풀.html.php?page=".($number)."'>".$number."</a></li>";
+						echo"<li><a href='./car_history.html.php?page=".($number)."'>".$number."</a></li>";
 					else
-						echo"<li class='active'><a href='./탑승내역_카풀.html.php?page=".($number)."'>".$number."</a></li>";
+						echo"<li class='active'><a href='./car_history.html.php?page=".($number)."'>".$number."</a></li>";
 				}
 			}
 	
 			if($page<floor((($num-1)/10))+1)
-  				echo "<li><a href='./탑승내역_카풀.html.php?page=".($page+1)."'>></a></li>";
+  				echo "<li><a href='./car_history.html.php?page=".($page+1)."'>></a></li>";
 	
 			if($page<floor((($num-1)/10)+1))
-  				echo "<li><a href='./탑승내역_카풀.html.php?page=".floor(((($num-1)/10)+1))."'>»</a></li>";
+  				echo "<li><a href='./car_history.html.php?page=".floor(((($num-1)/10)+1))."'>»</a></li>";
   		?>
  		</ul>
 	</div>

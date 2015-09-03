@@ -7,7 +7,7 @@
 		 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
    		 <title>i-Taxi</title>
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-   		 <link rel="stylesheet" type="text/css" href="../css/로그인.css">
+   		 <link rel="stylesheet" type="text/css" href="../css/login.css">
    		 <meta name="apple-mobile-web-app-capable" content="yes" />
    		 <link rel="apple-touch-icon-precomposed" href="./img/logo_big.png" />
    		 <link rel="apple-touch-icon" href="./img/logo_big.png" />

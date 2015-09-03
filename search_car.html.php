@@ -114,7 +114,7 @@
 										else if($current_time>$data[2]." ".$data[3])
 											{?>onclick="location.href='#'"<?php } 
 										else	
-											{?>onclick="location.href='./php/car_탑승하기질문.php?post_id=<?php echo $data[5]; ?>'"<?php }
+											{?>onclick="location.href='./php/car_get_in_question.php?post_id=<?php echo $data[5]; ?>'"<?php }
 									   }
 									  else if($check2==true)
 											{?>onclick="location.href='./car_Room.html.php?<?php echo $data[5]; ?>'"<?php } ?>>									

@@ -11,7 +11,7 @@ out();
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">  
 	<link rel="stylesheet" type="text/css" href="./css/search.css">
-	<link rel="stylesheet" type="text/css" href="./css/조회창_그냥.css">
+	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
 
@@ -90,8 +90,8 @@ out();
 		
 		<tr class = "tr1" onclick="location.href='./mypage-탑승내역.html.php'">
 			<td>
-			<form action='./mypage-탑승내역.html.php'>
-				<a href="./mypage-탑승내역.html.php" class="noul">
+			<form action='./history.html.php'>
+				<a href="./history.html.php" class="noul">
 					<img src="./img/list.png" class="img2">
 					&nbsp;&nbsp;&nbsp;
 				</a>

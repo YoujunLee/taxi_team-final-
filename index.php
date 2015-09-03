@@ -2,7 +2,7 @@
 <?php
 session_start();
 if(isset($_SESSION['user_id']) && isset($_SESSION['user_pw']))
-echo "<script>location.replace('./조회창.html.php');</script>";
+echo "<script>location.replace('./main.html.php');</script>";
 ?>
 
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 		 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
    		 <title>i-Taxi</title>
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-   		 <link rel="stylesheet" type="text/css" href="../css/로그인.css">
+   		 <link rel="stylesheet" type="text/css" href="../css/login.css">
    		 <meta name="apple-mobile-web-app-capable" content="yes" />
    		 <link rel="apple-touch-icon-precomposed" href="./img/logo_big.png" />
    		 <link rel="apple-touch-icon" href="./img/logo_big.png" />
@@ -32,12 +32,12 @@ echo "<script>location.replace('./조회창.html.php');</script>";
   		<!-- Id 입력창 -->
 	  	<form action='./php/login.php'  method='post'>
 			<div class="div1">
-			    <input type="tel" class="form-control" autofocus placeholder="점검중" name="logid" required>
+			    <input type="tel" class="form-control" autofocus placeholder="Student ID" name="logid" required>
 			</div>
 			<br>
 			<!-- Pw 입력창 -->
 			<div class="div1">
-		    	<input type="password" class="form-control" placeholder="점검중"  name="logpass" required>
+		    	<input type="password" class="form-control" placeholder="Password"  name="logpass" required>
 			</div>
 					
 			<br><br><br>
@@ -46,7 +46,7 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 		<br>			
 
 		<!-- 회원가입 버튼 -->
-		<form action='./약관.html.php'>
+		<form action='./info.html.php'>
 			<input class="btn btn-lg btn-block" type="submit" style="background-color:#ffde00; color: #ffffff;" value="회원가입">
 	    </form>
 	    <form class="right_go" action='./password.html.php'>
@@ -54,7 +54,7 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 		</form>
 		<div class="div2">
 			   
-			   <span>현재 점검 중입니다. 이용이 제한 될 수 있습니다.</span>
+			   <span>본 서비스는 모바일 환경에 최적화 되어 있습니다.</span>
 		</div>
 	
 		</div>
