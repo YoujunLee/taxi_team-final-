@@ -20,7 +20,7 @@ out();
 	<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
 		   <td class = "logo" >
-      			<a  href="./조회창.html.php">
+      			<a  href="./main.html.php">
       				<img src="./img/logo.png">
       			</a>
   		   </td>
@@ -125,7 +125,7 @@ out();
 			
 			<td>
 			<form class="div_yg" action='./계산기.html.php'>
-			  <a href="./계산기.html.php" class="noul">
+			  <a href="./cacul.html.php" class="noul">
 			  <img src="./img/cacul.png" class="img"><br>
 			  <input class="btn3" type="submit" value="계산기">
 			  </a>

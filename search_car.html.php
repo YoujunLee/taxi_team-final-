@@ -21,7 +21,7 @@
 		   		if(result)
 		   			location.replace('../make_car.html.php');
 		   			else 
-		   		   location.replace('./조회창.html.php');
+		   		   location.replace('./main.html.php');
 		   	  </script>";
    		exit;
 	}
@@ -41,7 +41,7 @@
 	<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
 		   <td class = "logo" >
-      			<a  href="./조회창.html.php">
+      			<a  href="./main.html.php">
       				<img src="./img/logo.png">
       			</a>
   		   </td>
@@ -51,7 +51,7 @@
 	       		</a>
            </td>
       	   <td class = "logout1">
-      	   		<a href='./조회창.html.php'>
+      	   		<a href='./main.html.php'>
 		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>

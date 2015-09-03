@@ -1,9 +1,4 @@
 <!-- Login page -->
-<?php
-session_start();
-if(isset($_SESSION['user_id']) && isset($_SESSION['user_pw']))
-echo "<script>location.replace('./조회창.html.php');</script>";
-?>
 
 <!DOCTYPE html>
 <html>
@@ -32,12 +27,12 @@ echo "<script>location.replace('./조회창.html.php');</script>";
   		<!-- Id 입력창 -->
 	  	<form action='./php/login.php'  method='post'>
 			<div class="div1">
-			    <input type="tel" class="form-control" autofocus placeholder="Student ID" name="logid" required>
+			    <input type="tel" class="form-control" autofocus placeholder="Hisnet ID123" name="logid" required>
 			</div>
 			<br>
 			<!-- Pw 입력창 -->
 			<div class="div1">
-		    	<input type="password" class="form-control" placeholder="Password"  name="logpass" required>
+		    	<input type="password" class="form-control" placeholder="Hisnet Password"  name="logpass" required>
 			</div>
 					
 			<br><br><br>
@@ -46,11 +41,9 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 		<br>			
 
 		<!-- 회원가입 버튼 -->
-		<form action='./약관.html.php'>
-			<input class="btn btn-lg btn-block" type="submit" style="background-color:#ffde00; color: #ffffff;" value="회원가입">
-	    </form>
-	    <form class="right_go" action='./password.html.php'>
-			<input class = "btn1" type="submit" value="비밀번호 찾기">
+		
+	    <form class="right_go" action='./info_hisnet.html.php'>
+			<input class = "btn5" type="submit" value="약관 확인">
 		</form>
 		<div class="div2">
 			   

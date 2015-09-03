@@ -21,7 +21,7 @@ out();
 	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
   			<td class = "logo" >
-       		<a  href="./조회창.html.php"><img src="./img/logo.png"></a>
+       		<a  href="./main.html.php"><img src="./img/logo.png"></a>
   		    </td >
       
       		 <td class = "logout">

@@ -32,12 +32,12 @@ echo "<script>location.replace('./조회창.html.php');</script>";
   		<!-- Id 입력창 -->
 	  	<form action='./php/login.php'  method='post'>
 			<div class="div1">
-			    <input type="tel" class="form-control" autofocus placeholder="Student ID" name="logid" required>
+			    <input type="tel" class="form-control" autofocus placeholder="점검중" name="logid" required>
 			</div>
 			<br>
 			<!-- Pw 입력창 -->
 			<div class="div1">
-		    	<input type="password" class="form-control" placeholder="Password"  name="logpass" required>
+		    	<input type="password" class="form-control" placeholder="점검중"  name="logpass" required>
 			</div>
 					
 			<br><br><br>
@@ -54,7 +54,7 @@ echo "<script>location.replace('./조회창.html.php');</script>";
 		</form>
 		<div class="div2">
 			   
-			   <span>본 서비스는 모바일 환경에 최적화 되어있습니다.</span>
+			   <span>현재 점검 중입니다. 이용이 제한 될 수 있습니다.</span>
 		</div>
 	
 		</div>
