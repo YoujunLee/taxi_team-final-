@@ -27,7 +27,7 @@
   		<!-- Id 입력창 -->
 	  	<form action='./php/login.php'  method='post'>
 			<div class="div1">
-			    <input type="tel" class="form-control" autofocus placeholder="Hisnet ID123" name="logid" required>
+			    <input type="text" class="form-control" autofocus placeholder="Hisnet ID" name="logid" required>
 			</div>
 			<br>
 			<!-- Pw 입력창 -->
