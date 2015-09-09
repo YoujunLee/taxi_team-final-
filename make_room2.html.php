@@ -41,6 +41,14 @@ out();
 	<div class="form-group col-xs-12  col-md-4 col-md-offset-4">
 	<table class="table">
 		<tbody>
+		
+		<tr>
+		
+		<form action="./make_room_practice2.html.php">
+			<input  type="submit" class="btn btn-lg btn-block" style="background-color:#ffde00; color: #ffffff;" value="목적지 선택입력">
+	    </form>
+		</tr>
+		
 			<!-- 출발지 -->
 			<tr>
 			<form action="./php/post.php"  method="post">
@@ -49,17 +57,7 @@ out();
 					출발지
 				</td>
 				<td class="col-md-9">
-					<select id="start" size="1" name="room_start" class="form-control">
-					<option value="한동대학교 택시 승강장" selected>한동대 택시승강장</option>
-					<option value="양덕 하나로마트">양덕 하나로마트</option>
-					<option value="E1">E1 주유소</option>
-					<option value="장흥초">장흥초</option>
-					<option value="북부해수욕장">북부해수욕장</option>
-					<option value="고속버스터미널">고속터미널</option>
-					<option value="시외버스터미널">시외버스터미널</option>
-					<option value="육거리">육거리</option>
-					<option value="포항역(KTX)">포항역</option>
-					</select>
+					<input type='text' class='form-control' id='start' size='1' name='room_start' placeholder='직접입력' maxlength='20' required>
 				</td>
 				</label>
 			</tr>
@@ -68,17 +66,7 @@ out();
 				<label for="arrive">
 				<td class="col-md-3">도착지</td>
 				<td class="col-md-9">
-					<select id="arrive" size="1" name="room_arrive" class="form-control">
-					<option value="한동대학교 택시 승강장">한동대 택시승강장</option>
-					<option value="양덕 하나로마트">양덕 하나로마트</option>
-					<option value="E1">E1 주유소</option>
-					<option value="장흥초">장흥초</option>
-					<option value="북부해수욕장">북부해수욕장</option>
-					<option value="고속버스터미널">고속터미널</option>
-					<option value="시외버스터미널">시외버스터미널</option>
-					<option value="육거리">육거리</option>
-					<option value="포항역(KTX)" selected>포항역</option>
-					</select>
+					<input type='text' class='form-control' id='start' size='1' name='room_arrive' placeholder='직접입력' maxlength='20' required>
 				</td>
 				</label>
 			</tr>		
