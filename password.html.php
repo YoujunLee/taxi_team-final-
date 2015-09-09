@@ -8,10 +8,30 @@
    		 <title>비밀번호 찾기</title>
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="../css/box.css">
+   		 <link rel="stylesheet" type="text/css" href="./css/mypage.css">
 	</head>
 
-	<body class="col-xs-12 col-md-4 col-md-offset-4 " >
-		<br>
+	<body  >
+		<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
+		<tr class="row">
+		   <td class = "logo" >
+      			<a onclick="location.href='./main.html.php'">
+      				<img src="./img/logo.png">
+      			</a>
+  		   </td>
+  		   <td class = "logout">
+      	   		<a  onclick="location.href='./php/logout.php'">
+      	   			<img src="./img/power.png" width="30px" height="30px">
+	       		</a>
+           </td>
+      	   <td class = "logout1">
+      	   		<a onclick="location.href='./main.html.php'">
+		     		<img src="./img/home.png" width="25px" height="25px">
+	       		</a>
+           </td>
+  		</tr>
+		</table>
+		<br><br><br>
 		<div align="center">
 			<h2 style="color:#34C6BE">비밀번호 찾기</h2>
 		</div>

@@ -5,19 +5,36 @@
 	<head>
 		 <meta charset="utf-8">
 		 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
    		 <title>iTaxi</title>
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+   		 <link rel="stylesheet" type="text/css" href="./css/mypage.css">
    		 <link rel="stylesheet" type="text/css" href="../css/index2.css">
 	</head>
 
 	<body class="center">
+		<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
+		<tr class="row">
+		   <td class = "logo" >
+      			<a onclick="location.href='./main.html.php'">
+      				<img src="./img/logo.png">
+      			</a>
+  		   </td>
+  		   <td class = "logout">
+      	   		<a  onclick="location.href='./php/logout.php'">
+      	   			<img src="./img/power.png" width="30px" height="30px">
+	       		</a>
+           </td>
+      	   <td class = "logout1">
+      	   		<a onclick="location.href='./main.html.php'">
+		     		<img src="./img/home.png" width="25px" height="25px">
+	       		</a>
+           </td>
+  		</tr>
+		</table>
 	<br />
 
-	<!-- 네비게이션 바 -->
-	<div class="padding col-xs-12  col-md-4 col-md-offset-4 "> 
-		<a onclick="location.href="./index.php"><img src="./img/logo_big.png" class="image-size3 "></a>
-	</div>
-	
+
 	<div class="col-xs-12  col-md-4 col-md-offset-4 "> 
 		&nbsp;
 	</div>
