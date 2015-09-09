@@ -1,3 +1,5 @@
+<!-- 택시 방 내부2 -->
+
 <?php
 include "./php/session_out.php";
 out();
@@ -13,20 +15,20 @@ out();
 	<link rel="stylesheet" type="text/css" href="../css/index2.css">
 </head>
 <body class="center">
-	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
+	<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
-  		   <td class = "logo" >
-      	       <a  href="./main.html.php">
-      	       	  <img src="./img/logo.png">
-      	       </a>
-    	   </td>
-     	    <td class = "logout">
-      	   		<a href='./php/logout.php'>
+		   <td class = "logo" >
+      			<a onclick="location.href='./main.html.php'">
+      				<img src="./img/logo.png">
+      			</a>
+  		   </td>
+  		   <td class = "logout">
+      	   		<a  onclick="location.href='./php/logout.php'">
       	   			<img src="./img/power.png" width="30px" height="30px">
 	       		</a>
            </td>
       	   <td class = "logout1">
-      	   		<a href='./main.html.php'>
+      	   		<a onclick="location.href='./main.html.php'">
 		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>
@@ -35,7 +37,6 @@ out();
 
 <section>
 	<div class="wrapper col-xs-12  col-md-4 col-md-offset-4">
-	
 	<?php 
   	    $post_id=getenv("QUERY_STRING"); // Get값으로 넘어온 값들을 구합니다.
 		
@@ -84,35 +85,33 @@ out();
 	</tbody>
 	</table>
 	</div>
-  </section>
+</section>
   
-  <section>
-  
-  	<div >
+<section>
+  	<div>
    	<?php
  	 	$post_id2=getenv("QUERY_STRING");
   		echo"<form action=./php/comment_db.php?$post_id2  method=post>";
   	?>
-  	
   		<input class="col-xs-9 col-md-3 col-md-offset-4" type="text" placeholder="댓글을 입력하시오(최대 100자)" name="댓글" autofocus id="content">
   		<input class="col-xs-3 col-md-1 btn4" type="submit" value="댓글달기">
   	</form>
   	</div>
-	</section>
+</section>
 	
-	<section>
-		<div class="wrapper4 col-xs-12  col-md-4 col-md-offset-4">
-			<table class="table table-striped table-hover ">
-  				<thead class="co">
-    				<tr class="row">
-      					<th class="col-xs-2 col-md-2">No.</th>
-      					<th class="col-xs-4 col-md-4">Student id</th>
-      					<th class="col-xs-6 col-md-6">Phone</th>
-    				</tr>
-  				</thead>
-  
-  				<!-- 바꾼 코드. -->
-  				<tbody>
+<section>
+	<div class="wrapper4 col-xs-12  col-md-4 col-md-offset-4">
+		<table class="table table-striped table-hover ">
+			<thead class="co">
+   				<tr class="row">
+ 					<th class="col-xs-2 col-md-2">No.</th>
+   					<th class="col-xs-4 col-md-4">Student id</th>
+   					<th class="col-xs-6 col-md-6">Phone</th>
+   				</tr>
+			</thead>
+
+			<!-- 바꾼 코드. -->
+			<tbody>
 			  	<?php
 					require_once './php/db.php';
 					$check = true;
@@ -137,10 +136,8 @@ out();
 	 				if($check){
 						echo "<script>location.replace('./make_room.html.php');</script>"; exit;}
 				?>
-	
    				</tbody>
-   
-   				<!-- 여기까지 바꾼코드 -->
+			<!-- 여기까지 바꾼코드 -->
 			</table>
 
 		<?php
@@ -158,9 +155,9 @@ out();
 			?>
 			<?php						
 			if($result<-1800)
-				echo "<a href='./php/delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";
+				echo "<a onclick=location.href='./php/delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";
 			else
-				echo "<a href='#' class="."'btn btn-danger'"." > 취소불가</a>";
+				echo "<a onclick=location.href='#' class="."'btn btn-danger'"." > 취소불가</a>";
 			
 			$db->DBO();
 			$db2->DBO();

@@ -19,19 +19,20 @@ out();
 
 <body class = "center">
 	<!-- 네비게이션 바 -->
-	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
+	<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
-  			<td class = "logo" >
-       		<a  href="./main.html.php"><img src="./img/logo.png"></a>
-  		    </td > 
-      
-      		<td class = "logout">
-      	   		<a href='./php/logout.php'>
+		   <td class = "logo" >
+      			<a onclick="location.href='./main.html.php'">
+      				<img src="./img/logo.png">
+      			</a>
+  		   </td>
+  		   <td class = "logout">
+      	   		<a  onclick="location.href='./php/logout.php'">
       	   			<img src="./img/power.png" width="30px" height="30px">
 	       		</a>
            </td>
       	   <td class = "logout1">
-      	   		<a href='./조회창.html.php'>
+      	   		<a onclick="location.href='./main.html.php'">
 		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>
@@ -117,7 +118,7 @@ out();
 		<!-- 방만들기 버튼, 취소 버튼 -->
 	<div class = "div_yg">
 	<input type="submit" value="방만들기" class=" margin_right btn-info" style="background-color:#34c6be; color: #ffffff;">
-	<a href="./조회창.html.php"><input type="button" value="취소" class="btn btn-danger"></a>
+	<a onclick="location.href='./main.html.php'"><input type="button" value="취소" class="btn btn-danger"></a>
 	</div>
 	<div class="div2">
 	<br>

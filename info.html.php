@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+<!-- 약관 페이지 -->
 
+<!DOCTYPE html>
 <html>
 	<head>
 		 <meta charset="utf-8">
@@ -8,21 +9,24 @@
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="../css/index2.css">
 	</head>
+
 	<body class="center">
 	<br />
+
 	<!-- 네비게이션 바 -->
 	<div class="padding col-xs-12  col-md-4 col-md-offset-4 "> 
-		<a href="./index.php"><img src="./img/logo_big.png" class="image-size3 "></a>
+		<a onclick="location.href="./index.php"><img src="./img/logo_big.png" class="image-size3 "></a>
 	</div>
+	
 	<div class="col-xs-12  col-md-4 col-md-offset-4 "> 
-	&nbsp;
+		&nbsp;
 	</div>
+	
 	<!-- 이용 약관 -->
 	<section>
     	<div class="wrapper5 col-xs-12  col-md-4 col-md-offset-4 ">    		
 			<form action="./php/agree.php"  method="post">
-			<h3>iTaxi 이용약관</h3>
-		
+				<h3>iTaxi 이용약관</h3>
 			이용약관은 다음과 같은 내용을 담고 있습니다.<br>
 			<br>
 			제 1 장 총   칙<br>

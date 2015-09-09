@@ -1,3 +1,5 @@
+<!-- QnA 확인창 -->
+
 <?php
 	include "./php/session_out.php";
 	out();

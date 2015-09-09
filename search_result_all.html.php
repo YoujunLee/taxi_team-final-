@@ -1,3 +1,5 @@
+<!-- 택시 전체 조회 -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,17 +43,17 @@
 	<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
 		   <td class = "logo" >
-      			<a  href="./main.html.php">
+      			<a onclick="location.href='./main.html.php'">
       				<img src="./img/logo.png">
       			</a>
   		   </td>
-      	    <td class = "logout">
-      	   		<a href='./php/logout.php'>
+  		   <td class = "logout">
+      	   		<a  onclick="location.href='./php/logout.php'">
       	   			<img src="./img/power.png" width="30px" height="30px">
 	       		</a>
            </td>
       	   <td class = "logout1">
-      	   		<a href='./main.html.php'>
+      	   		<a onclick="location.href='./main.html.php'">
 		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>
@@ -123,13 +125,13 @@
     						echo " <td class="."'col-xs-7 col-md-7'".">".$data[0]."<br>"."&nbsp;&nbsp;"." →&nbsp;&nbsp;".$data[1]."</th>";
     						
 							if($current_time>$data[2]." ".$data[3])
-								echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-success1'>시간<br>종료</a></th>";
+								echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a onclick=location.href='#' class='btn btn-success1'>시간<br>종료</a></th>";
 							else if($check2==true)
-    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-warning1'>참여중<br>".$num2."/".$data[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a onclick=location.href='#' class='btn btn-warning1'>참여중<br>".$num2."/".$data[4]."</a></th>";
 							else if($num2==$data[4])
-    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a onclick=location.href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data[4]."</a></th>";
 							else 
-    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a onclick=location.href='#' class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
 							?>					
         					</tr>
         				<?php
@@ -152,25 +154,25 @@
 		<?php
 			$number;
 			if($page>1)
-				echo "<li><a href='./search_result_all.html.php'>«</a></li>";
+				echo "<li><a onclick=location.href='./search_result_all.html.php'>«</a></li>";
 
 			if($page>1)
-  				echo "<li><a href='./search_result_all.html.php?page=".($page-1)."'><</a></li>";
+  				echo "<li><a onclick=location.href='./search_result_all.html.php?page=".($page-1)."'><</a></li>";
 	
 			for($number=floor((($page-1)/3))*3+1;$number<floor((($page-1)/3))*3+4;$number++){
 				if($number<=floor((($num-1)/10))+1){
 			   		if($number!=$page)
-						echo"<li><a href='./search_result_all.html.php?page=".($number)."'>".$number."</a></li>";
+						echo"<li><a onclick=location.href='./search_result_all.html.php?page=".($number)."'>".$number."</a></li>";
 					else
-						echo"<li class='active'><a href='./search_result_all.html.php?page=".($number)."'>".$number."</a></li>";
+						echo"<li class='active'><a onclick=location.href='./search_result_all.html.php?page=".($number)."'>".$number."</a></li>";
 				}
 			}
 	
 			if($page<floor((($num-1)/10))+1)
-  				echo "<li><a href='./search_result_all.html.php?page=".($page+1)."'>></a></li>";
+  				echo "<li><a onclick=location.href='./search_result_all.html.php?page=".($page+1)."'>></a></li>";
 	
 			if($page<floor((($num-1)/10)+1))
-  				echo "<li><a href='./search_result_all.html.php?page=".floor(((($num-1)/10)+1))."'>»</a></li>";
+  				echo "<li><a onclick=location.href='./search_result_all.html.php?page=".floor(((($num-1)/10)+1))."'>»</a></li>";
   		?>
  	</ul>
  	<div class="div2">

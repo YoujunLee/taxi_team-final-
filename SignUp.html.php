@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+<!-- 회원가입 창 -->
 
+<!DOCTYPE html>
 <html>
 	<head>
 		 <meta charset="utf-8">

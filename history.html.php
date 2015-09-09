@@ -1,3 +1,5 @@
+<!-- 택시 탑승내역 -->
+
 <?php
 include "./php/session_out.php";
 out();
@@ -17,44 +19,44 @@ out();
 
 <body class = "center">
 <script>  window.setTimeout('window.location.reload()',100000); </script>
-	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
+	
+	<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
-			<td class = "logo" >
-		        <a  href="./main.html.php"><img src="./img/logo.png"></a>
-    		</td>
-      
-      		 <td class = "logout">
-      	   		<a href='./php/logout.php'>
+		   <td class = "logo" >
+      			<a onclick="location.href='./main.html.php'">
+      				<img src="./img/logo.png">
+      			</a>
+  		   </td>
+  		   <td class = "logout">
+      	   		<a onclick="location.href='./php/logout.php'">
       	   			<img src="./img/power.png" width="30px" height="30px">
 	       		</a>
            </td>
       	   <td class = "logout1">
-      	   		<a href='./main.html.php'>
+      	   		<a onclick="location.href='./main.html.php'">
 		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>
   		</tr>
 	</table>
 	
-	<section >
+	<section>
 		<table class="title col-xs-12  col-md-4 col-md-offset-4"  style="background-color: #dcdcdc">
 		<tr class="row">
-		<td class=" col-xs-4  col-md-4">
-   
-		</td>
-		<td class="padding col-xs-4  col-md-4">
+			<td class=" col-xs-4  col-md-4">
+   			</td>
+			
+			<td class="padding col-xs-4  col-md-4">
 				<h4><span style="color:black"><b>택시 탑승내역 </b> </span></h4>
-		</td>
-		<td class=" col-xs-4  col-md-4">
-		<form class="yg_float" action = './car_history.html.php'>
-	    	<input class="btn5" type="submit" value="카풀 내역 GO">
-	    	</form>
-		</td>
-	    	
-	    	
-	    	
-   		</tr>
-	</table>
+			</td>
+			
+			<td class=" col-xs-4  col-md-4">
+				<form class="yg_float" action = './car_history.html.php'>
+	    			<input class="btn5" type="submit" value="카풀 내역 GO">
+	    		</form>
+			</td>
+	    </tr>
+		</table>
 	</section>
 	
 	<div class="padding col-xs-12  col-md-4 col-md-offset-4">
@@ -121,7 +123,7 @@ out();
 										else if($current_time>$data[2]." ".$data[3])
 											{?>onclick="location.href='#'"<?php } 
 										else	
-											{?>onclick="location.href='./php/탑승하기질문.php?post_id=<?php echo $data1[5]; ?>'"<?php }
+											{?>onclick="location.href='./php/get_in_question.php?post_id=<?php echo $data1[5]; ?>'"<?php }
 									   }
 									  else if($check2==true)
 											{?>onclick="location.href='./Room.html.php?<?php echo $data1[5]; ?>'"<?php } ?>>									
@@ -131,13 +133,13 @@ out();
     						echo " <td class="."'col-xs-7 col-md-7'".">".$data1[0]."<br>"."&nbsp;&nbsp;"." →&nbsp;&nbsp;".$data1[1]."</th>";
     						
 							if($current_time>$data1[2]." ".$data1[3])
-								echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-success1'>시간<br>종료</a></th>";
+								echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a onclick=location.href='#' class='btn btn-success1'>시간<br>종료</a></th>";
 							else if($check2==true)
-    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-warning1'>참여중<br>".$num2."/".$data1[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a onclick=location.href='#' class='btn btn-warning1'>참여중<br>".$num2."/".$data1[4]."</a></th>";
 							else if($num2==$data1[4])
-    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data1[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a onclick=location.href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data1[4]."</a></th>";
 							else 
-    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-info1'>탑승<br>".$num2."/".$data1[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a onclick=location.href='#' class='btn btn-info1'>탑승<br>".$num2."/".$data1[4]."</a></th>";
 							?>					
         					</tr>
         				<?php
@@ -157,29 +159,29 @@ out();
 	</div>
 	<!-- Page 넘기는 장치-->
 	<div class="col-xs-12 col-md-6 col-md-offset-3">
-		<ul class="pagination pagination-lg">
+			<ul class="pagination pagination-lg">
   		<?php
 			$number;
 			if($page>1)
-				echo "<li><a href='./history.html.php'>«</a></li>";
+				echo "<li><a onclick=location.href='./history.html.php'>«</a></li>";
 
 			if($page>1)
-  				echo "<li><a href='./history.html.php?page=".($page-1)."'><</a></li>";
+  				echo "<li><a onclick=location.href='./history.html.php?page=".($page-1)."'><</a></li>";
 	
 			for($number=floor((($page-1)/3))*3+1;$number<floor((($page-1)/3))*3+4;$number++){
 				if($number<=floor((($num-1)/10))+1){
 			   		if($number!=$page)
-						echo"<li><a href='./history.html.php?page=".($number)."'>".$number."</a></li>";
+						echo"<li><a onclick=location.href='./history.html.php?page=".($number)."'>".$number."</a></li>";
 					else
-						echo"<li class='active'><a href='./history.html.php?page=".($number)."'>".$number."</a></li>";
+						echo"<li class='active'><a onclick=location.href='./history.html.php?page=".($number)."'>".$number."</a></li>";
 				}
 			}
 	
 			if($page<floor((($num-1)/10))+1)
-  				echo "<li><a href='./history.html.php?page=".($page+1)."'>></a></li>";
+  				echo "<li><a onclick=location.href='./history.html.php?page=".($page+1)."'>></a></li>";
 	
 			if($page<floor((($num-1)/10)+1))
-  				echo "<li><a href='./history.html.php?page=".floor(((($num-1)/10)+1))."'>»</a></li>";
+  				echo "<li><a onclick=location.href='./history.html.php?page=".floor(((($num-1)/10)+1))."'>»</a></li>";
   		?>
  		</ul>
 	</div>

@@ -1,3 +1,5 @@
+<!-- 택시번호 초회 창 -->
+
 <?php
 include "./php/session_out.php";
 out();
@@ -23,20 +25,20 @@ function callNumber(num){
 
 </head>
 <body class="center " >
-		<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
+	<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
 		   <td class = "logo" >
-      			<a  href="./main.html.php">
+      			<a onclick="location.href='./main.html.php'">
       				<img src="./img/logo.png">
       			</a>
   		   </td>
-      	    <td class = "logout">
-      	   		<a href='./php/logout.php'>
+  		   <td class = "logout">
+      	   		<a  onclick="location.href='./php/logout.php'">
       	   			<img src="./img/power.png" width="30px" height="30px">
 	       		</a>
            </td>
       	   <td class = "logout1">
-      	   		<a href='./조회창.html.php'>
+      	   		<a onclick="location.href='./main.html.php'">
 		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>
@@ -44,16 +46,16 @@ function callNumber(num){
 	</table>
 		
 	<ul class="col-xs-12  col-md-4 col-md-offset-4 padding">
-  <li><a href="tel:054-252-1111" class="eat"><span>
+  <li><a onclick="location.href='tel:054-252-1111'" class="eat"><span>
         <h1>포스콜</h1>
         <p>054-252-1111</p></span></a></li>
-  <li><a href="tel:054-283-8282" class="drink"><span>
+  <li><a onclick="location.href='tel:054-283-8282'" class="drink"><span>
         <h1>해맞이콜</h1>
         <p>054-283-8282</p></span></a></li>
-  <li><a href="tel:054-282-6161" class="play"><span>
+  <li><a onclick="location.href='tel:054-282-6161'" class="play"><span>
         <h1>육일콜</h1>
         <p>054-282-6161</p></span></a></li>
-  <li><a href="tel:054-231-2330" class="relax"><span>
+  <li><a onclick="location.href='tel:054-231-2330'" class="relax"><span>
         <h1>영광콜</h1>
         <p>054-231-2330</p></span></a></li>
 </ul>	

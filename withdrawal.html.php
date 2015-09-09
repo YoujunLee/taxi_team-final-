@@ -13,22 +13,24 @@ out();
 	</head>
 	
 	<body>
-		<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
-			<tr class="row">
-  			   <td class = "logo" >
-      				<a  href="./main.html.php"><img src="./img/logo.png"></a>
-  			   </td >
-				<td class = "logout">
-      	   		<a href='./php/logout.php'>
+		<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
+		<tr class="row">
+		   <td class = "logo" >
+      			<a onclick="location.href='./main.html.php'">
+      				<img src="./img/logo.png">
+      			</a>
+  		   </td>
+  		   <td class = "logout">
+      	   		<a  onclick="location.href='./php/logout.php'">
       	   			<img src="./img/power.png" width="30px" height="30px">
 	       		</a>
            </td>
       	   <td class = "logout1">
-      	   		<a href='./main.html.php'>
+      	   		<a onclick="location.href='./main.html.php'">
 		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>
-      		</tr>
+  		</tr>
 		</table>
 
 		<form  action='./php/withdrawal.php' method='POST'  class="form-horizontal">
@@ -50,7 +52,7 @@ out();
 			  		<div class = "div_yg" >
 						<input type="submit" value="탈퇴하기" class="margin_right btn btn-info" style="background-color:#34c6be; color: #ffffff; border-color: #34C6BE">
 						<input style="border: none; width: 50px;" />
-						<a href="./MyPage.html.php"><input type="button" value="취소" class="btn btn-danger"></a>
+						<a onclick="location.href="./MyPage.html.php"><input type="button" value="취소" class="btn btn-danger"></a>
 					</div>
 					<br />
 			  </div>

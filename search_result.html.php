@@ -1,3 +1,5 @@
+<!-- 택시 조건 조회 결과(비활성화)-->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -60,47 +62,42 @@
 	<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
 		   <td class = "logo" >
-      			<a  href="./main.html.php">
+      			<a onclick="location.href='./main.html.php'">
       				<img src="./img/logo.png">
       			</a>
   		   </td>
-      	    <td class = "logout">
-      	   		<a href='./php/logout.php'>
+  		   <td class = "logout">
+      	   		<a  onclick="location.href='./php/logout.php'">
       	   			<img src="./img/power.png" width="30px" height="30px">
 	       		</a>
            </td>
       	   <td class = "logout1">
-      	   		<a href='./main.html.php'>
+      	   		<a onclick="location.href='./main.html.php'">
 		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>
   		</tr>
 	</table>
 	
-	
-<section >
-	
+<section>
 	<div class="wrapper col-xs-12  col-md-4 col-md-offset-4">
 	    <?php echo$date." ".$s_time."~".$e_time."<br>";?>
 	    <?php echo$start."->".$arrive;?>
-   
-	</div>
-	
+   	</div>
 </section>
 
-<section >
-<div class="padding col-xs-12  col-md-4 col-md-offset-4">
-
-<table class="table3 table-striped table-hover ">
-  <thead>
+<section>
+	<div class="padding col-xs-12  col-md-4 col-md-offset-4">
+	<table class="table3 table-striped table-hover ">
+  	<thead>
     <tr class="row">
 	  <th class="col-xs-3 col-md-3">시간</th>
       <th class="col-xs-7 col-md-7">장소 <span class="padding" style="font-size: 10px">(출발지→도착지)</span></th>
       <th class="col-xs-2 col-md-2" style="text-align:center">상태</th>
     </tr>
-  </thead>
-  <tbody>
-  <?php
+  	</thead>
+  	<tbody>
+  	<?php
      $page = 1; 
      if(isset($_GET["page"]))
      $page = $_GET["page"];
@@ -147,57 +144,54 @@
     						echo " <td class="."'col-xs-7 col-md-7'".">".$data[0]."<br>"."&nbsp;&nbsp;"." →&nbsp;&nbsp;".$data[1]."</th>";
     						
 							if($current_time>$data[2]." ".$data[3])
-								echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-success1'>시간<br>종료</a></th>";
+								echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a onclick=location.href='#' class='btn btn-success1'>시간<br>종료</a></th>";
 							else if($check2==true)
-    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-warning1'>참여중<br>".$num2."/".$data[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a onclick=location.href='#' class='btn btn-warning1'>참여중<br>".$num2."/".$data[4]."</a></th>";
 							else if($num2==$data[4])
-    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a onclick=location.href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data[4]."</a></th>";
 							else 
-    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a onclick=location.href='#' class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
 							?>					
         					</tr>
-        	<?php
-  			}
-  			else
-				break;
-	
-	        $count++;
-	  }
-	
-	$db->DBO();
-	$db2->DBO();
-    ?>
+    				    	<?php
+  							}
+  							else
+								break;
+					        $count++;
+	  						}
+							$db->DBO();
+							$db2->DBO();
+    						?>
  
-   </tbody>
-</table>
-</div>
-</section >
+   		</tbody>
+		</table>
+		</div>
+</section>
 	
 <div class="col-xs-12 col-md-4 col-md-offset-4">
 	<ul class="pagination pagination-lg">
-  		
-	<?php
+  	<?php
 	$number;
 	if($page>1)
-	echo "<li><a href='./search_result.html.php'>«</a></li>";
+	echo "<li><a onclick=location.href='./search_result.html.php'>«</a></li>";
 
 	if($page>1)
-  	echo "<li><a href='./search_result.html.php?page=".($page-1)."'><</a></li>";
+  	echo "<li><a onclick=location.href='./search_result.html.php?page=".($page-1)."'><</a></li>";
 	
 	for($number=floor((($page-1)/3))*3+1;$number<floor((($page-1)/3))*3+4;$number++){
 		if($number<=floor((($num-1)/10))+1){
 	   		if($number!=$page)
-				echo"<li><a href='./search_result.html.php?page=".($number)."'>".$number."</a></li>";
+				echo"<li><a onclick=location.href='./search_result.html.php?page=".($number)."'>".$number."</a></li>";
 		else
-			echo"<li class='active'><a href='./search_result.html.php?page=".($number)."'>".$number."</a></li>";
+			echo"<li class='active'><a onclick=location.href='./search_result.html.php?page=".($number)."'>".$number."</a></li>";
 		}
 	}
 	
 	if($page<floor((($num-1)/10))+1)
-  	echo "<li><a href='./search_result.html.php?page=".($page+1)."'>></a></li>";
+  	echo "<li><a onclick=location.href='./search_result.html.php?page=".($page+1)."'>></a></li>";
 	
 	if($page<floor((($num-1)/10)+1))
-  	echo "<li><a href='./search_result.html.php?page=".floor(((($num-1)/10)+1))."'>»</a></li>";
+  	echo "<li><a onclick=location.href='./search_result.html.php?page=".floor(((($num-1)/10)+1))."'>»</a></li>";
   	?>
  			
 	</ul>
