@@ -51,7 +51,7 @@ if($num==1)
    $_SESSION['name'] = $data[1]; 
    $_SESSION['cellphone'] = $data[2]; 
    
-   echo "<script>location.replace('../조회창.html.php');</script>";
+   echo "<script>location.replace('../main.html.php');</script>";
    exit;
 } 
 else if(($studentid==null))

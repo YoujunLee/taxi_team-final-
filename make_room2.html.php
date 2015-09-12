@@ -19,20 +19,19 @@ out();
 
 <body class = "center">
 	<!-- 네비게이션 바 -->
-	<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
+	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
-		   <td class = "logo" >
-      			<a onclick="location.href='./main.html.php'">
-      				<img src="./img/logo.png">
-      			</a>
-  		   </td>
-  		   <td class = "logout">
-      	   		<a  onclick="location.href='./php/logout.php'">
+  			<td class = "logo" >
+       		<a  href="./main.html.php"><img src="./img/logo.png"></a>
+  		    </td > 
+      
+      		<td class = "logout">
+      	   		<a href='./php/logout.php'>
       	   			<img src="./img/power.png" width="30px" height="30px">
 	       		</a>
            </td>
       	   <td class = "logout1">
-      	   		<a onclick="location.href='./main.html.php'">
+      	   		<a href='./조회창.html.php'>
 		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>
@@ -42,6 +41,14 @@ out();
 	<div class="form-group col-xs-12  col-md-4 col-md-offset-4">
 	<table class="table">
 		<tbody>
+		
+		<tr>
+		
+		<form action="./make_room_practice2.html.php">
+			<input  type="submit" class="btn btn-lg btn-block" style="background-color:#ffde00; color: #ffffff;" value="목적지 선택입력">
+	    </form>
+		</tr>
+		
 			<!-- 출발지 -->
 			<tr>
 			<form action="./php/post.php"  method="post">
@@ -50,17 +57,7 @@ out();
 					출발지
 				</td>
 				<td class="col-md-9">
-					<select id="start" size="1" name="room_start" class="form-control">
-					<option value="한동대학교 택시 승강장" selected>한동대 택시승강장</option>
-					<option value="양덕 하나로마트">양덕 하나로마트</option>
-					<option value="E1">E1 주유소</option>
-					<option value="장흥초">장흥초</option>
-					<option value="북부해수욕장">북부해수욕장</option>
-					<option value="고속버스터미널">고속터미널</option>
-					<option value="시외버스터미널">시외버스터미널</option>
-					<option value="육거리">육거리</option>
-					<option value="포항역(KTX)">포항역</option>
-					</select>
+					<input type='text' class='form-control' id='start' size='1' name='room_start' placeholder='직접입력' maxlength='20' required>
 				</td>
 				</label>
 			</tr>
@@ -69,17 +66,7 @@ out();
 				<label for="arrive">
 				<td class="col-md-3">도착지</td>
 				<td class="col-md-9">
-					<select id="arrive" size="1" name="room_arrive" class="form-control">
-					<option value="한동대학교 택시 승강장">한동대 택시승강장</option>
-					<option value="양덕 하나로마트">양덕 하나로마트</option>
-					<option value="E1">E1 주유소</option>
-					<option value="장흥초">장흥초</option>
-					<option value="북부해수욕장">북부해수욕장</option>
-					<option value="고속버스터미널">고속터미널</option>
-					<option value="시외버스터미널">시외버스터미널</option>
-					<option value="육거리">육거리</option>
-					<option value="포항역(KTX)" selected>포항역</option>
-					</select>
+					<input type='text' class='form-control' id='start' size='1' name='room_arrive' placeholder='직접입력' maxlength='20' required>
 				</td>
 				</label>
 			</tr>		
@@ -118,7 +105,7 @@ out();
 		<!-- 방만들기 버튼, 취소 버튼 -->
 	<div class = "div_yg">
 	<input type="submit" value="방만들기" class=" margin_right btn-info" style="background-color:#34c6be; color: #ffffff;">
-	<a onclick="location.href='./main.html.php'"><input type="button" value="취소" class="btn btn-danger"></a>
+	<a href="./조회창.html.php"><input type="button" value="취소" class="btn btn-danger"></a>
 	</div>
 	<div class="div2">
 	<br>

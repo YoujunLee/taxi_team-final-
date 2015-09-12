@@ -1,5 +1,6 @@
-<!DOCTYPE html>
+<!-- 개인정보수정 page -->
 
+<!DOCTYPE html>
 <html>
 	<head>
 		 <meta charset="utf-8">
@@ -11,22 +12,24 @@
 	</head>
 	<body>
 		
-		<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
-			<tr class="row">
-  			   <td class = "logo" >
-      				<a  href="./조회창.html.php"><img src="./img/logo.png"></a>
-  			   </td >
-				 <td class = "logout">
-      	   		<a href='./php/logout.php'>
+		<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
+		<tr class="row">
+		   <td class = "logo" >
+      			<a onclick="location.href='./main.html.php'">
+      				<img src="./img/logo.png">
+      			</a>
+  		   </td>
+  		   <td class = "logout">
+      	   		<a  onclick="location.href='./php/logout.php'">
       	   			<img src="./img/power.png" width="30px" height="30px">
 	       		</a>
            </td>
       	   <td class = "logout1">
-      	   		<a href='./조회창.html.php'>
+      	   		<a onclick="location.href='./main.html.php'">
 		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>
-      		</tr>
+  		</tr>
 		</table>
 		<br/><br><br><br><br>
 		<div class=" col-xs-12  col-md-4 col-md-offset-4">
@@ -163,7 +166,7 @@
 		    
 		     <div>
                 <input class="btn btn-lg btn-block" type="submit" style="background-color:#34C6BE; color: #ffffff;" value="변경">
-			    <a href="./MyPage.html.php" class="btn btn-lg btn-block" style="background-color:red; color: #ffffff; opacity:0.8;" value="취소">취소</a>
+			    <a onclick="location.href='./MyPage.html.php'" class="btn btn-lg btn-block" style="background-color:red; color: #ffffff; opacity:0.8;" value="취소">취소</a>
 			</div>
 			</form>
 	</div>

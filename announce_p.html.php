@@ -1,4 +1,4 @@
-<!-- QnA 확인창 -->
+<!-- 공지사항 -->
 
 <?php
 	include "./php/session_out.php";
@@ -9,7 +9,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
-		<title>Q & A</title>
+		<title>공지사항</title>
 		<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="./css/mypage.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -49,22 +49,24 @@
 	</head>
 	<body>
 		
-		<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
-			<tr class="row">
-			   <td class = "logo" >
-			      <a  href="./main.html.php"><img src="./img/logo.png"></a>
-			    </td >
-			    
-      		 <td class = "logout">
-      	   		<a href='./php/logout.php'>
+		<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
+		<tr class="row">
+		   <td class = "logo" >
+      			<a onclick="location.href='./main.html.php'">
+      				<img src="./img/logo.png">
+      			</a>
+  		   </td>
+  		   <td class = "logout1">
+      	   		<a onclick="history.back(-1)">
+		     		<img src="./img/back.png" width="25px" height="25px">
+	       		</a>
+           </td>
+  		   <td class = "logout">
+      	   		<a  onclick="location.href='./php/logout.php'">
       	   			<img src="./img/power.png" width="30px" height="30px">
 	       		</a>
            </td>
-      	   <td class = "logout1">
-      	   		<a href='./main.html.php'>
-		     		<img src="./img/home.png" width="25px" height="25px">
-	       		</a>
-           </td>
+      	  
   		</tr>
 	</table>
 	
@@ -78,7 +80,7 @@
 				$db = new DBC;	 //db object생성
 				$db->DBI();		//db 들어가기
 				
-				$db->query = "select * from QnA order by num desc";
+				$db->query = "select * from notice order by num desc";
 				$db->DBQ();
 			?>
 				
@@ -94,7 +96,6 @@
 						<div class="panel">
 						<?php	
 							echo $data['memo']. "<br>";
-							echo "<br>"."학번: ". $data['stu_id']."<br>"."작성자: ". $data['name']."<br>"."핸드폰 번호: ". $data['phone_num'];
 						?>
 						</div>
 						<br>

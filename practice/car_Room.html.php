@@ -1,5 +1,3 @@
-<!-- 카풀 방 내부 -->
-
 <?php
 include "./php/session_out.php";
 out();
@@ -14,23 +12,21 @@ out();
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"> 
 	<link rel="stylesheet" type="text/css" href="../css/index2.css"> 
 </head>
-
 <body class="center">
-	
-	<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
+	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
-		   <td class = "logo" >
-      			<a onclick="location.href='./main.html.php'">
-      				<img src="./img/logo.png">
-      			</a>
-  		   </td>
-  		   <td class = "logout">
-      	   		<a  onclick="location.href='./php/logout.php'">
+  		   <td class = "logo" >
+      	       <a  href="./조회창.html.php">
+      	       	  <img src="./img/logo.png">
+      	       </a>
+    	   </td>
+     	    <td class = "logout">
+      	   		<a href='./php/logout.php'>
       	   			<img src="./img/power.png" width="30px" height="30px">
 	       		</a>
            </td>
       	   <td class = "logout1">
-      	   		<a onclick="location.href='./main.html.php'">
+      	   		<a href='./조회창.html.php'>
 		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>
@@ -161,9 +157,9 @@ out();
 			
 			<?php							
 			if($result<-1800)
-				echo "<a onclick=location.href='./php/car_delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";
+				echo "<a href='./php/car_delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";
 			else
-				echo "<a onclick=location.href='#' class="."'btn btn-danger'"." > 취소불가</a>";
+				echo "<a href='#' class="."'btn btn-danger'"." > 취소불가</a>";
 			
 			$db->DBO();
 			$db2->DBO();

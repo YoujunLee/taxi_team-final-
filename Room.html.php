@@ -1,3 +1,5 @@
+<!-- 택시 방 내부 -->
+
 <?php
 include "./php/session_out.php";
 out();
@@ -12,21 +14,22 @@ out();
 	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="../css/index2.css">
 </head>
+
 <body class="center">
-	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
+	<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
-  		   <td class = "logo" >
-      	       <a  href="./조회창.html.php">
-      	       	  <img src="./img/logo.png">
-      	       </a>
-    	   </td>
-     	    <td class = "logout">
-      	   		<a href='./php/logout.php'>
+		   <td class = "logo" >
+      			<a onclick="location.href='./main.html.php'">
+      				<img src="./img/logo.png">
+      			</a>
+  		   </td>
+  		   <td class = "logout">
+      	   		<a  onclick="location.href='./php/logout.php'">
       	   			<img src="./img/power.png" width="30px" height="30px">
 	       		</a>
            </td>
       	   <td class = "logout1">
-      	   		<a href='./조회창.html.php'>
+      	   		<a onclick="location.href='./main.html.php'">
 		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>
@@ -129,7 +132,7 @@ out();
     			<tr class="row">
       				<th class="col-xs-2 col-md-2"><?php echo $i?></th>
       				<th class="col-xs-4 col-md-4"><?php echo $data['stu_id']?></th>
-      				<th class="col-xs-6 col-md-6"><?php echo $data['cellphone']?></th>
+      				<th class="col-xs-6 col-md-6"><a onclick="location.href="tel: <?php echo $data['cellphone']?>"><?php echo $data['cellphone']?></a></th>
     			</tr>
     			<?php $i=$i+1; ?>
 			    <?php
@@ -138,10 +141,8 @@ out();
 						echo "<script>history.back();</script>"; exit;}
 					
 				?>
-	
-   				</tbody>
-   
-   				<!-- 여기까지 바꾼코드 -->
+				</tbody>
+    		<!-- 여기까지 바꾼코드 -->
 			</table>
 		
 		<?php
@@ -154,16 +155,15 @@ out();
 			date_default_timezone_set("Asia/Seoul");
     		$current_time = date("Y-m-d H:i:s");
 			/*30분 구하는 코드*/
-			$result=strtotime($current_time)-strtotime($data[0]." ".$data[1]); ?>
-			
-			
-			
-			<?php						
+			$result=strtotime($current_time)-strtotime($data[0]." ".$data[1]); 
+		?>
+							
+		<?php						
 			if($result<-1800)
-				echo "<a href='./php/delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";		
+				echo "<a onclick=location.href='./php/delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";		
 			else
-				echo "<a href='#' class="."'btn btn-danger'"." > 취소불가</a>";
-			?>
+				echo "<a onclick=location.href='#' class="."'btn btn-danger'"." > 취소불가</a>";
+		?>
 			
 		<?php
 			$db->DBO();

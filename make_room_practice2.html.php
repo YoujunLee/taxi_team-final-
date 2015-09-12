@@ -42,12 +42,18 @@ out();
 	<div class="form-group col-xs-12  col-md-4 col-md-offset-4">
 	<table class="table">
 		<tbody>
+		<tr>
+		
+		<form action="./make_room2.html.php">
+			<input  type="submit" class="btn btn-lg btn-block" style="background-color:#ffde00; color: #ffffff;" value="목적지 직접입력">
+	    </form>
+		</tr>
 			<!-- 출발지 -->
 			<tr>
 			<form action="./php/post.php"  method="post">
 				<label for="start">
 				<td class="col-md-3">
-					출발지
+					출발지 
 				</td>
 				<td class="col-md-9">
 					<select id="start" size="1" name="room_start" class="form-control">
@@ -118,7 +124,8 @@ out();
 		<!-- 방만들기 버튼, 취소 버튼 -->
 	<div class = "div_yg">
 	<input type="submit" value="방만들기" class=" margin_right btn-info" style="background-color:#34c6be; color: #ffffff;">
-	<a onclick="location.href='./main.html.php'"><input type="button" value="취소" class="btn btn-danger"></a>
+	
+	<a onclick="./main.html.php"><input type="button" value="취소" class="btn btn-danger"></a>
 	</div>
 	<div class="div2">
 	<br>

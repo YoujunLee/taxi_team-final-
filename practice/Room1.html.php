@@ -1,5 +1,3 @@
-<!-- 카풀 방 내부 -->
-
 <?php
 include "./php/session_out.php";
 out();
@@ -11,26 +9,24 @@ out();
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 	<title>i-Taxi</title>
-	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css"> 
-	<link rel="stylesheet" type="text/css" href="../css/index2.css"> 
+	<link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="../css/index2.css">
 </head>
-
 <body class="center">
-	
-	<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
+	<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
-		   <td class = "logo" >
-      			<a onclick="location.href='./main.html.php'">
-      				<img src="./img/logo.png">
-      			</a>
-  		   </td>
-  		   <td class = "logout">
-      	   		<a  onclick="location.href='./php/logout.php'">
+  		   <td class = "logo" >
+      	       <a  href="./조회창.html.php">
+      	       	  <img src="./img/logo.png">
+      	       </a>
+    	   </td>
+     	    <td class = "logout">
+      	   		<a href='./php/logout.php'>
       	   			<img src="./img/power.png" width="30px" height="30px">
 	       		</a>
            </td>
       	   <td class = "logout1">
-      	   		<a onclick="location.href='./main.html.php'">
+      	   		<a href='./조회창.html.php'>
 		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>
@@ -47,14 +43,13 @@ out();
 
 		$db = new DBC;
 		$db->DBI();
-		$db->query = "SELECT date, time, start, arrive, car, price FROM car_post WHERE post_id='".$post_id."'";
+		$db->query = "SELECT date, time, start, arrive FROM post WHERE post_id='".$post_id."'";
 		$db->DBQ();
 		
 		$data=$db->result->fetch_row();
-		echo "<b>".$data[0]." ".$data[1]."<br>".$data[2]." → ".$data[3]."<br>차종: ".$data[4]." / 가격: ".$data[5]."원</b>";
+		echo $data[0]." ".$data[1]."<br>".$data[2]." → ".$data[3];
 		
 		$db->DBO();
-		
 	?>
 	</div>
 </section>
@@ -68,7 +63,7 @@ out();
 		
 		$db = new DBC;
 		$db->DBI();
-		$db->query = "SELECT * FROM car_comment WHERE post_id='".$post_id."'ORDER BY time desc";  //방 별로 다른 commet 출력. 
+		$db->query = "SELECT * FROM comment WHERE post_id='".$post_id."'ORDER BY time desc";  //방 별로 다른 commet 출력. 
 		$db->DBQ();
 		
 		$db2 = new DBC;
@@ -96,10 +91,10 @@ out();
   	<div >
    	<?php
  	 	$post_id2=getenv("QUERY_STRING");
-  		echo"<form action=./php/car_comment_db.php?$post_id2  method=post>";
+  		echo"<form action=./php/comment_db.php?$post_id2  method=post>";
   	?>
   	
-  		<input class="col-xs-9 col-md-3 col-md-offset-4" type="text" placeholder="댓글을 입력하시오(최대 100자)" name="댓글" id="content" autofocus>
+  		<input class="col-xs-9 col-md-3 col-md-offset-4" type="text" placeholder="댓글을 입력하시오(최대 100자)" name="댓글" autofocus id="content">
   		<input class="col-xs-3 col-md-1 btn4" type="submit" value="댓글달기">
   	</form>
   	</div>
@@ -123,7 +118,7 @@ out();
 					$check = true;
 					$db = new DBC;
 					$db->DBI();
-					$db->query = "SELECT * FROM car_user WHERE post_id='".$post_id."'";
+					$db->query = "SELECT * FROM room_user WHERE post_id='".$post_id."'";
 					$db->DBQ();
 					$i = 1;
   	
@@ -140,30 +135,32 @@ out();
 			    <?php
    					}
 	 				if($check){
-						echo "<script>history.back();</script>"; exit;}
+						echo "<script>location.replace('./make_room.html.php');</script>"; exit;}
 				?>
-				
+	
    				</tbody>
-   			</table>
+   
+   				<!-- 여기까지 바꾼코드 -->
+			</table>
+
 		<?php
 			$db2 = new DBC;
 			$db2->DBI();
-			$db2->query = "SELECT date, time FROM car_post WHERE post_id='".$post_id."'";
+			$db2->query = "SELECT date, time FROM post WHERE post_id='".$post_id."'";
 			$db2->DBQ();
 			$data=$db2->result->fetch_row();
 			
 			date_default_timezone_set("Asia/Seoul");
     		$current_time = date("Y-m-d H:i:s");
+			
 			/*30분 구하는 코드*/
 			$result=strtotime($current_time)-strtotime($data[0]." ".$data[1]);
-			
 			?>
-			
-			<?php							
+			<?php						
 			if($result<-1800)
-				echo "<a onclick=location.href='./php/car_delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";
+				echo "<a href='./php/delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";
 			else
-				echo "<a onclick=location.href='#' class="."'btn btn-danger'"." > 취소불가</a>";
+				echo "<a href='#' class="."'btn btn-danger'"." > 취소불가</a>";
 			
 			$db->DBO();
 			$db2->DBO();
@@ -173,6 +170,7 @@ out();
 			    <span>Tip: 출발시간 30분전에는 취소가 불가능합니다.</span>
 		</div>
 		</div>
+		
 	</section>
 </body>
 </html>

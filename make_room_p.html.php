@@ -32,7 +32,7 @@ out();
 	       		</a>
            </td>
       	   <td class = "logout1">
-      	   		<a onclick="location.href='./main.html.php'">
+      	   		<a onclick="history.back(-1)">
 		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>

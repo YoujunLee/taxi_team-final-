@@ -1,37 +1,15 @@
-<!-- 회원가입 창 -->
-
 <!DOCTYPE html>
+
 <html>
 	<head>
 		 <meta charset="utf-8">
 		 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
    		 <title>iTaxi</title>
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="../css/box.css">
-   		 <link rel="stylesheet" type="text/css" href="./css/mypage.css">
 	</head>
-	<body >
-		<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
-		<tr class="row">
-		   <td class = "logo" >
-      			<a onclick="location.href='./main.html.php'">
-      				<img src="./img/logo.png">
-      			</a>
-  		   </td>
-  		   <td class = "logout">
-      	   		<a  onclick="location.href='./php/logout.php'">
-      	   			<img src="./img/power.png" width="30px" height="30px">
-	       		</a>
-           </td>
-      	   <td class = "logout1">
-      	   		<a onclick="location.href='./main.html.php'">
-		     		<img src="./img/home.png" width="25px" height="25px">
-	       		</a>
-           </td>
-  		</tr>
-		</table>
-		<br><br><br>
+	<body class="col-xs-12 col-md-4 col-md-offset-4 " >
+		<br>
 		<div align="center">
 				<h2 style="color:#34C6BE">WELCOME!</h2>
 		</div>
@@ -51,7 +29,7 @@
 		    </div>
 		    </div>
 		    <p class="notice">
-		      	※ 사고에 대비하여 외부인 가입을 제한 중입니다.<br>본교 학생이  정보가 없다고 뜰 시, <span style="color:red">hguitaxi@gmail.com</span>로<br>문의주시면 바로 처리해드리겠습니다.<br>(대학원생분들도 위의 메일로 문의주시기 바랍니다.)  
+		      	※ 혹시 모를 사고에 대비하여,<br>외부인 가입을 제한 중 입니다.<br>본교 학생이 정보가 없다고 뜰 시, <span style="color:red">hguitaxi@gmail.com</span><br>e-mail 보내주시면 바로 조치해드리겠습니다.  
 		    </p>		
 		    <div class="form-group">
 		    	<label for="inputcellPhone" class="col-xs-4 col-md-3  control-label">핸드폰번호</label>

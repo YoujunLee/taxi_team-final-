@@ -1,28 +1,49 @@
-<!DOCTYPE html>
+<!-- 약관 페이지 -->
 
+<!DOCTYPE html>
 <html>
 	<head>
 		 <meta charset="utf-8">
 		 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
    		 <title>iTaxi</title>
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+   		 <link rel="stylesheet" type="text/css" href="./css/mypage.css">
    		 <link rel="stylesheet" type="text/css" href="../css/index2.css">
 	</head>
+
 	<body class="center">
+		<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
+		<tr class="row">
+		   <td class = "logo" >
+      			<a onclick="location.href='./main.html.php'">
+      				<img src="./img/logo.png">
+      			</a>
+  		   </td>
+  		   <td class = "logout">
+      	   		<a  onclick="location.href='./php/logout.php'">
+      	   			<img src="./img/power.png" width="30px" height="30px">
+	       		</a>
+           </td>
+      	   <td class = "logout1">
+      	   		<a onclick="location.href='./main.html.php'">
+		     		<img src="./img/home.png" width="25px" height="25px">
+	       		</a>
+           </td>
+  		</tr>
+		</table>
 	<br />
-	<!-- 네비게이션 바 -->
-	<div class="padding col-xs-12  col-md-4 col-md-offset-4 "> 
-		<a href="./index.php"><img src="./img/logo_big.png" class="image-size3 "></a>
-	</div>
+
+
 	<div class="col-xs-12  col-md-4 col-md-offset-4 "> 
-	&nbsp;
+		&nbsp;
 	</div>
+	
 	<!-- 이용 약관 -->
 	<section>
     	<div class="wrapper5 col-xs-12  col-md-4 col-md-offset-4 ">    		
 			<form action="./php/agree.php"  method="post">
-			<h3>iTaxi 이용약관</h3>
-		
+				<h3>iTaxi 이용약관</h3>
 			이용약관은 다음과 같은 내용을 담고 있습니다.<br>
 			<br>
 			제 1 장 총   칙<br>
@@ -180,7 +201,7 @@
 			<br>
 			2. 한동대학교 CRA iTaxi팀은 회원의 귀책사유로 인한 서비스 이용의 장애에 대하여 책임을 지지 않습니다.<br> 
 			<br>
-			3. 한동대학교 CRA iTaxi팀은 회원이 서비스를 통하여 얻은 자료로 인한 손해 및 서비스 이용 중 발생한 사고에 관하여 책임을 지지 않습니다. 단, 기숙적 문제로 인해 발생한 사고는 제외로 한다.<br>
+			3. 한동대학교 CRA iTaxi팀은 회원이 서비스를 통하여 얻은 자료로 인한 손해 및 서비스 이용 중 발생한 사고에 관하여 책임을 지지 않습니다. 단, 기술적 문제로 인해 발생한 사고는 제외로 한다.<br>
 			<br>
 			4. 한동대학교 CRA iTaxi팀은 회원이 서비스에 게재한 각종 정보나 자료, 사실의 신뢰도, 정확성 등 내용에 관하여는 책임을 지지 않습니다.<br>
 			<br>

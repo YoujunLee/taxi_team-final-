@@ -1,3 +1,5 @@
+<!-- 카풀 조회창 -->
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -21,7 +23,7 @@
 		   		if(result)
 		   			location.replace('../make_car.html.php');
 		   			else 
-		   		   location.replace('./조회창.html.php');
+		   		   location.replace('./main.html.php');
 		   	  </script>";
    		exit;
 	}
@@ -41,17 +43,17 @@
 	<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
 		<tr class="row">
 		   <td class = "logo" >
-      			<a  href="./조회창.html.php">
+      			<a onclick="location.href='./main.html.php'">
       				<img src="./img/logo.png">
       			</a>
   		   </td>
-      	    <td class = "logout">
-      	   		<a href='./php/logout.php'>
+  		   <td class = "logout">
+      	   		<a  onclick="location.href='./php/logout.php'">
       	   			<img src="./img/power.png" width="30px" height="30px">
 	       		</a>
            </td>
       	   <td class = "logout1">
-      	   		<a href='./조회창.html.php'>
+      	   		<a onclick="location.href='./main.html.php'">
 		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>
@@ -72,7 +74,7 @@
     			<tr class="row">
       			    <th class="col-xs-3 col-md-3">시간</th>
       				<th class="col-xs-4 col-md-4">장소 <span class="padding" style="font-size: 10px">(출발지→도착지)</span></th>
-      				 <th class="col-xs-3 col-md-3" style="text-align:center">가격</th>
+      				<th class="col-xs-3 col-md-3" style="text-align:center">가격</th>
       				<th class="col-xs-2 col-md-2" style="text-align:center">상태</th>
     			</tr>
   			</thead>
@@ -114,7 +116,7 @@
 										else if($current_time>$data[2]." ".$data[3])
 											{?>onclick="location.href='#'"<?php } 
 										else	
-											{?>onclick="location.href='./php/car_탑승하기질문.php?post_id=<?php echo $data[5]; ?>'"<?php }
+											{?>onclick="location.href='./php/car_get_in_question.php?post_id=<?php echo $data[5]; ?>'"<?php }
 									   }
 									  else if($check2==true)
 											{?>onclick="location.href='./car_Room.html.php?<?php echo $data[5]; ?>'"<?php } ?>>									
@@ -126,13 +128,13 @@
 							echo " <td class="."'col-xs-3 col-md-3'"." style="."'text-align:center'".">".$data[6]."원</td>";
     						
 							if($current_time>$data[2]." ".$data[3])
-								echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-success1'>시간<br>종료</a></th>";
+								echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a onclick=location.href='#' class='btn btn-success1'>시간<br>종료</a></th>";
 							else if($check2==true)
-    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-warning1'>참여중<br>".$num2."/".$data[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a onclick=location.href='#' class='btn btn-warning1'>참여중<br>".$num2."/".$data[4]."</a></th>";
 							else if($num2==$data[4])
-    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a onclick=location.href='#' class='btn btn-danger1'>FULL<br>".$num2."/".$data[4]."</a></th>";
 							else 
-    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a href='#' class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
+    							echo " <th class="."'col-xs-2 col-md-2'"." style="."'text-align:center'"."><a onclick=location.href='#' class='btn btn-info1'>탑승<br>".$num2."/".$data[4]."</a></th>";
 							?>					
         					</tr>
         				<?php
@@ -156,25 +158,25 @@
 		<?php
 			$number;
 			if($page>1)
-				echo "<li><a href='./search_car.html.php'>«</a></li>";
+				echo "<li><a onclick=location.href='./search_car.html.php'>«</a></li>";
 
 			if($page>1)
-  				echo "<li><a href='./search_car.html.php?page=".($page-1)."'><</a></li>";
+  				echo "<li><a onclick=location.href='./search_car.html.php?page=".($page-1)."'><</a></li>";
 	
 			for($number=floor((($page-1)/3))*3+1;$number<floor((($page-1)/3))*3+4;$number++){
 				if($number<=floor((($num-1)/10))+1){
 			   		if($number!=$page)
-						echo"<li><a href='./search_car.html.php?page=".($number)."'>".$number."</a></li>";
+						echo"<li><a onclick=location.href='./search_car.html.php?page=".($number)."'>".$number."</a></li>";
 					else
-						echo"<li class='active'><a href='./search_car.html.php?page=".($number)."'>".$number."</a></li>";
+						echo"<li class='active'><a onclick=location.href='./search_car.html.php?page=".($number)."'>".$number."</a></li>";
 				}
 			}
 	
 			if($page<floor((($num-1)/10))+1)
-  				echo "<li><a href='./search_car.html.php?page=".($page+1)."'>></a></li>";
+  				echo "<li><a onclick=location.href='./search_car.html.php?page=".($page+1)."'>></a></li>";
 	
 			if($page<floor((($num-1)/10)+1))
-  				echo "<li><a href='./search_car.html.php?page=".floor(((($num-1)/10)+1))."'>»</a></li>";
+  				echo "<li><a onclick=location.href='./search_car.html.php?page=".floor(((($num-1)/10)+1))."'>»</a></li>";
   		?>
  	</ul>
  	<div class="div2">

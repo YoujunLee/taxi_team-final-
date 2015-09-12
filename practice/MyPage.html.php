@@ -1,5 +1,3 @@
-<!-- mypage 창 -->
-
 <?php
 include "./php/session_out.php";
 out();
@@ -13,8 +11,7 @@ out();
    		 <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
    		 <link rel="stylesheet" type="text/css" href="./css/mypage.css">
    	     <script type="text/javascript">
-	   		function popupOpen()
-	   		{
+	   		function popupOpen(){
 				var popUrl = "test.html";	//팝업창에 출력될 페이지 URL
 				var popOption = "width=370, height=360, resizable=no, scrollbars=no, status=no;";    //팝업창 옵션(optoin)
 					window.open(popUrl,"",popOption);
@@ -24,24 +21,22 @@ out();
 	
 	<body>
 		
-		<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
-		<tr class="row">
-		   <td class = "logo" >
-      			<a onclick="location.href='./main.html.php'">
-      				<img src="./img/logo.png">
-      			</a>
-  		   </td>
-  		   <td class = "logout">
-      	   		<a  onclick="location.href='./php/logout.php'">
+		<table class=" navi col-xs-12  col-md-4 col-md-offset-4" >	
+			<tr class="row">
+  			   <td class = "logo" >
+      				<a  href="./조회창.html.php"><img src="./img/logo.png"></a>
+  			   </td >
+				<td class = "logout">
+      	   		<a href='./php/logout.php'>
       	   			<img src="./img/power.png" width="30px" height="30px">
 	       		</a>
            </td>
       	   <td class = "logout1">
-      	   		<a onclick="location.href='./main.html.php'">
+      	   		<a href='./조회창.html.php'>
 		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>
-  		</tr>
+      		</tr>
 		</table>
 		
 		<br><br><br><br><br><br>
@@ -59,7 +54,7 @@ out();
 		      ?>
 			
 			   <div class="modify">
-			   <a onclick="./update_mypage.html.php" class="btn btn-link">개인정보 수정</a>
+			   <a href="./update_mypage.html.php" class="btn btn-link">개인정보 수정</a>
 			   </div>
 			  </div>
 			</div>
@@ -68,7 +63,7 @@ out();
 			<!-- Table -->
 			  <table class="table table-hover tableheight" style="text-align: center">
 			  <div>
-  			   	<tr onclick="location.href='./announce.html.php'"><td>공지사항</td></tr>
+  			   	<tr onclick="location.href='./공지사항.html.php'"><td>공지사항</td></tr>
 			   	<tr onclick="location.href='./QnA.html.php'"><td>1:1 문의</td></tr>
 			   	<tr onclick="location.href='./withdrawal.html.php'"><td>회원탈퇴</td></tr>
 			  </div>

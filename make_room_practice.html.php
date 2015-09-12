@@ -44,12 +44,59 @@ out();
 		<tbody>
 			<!-- 출발지 -->
 			<tr>
-			<form action="./php/post.php"  method="post">
+			<form action="./php/post_practice.php"  method="post">
 				<label for="start">
 				<td class="col-md-3">
-					출발지
+					출발지(직접입력<input type="checkbox" name="agree" id="agree" value="agree" >)
 				</td>
-				<td class="col-md-9">
+				<td class="col-md-9" id="inHere">
+				
+				<script>
+		      var check = document.getElementById('agree');
+		      var str = "";
+		       str +="<form action='./php/post_practice.php'  method='post'  onsubmit='alert(this.room_start.value)' >"
+		       str += "<select id='start' size='1' name= 'room_start' class='form-control'>";
+		       str += "<option value='한동대학교 택시 승강장' selected>한동대 택시승강장</option>";
+		       str += "<option value='양덕 하나로마트'>양덕 하나로마트</option>";
+			   str += "<option value='E1'>E1 주유소</option>";
+			   str += "<option value='장흥초'>장흥초</option>";
+			   str += "<option value='북부해수욕장'>북부해수욕장</option>";
+			   str += "<option value='고속버스터미널'>고속터미널</option>";
+			   str += "<option value='시외버스터미널'>시외버스터미널</option>";
+			   str += "<option value='육거리'>육거리</option>";
+			   str += "<option value='포항역(KTX)'>포항역</option>";
+		       str += "</select>";
+		      document.getElementById("inHere").innerHTML = str;
+		       check.onclick = function(event){
+
+               event = event || window.event;
+              str = "";
+              
+		      if(check.checked){
+		     str +="<form action='./php/post_practice.php'  method='post'  onsubmit='alert(this.room_start.value)' >"
+		       str += "<input type='text' class='form-control' id='start' size='1' name='room_start' placeholder='직접입력' maxlength='20' required>";
+		      document.getElementById("inHere").innerHTML = str;
+		      
+		      }
+		      
+		      else{
+		      str +="<form action='./php/post_practice.php'  method='post'  onsubmit='alert(this.room_start.value)' >"
+		       str += "<select id='start' size='1' name='room_start' class='form-control'>";
+		       str += "<option value='한동대학교 택시 승강장' selected>한동대 택시승강장</option>";
+		       str += "<option value='양덕 하나로마트'>양덕 하나로마트</option>";
+			   str += "<option value='E1'>E1 주유소</option>";
+			   str += "<option value='장흥초'>장흥초</option>";
+			   str += "<option value='북부해수욕장'>북부해수욕장</option>";
+			   str += "<option value='고속버스터미널'>고속터미널</option>";
+			   str += "<option value='시외버스터미널'>시외버스터미널</option>";
+			   str += "<option value='육거리'>육거리</option>";
+			   str += "<option value='포항역(KTX)'>포항역</option>";
+		       str += "</select>";
+		      document.getElementById("inHere").innerHTML = str;
+		      }
+		      }
+		      </script>
+				<!--<td class="col-md-9">
 					<select id="start" size="1" name="room_start" class="form-control">
 					<option value="한동대학교 택시 승강장" selected>한동대 택시승강장</option>
 					<option value="양덕 하나로마트">양덕 하나로마트</option>
@@ -63,8 +110,11 @@ out();
 					</select>
 				</td>
 				</label>
-			</tr>
+			</tr>-->
 			<!-- 도착지 -->
+			</td>
+				</label>
+				</tr>
 			<tr>
 				<label for="arrive">
 				<td class="col-md-3">도착지</td>
@@ -118,7 +168,7 @@ out();
 		<!-- 방만들기 버튼, 취소 버튼 -->
 	<div class = "div_yg">
 	<input type="submit" value="방만들기" class=" margin_right btn-info" style="background-color:#34c6be; color: #ffffff;">
-	<a onclick="location.href='./main.html.php'"><input type="button" value="취소" class="btn btn-danger"></a>
+	<a onclick=="./main.html.php"><input type="button" value="취소" class="btn btn-danger"></a>
 	</div>
 	<div class="div2">
 	<br>

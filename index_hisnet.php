@@ -1,10 +1,4 @@
-<!--Login page -->
-
-<?php
-session_start();
-if(isset($_SESSION['user_id']) && isset($_SESSION['user_pw']))
-echo "<script>location.replace('./main.html.php');</script>";
-?>
+<!-- Login page -->
 
 <!DOCTYPE html>
 <html>
@@ -25,38 +19,38 @@ echo "<script>location.replace('./main.html.php');</script>";
 	
 	<body>
 		<div class= "col-xs-12  col-md-4 col-md-offset-4">
-			<div class="wrapper">
-				<img src="./img/logo_big.png"  width = "100%" >
-			</div>
 		
-  			<!-- Id 입력창 -->
-	  		<form action='./php/login.php'  method='post'>
-				<div class="div1">
-				    <input type="tel" class="form-control" autofocus placeholder="Student ID" name="logid" required>
-				</div>
-				<br>
-			
+		<div class="wrapper">
+			<img src="./img/logo_big.png"  width = "100%" >
+		</div>
+		
+  		<!-- Id 입력창 -->
+	  	<form action='./php/login.php'  method='post'>
+			<div class="div1">
+			    <input type="text" class="form-control" autofocus placeholder="Hisnet ID" name="logid" required>
+			</div>
+			<br>
 			<!-- Pw 입력창 -->
-				<div class="div1">
-		    		<input type="password" class="form-control" placeholder="Password"  name="logpass" required>
-				</div>
-				<br><br><br>
+			<div class="div1">
+		    	<input type="password" class="form-control" placeholder="Hisnet Password"  name="logpass" required>
+			</div>
+					
+			<br><br><br>
 	            <input class="btn btn-lg btn-block" type="submit" style="background-color:#34c6be; color: #ffffff;" value="GO">
-			</form>
-			<br>			
+		</form>
+		<br>			
 
 		<!-- 회원가입 버튼 -->
-			<form action='./info.html.php'>
-				<input class="btn btn-lg btn-block" type="submit" style="background-color:#ffde00; color: #ffffff;" value="회원가입">
-	    	</form>
-	
-	    	<form class="right_go" action='./password.html.php'>
-				<input class = "btn1" type="submit" value="비밀번호 찾기">
-			</form>
 		
-			<div class="div2">
-			   <span>본 서비스는 모바일 환경에 최적화 되어 있습니다.</span>
-			</div>
+	    <form class="right_go" action='./info_hisnet.html.php'>
+			<input class = "btn5" type="submit" value="약관 확인">
+		</form>
+		<div class="div2">
+			   
+			   <span>본 서비스는 모바일 환경에 최적화 되어있습니다.</span>
 		</div>
+	
+		</div>
+		
 	</body>
 </html>
