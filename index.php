@@ -17,8 +17,8 @@ echo "<script>location.replace('./main.html.php');</script>";
    		 <meta name="apple-mobile-web-app-capable" content="yes" />
    		 <link rel="apple-touch-icon-precomposed" href="./img/logo_big.png" />
    		 <link rel="apple-touch-icon" href="./img/logo_big.png" />
-   		 <script type="text/javascript" src="./js/fastclick.js"></script>
-   		  <script type="text/javascript" src="./js/index.js"></script>
+   		 <script type="text/javascript" src="./js/bookmark_bubble.js"></script>
+   		 <script type="text/javascript" src="./js/page.js"></script>
 		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		 <script src="./js/set.js"></script> 
 	</head>
@@ -55,7 +55,8 @@ echo "<script>location.replace('./main.html.php');</script>";
 			</form>
 		
 			<div class="div2">
-			   <span>본 서비스는 모바일 환경에 최적화 되어 있습니다.</span>
+			   <span>본 서비스는 모바일 환경에 최적화 되어 있습니다.</span> <br>
+			   <span>로그인 오류시 injxyj@gmail.com으로 메일주세요</span>
 			</div>
 		</div>
 	</body>
