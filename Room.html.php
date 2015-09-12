@@ -23,14 +23,14 @@ out();
       				<img src="./img/logo.png">
       			</a>
   		   </td>
+  		   <td class = "logout1">
+      	   		<a onclick="history.back(-1)">
+		     		<img src="./img/back.png" width="25px" height="25px">
+	       		</a>
+           </td>
   		   <td class = "logout">
       	   		<a  onclick="location.href='./php/logout.php'">
       	   			<img src="./img/power.png" width="30px" height="30px">
-	       		</a>
-           </td>
-      	   <td class = "logout1">
-      	   		<a onclick="location.href='./main.html.php'">
-		     		<img src="./img/home.png" width="25px" height="25px">
 	       		</a>
            </td>
   		</tr>
