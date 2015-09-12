@@ -1,6 +1,8 @@
 <?php
 function out(){
 session_start();
+
+
 if(!isset($_SESSION['user_id']) || !isset($_SESSION['user_pw'])) {
  session_unset('user_id');
  session_unset('user_pw');

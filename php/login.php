@@ -45,7 +45,8 @@ else {
 $db->DBO();
 if($num==1)
 {
-	 session_start();
+   session_start();
+
    $_SESSION['user_id'] = $studentid;
    $_SESSION['user_pw'] = $data[3];
    $_SESSION['name'] = $data[1]; 
