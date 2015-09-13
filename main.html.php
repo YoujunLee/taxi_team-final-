@@ -2,6 +2,11 @@
 include "./php/session_out.php";
 out();
 ?>
+<?php
+// Extend cookie life time by an amount of your liking
+$cookieLifetime = 365 * 24 * 60 * 60; // A year in seconds
+setcookie(session_name(),session_id(),time()+$cookieLifetime);
+?>
 <!DOCTYPE html>
 <html>
 <head>
