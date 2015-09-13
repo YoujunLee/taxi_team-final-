@@ -61,19 +61,19 @@
 	</table>
 	
 	<section >
-		<div class="title col-xs-12  col-md-4 col-md-offset-4">
+		<div class="title col-xs-12 col-md-4 col-md-offset-4">
 	    	<h4><b>전체조회</b></h4>
    		</div>
 	</section>
 
 	<section>
-		<div class="padding col-xs-12  col-md-4 col-md-offset-4">
+		<div class="padding col-xs-12 col-md-4 col-md-offset-4">
 			<table class="table3 table-striped table-hover ">
   
   			<thead>
     			<tr class="row">
       			    <th class="col-xs-3 col-md-3">시간</th>
-      				<th class="col-xs-7 col-md-7 ">장소 <span class="padding" style="font-size: 10px">(출발지→도착지)</span></th>
+      				<th class="col-xs-7 col-md-7">장소 <span class="padding" style="font-size: 10px">(출발지→도착지)</span></th>
       				<th class="col-xs-2 col-md-2" style="text-align:center">상태</th>
     			</tr>
   			</thead>
