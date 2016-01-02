@@ -1,0 +1,120 @@
+/**{
+	border: 1px solid blue;
+}*/
+.myposition
+{
+	
+	bottom: 1px;
+}
+
+.image
+{
+	height:80px;
+	width:80px;
+	max-height: 100%
+}
+
+tr
+tr.tableheight
+{
+	max-height: 100%;
+}
+
+tr.tr2
+{
+	height:70px;
+	background: #bebebe;
+}
+tr.tr1
+{
+	height:70px;
+}
+
+.btn-center
+{
+	vertical-align : middle;
+}
+tr.trcenter
+{
+	text-align: middle;
+}
+.tablewidth
+{
+	height: 50px
+}
+
+.center
+{
+	text-align: center;
+	background-align: center;
+	/*margin:auto;*/
+	/*width: 40%;*/
+}
+.center1
+{
+	text-align: center;
+	background-align: center;
+	margin:auto;
+}
+tr.mypage_hover
+{
+	background-color: transparent;
+}
+.padding{
+	padding-right : 0px !important;
+	padding-left : 0px !important;
+	margin-bottom : 0px !important;
+}
+ul.right{
+	float : right;
+	padding-right : 3%;
+	
+}
+
+
+.navi{
+    padding-left: 2%;
+    padding-right: 2%;
+    height : 55px;
+   background-color: black;
+}
+.btn1{
+  border: 0px none;
+ color : white;
+  background-color: transparent;
+ 
+}
+.btn2{
+  font-size : 25px;
+  border: 0px none;
+ color : black;
+  background-color: transparent;
+ 
+}
+.btn3{
+  
+  border: 0px none;
+ color : black;
+  background-color: transparent;
+ 
+}
+.image-size1{
+  width: 40%;
+  
+  
+}.image-size2{
+  width: 30%;
+  
+}
+
+.div_yg{
+text-align: center;
+}
+
+.title{
+	color: white;
+	padding-left: 0%;
+    padding-right: 0%;
+    text-align: center;
+    
+}

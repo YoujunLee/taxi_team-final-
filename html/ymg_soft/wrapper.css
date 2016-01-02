@@ -1,0 +1,221 @@
+html, body {
+	background: rgb(253, 253, 253);
+}
+
+body {
+	min-width: 960px;
+	background: rgb(253, 253, 253);
+}
+
+.main-content-wrapper {
+	background-color: #E4F7BA;
+	margin: 60px 0px 40px 0px;
+	width: 380px;
+	border: 1px solid #e8e8e8;
+	border-radius: 5px;
+}
+
+.main-content-header p {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.main-header-logo {
+	width: 80px;
+	margin: 25px 0px 0px 0px;
+}
+
+.login-content {
+	padding: 6px 0px 0px 0px;
+}
+
+.main-content {
+	width: 310px;
+}
+
+.main-content-footer {
+	width: 378px;
+	padding: 0px 0px 20px 0px;
+	margin: 20px 0px 0px 0px;
+	border: 1px solid #e8e8e8;
+	font-size: 14px;
+	background-color: #E0E0E0;
+	border-radius: 5px;
+}
+
+.main-content-footer a {
+	color: #03A079;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.main-content-footer p {
+	margin-bottom: 5px;
+}
+
+.btn-link {
+	width: 299px;
+	height: 42px;
+	margin: 10px 0px 0px 0px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+.btn-link a {
+	padding: 9px;
+	display: block;
+}
+
+.bt-fb {
+	background-color: #3b5998;
+}
+
+.bt-fb a, .bt-tw a {
+	color: #ffffff;
+	font-size: 16px;
+}
+
+.bt-kt {
+	background-color: #fedc00;
+}
+
+.bt-kt a {
+	color: #623c3b;
+	font-size: 16px;
+}
+
+.bt-tw {
+	background-color: #55acee;
+}
+
+.bt-join {
+	background-color: #EDD200;
+	cursor: pointer;
+	margin: 20px 0px 0px 0px;
+}
+
+.bt-join a {
+	color: #ffffff;
+	font-size: 16px;
+}
+
+.input-field {
+	width: 299px;
+	box-sizing: border-box;
+	line-height: 40px;
+	border-radius: 4px;
+	height: 42px;
+	padding: 0 5px;
+	font-size: 16px;
+	font-weight: normal;
+	margin: 10px 0px 0px 0px;
+	border: 1px solid #ccc;
+}
+
+.login-keep {
+	margin: 15px 0px 15px 10px;
+	font-size: 14px;
+}
+
+.login-keep a {
+	cursor: pointer;
+}
+
+.login-keep ul li {
+	margin: 3px 0px 0px 0px;
+}
+
+.error {
+	color: red;
+}
+
+.error-chk {
+	display: none;
+	color: red;
+}
+
+#sns-join-form {
+	display: none;
+}
+
+.area-join-txt {
+	display: none;
+}
+
+.link-terms a {
+	text-decoration: underline;
+}
+
+.login-content {
+	padding: 6px 0px 15px 0px;
+}
+
+.bt-fb {
+	background-color: #3b5998;
+}
+
+.bt-fb a, .bt-tw a {
+	color: #ffffff;
+	font-size: 16px;
+	line-height:24px;
+}
+
+.bt-kt {
+	background-color: #fedc00;
+}
+
+.bt-kt a {
+	color: #623c3b;
+	font-size: 16px;
+	line-height:24px;
+}
+
+.bt-tw {
+	background-color: #55acee;
+}
+
+.bt-login {
+	background-color: #EDD200;
+	cursor: pointer;
+	margin: 20px 0px 0px 0px;
+}
+
+.bt-login a {
+	color: #ffffff;
+	font-size: 16px;
+	line-height:24px;
+}
+
+.input-field {
+	width: 299px;
+	box-sizing: border-box;
+	line-height: 40px;
+	border-radius: 4px;
+	height: 42px;
+	padding: 0 5px;
+	font-size: 16px;
+	font-weight: normal;
+	margin: 10px 0px 0px 0px;
+	border: 1px solid #ccc;
+}
+
+.login-keep {
+	margin: 12px 0px 20px 5px;
+	font-size: 14px;
+}
+
+.login-keep a {
+	cursor: pointer;
+}
+
+.lb-login-keep {
+	margin: 0px 100px 0px 0px;
+}
+
+.error {
+	color: red;
+}
+
+#btn-find-pw {
+	text-decoration: underline;
+}

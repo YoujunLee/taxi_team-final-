@@ -1,0 +1,83 @@
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.eat {
+  background : #cbd9e2;
+}
+.drink {
+  background: #f0e463;
+}
+.play {
+  background : #c3d2a7;
+}
+.relax {
+  background: #7d9bb7;
+}
+ul {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+ul li {
+  float: left;
+  width: 50%;
+  height: 250px;
+  overflow: hidden;
+  
+}
+ul li a {
+  position: relative;
+  display: block;
+  height: 110% ;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 110% ;
+  -webkit-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+          border : 1;
+}
+ul li a:hover {
+  text-shadow: 0 0 8px rgba(0,0,0,0.3);
+  background-size: 150%  ;
+  z-index: 999;
+}
+ul li a:hover:before {
+  background: #FFFFFF;
+}
+ul li a:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 90%;
+  left: 0;
+  
+  -webkit-transition: all 0.5s ease-in-out;
+          transitio	n: all 0.5s ease-in-out;
+}
+ul li a span {
+  text-transform: uppercase;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10;
+}
+ul li a span h1 {
+  font-size: 2em;
+  font-weight: 50%;
+  width : 150px;
+}
+ul li a span p {
+  font-weight: 300;
+}
+
+.padding{
+	padding-right : 0px ;
+	padding-left : 0px ;
+	padding-top: 0px ;
+}
