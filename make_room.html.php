@@ -42,7 +42,15 @@ out();
 	<div class="form-group col-xs-12  col-md-4 col-md-offset-4">
 	<table class="table">
 		<tbody>
-			<!-- 출발지 -->
+			<tr>
+				　&nbsp;
+			</tr>
+			<tr>
+			<form action="./make_room2.html.php">
+				<input  type="submit" class="btn btn-lg btn-block" style="background-color:#afeeee; color: #ffffff;" value="목적지 직접입력 (click!)">
+	    	</form>
+			</tr>
+				<!-- 출발지 -->
 			<tr>
 			<form action="./php/post.php"  method="post">
 				<label for="start">
@@ -59,7 +67,7 @@ out();
 					<option value="고속버스터미널">고속터미널</option>
 					<option value="시외버스터미널">시외버스터미널</option>
 					<option value="육거리">육거리</option>
-					<option value="포항역(KTX)">포항역</option>
+					<option value="포항역(KTX)">포항역(EYDIA 앞)</option>
 					</select>
 				</td>
 				</label>

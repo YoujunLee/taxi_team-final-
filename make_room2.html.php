@@ -41,13 +41,15 @@ out();
 	<div class="form-group col-xs-12  col-md-4 col-md-offset-4">
 	<table class="table">
 		<tbody>
+			<tr>
+				　&nbsp;
+			</tr>
 		
-		<tr>
-		
-		<form action="./make_room_practice2.html.php">
-			<input  type="submit" class="btn btn-lg btn-block" style="background-color:#ffde00; color: #ffffff;" value="목적지 선택입력">
-	    </form>
-		</tr>
+			<tr>
+					<form action="./make_room.html.php">
+				<input  type="submit" class="btn btn-lg btn-block" style="background-color:#ffde00; color: #ffffff;" value="목적지 선택입력 (click!)">
+	    	</form>
+			</tr>
 		
 			<!-- 출발지 -->
 			<tr>
