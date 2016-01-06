@@ -15,7 +15,6 @@ setcookie(session_name(),session_id(),time()+$cookieLifetime);
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">  
-	<link rel="stylesheet" type="text/css" href="./css/search.css">
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
 	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
 </head>
@@ -44,9 +43,10 @@ setcookie(session_name(),session_id(),time()+$cookieLifetime);
 			
 	<!-- 방만들기, 방조회  -->
 	<table class="col-xs-12  col-md-4 col-md-offset-4 ">
+		<tbody >
 		<tr class="tr1" onclick="location.href='./make_room.html.php'">
 			<td>
-			<form action='./make_room.html.php'>
+			<form class="div_yg" action='./make_room.html.php'>
 				<a onclick="location.href='./make_room.html.php'" class="noul">
 					<img src="./img/taxi.png" class="img">
 					&nbsp;&nbsp;&nbsp;
@@ -58,7 +58,7 @@ setcookie(session_name(),session_id(),time()+$cookieLifetime);
 		
 		<tr class = "tr2" onclick="location.href='./search_result_all.html.php'">
 			<td>
-			<form action='./search_result_all.html.php'>
+			<form class="div_yg" action='./search_result_all.html.php'>
 				<a onclick="location.href='./search_result_all.html.php'" class="noul">
 					<img src="./img/car_s.png" class="img">
 					&nbsp;&nbsp;&nbsp;
@@ -71,7 +71,7 @@ setcookie(session_name(),session_id(),time()+$cookieLifetime);
 			
 		<tr class="tr1" onclick="location.href='./make_car.html.php'">
 			<td>
-			<form action='./make_car.html.php'>
+			<form class="div_yg" action='./make_car.html.php'>
 		     	<a onclick="location.href='./make_car.html.php'" class="noul">
 					<img src="./img/car.png" class="img">
 					&nbsp;&nbsp;&nbsp;
@@ -83,7 +83,7 @@ setcookie(session_name(),session_id(),time()+$cookieLifetime);
 		
 		<tr class="tr2" onclick="location.href='./search_car.html.php'">
 			<td>
-			<form action='./search_car.html.php'>
+			<form class="div_yg" action='./search_car.html.php'>
 		     	<a onclick="location.href='./search_car.html.php'" class="noul">
 					<img src="./img/car_s.png" class="img">
 					&nbsp;&nbsp;&nbsp;
@@ -95,7 +95,7 @@ setcookie(session_name(),session_id(),time()+$cookieLifetime);
 		
 		<tr class = "tr1" onclick="location.href='./history.html.php'">
 			<td>
-			<form action='./history.html.php'>
+			<form class="div_yg" action='./history.html.php'>
 				<a onclick="location.href='./history.html.php'" class="noul">
 					<img src="./img/list.png" class="img2">
 					&nbsp;&nbsp;&nbsp;
@@ -104,6 +104,7 @@ setcookie(session_name(),session_id(),time()+$cookieLifetime);
 	       </form>
 		   </td>
 		</tr>
+		</tbody>
 	</table>
 	
 	<!-- blank -->
