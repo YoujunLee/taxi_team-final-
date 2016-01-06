@@ -39,6 +39,7 @@ out();
 <section>
 	<div class="wrapper col-xs-12  col-md-4 col-md-offset-4">
 	
+	<!--화면에 방정보 (날짜, 시간, 도착, 출발)등을 표시합니다. -->
 	<?php 
   	    $post_id=getenv("QUERY_STRING"); // Get값으로 넘어온 값들을 구합니다.
 		
@@ -49,8 +50,16 @@ out();
 		$db->query = "SELECT date, time, start, arrive FROM post WHERE post_id='".$post_id."'";
 		$db->DBQ();
 		
+		$room_name = array('피카츄', '라이츄', '파이리', '꼬부기', '버터플', '야도란', '피죤투', '또가스', '마자용', '잠만보', '리자몽', '거북왕', '메타몽', '리자드'
+		                   ,'구구', '알통몬', '갸라도스', '뮤', '이브이', '미뇽'); //20개
+		
 		$data=$db->result->fetch_row();
-		echo "<b>".$data[0]." ".$data[1]."<br>".$data[2]." → ".$data[3]."</b>";
+		srand($data[1]+$post_id);
+		$count_room=rand(1,20);
+		
+		echo "<b><span style=font-size:23px>[&nbsp".$room_name[$count_room]."&nbsp]</span><br>".$data[0]." ".$data[1]."<br>".$data[2]." → ".$data[3]."</b>";
+		
+		
 		
 		$db->DBO();
 	?>
@@ -171,7 +180,8 @@ out();
 		?>
 		<div class="div2">
 			
-			    <span>Tip: 출발시간 30분전에는 취소가 불가능합니다.</span>
+			    <span>Tip: 출발시간 30분전에는 취소가 불가능합니다.</span><br>
+			    <span>방이름이 상단에 있습니다. 사람이 많을 때 쉽게 같은 방을 찾으세요~</span>
 		</div>
 		</div>
 		
