@@ -55,7 +55,7 @@ out();
 		
 		$data=$db->result->fetch_row();
 		srand($data[1]+$post_id);
-		$count_room=rand(1,20);
+		$count_room=rand(0,19);
 		
 		echo "<b><span style=font-size:23px>[&nbsp".$room_name[$count_room]."&nbsp]</span><br>".$data[0]." ".$data[1]."<br>".$data[2]." → ".$data[3]."</b>";
 		
