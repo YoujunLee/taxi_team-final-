@@ -59,7 +59,7 @@ out();
 		      ?>
 			
 			   <div class="modify">
-			   <a onclick="./update_mypage.html.php" class="btn btn-link">개인정보 수정</a>
+			   <a onclick="location.href='./update_mypage.html.php'" class="btn btn-link">개인정보 수정</a>
 			   </div>
 			  </div>
 			</div>

@@ -88,7 +88,7 @@ if(!$db->result)
 	
 } else
 {
-	echo "<script>alert('개인정보가 수정 되었습니다. 조회창으로 이동합니다.');location.replace('../index.php');</script>";
+	echo "<script>alert('개인정보가 수정 되었습니다. 다시 로그인하면 변경된 사항이 적용됩니다.');location.replace('../index.php');</script>";
 	$db->DBO();
 	exit;
 }

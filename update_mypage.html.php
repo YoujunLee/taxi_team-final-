@@ -34,7 +34,7 @@
 		<br/><br><br><br><br>
 		<div class=" col-xs-12  col-md-4 col-md-offset-4">
 		<!-- <div class="div_root"> -->
-		<form  action='./php/registo_change.php' method='POST'  class="form-horizontal">
+		<form action='./php/registo_change.php' method='POST'  class="form-horizontal">
 
 		    <div class="form-group">
 		      <label for="inputName" class="control-label col-xs-4 col-md-3 ">이름</label>
@@ -165,8 +165,8 @@
 		     <br/><br/>
 		    
 		     <div>
-                <input class="btn btn-lg btn-block" type="submit" style="background-color:#34C6BE; color: #ffffff;" value="변경">
-			    <a onclick="location.href='./MyPage.html.php'" class="btn btn-lg btn-block" style="background-color:red; color: #ffffff; opacity:0.8;" value="취소">취소</a>
+                <input class="btn btn-lg btn-block" type="submit" style="background-color:#34C6BE; color: #ffffff;" value="변경 (다시 로그인해야 적용)">
+	
 			</div>
 			</form>
 	</div>
