@@ -24,7 +24,6 @@ echo "<script>location.replace('./main.html.php');</script>";
 	</head>
 	
 	<body>
-		
 		<div class= "col-xs-12  col-md-4 col-md-offset-4">
 			<div class="wrapper">
 				<img src="./img/logo_big.png"  width = "100%" >
