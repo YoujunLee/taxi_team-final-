@@ -62,14 +62,28 @@ if($pass==null||$pass=='')
 	exit;
 }
 
+/*학번 확인 꼼수 (8자리 점검 및 학번이 '2'로 시작하는지 점검)*/
+if(strlen($student_no)!=8)
+{
+	echo "<script>alert('존재하지 않는 학번입니다.');history.back();</script>";
+	exit;
+}
+
+if($student_no[0]!="2")
+{
+		echo "<script>alert('존재하지 않는 학번입니다.');history.back();</script>";
+		exit;
+}
+
 /*학생 여부*/
+/*
 if($data[0]==null||$data[1]==null)
 {
 	echo "<script>alert('이름과 학번이 일치하는 학생 정보가 존재하지 않습니다.');history.back();</script>";
 	$db2->DBO();
 	exit;
 }
-
+*/
 /*이름 입력 여 부*/
 if($name==null||$name=='')
 {
