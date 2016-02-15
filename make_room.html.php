@@ -47,7 +47,7 @@ out();
 			</tr>
 			<tr>
 			<form action="./make_room2.html.php">
-				<input  type="submit" class="btn btn-lg btn-block" style="background-color:#afeeee; color: #ffffff;" value="목적지 직접입력 (click!)">
+				<input  type="submit" class="btn btn-lg btn-block" style="background-color:#afeabe; color: #ffffff;" value="목록에 목적지가 없을시 (click!)">
 	    	</form>
 			</tr>
 				<!-- 출발지 -->
