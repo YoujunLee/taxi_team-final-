@@ -14,6 +14,8 @@ out();
 	<meta name="viewport" content="width=device-width, user-scalable=0, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">  
 	<link rel="stylesheet" type="text/css" href="./css/make_room.css"> 
+	<script src="./js/checkbox.js"></script>
+	<script src="./js/jquery.min.js"></script>
 	<title>i-Taxi</title>
 </head>
 
@@ -40,25 +42,23 @@ out();
 	</table>
 	<!-- 출발지, 도착지, 날짜, 시간, 최대탑승인원 -->	
 	<div class="form-group col-xs-12  col-md-4 col-md-offset-4">
+	
 	<table class="table">
 		<tbody>
 			<tr>
 				　&nbsp;
 			</tr>
-			<tr>
-			<form action="./make_room2.html.php">
-				<input  type="submit" class="btn btn-lg btn-block" style="background-color:#afeabe; color: #ffffff;" value="목록에 목적지가 없을시 (click!)">
-	    	</form>
-			</tr>
+			
 				<!-- 출발지 -->
 			<tr>
 			<form action="./php/post.php"  method="post">
 				<label for="start">
 				<td class="col-md-3">
-					출발지
+					<b>출발지</b>&nbsp;&nbsp;&nbsp;
+					<sub><input type="checkbox" onclick="movepage('http://itaxi.handong.edu/make_room2.html.php');">직접입력</sub>
 				</td>
 				<td class="col-md-9">
-					<select id="start" size="1" name="room_start" class="form-control">
+					<select id="starter" size="1" name="room_start" class="form-control">
 					<option value="한동대학교 택시 승강장" selected>한동대 택시승강장</option>
 					<option value="양덕 하나로마트">양덕 하나로마트</option>
 					<option value="E1">E1 주유소</option>
@@ -75,7 +75,10 @@ out();
 			<!-- 도착지 -->
 			<tr>
 				<label for="arrive">
-				<td class="col-md-3">도착지</td>
+				<td class="col-md-3">
+					<b>도착지</b>&nbsp;&nbsp;&nbsp;
+					<sub><input type="checkbox" onclick="movepage('http://itaxi.handong.edu/make_room2.html.php');">직접입력</sub>
+				</td>
 				<td class="col-md-9">
 					<select id="arrive" size="1" name="room_arrive" class="form-control">
 					<option value="한동대학교 택시 승강장">한동대 택시승강장</option>
@@ -95,7 +98,7 @@ out();
 			<tr>
 				<label for="make_date">
 				<td class="col-md-3">
-					날짜
+					<b>날짜</b>
 				</td>
 				<td class="col-md-9"><input type="date" id="make_date" name="room_date" class="form-control" placeholder="YYYYMMDD"></td>
 				</label>
@@ -104,7 +107,7 @@ out();
 			<tr>
 				<label for="make_time">
 				<td class="col-md-3">
-					시간
+					<b>시간</b>
 				</td>
 				<td class="col-md-9">
 					<input type="time" id="make_time" name="room_time" class="form-control" value="09:00">
@@ -114,7 +117,7 @@ out();
 		<!-- 최대탑승인원 -->
 			<tr>
 				<label for="make_population">
-				<td class="col-md-5">최대탑승인원</td>
+				<td class="col-md-5"><b>최대탑승인원</b></td>
 					<td class="col-md-7">
 						<input type="tel" id="make_populaion" name="room_population" class="form-control" maxlength="1" value="4" >
 						<div style="color:#34C6BE">※ 최소탑승인원: 2명<br> &nbsp;&nbsp;&nbsp;&nbsp;최대탑승인원: 4명</div>
