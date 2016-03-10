@@ -34,7 +34,7 @@
 		</table>
 
 		<div class="form-group col-xs-12  col-md-4 col-md-offset-4">
-		<table class="table">
+			<table class="table">
 			<thead>
 			<tr>
 					<td colspan=2>
