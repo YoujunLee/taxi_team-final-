@@ -15,7 +15,7 @@
 	$db->query = "select start, arrive, date, time,population,post_id from post ORDER BY date desc,time desc";
 	$db->DBQ();
 	$num = $db->result->num_rows;
-    			
+
 	if($num<=0)
 	{
 		echo "<script>
@@ -44,7 +44,7 @@
 	<script>
 		$(function() {
 			$( ".datepicker" ).datepicker( {
-				dateFormat:"mm/dd"
+				dateFormat:"yy/mm/dd"
 			});
 		});
 	</script>
@@ -79,8 +79,8 @@
 				<th style="font-size:20px">[전체조회]</th>
 				<td style="text-align:right">
 					<form action="./php/search.php" method="post">
-						<input type="text" style="width:30%;" placeholder="날짜 입력" class="datepicker" >
-						<input type="submit" value="조회" class="btn btn-info1"	>
+						<input type="text" name="search_date" style="width:30%;" placeholder="날짜 입력" class="datepicker" >
+						<input type="submit" value="조회" >
 					</form>
 				</td>
 			</tr>

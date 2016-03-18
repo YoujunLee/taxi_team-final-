@@ -8,36 +8,20 @@
 <?php
 	include "./php/session_out.php";
 	out();
-    if(!isset($_SESSION['search_start'])){
-		echo "<script>location.replace('../index.php');</script>";
-   		exit;
-	}
-	
-	$start = $_SESSION['search_start'];
-	$arrive = $_SESSION['search_arrive'];
-	$date = $_SESSION['search_date'];
-	$s_time= $_SESSION['start_time'];
-	$e_time = $_SESSION['end_time'];
-
 	require_once './php/config.php';
-   
+
+	$date = $_SESSION['search_date'];
+
 	$db = new DBC;
 	$db->DBI();
-	if($start!='전체보기'&&$arrive!='전체보기')
-	$db->query = "select start, arrive, date, time,population,post_id from post where start='".$start."' and arrive='".$arrive."'and date='".$date."'and time>='".$s_time."'and time<='".$e_time."' ORDER BY date desc,time desc";
-	else if($start=='전체보기'&&$arrive=='전체보기')
-	$db->query = "select start, arrive, date, time,population,post_id from post where date='".$date."'and time>='".$s_time."'and time<='".$e_time."'ORDER BY date desc,time desc";
-	else if($start=='전체보기')
-	$db->query = "select start, arrive, date, time,population,post_id from post where arrive='".$arrive."'and date='".$date."'and time>='".$s_time."'and time<='".$e_time."'ORDER BY date desc,time desc";
-	else 
-	$db->query = "select start, arrive, date, time,population,post_id from post where start='".$start."' and date='".$date."'and time>='".$s_time."'and time<='".$e_time."'ORDER BY date desc,time desc";	
+	$db->query = "select date from post where date='".$date."'ORDER BY date desc";
 	$db->DBQ();
 	$num = $db->result->num_rows;
-    			
+
 	if($num<=0)
 	{
 		echo "<script>
-		   		var result=confirm('조회되는 방이 없습니다. 방을 만드시겠습니까?');
+		   		var result=confirm ('조회 는 방이 없습니다. 방을 만드시겠습니까?');
 		   		if(result)
 		   			location.replace('../make_room.html.php');
 		   		else
@@ -81,8 +65,7 @@
 	
 <section>
 	<div class="wrapper col-xs-12  col-md-4 col-md-offset-4">
-	    <?php echo$date." ".$s_time."~".$e_time."<br>";?>
-	    <?php echo$start."->".$arrive;?>
+		<h4><b> <?php echo$date?></b></h4>
    	</div>
 </section>
 
