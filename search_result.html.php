@@ -14,7 +14,7 @@
 
 	$db = new DBC;
 	$db->DBI();
-	$db->query = "select date from post where date='".$date."'ORDER BY date desc";
+	$db->query = "select start, arrive, date, time,population,post_id from post where date='".$date."'ORDER BY date desc, time desc";
 	$db->DBQ();
 	$num = $db->result->num_rows;
 
@@ -25,7 +25,7 @@
 		   		if(result)
 		   			location.replace('../make_room.html.php');
 		   		else
-		   			location.replace('../search_room.html.php');
+		   			location.replace('../main.html.php');
 		   	  </script>";
    		
    		exit;
@@ -39,6 +39,17 @@
 <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 <link rel="stylesheet" type="text/css" href="./css/index2.css">
 <link rel="stylesheet" type="text/css" href="./css/index3.css">
+<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
+<link rel="stylesheet" href="http://code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+<!-- 날짜 입력 칸 클릭시 달력 뜨는 javascript-->
+<script>
+	$(function() {
+		$( ".datepicker" ).datepicker( {
+			dateFormat:"yy/mm/dd"
+		});
+	});
+</script>
 </head>
 
 <body class="center">
@@ -64,9 +75,21 @@
 	</table>
 	
 <section>
-	<div class="wrapper col-xs-12  col-md-4 col-md-offset-4">
-		<h4><b> <?php echo$date?></b></h4>
-   	</div>
+	<div class="padding col-xs-12 col-md-4 col-md-offset-4">
+		<table class="table3 table-striped table-hover">
+			<tr class="row">
+				<th style="font-size:20px">[<?php echo$date?>]</th>
+				<td style="text-align:right">
+					<form action="./php/search.php" method="post">
+						<input type="text" name="search_date" style="width:30%;" placeholder="날짜 입력" class="datepicker" >
+						<input type="submit" value="조회" >
+						<a href="./search_result_all.html.php"><input type="button" value="전체목록"></a>
+					</form>
+
+				</td>
+			</tr>
+		</table>
+	</div>
 </section>
 
 <section>
@@ -96,7 +119,7 @@
 	 		if($page_number++<$page*10)
 	 		{
 	 			$check2= false;
-	 			$db2->query = "select post_id, stu_id from room_user where post_id = '".$data[5]."'"; 
+	 			$db2->query = "select post_id, stu_id from room_user where post_id = '".$data[5]."'";
 	 			$db2->DBQ();
 	    		$num2 = $db2->result->num_rows;
     	
