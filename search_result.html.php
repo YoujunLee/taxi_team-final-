@@ -81,9 +81,9 @@
 				<th style="font-size:20px">[<?php echo$date?>]</th>
 				<td style="text-align:right">
 					<form action="./php/search.php" method="post">
-						<input type="text" name="search_date" style="width:30%;" placeholder="날짜 입력" class="datepicker" >
-						<input type="submit" value="조회" >
-						<a href="./search_result_all.html.php"><input type="button" value="전체목록"></a>
+						<input type="text"  name="search_date" style="width:35%;" placeholder="날짜 조회" class="datepicker" >
+						<input type="submit" class="btn btn-default" value="조회" >
+						<a  onclick="location.href='./search_result_all.html.php'"><input class="btn btn-default" type="button" value="all"></a>
 					</form>
 
 				</td>
@@ -139,7 +139,7 @@
 										else if($current_time>$data[2]." ".$data[3])
 											{?>onclick="location.href='#'"<?php } 
 										else	
-											{?>onclick="location.href='./php/탑승하기질문.php?post_id=<?php echo $data[5]; ?>'"<?php }
+											{?>onclick="location.href='./php/get_in_question.php?post_id=<?php echo $data[5]; ?>'"<?php }
 									   }
 									  else if($check2==true)
 											{?>onclick="location.href='./Room1.html.php?<?php echo $data[5]; ?>'"<?php } ?>>									

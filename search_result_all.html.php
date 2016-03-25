@@ -19,11 +19,11 @@
 	if($num<=0)
 	{
 		echo "<script>
-		   		var result=confirm('죄회되는 방이 없습니다. 방을 만드시겠습니까?');
+		   		var result=confirm('조회되는 방이 없습니다. 방을 만드시겠습니까?');
 		   		if(result)
 		   			location.replace('../make_room.html.php');
 		   		else
-		   		   location.replace('./main.html.php');
+		   		   location.replace('./search_result_all.html.php');
 		   	  </script>";
 		exit;
 	}
@@ -79,8 +79,8 @@
 				<th style="font-size:20px">[전체조회]</th>
 				<td style="text-align:right">
 					<form action="./php/search.php" method="post">
-						<input type="text" name="search_date" style="width:30%;" placeholder="날짜 입력" class="datepicker" >
-						<input type="submit" value="조회" >
+						<input type="text" name="search_date" style="width:35%;" placeholder="날짜 조회" class="datepicker" >
+						<input type="submit"  class="btn btn-default" value="조회" >
 					</form>
 				</td>
 			</tr>
