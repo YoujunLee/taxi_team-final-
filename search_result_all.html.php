@@ -10,6 +10,11 @@
 	out();
 	require_once './php/config.php';
 
+	$db3= new DBC;
+	$db3->DBI();
+	$db3->query = "delete from room_user where stu_id=0";
+	$db3->DBQ();
+
 	$db = new DBC;
 	$db->DBI();
 	$db->query = "select start, arrive, date, time,population,post_id from post ORDER BY date desc,time desc";
