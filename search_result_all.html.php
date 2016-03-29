@@ -10,6 +10,10 @@
 	out();
 	require_once './php/config.php';
 
+	date_default_timezone_set("Asia/Seoul");
+	$current_time2 = date("Y-m-d");
+	$current_time3 = date("H:i:s");
+
 	$db3= new DBC;
 	$db3->DBI();
 	$db3->query = "delete from room_user where stu_id=0";
@@ -17,7 +21,7 @@
 
 	$db = new DBC;
 	$db->DBI();
-	$db->query = "select start, arrive, date, time,population,post_id from post ORDER BY date desc,time desc";
+	$db->query = "select start, arrive, date, time,population,post_id from post WHERE date>'".$current_time2."' or date='".$current_time2."' and time>'".$current_time3."'  ORDER BY date, time";
 	$db->DBQ();
 	$num = $db->result->num_rows;
 
@@ -115,6 +119,9 @@
 			$check = false;
 			$num = $db->result->num_rows;
 
+			date_default_timezone_set("Asia/Seoul");
+			$current_time = date("Y-m-d H:i:s");
+
 			while($data = $db->result->fetch_row())
 			{
 				if($page_number==$count)
@@ -130,8 +137,7 @@
 							if($data2[1]== $_SESSION['user_id'])
 								$check2=true;
 						}
-						date_default_timezone_set("Asia/Seoul");
-						$current_time = date("Y-m-d H:i:s");
+
 						?>
 
 						<tr <?php if($check2==false)
