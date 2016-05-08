@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eff0a61f-841a-4e23-aeb9-6060ea3ca449" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="eff0a61f-841a-4e23-aeb9-6060ea3ca449" name="Default" comment="" />
     <ignored path="taxi_team-final-.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -223,7 +221,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1458276488542</updated>
-      <workItem from="1462718935637" duration="47000" />
+      <workItem from="1462718935637" duration="623000" />
     </task>
     <task id="LOCAL-00001" summary="태그짝 안맞는거 수정">
       <created>1462718960945</created>
@@ -236,7 +234,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47000" />
+    <option name="totallyTimeSpent" value="623000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
