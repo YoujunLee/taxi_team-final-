@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+<<<<<<< HEAD
   <component name="PublishConfigData" serverName="itaxi_server">
     <serverData>
       <paths name="compiler">
@@ -24,12 +25,18 @@
         </serverdata>
       </paths>
       <paths name="itaxi_server">
+=======
+  <component name="PublishConfigData" autoUpload="On explicit save action" serverName="taxi_team_final-">
+    <serverData>
+      <paths name="taxi_team_final-">
+>>>>>>> b2be1ba44f8a24f2f0e520433f672efc0d2b6c4c
         <serverdata>
           <mappings>
             <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
           </mappings>
         </serverdata>
       </paths>
+<<<<<<< HEAD
       <paths name="test_web">
         <serverdata>
           <mappings>
@@ -38,5 +45,9 @@
         </serverdata>
       </paths>
     </serverData>
+=======
+    </serverData>
+    <option name="myAutoUpload" value="ON_EXPLICIT_SAVE" />
+>>>>>>> b2be1ba44f8a24f2f0e520433f672efc0d2b6c4c
   </component>
 </project>

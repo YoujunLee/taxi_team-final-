@@ -34,7 +34,11 @@
 		</table>
 
 		<div class="form-group col-xs-12  col-md-4 col-md-offset-4">
+<<<<<<< HEAD
 		<table class="table">
+=======
+			<table class="table">
+>>>>>>> b2be1ba44f8a24f2f0e520433f672efc0d2b6c4c
 			<thead>
 			<tr>
 					<td colspan=2>

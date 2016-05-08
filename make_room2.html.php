@@ -53,7 +53,11 @@ out();
 				<label for="start">
 				<td class="col-md-3">
 					<b>출발지</b>&nbsp;&nbsp;&nbsp;
+<<<<<<< HEAD
 					<label><sub><input type="checkbox" onclick="movepage('http://itaxi.handong.edu/make_room.html.php');">옵션보기</sub></label>
+=======
+					<sub><input type="checkbox" onclick="movepage('http://itaxi.handong.edu/make_room.html.php');">옵션보기</sub>
+>>>>>>> b2be1ba44f8a24f2f0e520433f672efc0d2b6c4c
 				</td>
 				<td class="col-md-9">
 					<input type='text' class='form-control' id='start' size='1' name='room_start' placeholder='직접입력' maxlength='20' required>
@@ -65,7 +69,11 @@ out();
 				<label for="arrive">
 				<td class="col-md-3">
 					<b>도착지</b>&nbsp;&nbsp;&nbsp;
+<<<<<<< HEAD
 					<label><sub><input type="checkbox" onclick="movepage('http://itaxi.handong.edu/make_room.html.php');">옵션보기</sub></label>
+=======
+					<sub><input type="checkbox" onclick="movepage('http://itaxi.handong.edu/make_room.html.php');">옵션보기</sub>
+>>>>>>> b2be1ba44f8a24f2f0e520433f672efc0d2b6c4c
 				</td>
 				<td class="col-md-9">
 					<input type='text' class='form-control' id='start' size='1' name='room_arrive' placeholder='직접입력' maxlength='20' required>

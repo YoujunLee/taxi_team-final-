@@ -1,5 +1,8 @@
 <?php
+<<<<<<< HEAD
 
+=======
+>>>>>>> b2be1ba44f8a24f2f0e520433f672efc0d2b6c4c
 class DBC
 {
     public $db;
