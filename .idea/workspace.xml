@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="eff0a61f-841a-4e23-aeb9-6060ea3ca449" name="Default" comment="" />
+    <list default="true" id="eff0a61f-841a-4e23-aeb9-6060ea3ca449" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/a.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="taxi_team-final-.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -52,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="announce.html.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="announce.html.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/announce.html.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="425">
@@ -60,6 +63,16 @@
               <folding>
                 <marker date="1462718948185" expanded="true" signature="1890:1928" placeholder="select * fro... notice" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="a.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/a.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="25">
+              <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -93,6 +106,7 @@
         <option value="$PROJECT_DIR$/ccon/php/db2.php" />
         <option value="$PROJECT_DIR$/ccon/wow.html.php" />
         <option value="$PROJECT_DIR$/announce.html.php" />
+        <option value="$PROJECT_DIR$/a.php" />
       </list>
     </option>
   </component>
@@ -221,7 +235,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1458276488542</updated>
-      <workItem from="1462718935637" duration="623000" />
+      <workItem from="1462718935637" duration="659000" />
     </task>
     <task id="LOCAL-00001" summary="태그짝 안맞는거 수정">
       <created>1462718960945</created>
@@ -234,7 +248,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="623000" />
+    <option name="totallyTimeSpent" value="659000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -291,13 +305,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/main.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="188" column="0" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/search_result_all.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -663,6 +670,14 @@
           <folding>
             <marker date="1462718948185" expanded="true" signature="1890:1928" placeholder="select * fro... notice" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/a.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="9" selection-start-line="1" selection-start-column="9" selection-end-line="1" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
