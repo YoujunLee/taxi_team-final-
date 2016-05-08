@@ -1,0 +1,58 @@
+/*{
+	border  :1px solid blue;
+}*/
+
+#center {
+ position:absolute;
+ top:50%; 
+ left:50%; 
+ width:300px; 
+ height:200px; 
+ overflow:hidden;
+ margin-top:-150px; 
+ margin-left:-100px;
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+.jumbotron > h1 {
+  color: black;
+  text-align: center;
+}
+
+.page-header {
+  margin-top: 100px;
+}
+
+#profile-description {
+  text-align: center;
+}
+
+.div_root{
+	margin:auto;
+	
+}
+
+#div_go{
+	width:30%;
+	float:right;
+}
+body.padding{
+	padding-right: 0px !important ;
+	padding-left: 0px !important ;
+}
+ul.right{
+	float : right;
+	padding-right: 3%;
+}
+.checkpass{
+	border : none;
+}
+
+.notice{
+	color:#34C6BE;
+	text-align:right;
+	margin-right:2px;
+	}	

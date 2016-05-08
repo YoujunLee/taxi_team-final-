@@ -1,0 +1,81 @@
+.backg{
+	background-image : url("../img/tax_num.png") ; 
+	background-size: 200%; 
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+   
+}
+.backg1{
+	background-image : url("../img/tax_num1.png") ; 
+	background-size: cover; 
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    text-align : center; 
+}
+.backg2{
+	background-image : url("../img/tax_num2.png") ; 
+	background-size: cover; 
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+.backg3{
+	background-image : url("../img/tax_num3.png") ; 
+	background-size: cover; 
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+.backg4{
+	background-image : url("../img/tax_num4.png") ; 
+	background-size: cover; 
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+}
+.center{
+	text-align: center;
+  	background-align: center;	
+  	
+  	 }
+
+
+.padding{
+	padding-right : 0px !important;
+	padding-left : 0px !important;
+	margin-bottom : 0px !important;
+	padding-top : 1%;
+	
+}
+ul.right{
+	float : right;
+	padding-right : 3%;
+	
+}
+
+li {
+    list-style: none;
+    }
+.picture{
+	    opacity: 0.5;
+}
+
+.table1{
+	width : 100%;
+	
+}
+
+.img{
+	float:right;
+}
+
+.navi{
+    padding-left: 2%;
+    padding-right: 2%;
+    height : 55px;
+	background-color: black;
+	
+}
+.btn1{
+	border: 0px none;
+ 	color : white;
+  	background-color: transparent;
+}
+

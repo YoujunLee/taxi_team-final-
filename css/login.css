@@ -1,0 +1,82 @@
+/*{
+	border  :1px solid blue;
+}*/
+
+.jumbotron {
+  text-align: center;
+}
+
+.jumbotron > h1 {
+  color: black;
+}
+
+.page-header {
+  margin-top: 100px;
+ }
+
+#profile-description {
+  text-align: center;
+}
+
+#profile-photo {
+  width: 23px;
+  height: 22px;
+}
+
+.div_root{
+	margin:auto;
+	width:30%;
+}
+
+.div_login{
+
+	width:100%;
+	float:left;
+}
+
+.main_color{
+	background-color: #34c6be; !important
+}
+
+.wrapper{
+ 	margin-top: 20%;  
+ 	margin-bottom: 10%; 
+ 	text-align: center;
+}
+    
+.btn1{
+	margin-top:15px;
+	padding:1%;
+	color:white;
+	border: 0px none;
+  	border-radius : 8%;
+	background-color: #d96d63;
+}
+
+.btn5{
+	margin-top:15px;
+	padding:1%;
+	color:white;
+	border: 0px none;
+  	border-radius : 8%;
+	background-color: #d96d63;!important
+
+}
+
+.right_go{
+	
+  	
+  	text-align: right;
+	
+}
+
+.div2{
+	color:gray;
+	text-align: center;
+	padding: 0%; !important;
+	margin-top: 10px;
+}
+
+p{
+	padding: 0%;
+	margin: 0%;}
