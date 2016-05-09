@@ -1,20 +1,21 @@
 <!--Login page -->
 
 <?php
-session_start();
+session_start();//세션사용을 시작한다.
 if(isset($_SESSION['user_id']) && isset($_SESSION['user_pw']))
-echo "<script>location.replace('./main.html.php');</script>";
+echo "<script>location.replace('./main.html.php');</script>";//만약 로그인을 했을 경우에 ./php/login.php에서 $_SESSION['user_id']과 $_SESSION['user_pw']를(각각 학번과 비번)
+                                                                  // 설정해 놓고 로그인 세션이 남아있을 경우 로그인 없이 메인화면으로 넘어가게 한다.
 ?>
 
 <!DOCTYPE html>
 <html>
 	<head>
-		 <meta charset="utf-8">
-		 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		 <meta charset="utf-8"> <!-- 한글깨짐방지로 utf-8로 설정 -->
+		 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><!-- 모바일 가로 사이즈에 맞추고 (가로 스크롤 안생김) 정상배율에 확대축소 안되게 설정 -->
    		 <title>iTaxi</title>
-   		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-   		 <link rel="stylesheet" type="text/css" href="../css/login.css">
-   		 <meta name="apple-mobile-web-app-capable" content="yes" />
+   		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"><!-- https://bootswatch.com/에 있는 공짜 css테마를 사용(약간 수정) -->
+   		 <link rel="stylesheet" type="text/css" href="../css/login.css"><!-- 직접만든 css -->
+   		 <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 모바일 사파리 풀 스크린으로 시작 -->
    		 <link rel="apple-touch-icon-precomposed" href="./img/logo_big.png" />
    		 <link rel="apple-touch-icon" href="./img/logo_big.png" />
    		 <script type="text/javascript" src="./js/bookmark_bubble.js"></script>
