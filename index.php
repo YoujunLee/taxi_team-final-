@@ -32,7 +32,7 @@ echo "<script>location.replace('./main.html.php');</script>";//만약 로그인�
 			</div>
 		
   			<!-- Id 입력창 -->
-	  		<form action='./php/login.php'  method='post'> <!-- 로그인 버튼 누를 시 /php/login.php로 넘어감 -->
+	  		<form action='./php/login.php'  method='post'> <!-- 로그인 버튼 누를 시 /php/login.php로 넘어감 사용자가 입력한 학번과, 비밀번호 데이터를 post형태로 넘긴다. -->
 				<div class="div1">
 				    <input type="tel" class="form-control" autofocus placeholder="Student ID" name="logid" required>
 				</div>
