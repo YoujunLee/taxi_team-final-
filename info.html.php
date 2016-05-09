@@ -5,27 +5,27 @@
 	<head>
 		 <meta charset="utf-8">
 		 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-		 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		 <meta http-equiv="X-UA-Compatible" content="IE=edge"><!-- IE브라우저 중 최신 표준 모드를 선택(랜더링) -->
    		 <title>iTaxi</title>
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
-   		 <link rel="stylesheet" type="text/css" href="./css/mypage.css">
-   		 <link rel="stylesheet" type="text/css" href="../css/index2.css">
+   		 <link rel="stylesheet" type="text/css" href="./css/mypage.css"><!-- 직접만든 css -->
+   		 <link rel="stylesheet" type="text/css" href="../css/index2.css"><!-- 직접만든 css -->
 	</head>
 
 	<body class="center">
-		<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	
+		<table class="navi col-xs-12  col-md-4 col-md-offset-4" >	<!-- 여기서 table 태그 안에 있는 모든 것은 아이택시 페이지중 거의 모든 페이지위에 있는 네비게이션바다 -->
 		<tr class="row">
-		   <td class = "logo" >
+		   <td class = "logo" ><!-- 아이택시 로고 누를 시 메인화면으로 돌아가게끔 한다 -->
       			<a onclick="location.href='./main.html.php'">
       				<img src="./img/logo.png">
       			</a>
   		   </td>
-  		   <td class = "logout1">
+  		   <td class = "logout1"> <!-- 왼쪽 화살표 이모콘 자바스크립트로 뒤로가기 구현 -->
       	   		<a onclick="history.back(-1)">
 		     		<img src="./img/back.png" width="25px" height="25px">
 	       		</a>
            </td>
-  		   <td class = "logout">
+  		   <td class = "logout"> <!-- 로그아웃 버튼 누를 시 /php/logout.php로 가서 세션설정한 것을 모두 없애고 세션이 없으므로 로그인화면으로 이동 -->
       	   		<a  onclick="location.href='./php/logout.php'">
       	   			<img src="./img/power.png" width="30px" height="30px">
 	       		</a>
@@ -42,7 +42,7 @@
 	<!-- 이용 약관 -->
 	<section>
     	<div class="wrapper5 col-xs-12  col-md-4 col-md-offset-4 ">    		
-			<form action="./php/agree.php"  method="post">
+			<form action="./php/agree.php"  method="post"> <!-- 모두 동의 하고 다음단계 버튼을 누를 경우 /php/agree.php로 넘어가서 동의 두개를 모두 체크했는지 확인 후 회원가입창으로 넘어감 -->
 				<h3>iTaxi 이용약관</h3>
 			이용약관은 다음과 같은 내용을 담고 있습니다.<br>
 			<br>
