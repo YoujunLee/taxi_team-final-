@@ -16,23 +16,23 @@ echo "<script>location.replace('./main.html.php');</script>";//만약 로그인�
    		 <link rel="stylesheet" type="text/css" href="../css/bootstrap.css"><!-- https://bootswatch.com/에 있는 공짜 css테마를 사용(약간 수정) -->
    		 <link rel="stylesheet" type="text/css" href="../css/login.css"><!-- 직접만든 css -->
    		 <meta name="apple-mobile-web-app-capable" content="yes" /><!-- 모바일 사파리 풀 스크린으로 시작 -->
-   		 <link rel="apple-touch-icon-precomposed" href="./img/logo_big.png" />
-   		 <link rel="apple-touch-icon" href="./img/logo_big.png" />
+   		 <link rel="apple-touch-icon-precomposed" href="./img/logo_big.png" /><!-- 아이폰 precomposed 아이콘 지정 -->
+   		 <link rel="apple-touch-icon" href="./img/logo_big.png" /><!-- 아이폰 터치아이콘 지정 -->
    		 <script type="text/javascript" src="./js/bookmark_bubble.js"></script>
    		 <script type="text/javascript" src="./js/page.js"></script>
 		 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-		 <script src="./js/set.js"></script> 
+		 <script src="./js/set.js"></script> <!-- 아이폰 바로가기추가 하기 위한 자바스크립트 및 라이브러리들 -->
 	</head>
 	
 	<body>
 		
-		<div class= "col-xs-12  col-md-4 col-md-offset-4">
+		<div class= "col-xs-12  col-md-4 col-md-offset-4"><!-- col-xs-12는 모바일에서 가로를 12등분 했을 때 모두 사용 col-md-4 col-md-offset-4는 컴퓨터에서 가로 12등분했을 때 4칸 뛰고 4칸만 사용 -->
 			<div class="wrapper">
-				<img src="./img/logo_big.png"  width = "100%" >
+				<img src="./img/logo_big.png"  width = "100%" > <!-- 아이택시 로고 이미지 -->
 			</div>
 		
   			<!-- Id 입력창 -->
-	  		<form action='./php/login.php'  method='post'>
+	  		<form action='./php/login.php'  method='post'> <!-- 로그인 버튼 누를 시 /php/login.php로 넘어감 -->
 				<div class="div1">
 				    <input type="tel" class="form-control" autofocus placeholder="Student ID" name="logid" required>
 				</div>
@@ -48,11 +48,11 @@ echo "<script>location.replace('./main.html.php');</script>";//만약 로그인�
 			<br>			
 
 		<!-- 회원가입 버튼 -->
-			<form action='./info.html.php'>
+			<form action='./info.html.php'> <!-- 회원가입 버튼 누를 시 /info.html.php로 넘어감 -->
 				<input class="btn btn-lg btn-block" type="submit" style="background-color:#ffde00; color: #ffffff;" value="회원가입">
 	    	</form>
 	
-	    	<form class="right_go" action='./password.html.php'>
+	    	<form class="right_go" action='./password.html.php'> <!-- 비밀번호 찾기 버튼 누를 시 /password.html.php로 넘어감 -->
 				<input class = "btn1" type="submit" value="비밀번호 찾기">
 			</form>
 		
