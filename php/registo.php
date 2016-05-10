@@ -102,7 +102,7 @@ if($num==1)
    exit;
 }
 
-$hash = password_hash($pass, PASSWORD_DEFAULT);
+$hash = password_hash($pass, PASSWORD_DEFAULT);//php가 제공하는 hash로 비밀번호 암호화
 	
 
 $db->query = "insert into student_info values ('".$student_no."', '".$name."','".$cellPhone."','".$hash."','".$question."','".$answer."')";//student_info라는 테이블에 학생이 입력한 데이터 저장
