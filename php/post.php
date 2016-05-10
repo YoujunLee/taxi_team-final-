@@ -8,7 +8,7 @@
 include "./session_out.php";
 out();
 require_once './config.php';
-
+//post는  방만든 학생에 대한 정보와 택시 정보를 담은 테이블, room_user는 방에 참여한 학생들에 대한 정보를 담은 테이블
 $db = new DBC; //db object생성
 $db->DBI();//db 들어가기
 $db->query = "SELECT post_id FROM post ORDER BY post_id desc LIMIT 1";
@@ -22,7 +22,7 @@ if($num==1)
 else
 {	$post_id=1;	
 }
-
+//학생이 입력한 택시 정보 변수에 저장시키고 디비에 저장
 $room_start = $_POST['room_start'];
 $room_arrive = $_POST['room_arrive'];
 $room_date = $_POST['room_date'];
@@ -96,7 +96,7 @@ if(!$db->result)
 } 
 else
 {
-	echo "<script>location.replace('../Room1.html.php?$post_id');</script>";
+	echo "<script>location.replace('../Room1.html.php?$post_id');</script>"; // 방 만들었을 시에 방으로 넘어감
 }
 
 $db->DBO();
