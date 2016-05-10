@@ -5,7 +5,7 @@ class DBC
 	public $query;
 	public $result;
 
-	public function DBI()
+	public function DBI() //db접속
 	{
 		$this->db = new mysqli('localhost', 'root', 'taxi', 'youjun'); //host, id, pw, database 순서입니다.
 		$this->db->query('SET NAMES UTF8');
@@ -17,12 +17,12 @@ class DBC
 		}
 	}
 
-	public function DBQ()
+	public function DBQ() //쿼리문을 실행한다
 	{
 		$this->result = $this->db->query($this->query);
 	}
 
-	public function DBO()
+	public function DBO()// db 연결 끊기
 	{
 		
 		$this->db->close();
