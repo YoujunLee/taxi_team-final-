@@ -55,7 +55,7 @@ out();
 				<label for="start">
 				<td class="col-md-3">
 					<b>출발지</b>&nbsp;&nbsp;&nbsp;
-					<sub><input type="checkbox" onclick="movepage('http://itaxi.handong.edu/make_room2.html.php');">직접입력</sub>
+					<sub><input type="checkbox" onclick="movepage('http://itaxi.handong.edu/make_room2.html.php');">직접입력</sub><!-- 누를 경우 페이지가 바뀌어서 출발지 목적지를 선택하는 게 아니라 직접입력 -->
 				</td>
 				<td class="col-md-9">
 					<select id="starter" size="1" name="room_start" class="form-control">
@@ -67,11 +67,8 @@ out();
 					<option value="고속버스터미널">고속터미널</option>
 					<option value="시외버스터미널">시외버스터미널</option>
 					<option value="육거리">육거리</option>
-<<<<<<< HEAD
 					<option value="포항역(KTX)">포항역(EDIYA 앞)</option>
-=======
-					<option value="포항역(KTX)">포항역(EYDIA 앞)</option>
->>>>>>> b2be1ba44f8a24f2f0e520433f672efc0d2b6c4c
+
 					</select>
 				</td>
 				</label>
