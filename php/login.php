@@ -46,7 +46,7 @@ $db->DBO();
 if($num==1)
 {
    session_start();
-
+   //학생 학번과 비번과 이름 전화번호를 세션으로 지정하여서 아이택시 기능을 이용할 때 다시 db데이터를 빼서 사용하기보다 주로 세션정보를 사용, 그리고 세션만료(대략 이용안하고 24분후에)시에 자동 로그아웃
    $_SESSION['user_id'] = $studentid;
    $_SESSION['user_pw'] = $data[3];
    $_SESSION['name'] = $data[1]; 
