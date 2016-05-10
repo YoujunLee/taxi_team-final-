@@ -16,7 +16,7 @@ setcookie(session_name(),session_id(),time()+$cookieLifetime);
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">  
 	<link rel="stylesheet" type="text/css" href="./css/main.css">
-	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+	<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script> <!-- 카카오톡으로 연결하는 자바스크립트 라이브러리 -->
 </head>
 
 <body class="center">
@@ -139,6 +139,7 @@ setcookie(session_name(),session_id(),time()+$cookieLifetime);
 			</td>
 			
 			<td>
+				<!-- 모바일에서 누를 경우 카톡으로 바로 아이택시 url 보낼 수 있게 함 자바스크립트 라이브러리는 인터넷에서 다운 받았다. -->
 			<form class="div_yg" action='javascript:;'>
 			  <a id="kakao-link-btn" href="javascript:;" >
 			  <img src="./img/kakao.png" class="img"><br>
@@ -149,7 +150,7 @@ setcookie(session_name(),session_id(),time()+$cookieLifetime);
 	        
 	        <script>
 			    Kakao.init('99930094479238c325ba429e2ace07a2');
-
+				//label과 아이택시 로고이미지와 아이택시 url을 카톡으로 보냄
    				Kakao.Link.createTalkLinkButton({
       				container: '#kakao-link-btn',
       				label: 'itaxi HGU 택시 카풀 서비스에 오신걸 환영합니다.',
@@ -175,7 +176,7 @@ setcookie(session_name(),session_id(),time()+$cookieLifetime);
 	        </form>
 			</td>
 		</tr>
-		<!-- 가입자수 출력-->
+		<!-- 가입자수 출력(초기에는 가입자 수 출력했지만 이제는 사용자수가 많아서 출력안함)-->
 		<tr class="row">
 		<?php
 			require_once './php/config.php';
