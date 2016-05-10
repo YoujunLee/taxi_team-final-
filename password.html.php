@@ -33,6 +33,7 @@
 		</table>
 		<div class="form-group col-xs-12  col-md-4 col-md-offset-4">
 			<table class="table">
+				<form action='./php/find.php' method='POST'>
 			<thead>
 			<tr>
 				<td colspan=2>
@@ -44,7 +45,7 @@
 
 			<tbody>
 				<tr>
-					<form action='./php/find.php' method='POST'>
+					
 					<label for=""inputName">
 					<td class="col-md-3">
 						<b>이름</b>
@@ -153,8 +154,9 @@
 						<input class="btn btn-lg btn-block" style="background-color:#34C6BE; color: #ffffff;" type="submit" value="찾기">
 					</td>
 				</tr>
-				</form>
+				
 			</tfoot>
+				</form>
 			</table>
 			</div>
 	</body>
