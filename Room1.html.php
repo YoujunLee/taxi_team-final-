@@ -38,7 +38,7 @@ out();
 <section>
 	<div class="wrapper col-xs-12  col-md-4 col-md-offset-4">
 	<?php 
-  	    $post_id=getenv("QUERY_STRING"); // Get값으로 넘어온 값들을 구합니다.
+  	    $post_id=getenv("QUERY_STRING"); // Get값으로 넘어온 값들을 구합니다. (페이지를 url로 넘길때 뒤에 방 고유 번호인 post_id를 같이 넘겨 get값으로 받음)
 		
 		require_once './php/db.php';
 
@@ -48,7 +48,7 @@ out();
 		$db->DBQ();
 		
 		$data=$db->result->fetch_row();
-		echo $data[0]." ".$data[1]."<br>".$data[2]." → ".$data[3];
+		echo $data[0]." ".$data[1]."<br>".$data[2]." → ".$data[3];//방정보 맨위에 출력
 		
 		$db->DBO();
 	?>
@@ -61,10 +61,10 @@ out();
 	<tbody>
 	<?php
 		require_once './php/db.php';
-		
+		//방별로 댓글 출력
 		$db = new DBC;
 		$db->DBI();
-		$db->query = "SELECT * FROM comment WHERE post_id='".$post_id."'ORDER BY time desc";  //방 별로 다른 commet 출력. 
+		$db->query = "SELECT * FROM comment WHERE post_id='".$post_id."'ORDER BY time desc";  //방 고유번호인 post_id 별로 다른 commet 출력.
 		$db->DBQ();
 		
 		$db2 = new DBC;
@@ -134,7 +134,7 @@ out();
 			    <?php
    					}
 	 				if($check){
-						echo "<script>location.replace('./make_room.html.php');</script>"; exit;}
+						echo "<script>location.replace('./make_room.html.php');</script>"; exit;}//방에 참여한 사람이 아닐경우 방만드는 페이지로 로드
 				?>
    				</tbody>
 			<!-- 여기까지 바꾼코드 -->
@@ -155,9 +155,9 @@ out();
 			?>
 			<?php						
 			if($result<-1800)
-				echo "<a onclick=location.href='./php/delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";
+				echo "<a onclick=location.href='./php/delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>"; // 탑승취소 버튼 누를 시에 delete.php에서 방에 참여한 학생 데이터 삭제
 			else
-				echo "<a onclick=location.href='#' class="."'btn btn-danger'"." > 취소불가</a>";
+				echo "<a onclick=location.href='#' class="."'btn btn-danger'"." > 취소불가</a>"; // 택시 탑승 30분전에는 탑승취소 불가
 			
 			$db->DBO();
 			$db2->DBO();
