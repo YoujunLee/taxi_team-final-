@@ -16,7 +16,7 @@
 
 	$db3= new DBC;
 	$db3->DBI();
-	$db3->query = "delete from room_user where stu_id=0";
+	$db3->query = "delete from room_user where stu_id=0"; // 가끔씩 학번이 0으로 나타나는 경우가 있어서 조회할경우 매번 삭제 (설명서 향후 개발 5번에 설명있음)
 	$db3->DBQ();
 
 	$db = new DBC;
@@ -88,7 +88,7 @@
 				<th style="font-size:20px">[전체조회]</th>
 				<td style="text-align:right">
 					<form action="./php/search.php" method="post">
-						<input type="text" name="search_date" style="width:35%;" placeholder="날짜 조회" class="datepicker" >
+						<input type="text" name="search_date" style="width:35%;" placeholder="날짜 조회" class="datepicker" ><!-- 날짜 조회로 검색시에 -->
 						<input type="submit"  class="btn btn-default" value="조회" >
 					</form>
 				</td>
@@ -111,6 +111,7 @@
 
 			<tbody>
 			<?php
+			//10개씩 방조회가 되고 그외는 다음페이지로 넘어가게 구성
 			$page = 1;
 			if(isset($_GET["page"]))
 				$page = $_GET["page"];
@@ -125,7 +126,7 @@
 			while($data = $db->result->fetch_row())
 			{
 				if($page_number==$count)
-					if($page_number++<$page*10)
+					if($page_number++<$page*10)//페이지넘버당 방 10개 출력
 					{
 						$check2 = false;
 						$db2->query = "select post_id, stu_id from room_user where post_id = '".$data[5]."'";
@@ -142,14 +143,14 @@
 
 						<tr <?php if($check2==false)
 							{
-							if($check2==false&&$num2==$data[4])
+							if($check2==false&&$num2==$data[4])//인원수 full 일때(방에 못들어감)
 							{?>onclick="location.href='#'"<?php }
-							else if($current_time>$data[2]." ".$data[3])
+							else if($current_time>$data[2]." ".$data[3])//시간 지났을 때(방에 못들어감)
 							{?>onclick="location.href='#'"<?php }
-							else
+							else//방에 참여할 때
 							{?>onclick="location.href='./php/get_in_question.php?post_id=<?php echo $data[5]; ?>'"<?php }
 							}
-							else if($check2==true)
+							else if($check2==true)//이미 방에 참여했을 때(바로 들어감)
 							{?>onclick="location.href='./Room.html.php?<?php echo $data[5]; ?>'"<?php } ?>>
 							<?php
 							echo "<td class="."'row'".">";?>
