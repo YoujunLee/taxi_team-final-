@@ -46,6 +46,7 @@ function callNumber(num){
 	</table>
 		
 	<ul class="col-xs-12  col-md-4 col-md-offset-4 padding">
+		<!-- 핸드폰에서 누를 시에 바로 전화연결 -->
   <li><a onclick="location.href='tel:054-252-1111'" class="eat"><span>
         <h1>포스콜</h1>
         <p>054-252-1111</p></span></a></li>
