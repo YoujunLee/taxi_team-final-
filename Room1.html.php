@@ -154,7 +154,7 @@ out();
 			$result=strtotime($current_time)-strtotime($data[0]." ".$data[1]);
 			?>
 			<?php						
-			if($result<-1800)
+			if($result<-600)
 				echo "<a onclick=location.href='./php/delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";
 			else
 				echo "<a onclick=location.href='#' class="."'btn btn-danger'"." > 취소불가</a>";

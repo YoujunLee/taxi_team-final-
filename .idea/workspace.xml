@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eff0a61f-841a-4e23-aeb9-6060ea3ca449" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ccon/php/post.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ccon/wow.html" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ccon/wow.html.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ccon/php/db2.php" afterPath="$PROJECT_DIR$/ccon/php/db2.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/make_room.html.php" afterPath="$PROJECT_DIR$/make_room.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Room.html.php" afterPath="$PROJECT_DIR$/Room.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Room1.html.php" afterPath="$PROJECT_DIR$/Room1.html.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/php/get_in_question.php" afterPath="$PROJECT_DIR$/php/get_in_question.php" />
     </list>
     <ignored path="taxi_team-final-.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -30,48 +28,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="db.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/php/db.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="10" column="22" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JSON.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ccon/php/JSON.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="236" column="0" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="db2.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ccon/php/db2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="post.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ccon/php/post.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="21" column="0" selection-start-line="19" selection-start-column="1" selection-end-line="21" selection-end-column="0" />
-              <folding>
-                <marker date="1461857250278" expanded="true" signature="186:212" placeholder="SELECT idx F... ez_content" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="wow.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ccon/wow.html">
           <provider selected="true" editor-type-id="text-editor">
@@ -85,8 +41,18 @@
       <file leaf-file-name="search_result_all.html.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/search_result_all.html.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="152" column="94" selection-start-line="152" selection-start-column="76" selection-end-line="152" selection-end-column="94" />
+            <state vertical-scroll-proportion="-8.235294">
+              <caret line="77" column="66" selection-start-line="77" selection-start-column="64" selection-end-line="77" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_room.html.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search_room.html.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.235294">
+              <caret line="33" column="70" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -102,11 +68,78 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="post.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="post.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/post.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5278481">
-              <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="23" selection-end-column="1" />
+            <state vertical-scroll-proportion="-8.235294">
+              <caret line="51" column="4" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="get_in_question.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/get_in_question.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.352941">
+              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+              <folding>
+                <marker date="1463319975059" expanded="true" signature="142:371" placeholder="..." />
+                <marker date="1463319975059" expanded="true" signature="222:300" placeholder="{...}" />
+                <marker date="1463319975059" expanded="true" signature="304:357" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6545454">
+              <caret line="58" column="29" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Room.html.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Room.html.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.5">
+              <caret line="170" column="27" selection-start-line="170" selection-start-column="27" selection-end-line="170" selection-end-column="27" />
+              <folding>
+                <marker date="1463319887693" expanded="true" signature="1286:1357" placeholder="SELECT date,... " />
+                <marker date="1463319887693" expanded="true" signature="1680:1694" placeholder="..." />
+                <marker date="1463319887693" expanded="true" signature="2084:2153" placeholder="SELECT * FRO... comment" />
+                <marker date="1463319887693" expanded="true" signature="2298:2371" placeholder="SELECT stude... student_info" />
+                <marker date="1463319887693" expanded="true" signature="3644:3696" placeholder="SELECT * FRO... room_user" />
+                <marker date="1463319887693" expanded="true" signature="4418:4479" placeholder="SELECT date,... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Room1.html.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Room1.html.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.617647">
+              <caret line="156" column="25" selection-start-line="156" selection-start-column="25" selection-end-line="156" selection-end-column="25" />
+              <folding>
+                <marker date="1463319906262" expanded="true" signature="1241:1312" placeholder="SELECT date,... " />
+                <marker date="1463319906262" expanded="true" signature="1663:1731" placeholder="SELECT * FRO... comment" />
+                <marker date="1463319906262" expanded="true" signature="1875:1948" placeholder="SELECT stude... student_info" />
+                <marker date="1463319906262" expanded="true" signature="3178:3230" placeholder="SELECT * FRO... room_user" />
+                <marker date="1463319906262" expanded="true" signature="3901:3957" placeholder="SELECT date,... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_result.html.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/search_result.html.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-3.4857142">
+              <caret line="70" column="70" selection-start-line="70" selection-start-column="68" selection-end-line="70" selection-end-column="70" />
               <folding />
             </state>
           </provider>
@@ -123,7 +156,6 @@
         <option value="$PROJECT_DIR$/php/search.php" />
         <option value="$PROJECT_DIR$/search_result_new.html.php" />
         <option value="$PROJECT_DIR$/search_result.html.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/main.html.php" />
         <option value="$PROJECT_DIR$/search_result_all.html.php" />
         <option value="$PROJECT_DIR$/php/db.php" />
@@ -133,6 +165,10 @@
         <option value="$PROJECT_DIR$/ccon/php/post.php" />
         <option value="$PROJECT_DIR$/ccon/wow.html" />
         <option value="$PROJECT_DIR$/make_room.html.php" />
+        <option value="$PROJECT_DIR$/Room.html.php" />
+        <option value="$PROJECT_DIR$/Room1.html.php" />
+        <option value="$PROJECT_DIR$/php/get_in_question.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -176,20 +212,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="taxi_team-final-">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -271,6 +293,20 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="taxi_team-final-">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -339,10 +375,11 @@
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19721329" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19989282" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.023337223" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -351,7 +388,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.02341137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905483" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -375,20 +411,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/search_result_all.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Room.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -592,13 +614,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search_room.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-69.47059">
-          <caret line="117" column="129" selection-start-line="117" selection-start-column="46" selection-end-line="117" selection-end-column="129" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/make_room2.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-37.5">
@@ -620,13 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search_result.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="84" column="45" selection-start-line="84" selection-start-column="45" selection-end-line="84" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -645,20 +653,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.95057034">
           <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Room.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.031685676">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.61977184">
-          <caret line="58" column="42" selection-start-line="58" selection-start-column="42" selection-end-line="58" selection-end-column="42" />
         </state>
       </provider>
     </entry>
@@ -718,14 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/search_result_all.html.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="152" column="94" selection-start-line="152" selection-start-column="76" selection-end-line="152" selection-end-column="94" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/make_room.html.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -734,10 +720,83 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Room.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.5">
+          <caret line="170" column="27" selection-start-line="170" selection-start-column="27" selection-end-line="170" selection-end-column="27" />
+          <folding>
+            <marker date="1463319887693" expanded="true" signature="1286:1357" placeholder="SELECT date,... " />
+            <marker date="1463319887693" expanded="true" signature="1680:1694" placeholder="..." />
+            <marker date="1463319887693" expanded="true" signature="2084:2153" placeholder="SELECT * FRO... comment" />
+            <marker date="1463319887693" expanded="true" signature="2298:2371" placeholder="SELECT stude... student_info" />
+            <marker date="1463319887693" expanded="true" signature="3644:3696" placeholder="SELECT * FRO... room_user" />
+            <marker date="1463319887693" expanded="true" signature="4418:4479" placeholder="SELECT date,... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Room1.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.617647">
+          <caret line="156" column="25" selection-start-line="156" selection-start-column="25" selection-end-line="156" selection-end-column="25" />
+          <folding>
+            <marker date="1463319906262" expanded="true" signature="1241:1312" placeholder="SELECT date,... " />
+            <marker date="1463319906262" expanded="true" signature="1663:1731" placeholder="SELECT * FRO... comment" />
+            <marker date="1463319906262" expanded="true" signature="1875:1948" placeholder="SELECT stude... student_info" />
+            <marker date="1463319906262" expanded="true" signature="3178:3230" placeholder="SELECT * FRO... room_user" />
+            <marker date="1463319906262" expanded="true" signature="3901:3957" placeholder="SELECT date,... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_result.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.4857142">
+          <caret line="70" column="70" selection-start-line="70" selection-start-column="68" selection-end-line="70" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_result_all.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.235294">
+          <caret line="77" column="66" selection-start-line="77" selection-start-column="64" selection-end-line="77" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/search_room.html.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.235294">
+          <caret line="33" column="70" selection-start-line="33" selection-start-column="68" selection-end-line="33" selection-end-column="70" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/post.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5278481">
-          <caret line="22" column="12" selection-start-line="22" selection-start-column="12" selection-end-line="23" selection-end-column="1" />
+        <state vertical-scroll-proportion="-8.235294">
+          <caret line="51" column="4" selection-start-line="51" selection-start-column="3" selection-end-line="51" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/get_in_question.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.352941">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+          <folding>
+            <marker date="1463319975059" expanded="true" signature="142:371" placeholder="..." />
+            <marker date="1463319975059" expanded="true" signature="222:300" placeholder="{...}" />
+            <marker date="1463319975059" expanded="true" signature="304:357" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6545454">
+          <caret line="58" column="29" selection-start-line="58" selection-start-column="26" selection-end-line="58" selection-end-column="29" />
           <folding />
         </state>
       </provider>
