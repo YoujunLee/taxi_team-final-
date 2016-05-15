@@ -168,7 +168,7 @@ out();
 		?>
 							
 		<?php						
-			if($result<-1800)
+			if($result<-1600)
 				echo "<a onclick=location.href='./php/delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";		
 			else
 				echo "<a onclick=location.href='#' class="."'btn btn-danger'"." > 취소불가</a>";
@@ -180,7 +180,7 @@ out();
 		?>
 		<div class="div2">
 			
-			    <span>Tip: 출발시간 30분전에는 취소가 불가능합니다.</span><br>
+			    <span>Tip: 출발시간 10분전에는 취소가 불가능합니다.</span><br>
 			    <span>방이름이 상단에 있습니다. 사람이 많을 때 쉽게 같은 방을 찾으세요~</span>
 		</div>
 		</div>

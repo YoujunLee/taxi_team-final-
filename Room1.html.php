@@ -154,7 +154,7 @@ out();
 			$result=strtotime($current_time)-strtotime($data[0]." ".$data[1]);
 			?>
 			<?php						
-			if($result<-1800)
+			if($result<-600)
 				echo "<a onclick=location.href='./php/delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>"; // 탑승취소 버튼 누를 시에 delete.php에서 방에 참여한 학생 데이터 삭제
 			else
 				echo "<a onclick=location.href='#' class="."'btn btn-danger'"." > 취소불가</a>"; // 택시 탑승 30분전에는 탑승취소 불가
@@ -164,7 +164,7 @@ out();
 		?>
 		<div class="div2">
 			
-			    <span>Tip: 출발시간 30분전에는 취소가 불가능합니다.</span>
+			    <span>Tip: 출발시간 10분전에는 취소가 불가능합니다.</span>
 		</div>
 		</div>
 		
