@@ -67,7 +67,7 @@ out();
 					<option value="고속버스터미널">고속터미널</option>
 					<option value="시외버스터미널">시외버스터미널</option>
 					<option value="육거리">육거리</option>
-					<option value="포항역(KTX)">포항역(EYDIA 앞)</option>
+					<option value="포항역(KTX)">포항역(EDIYA 앞)</option>
 					</select>
 				</td>
 				</label>

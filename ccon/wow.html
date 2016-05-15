@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>json데이터 사용하기</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<script>
+    $.ajax({
+        type:'POST',
+        url:'./php/post.php',
+        dataType:'json',
+        timeout: 10000,
+        success: function(data){
+            var name =data;
+            document.write("name"+name);
+        },
+        error: function(request, textStatus, errorThrown){
+            //에러내용확인
+            alert('error: ' + textStatus);
+        },
+    });
+
+
+</script>
+<script>
+    document.write("name"+name);
+</script>
+</body>
+</html>
