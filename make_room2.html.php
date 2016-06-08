@@ -111,7 +111,7 @@ out();
 		<!-- 방만들기 버튼, 취소 버튼 -->
 	<div class = "div_yg">
 	<input type="submit" value="방만들기" class=" margin_right btn-info" style="background-color:#34c6be; color: #ffffff;">
-	<a href="./조회창.html.php"><input type="button" value="취소" class="btn btn-danger"></a>
+	<a href="./main.html.php"><input type="button" value="취소" class="btn btn-danger"></a>
 	</div>
 	<div class="div2">
 	<br>
