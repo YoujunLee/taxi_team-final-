@@ -57,7 +57,6 @@ echo "<script>location.replace('./main.html.php');</script>";//만약 로그인�
 			</form>
 		
 			<div class="div2">
-			   <span>16/03/25 날짜 조회 기능 추가!</span> <br>
 			   <span>본 서비스는 모바일 환경에 최적화 되어 있습니다.</span> <br>
 			   <span>로그인 오류시 hguitaxi@gmail.com으로 메일주세요</span>
 			</div>

@@ -1,4 +1,4 @@
-<!-- 택시 방 내부 -->
+<!--택시 방 내부 -->
 
 <?php
 include "./php/session_out.php";
@@ -179,8 +179,7 @@ out();
 			$db2->DBO();
 		?>
 		<div class="div2">
-			
-			    <span>Tip: 출발시간 10분전에는 취소가 불가능합니다.</span><br>
+			    <span>Tip:출발시간 10분전에는 취소가 불가능합니다.</span><br>
 			    <span>방이름이 상단에 있습니다. 사람이 많을 때 쉽게 같은 방을 찾으세요~</span>
 		</div>
 		</div>

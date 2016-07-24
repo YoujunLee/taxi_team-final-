@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="45608afe-a42d-4944-8c82-e22f1bd4b8d4" name="taxi_team_final-" url="http://52.27.29.59">
+        <fileTransfer host="52.27.29.59" port="22" privateKey="C:\Users\injxy\Downloads\youjun.ppk" rootFolder="/var/www/html" accessType="SFTP" username="ubuntu" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
