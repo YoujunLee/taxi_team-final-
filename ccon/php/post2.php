@@ -31,7 +31,7 @@ if($result = mysqli_query($link, 'SELECT * FROM ez_product', MYSQLI_USE_RESULT))
                 'inventory_quantity' => $row->stock,
                 'inventory_management' => 'shopify',
                 'taxable' => true,
-                'requires_shjpping' => true
+                'requires_shipping' => true
             )
         ));
 
