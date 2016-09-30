@@ -10,6 +10,12 @@
 	out();
     require_once './php/config.php';
 
+	$db3= new DBC;
+	$db3->DBI();
+	$db3->query = "delete from car_user where stu_id=0"; // 가끔씩 학번이 0으로 나타나는 경우가 있어서 조회할경우 매번 삭제 (설명서 향후 개발 5번에 설명있음)
+	$db3->DBQ();
+
+
 	$db = new DBC;
 	$db->DBI();
 	$db->query = "select start, arrive, date, time,population,post_id, price from car_post ORDER BY date desc,time desc";
