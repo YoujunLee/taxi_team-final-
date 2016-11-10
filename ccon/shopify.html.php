@@ -15,7 +15,6 @@
     <title>Shopify Test</title>
 </head>
 <body>
-<a href="sms://+010-4408-4262">문자보내기</a>
     Shopify store name: <?php echo $shop['name'];?> <br>
     Shopify store name: <?php echo $shop['timezone'];?>
 </body>

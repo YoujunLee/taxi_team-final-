@@ -49,12 +49,20 @@ out();
 			<div class="panel panel-default">
 			  <div class="panel-body">
 			  	<?php
-		       
+				require_once './php/db.php';
+
 			   $name =  $_SESSION['name'] ;
 			   echo "이름 : "."$name"."<br>";
 			   $stu_id= $_SESSION['user_id'];
 			 	echo "학번 : "."$stu_id"."<br>";
-				$cellphone	= $_SESSION['cellphone'];
+
+				$db = new DBC;
+				$db->DBI();
+				$db->query = "SELECT cellphone FROM student_info WHERE studentid='".$stu_id."'";
+				$db->DBQ();
+				$data=$db->result->fetch_row();
+
+				$cellphone	= $data[0];
 				echo "전화번호 : "."$cellphone"
 		      ?>
 			
@@ -69,7 +77,7 @@ out();
 			  <table class="table table-hover tableheight" style="text-align: center">
 			  <div>
   			   	<tr onclick="location.href='./announce.html.php'"><td>공지사항</td></tr>
-			   	<tr onclick="location.href='./QnA.html.php'"><td>1:1 문의</td></tr>
+			   	<tr onclick=""><td>문의 [hguitaxi@gmail.com]</td></tr>
 			   	<tr onclick="location.href='./withdrawal.html.php'"><td>회원탈퇴</td></tr>
 			  </div>
 			  </table>

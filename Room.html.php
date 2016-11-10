@@ -187,7 +187,7 @@ out();
 		</a>
 
 		<?php
-		if($result<-1600)
+		if($result<-600)
 			echo "<a onclick=location.href='./php/delete.php?".$post_id2."' class="."'btn btn-danger'"." > 탑승취소</a>";
 		else
 			echo "<a onclick=location.href='#' class="."'btn btn-danger'"." > 취소불가</a>";
