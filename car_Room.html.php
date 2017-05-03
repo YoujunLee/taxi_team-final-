@@ -134,8 +134,8 @@ out();
     			<tr class="row">
       				<th class="col-xs-2 col-md-2"><?php echo $i?></th>
       				<th class="col-xs-4 col-md-4"><?php echo $data['stu_id']?></th>
-      				<th class="col-xs-6 col-md-6"><?php echo $data['cellphone']?></th>
-    			</tr>
+					<th class="col-xs-6 col-md-6"><a href="tel:<?php echo $data['cellphone']?>"><?php echo $data['cellphone']?></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="sms://<?php echo $data['cellphone']?>"><img src="./img/chat.png" width="26px" height="26px"></a></th>
+				</tr>
     			<?php $i=$i+1; ?>
 			    <?php
    					}

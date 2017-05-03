@@ -18,14 +18,14 @@ tr.tableheight{
 
 tr.tr2{
 	height:70px;
-	background: #fff5b2;
+	background: #E1DA21;
 	border: 4px solid white;
     border-collapse: collapse;
 }
 
 tr.tr1{
 	height:70px;
-	background-color: #7ad8d6;	
+	background-color: #D2E5FA;
 	border: 4px solid white;
     border-collapse: collapse;
 }
@@ -56,9 +56,7 @@ tr.trcenter{
 	margin:auto;
 }
 
-tr.change_color{
-	hover : 
-}
+
 
 .rr{
 	text-align: right; !important

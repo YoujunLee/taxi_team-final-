@@ -52,9 +52,29 @@ if($count_me>0)
 	exit;
 }
 
+$db4 = new DBC; //db object생성
+$db4->DBI();//db 들어가기
+$db4->query = "SELECT post_id FROM room_user WHERE post_id='".$post_id."'";
+$db4->DBQ();
+$count_me1 = $db4->result->num_rows;
+
+$db4->query = "SELECT population FROM post  WHERE post_id='".$post_id."'";
+$db4->DBQ();
+$data2 = $db4->result->fetch_row();
+$population = $data2[0];
+if($count_me1>=$population)
+{
+	echo "<script>alert('죄송합니다.방에 인원이 다 찼습니다.'); history.go(-2);</script>";
+	$db3->DBO();
+	$db4->DBO();
+	exit;
+}
+
 $db2->query = "insert into room_user values('".$id."', '".$post_id ."','".$stu_id."','".$name."','".$cellphone."','".$room_start."', '".$room_arrive."','".$room_date."','".$room_time."')";
 $db2->DBQ();
 $db2->DBO();
+$db3->DBO();
+$db4->DBO();
 
 echo "<script>location.replace('../Room.html.php?".$post_id."');</script>";
 
