@@ -3,10 +3,13 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json;charset=UTF-8");
 require_once '../php/config.php';
+date_default_timezone_set("Asia/Seoul");
+$current_time2 = date("Y-m-d");
+$current_time3 = date("H:i:s");
 
 $db= new DBC;
 $db->DBI();
-$db->query = "select start, arrive, date, time,population,post_id from post";
+$db->query = "select start, arrive, date, time,population,post_id from post WHERE date>'".$current_time2."' or date='".$current_time2."' and time>'".$current_time3."'  ORDER BY date, time";
 $db->DBQ();
 $num = $db->result->num_rows;
 
