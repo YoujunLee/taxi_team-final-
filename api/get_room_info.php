@@ -12,7 +12,11 @@ $db= new DBC;
 $db->DBI();
 $db->query = "SELECT date, time, start, arrive FROM post WHERE post_id='".$post_id."'";
 $db->DBQ();
-$num = $db->result->num_rows;
+
+$db2= new DBC;
+$db2->DBI();
+$db2->query = "SELECT * FROM room_user WHERE post_id='".$post_id."'";
+$db2->DBQ();
 
 $result=array();
 while($data = $db->result->fetch_array())
@@ -23,5 +27,15 @@ while($data = $db->result->fetch_array())
     $data_array['time']=$data['time'];
     array_push($result, $data_array);
 }
+
+while($data2 = $db2->result->fetch_array())
+{
+    $data2_array['stu_id']=$data2['stu_id'];
+    $data2_array['name']=$data2['name'];
+    $data2_array['cellphone']=$data2['cellphone'];
+    array_push($result, $data2_array);
+}
+
 echo json_encode ($result, JSON_UNESCAPED_UNICODE);
+
 ?>
