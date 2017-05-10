@@ -17,10 +17,10 @@ $db2= new DBC;
 $db2->DBI();
 $db2->query = "SELECT * FROM room_user WHERE post_id='".$post_id."'";
 $db2->DBQ();
-
+$num2 = $db2->result->num_rows;
 $result=array();
-while($data = $db->result->fetch_array())
-{
+
+while($data = $db->result->fetch_array()){
     $data_array['start']=$data['start'];
     $data_array['arrive']=$data['arrive'];
     $data_array['date']=$data['date'];
@@ -28,14 +28,13 @@ while($data = $db->result->fetch_array())
     array_push($result, $data_array);
 }
 
-while($data2 = $db2->result->fetch_array())
-{
+while($data2 = $db2->result->fetch_array()){
     $data2_array['stu_id']=$data2['stu_id'];
     $data2_array['name']=$data2['name'];
     $data2_array['cellphone']=$data2['cellphone'];
+    $data2_array['count']=$num2;
     array_push($result, $data2_array);
 }
 
 echo json_encode ($result, JSON_UNESCAPED_UNICODE);
-
 ?>
